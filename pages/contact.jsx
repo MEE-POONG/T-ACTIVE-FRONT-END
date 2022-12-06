@@ -19,15 +19,15 @@ export default function ContactPages() {
                   {/* <img className="mx-auto" src="/images/1.png" width="40%" /> */}
                 </div>
 
-                <div className="font-charmonman ">
+                <div className="font-trajan ">
                   <h1 className=" py-3 text-5xl  text-yellow-400  text-center">
-                    ช่องทางติดต่อ
+                    My Contact
                   </h1>
                     {/* <hr className="my-6 border-yellow-200 md:my-8 "/> */}
                   <p className="grid justify-items-center py-1 text-3xl  text-yellow-400  "> 
-                    ที่ตั้ง: บรืษัท ซูกาเวีย จำกัด 299 หมู่ 8 ต.หนองสาหร่าย อ.ปากช่อง จ.นครราชสีมา 30130 <br />  
-                    โทรศัพท์: 089-999-9999 <br />
-                    อีเมล์: Stevia_Sysup@gmail.com <br />
+                    Address 299 Moo 8, Nong Sarai Subdistrict, Pak Chong District, Nakhon Ratchasima Province 30130 Sugavia Co., Ltd. <br />  
+                    Phone: 089-999-9999 <br />
+                    E-mail: Stevia_Sysup@gmail.com <br />
                     facebook: T-Active Stevia Sysup <br />
                     Line: @T_Active
                   </p>
