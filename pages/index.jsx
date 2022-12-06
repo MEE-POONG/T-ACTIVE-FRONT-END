@@ -27,7 +27,8 @@ export default function Home() {
             </p>
           </div>
         </div>
-        <hr class="my-6 border-gray-200 md:my-8 dark:border-gray-700"/>
+        <hr class="my-6 border-yellow-500 md:my-8 dark:border-yellow-700"/>
+
         <div className=" mx-5 py-5 grid grid-cols-2 ">
 
         <div className=" mx-5 py-5 grid grid-cols-2 ">
