@@ -6,7 +6,7 @@ module.exports = {
   ],
   theme: {
     fontFamily: {
-      charmonman: ["TH_Charmonman_Regular", "sans-serif"],
+      helvethaica: ["db_helvethaica", "sans-serif"],
       trajan:["Trajan_Pro","sans-serif"],
     },
     screens: {
