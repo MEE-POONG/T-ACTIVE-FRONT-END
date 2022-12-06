@@ -20,17 +20,20 @@ export default function ContactPages() {
                 </div>
 
                 <div className="font-trajan ">
-                  <h1 className=" py-3 text-5xl  text-yellow-400  text-center">
+                  <h1 className=" py-3 text-3xl text-yellow-400  text-center">
                     My Contact
                   </h1>
-                    {/* <hr className="my-6 border-yellow-200 md:my-8 "/> */}
-                  <p className="grid justify-items-center py-1 text-3xl  text-yellow-400  "> 
-                    Address 299 Moo 8, Nong Sarai Subdistrict, Pak Chong District, Nakhon Ratchasima Province 30130 Sugavia Co., Ltd. <br />  
-                    Phone: 089-999-9999 <br />
-                    E-mail: Stevia_Sysup@gmail.com <br />
-                    facebook: T-Active Stevia Sysup <br />
-                    Line: @T_Active
+                    {/* <hr className="my-6 border-yellow-200 md:my-8 "/>     */}
+                  <p className="text-yellow-400 text-center space-y-2 ">   
+                    Address : 299 Moo 8, Nong Sarai Subdistrict, Pak Chong District <br />  
+                    Nakhon Ratchasima Province 30130 Sugavia Co., Ltd. <br />  
+                    Phone : 089-999-9999 <br />
+                    E-mail : Stevia_Sysup@gmail.com <br />
+                    facebook : T-Active Stevia Sysup <br />
+                    Line : @T_Active
                   </p>
+
+
                   <br /> <br /> <br /> 
                 </div>
               </div>
@@ -41,3 +44,5 @@ export default function ContactPages() {
     </>
   );
 }
+
+ /*grid justify-items-center  */
