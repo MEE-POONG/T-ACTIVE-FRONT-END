@@ -49,7 +49,7 @@ export default function ProductPages() {
         </div>
 
         <div className=" mx-5 py-5 md:grid md:grid-cols-2">
-          <div className="  my-auto ">
+          <div className="my-auto">
             <img className="mx-auto" src="/images/5.png" width="10%" />
           </div>
 

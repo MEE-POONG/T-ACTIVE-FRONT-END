@@ -33,13 +33,14 @@ export default function Home() {
 
         <div className=" mx-5 py-5 grid lg:grid-cols-2">
           <div className=" mx-5 py-5 md:grid md:grid-cols-2 ">
-            <div className="items-center">
+
+            <div className="my-auto">
               <img className="mx-auto" src="/images/img01.jpg" width="100%" />
             </div>
 
             <div className="py-3 md:flex md:flex-col md:justify-center text-yellow-500 ">
               <h1 className="font-trajan text-3xl md:text-5xl text-center ">
-                คุณสมบัติของสินค้า
+              Product Features
               </h1>
               <p className="   text-2xl  md:text-3xl  ">
                 หญ้าหวานทุกรูปแบบ ซูกาเวีย พิถีพิถันทุกขั้นตอน ปลูก สกัด บรรจุ
@@ -50,7 +51,13 @@ export default function Home() {
             </div>
           </div>
 
+
           <div className=" mx-5 py-5 md:grid md:grid-cols-2 ">
+
+          <div className="w-auto  md:hidden  my-auto">
+              <img className="mx-auto" src="/images/7.png" width="100%" />
+            </div>
+
             <div className="py-3 md:flex md:flex-col md:justify-center text-yellow-500 ">
               <h1 className="py-3 text-3xl md:text-5xl text-center ">
                 โรงงานบรรจุขวด
@@ -63,7 +70,7 @@ export default function Home() {
               </p>
             </div>
 
-            <div className="items-center">
+            <div className="w-0 md:w-auto  my-auto">
               <img className="mx-auto" src="/images/7.png" width="100%" />
             </div>
           </div>
