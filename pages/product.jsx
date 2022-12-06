@@ -11,8 +11,8 @@ export default function ProductPages() {
       </Head>
       <div className="container px-6 py-12 mx-auto">
         
-        <div className=" mx-5 py-5 grid grid-cols-2 ">
-          <div className="items-center">
+        <div className=" mx-5 py-5 md:grid md:grid-cols-2 ">
+          <div className=" my-auto">
             <img className="mx-auto" src="/images/5.png" width="10%" />
           </div>
 
@@ -29,7 +29,12 @@ export default function ProductPages() {
           </div>
         </div>
 
-        <div className=" mx-5 py-8 grid grid-cols-2 ">
+        <div className=" mx-5 py-5 md:grid md:grid-cols-2 ">
+
+        <div className="w-auto  md:hidden  my-auto">
+            <img className="mx-auto" src="/images/5.png" width="10%" />
+          </div>
+
           <div className=" font-charmonman ">
             <h1 className=" py-3 text-5xl  text-yellow-400  text-center">
               น้ำหญ้าหวานกลิ่น Originals
@@ -38,13 +43,15 @@ export default function ProductPages() {
               หญ้าหวานทุกรูปแบบ ซูกาเวีย พิถ๊พิถันทุกขั้นตอน
             </p>
           </div>
-          <div className="">
+
+          <div className="w-0 md:w-auto  my-auto">
             <img className="mx-auto" src="/images/5.png" width="10%" />
           </div>
+
         </div>
 
-        <div className=" mx-5 py-8 grid grid-cols-2 ">
-          <div className="">
+        <div className=" mx-5 py-5 md:grid md:grid-cols-2">
+          <div className="  my-auto ">
             <img className="mx-auto" src="/images/5.png" width="10%" />
           </div>
 
