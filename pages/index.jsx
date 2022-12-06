@@ -9,7 +9,7 @@ export default function Home() {
         <link rel="icon" href="/images/logo.png" />
       </Head>
 
-      <div>
+      <div className="container px-6 py-12 mx-auto">
         <div className=" mx-5 py-5 grid grid-cols-2 ">
           <div className="items-center">
             <img className="mx-auto" src="/images/1.png" width="40%" />
@@ -27,7 +27,7 @@ export default function Home() {
             </p>
           </div>
         </div>
-
+        <hr class="my-6 border-gray-200 md:my-8 dark:border-gray-700"/>
         <div className=" mx-5 py-5 grid grid-cols-2 ">
 
         <div className=" mx-5 py-5 grid grid-cols-2 ">
@@ -68,6 +68,16 @@ export default function Home() {
           </div>
         </div>
 
+        </div>
+
+        <div>
+          <div>
+
+          </div>
+
+          <div>
+
+          </div>  
         </div>
 
 
