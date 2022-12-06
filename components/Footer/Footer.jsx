@@ -4,7 +4,7 @@ export default function Footer(){
     return (
         <>
         <footer className=" font-trajan">
-    <div className="container py-1 text-sm mx-auto  ">
+    <div className="container  px-14 py-1 text-sm mx-auto  ">
         <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 sm:gap-y-10 lg:grid-cols-4">
             <div className="sm:col-span-2">
                 <h1 className="py-1 text-xl font-semibold tracking-tight text-yellow-400">Subscribe our newsletter to get update.</h1>
