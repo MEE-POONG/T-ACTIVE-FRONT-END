@@ -19,12 +19,12 @@ export default function ContactPages() {
                   {/* <img className="mx-auto" src="/images/1.png" width="40%" /> */}
                 </div>
 
-                <div className="font-trajan ">
-                  <h1 className=" py-3 text-3xl text-yellow-400  text-center">
+                <div className="font-helvethaica  ">
+                  <h1 className=" py-3 text-5xl text-yellow-400  text-center">
                     My Contact
                   </h1>
                     {/* <hr className="my-6 border-yellow-200 md:my-8 "/>     */}
-                  <p className="text-yellow-400 text-center space-y-2 ">   
+                  <p className=" text-2xl text-yellow-400 text-center space-y-2 ">   
                     Address : 299 Moo 8, Nong Sarai Subdistrict, Pak Chong District <br />  
                     Nakhon Ratchasima Province 30130 Sugavia Co., Ltd. <br />  
                     Phone : 089-999-9999 <br />
