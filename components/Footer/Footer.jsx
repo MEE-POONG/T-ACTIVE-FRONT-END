@@ -26,20 +26,22 @@ export default function Footer() {
                 </button>
               </div>
             </div>
-       
+
             <div className="sm:col-span-2">
               <p className="font-semibold text-yellow-400"> </p>
               <div className="flex flex-col items-start mt-5 ml-20">
-             <img
-                    src="/images/logo.png"
-                    className="h-20  ml-20"
-                    alt="T-ACTIVE Logo"
-                  />
+                <img
+                  src="/images/logo.png"
+                  className="h-20  ml-20"
+                  alt="T-ACTIVE Logo"
+                />
               </div>
             </div>
-         
+
             <div>
-              <p className=" ml-8 text-2xl  font-semibold text-yellow-400">Quick Link</p>
+              <p className=" ml-8 text-2xl  font-semibold text-yellow-400">
+                Quick Link
+              </p>
               <div className="ml-8 text-base  flex flex-col items-start mt-0 space-y-2">
                 <a
                   href="/"
@@ -69,16 +71,25 @@ export default function Footer() {
             </div>
 
             <div>
-              <p className=" ml-10 text-2xl font-semibold text-yellow-400 ">Contacts</p>
+              <p className=" ml-10 text-2xl font-semibold text-yellow-400 ">
+                Contacts
+              </p>
 
               <div className=" ml-10  text-base flex flex-col items-start mt-5 space-y-3">
-                <a href="#"
+                <a
+                  href="#"
                   className=" mx-7 h-9 text-yellow-600 transition-colors duration-300 dark:text-yellow-300 hover:text-blue-500 dark:hover:text-blue-400"
-                  aria-label="Facebook"><BsLine /> 
-                 <a href="#"
-                  className=" mx-2 text-yellow-600 transition-colors duration-300 dark:text-yellow-300 hover:text-blue-500 dark:hover:text-blue-400"
-                 aria-label="Facebook" ><BsFacebook /></a></a>
-               
+                  aria-label="Facebook"
+                >
+                  <BsLine />
+                </a>
+                <a
+                  href="#"
+                  className=" mx-7 h-9 text-yellow-600 transition-colors duration-300 dark:text-yellow-300 hover:text-blue-500 dark:hover:text-blue-400"
+                  aria-label="Facebook"
+                >
+                  <BsFacebook />
+                </a>
               </div>
             </div>
           </div>

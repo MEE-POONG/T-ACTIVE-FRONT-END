@@ -3,7 +3,7 @@ import React from "react";
 export default function Navbar() {
   return (
     <>
-    <div className=" sticky top-0 bg-black bg-opacity-80 py-2 mx-auto ">
+<div className=" sticky top-0 bg-black bg-opacity-80 py-2 mx-auto ">
 
   <nav>
 
@@ -23,7 +23,7 @@ export default function Navbar() {
       <a href="/contact" className="block py-2 pl-3 pr-4 ">Contact</a>
     </div>
 
-    <button data-collapse-toggle="navbar-default" type="button" className="inline-flex items-center p-2 ml-3 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-default" aria-expanded="false">
+    {/* <button data-collapse-toggle="navbar-default" type="button" className="inline-flex items-center p-2 ml-3 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-default" aria-expanded="false">
       <span className="sr-only">Open main menu</span>
       <svg className="w-6 h-6" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd"></path></svg>
     </button>
@@ -43,56 +43,12 @@ export default function Navbar() {
           <a href="/contact" className="block py-2 pl-3 pr-4 ">Contact</a>
         </li>
       </ul>
-    </div> */}
+    </div> */} 
   </div>
 </nav>
 
-    </div>
+</div>
   
-
-    {/* <div classNameName="container px-6 py-12 mx-auto">
-      <div classNameName=" container px-8 py-5 lg:py-8 mx-auto xl:px-5 max-w-screen-lg font-trajan">
-      <nav>
-        <div classNameName="flex flex-wrap   justify-items-center  md:gap-10 md:flex-nowrap">
-          <div classNameName="flex-col items-center justify-start order-1 hidden w-full md:flex md:flex-row md:justify-end md:w-auto md:order-none md:flex-1">
-            <a
-              classNameName="  px-14 py-6  text-lg font-medium text-yellow-500 dark:text-yellow-500 "
-              href="/"
-            >
-              Home 
-            </a>
-            <a
-              classNameName="px-14 py-6 text-lg font-medium text-yellow-500 dark:text-yellow-500 hover:text-yellow-500"
-              href="/product"
-            >
-              Product
-            </a>
-          </div>
-
-          <img  src="/images/logo.png" width="15%"/>
-          
-          <div classNameName="flex-col items-center justify-start order-2 hidden w-full md:flex md:flex-row md:w-auto md:flex-1 md:order-none">
-            <a
-              classNameName="px-14 py-6 text-lg font-medium text-yellow-500 dark:text-yellow-500 hover:text-yellow-500"
-              href="/about"
-            >
-              About
-            </a>
-            <a
-              classNameName="px-14 py-6 text-lg font-medium text-yellow-500 dark:text-yellow-500 hover:text-yellow-500"
-              href="/contact"
-            >
-              Contact
-            </a>
-          </div>
-        </div>
-      </nav>
-    </div>
-    </div> */}
-
-    
-    
-      
     </>
   );
 }
