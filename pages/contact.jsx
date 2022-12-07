@@ -1,5 +1,7 @@
 import React from "react";
 import Head from "next/head";
+import { BsLine, BsFacebook } from "react-icons/bs";
+
 
 export default function ContactPages() {
   return (
@@ -25,6 +27,7 @@ export default function ContactPages() {
                   </h1>
                     {/* <hr className="my-6 border-yellow-200 md:my-8 "/>     */}
                   <p className=" text-2xl text-yellow-400 text-center space-y-2 ">   
+                  
                     Address : 299 Moo 8, Nong Sarai Subdistrict, Pak Chong District <br />  
                     Nakhon Ratchasima Province 30130 Sugavia Co., Ltd. <br />  
                     Phone : 089-999-9999 <br />
