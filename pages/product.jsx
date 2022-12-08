@@ -2,6 +2,8 @@ import React from "react";
 import Head from "next/head";
 
 export default function ProductPages() {
+  
+  const [{data: ProductData, loading, error}, getProduct] = useAxios({url: '/api/product'})
   return (
     <>
       <Head>
