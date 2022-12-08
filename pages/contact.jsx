@@ -1,5 +1,6 @@
 import React from "react";
 import Head from "next/head";
+import { BsLine, BsFacebook } from "react-icons/bs";
 
 export default function ContactPages() {
   return (
@@ -23,18 +24,21 @@ export default function ContactPages() {
                   <h1 className=" py-3 text-5xl text-yellow-400  text-center">
                     My Contact
                   </h1>
-                    {/* <hr className="my-6 border-yellow-200 md:my-8 "/>     */}
-                  <p className=" text-2xl text-yellow-400 text-center space-y-2 ">   
-                    Address : 299 Moo 8, Nong Sarai Subdistrict, Pak Chong District <br />  
-                    Nakhon Ratchasima Province 30130 Sugavia Co., Ltd. <br />  
+                  {/* <hr className="my-6 border-yellow-200 md:my-8 "/>     */}
+                  <p className=" text-2xl text-amber-300 text-center space-y-2 ">
+                    Address : 299 Moo 8, Nong Sarai Subdistrict, Pak Chong
+                    District <br />
+                    Nakhon Ratchasima Province 30130 Sugavia Co., Ltd. <br />
                     Phone : 089-999-9999 <br />
                     E-mail : Stevia_Sysup@gmail.com <br />
                     facebook : T-Active Stevia Sysup <br />
                     Line : @T_Active
                   </p>
+                  {/* <h1 class="font-helvethaica text-transparent text-8xl bg-clip-text bg-gradient-to-r from-yellow-400 to-white-600">
+                    Tailwind CSS
+                  </h1> */}
 
-
-                  <br /> <br /> <br /> 
+                  <br /> <br /> <br />
                 </div>
               </div>
             </div>
@@ -45,4 +49,4 @@ export default function ContactPages() {
   );
 }
 
- /*grid justify-items-center  */
+/*grid justify-items-center  */
