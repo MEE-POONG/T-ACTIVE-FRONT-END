@@ -19,7 +19,7 @@ export default function Navbar() {
     </a>
 
     <div className=" text-yellow-500  flex-col items-center justify-start order-2 hidden w-full md:flex md:flex-row md:w-auto md:flex-1 md:order-none">
-      <a href="/product" className="block py-2 pl-3 pr-4 ">Product</a>
+      <a href="/products" className="block py-2 pl-3 pr-4 ">Product</a>
       <a href="/contact" className="block py-2 pl-3 pr-4 ">Contact</a>
     </div>
 

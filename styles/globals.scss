@@ -53,3 +53,9 @@ body{
   color: #d5c16d ;
 
 }
+.box1 {
+  border: 10px double transparent;
+  background-image: linear-gradient(rgb(13, 14, 33), rgb(13, 14, 33)), radial-gradient(circle at left top, #d5c79b #cb9b51 , #f8e2c1);
+  background-origin: border-box;
+  background-clip: padding-box, border-box;
+}
