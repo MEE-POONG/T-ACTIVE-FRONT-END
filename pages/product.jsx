@@ -3,7 +3,7 @@ import Head from "next/head";
 
 export default function ProductPages() {
   
-  const [{data: ProductData, loading, error}, getProduct] = useAxios({url: '/api/product'})
+  // const [{data: ProductData, loading, error}, getProduct] = useAxios({url: '/api/product'})
   return (
     <>
       <Head>

@@ -4,7 +4,7 @@ import Head from "next/head";
 
 export default function AboutPages() {
 
-  const [{data: AboutData, loading, error}, getAbout] = useAxios({url: '/api/about'})
+  // const [{data: AboutData, loading, error}, getAbout] = useAxios({url: '/api/about'})
 
   return (
     <>
@@ -27,6 +27,7 @@ export default function AboutPages() {
 
 
           <div className=" font-helvethaica text-[#FFD700] text-center ">
+            <h1 className=" py-3 text-5xl  ">น้ำหญ้าหวานกลิ่นมะลิ</h1>
             <p className=" py-3 text-3xl">
               All varieties of stevia, Sugavia, are meticulously grown,
               harvested, and packed by a team of specialists and professionals.
@@ -38,9 +39,33 @@ export default function AboutPages() {
 
         <hr class="my-6 border-yellow-500 md:my-8 dark:border-yellow-700" />
 
+        <div className=" mt-4 mx-5 py-5 md:grid md:grid-cols-2  rounded-xl">
+          <div className=" w-auto  md:hidden  my-auto">
+            <img className="mx-auto" src="/images/5.png" width="10%" />
+          </div>
+
+          <div className="font-helvethaica text-[#FFD700] text-center ">
+            <h1 className=" py-3 text-5xl  ">น้ำหญ้าหวานกลิ่น Originals</h1>
+            <p className=" py-3 text-3xl text-center">
+              Stevia herbs help increase vitality. Allows more blood to feed the
+              brain Help in the treatment of patients with diabetes. blood sugar
+              levels are Suitable for those who want to control blood sugar
+              levels and help reduce high blood fat. Reduces the risk of heart
+              disease high blood pressure and obesity, nourishes the liver, and
+              heals both internal and external wounds
+            </p>
+          </div>
+
+          <div className="w-0 md:w-auto  my-auto">
+            <img className="mx-auto" src="/images/5.png" width="10%" />
+          </div>
+        </div>
+
+        <hr class="my-6 border-yellow-500 md:my-8 dark:border-yellow-700" />
+
         <div className="mt-4 mx-5 py-5 md:grid md:grid-cols-2 rounded-xl">
           <div className="my-auto">
-            <img className="mx-auto" src="/images/A_2.jpg" width="55%" />
+            <img className="mx-auto" src="/images/5.png" width="10%" />
           </div>
 
           <div className=" font-helvethaica text-[#FFD700] text-center ">
@@ -59,6 +84,7 @@ export default function AboutPages() {
               sauce, soya bean paste, minced fish meat, and so on.
             </p>
           </div>
+          
         </div>
       </div>
    
