@@ -1,8 +1,12 @@
 import React from "react";
 import Head from "next/head";
 import { BsLine, BsFacebook } from "react-icons/bs";
+import useAxios from "axios-hooks";
 
 export default function ContactPages() {
+
+  const [{ data: contactData, loading, error }, getContact] = useAxios({ url: "/api/contact",});
+
   return (
     <>
       <Head>
@@ -11,8 +15,8 @@ export default function ContactPages() {
         <link rel="icon" href="/images/logo.png" />
       </Head>
 
-      <div>
-        <div className="container px-6 py-12 mx-auto">
+      {contactData?.map((contact, index) => (
+        <div className="container px-6 py-12 mx-auto" key={index}>
           <div className="grid grid-cols-1 gap-6 sm:grid-cols-3 sm:gap-y-10 lg:grid-cols-1">
             <div className="sm:col-span-2">
               <div className=" mx-5 py-5 grid ">
@@ -21,30 +25,25 @@ export default function ContactPages() {
                 </div>
 
                 <div className="font-helvethaica  ">
-                  <h1 className=" py-3 text-5xl text-yellow-400  text-center">
-                    My Contact
-                  </h1>
+                  <h1 className=" animate-charcter text-center text-transparent text-7xl bg-clip-text bg-gradient-to-r from-yellow-300 to-yellow-600">{contact.title} </h1>
                   {/* <hr className="my-6 border-yellow-200 md:my-8 "/>     */}
-                  <p className=" text-2xl text-amber-300 text-center space-y-2 ">
-                    Address : 299 Moo 8, Nong Sarai Subdistrict, Pak Chong
-                    District <br />
-                    Nakhon Ratchasima Province 30130 Sugavia Co., Ltd. <br />
-                    Phone : 089-999-9999 <br />
-                    E-mail : Stevia_Sysup@gmail.com <br />
-                    facebook : T-Active Stevia Sysup <br />
-                    Line : @T_Active
-                  </p>
-                  {/* <h1 class="font-helvethaica text-transparent text-8xl bg-clip-text bg-gradient-to-r from-yellow-400 to-white-600">
+                  <p className=" text-2xl text-amber-300 text-center space-y-2 ">Adress : {contact.address} </p>
+                  <p className=" text-2xl text-amber-300 text-center space-y-2 ">Tel : {contact.tel} </p>
+                  <p className=" text-2xl text-amber-300 text-center space-y-2 ">E-mail : {contact.email} </p>
+                  <p className=" text-2xl text-amber-300 text-center space-y-2 ">Facebook : {contact.facebook} </p>
+                  <p className=" text-2xl text-amber-300 text-center space-y-2 ">Line : {contact.line} </p>
+                  
+                  {/* <h1 className="animate-charcter font-helvethaica text-transparent text-8xl bg-clip-text bg-gradient-to-r from-yellow-300 to-yellow-400">
                     Tailwind CSS
                   </h1> */}
 
-                  <br /> <br /> <br />
+                  <br /> 
                 </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
+         ))}
     </>
   );
 }
