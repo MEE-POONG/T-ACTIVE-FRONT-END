@@ -25,7 +25,7 @@ export default function ContactPages() {
                 </div>
 
                 <div className="font-helvethaica  ">
-                  <h1 className=" animate-charcter text-center text-transparent text-7xl bg-clip-text bg-gradient-to-r from-yellow-300 to-yellow-600">{contact.title} </h1>
+                  <h1 className=" animate-charcter text-center text-6xl ">{contact.title} </h1>
                   {/* <hr className="my-6 border-yellow-200 md:my-8 "/>     */}
                   <p className=" text-2xl text-amber-300 text-center space-y-2 ">Adress : {contact.address} </p>
                   <p className=" text-2xl text-amber-300 text-center space-y-2 ">Tel : {contact.tel} </p>
@@ -37,7 +37,7 @@ export default function ContactPages() {
                     Tailwind CSS
                   </h1> */}
 
-                  <br /> 
+                  <br />  <br />  <br /> 
                 </div>
               </div>
             </div>

@@ -23,14 +23,23 @@ body{
    text-transform: uppercase;
   background-clip: border-box;
   background-size: 200% auto;
-  color: #fff;
+  color: #fff4c7 ;
   background-clip: text;
+  background-image: linear-gradient(
+	to right,
+	#d5c79b 0,
+  #cb9b51 22%, 
+	#f6e27a 45%,
+	#f6f2c0 50%,
+	#f6e27a 55%,
+	#cb9b51 78%,
+	#f8e2c1 100%
+	);
   text-fill-color: transparent;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-//   animation: textclip 1.5s linear infinite;
-  animation: 1.5s linear 1s infinite alternate slidein;
-  display: inline-block;
+  animation: textclip 5s linear infinite;
+  display: inline-flexbox;
 }
 
 @keyframes textclip {
