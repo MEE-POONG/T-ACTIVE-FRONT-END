@@ -7,8 +7,8 @@ export default function Footer() {
       <footer className=" font-helvethaica ">
         <div className="container  px-14 py-1 text-sm mx-auto  ">
           <hr className="my-6 border-yellow-200 md:my-8 " />
-          <div className="grid gap-5 lg:grid-cols-6">
-            <div className=" sm:col-span-2 ">
+          <div className="grid gap-5 md:grid-cols-2 lg:grid-cols-6 m-auto">
+            <div className=" col-span-1 md:col-span-2 ">
               <h1 className=" ml-12 py-1 text-2xl font-semibold tracking-tight text-yellow-400">
                 Subscribe our newsletter to get update.
               </h1>
@@ -27,7 +27,7 @@ export default function Footer() {
               </div>
             </div>
 
-            <div className="sm:col-span-2">
+            <div className="col-span-1 md:col-span-2">
               <p className="font-semibold text-yellow-400"> </p>
               <div className="flex flex-col items-start mt-5 ml-20">
                 <img
@@ -75,7 +75,7 @@ export default function Footer() {
                 Contacts
               </p>
 
-              <div className=" ml-10  text-base flex flex-col items-start mt-5 space-y-3">
+              <div className=" ml-10  text-base items-start mt-5 space-y-3">
                 <a
                   href="#"
                   className=" mx-7 h-9 text-yellow-600 transition-colors duration-300 dark:text-yellow-300 hover:text-blue-500 dark:hover:text-blue-400"

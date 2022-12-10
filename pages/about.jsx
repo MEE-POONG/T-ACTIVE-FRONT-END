@@ -15,6 +15,7 @@ export default function AboutPages() {
         <link rel="icon" href="/images/logo.png" />
       </Head>
 
+
       <div className=" my-auto ">
             <img className="mx-auto" src="/images/A_1.png" width="30%" />
           </div>
@@ -28,10 +29,18 @@ export default function AboutPages() {
         <img className="mx-auto" src={about.imagea1} width="50%" />
           </div>
 
-          <div className=" font-helvethaica text-[#FFD700] text-center ">
+          <div className=" font-font01 text-[#FFD700] text-center ">
             <h1 className=" animate-charcter text-center text-6xl ">{about.title1}</h1>
-            <p className=" subtitles text-center text-3xl "> {about.subtitle1} </p>
-            <p className=" subtitles text-center text-3xl"> {about.detail1} </p>
+
+            <div className=" subtitles text-center text-3xl">
+              {about.subtitle1}
+              </div>
+
+            <div
+                className=" font-font02 subtitles text-center text-xl md:text-2xl"
+                dangerouslySetInnerHTML={{ __html: about?.detail1 }}
+              />
+            
           </div>
         </div>
 
@@ -41,10 +50,17 @@ export default function AboutPages() {
           <div className=" w-auto  md:hidden  my-auto">
           </div>
 
-          <div className="font-helvethaica text-[#FFD700] text-center ">
+          <div className="font-font01 text-[#FFD700] text-center ">
           <h1 className=" animate-charcter text-center text-6xl ">{about.title2}</h1>
-            <p className=" subtitles text-center text-3xl"> {about.subtitle2} </p>
-            <p className=" subtitles text-center text-3xl"> {about.detail2} </p>
+
+            <div className=" subtitles text-center text-3xl">
+              {about.subtitle2}
+              </div>
+
+            <div
+                className="  font-font02 subtitles text-center text-xl md:text-2xl"
+                dangerouslySetInnerHTML={{ __html: about?.detail2 }}
+              />
           </div>
 
           <div className="w-0 md:w-auto  my-auto">
@@ -59,10 +75,17 @@ export default function AboutPages() {
           <img className="mx-auto" src={about.imagea3} width="50%" />
           </div>
 
-          <div className=" font-helvethaica text-[#FFD700] text-center ">
+          <div className=" font-font01 text-[#FFD700] text-center ">
           <h1 className="animate-charcter text-center text-6xl ">{about.title3}</h1>
-            <p className=" subtitles text-center text-3xl "> {about.subtitle3} </p>
-            <p className=" subtitles text-center text-3xl "> {about.detail3} </p>
+
+          <div className=" subtitles text-center text-3xl">
+              {about.subtitle3}
+              </div>
+
+            <div
+                className=" font-font02 subtitles text-center text-xl md:text-2xl"
+                dangerouslySetInnerHTML={{ __html: about?.detail3}}
+              />
           </div>
 
         </div>
