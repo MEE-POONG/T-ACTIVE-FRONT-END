@@ -22,7 +22,7 @@ export default function Home() {
               <img className="mx-auto" src={homee.imageh1} width="50%" />
             </div>
 
-            <div className=" font-font01 text-[#FFD700] text-center ">
+            <div className=" font-font01 font-semibold  text-[#FFD700] text-center ">
               <h1 className=" animate-charcter text-center text-5xl ">
                 {homee.title1}
               </h1>
@@ -46,8 +46,8 @@ export default function Home() {
 
             <div className=" w-auto  md:hidden  my-auto"></div>
 
-            <div className="font-font01 text-[#FFD700] text-center ">
-              <h1 className=" animate-charcter text-center text-5xl ">
+            <div className="font-font01   text-[#FFD700] text-center ">
+              <h1 className=" animate-charcter  font-semibold text-center text-5xl ">
                 {homee.title2}
               </h1>
               <div className=" font-font02 subtitles py-3 text-center text-3xl">
@@ -71,8 +71,8 @@ export default function Home() {
               <img className="mx-auto" src={homee.imageh3} width="50%" />
             </div>
 
-            <div className=" font-font01 text-[#FFD700] text-center ">
-              <h1 className="animate-charcter text-center text-5xl ">
+            <div className=" font-font01  text-[#FFD700] text-center ">
+              <h1 className="animate-charcter font-semibold text-center text-5xl ">
                 {homee.title3}
               </h1>
               <div className=" font-font02 subtitles py-3 text-center text-3xl">
