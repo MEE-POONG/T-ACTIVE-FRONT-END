@@ -23,10 +23,10 @@ export default function Home() {
             </div>
 
             <div className=" font-font01 text-[#FFD700] text-center ">
-              <h1 className=" animate-charcter text-center text-6xl ">
+              <h1 className=" animate-charcter text-center text-5xl ">
                 {homee.title1}
               </h1>
-              <div className=" subtitles text-center text-3xl">
+              <div className="font-font02 subtitles py-3 text-center text-3xl">
                 {homee.subtitle1}
               </div>
               <div
@@ -47,10 +47,10 @@ export default function Home() {
             <div className=" w-auto  md:hidden  my-auto"></div>
 
             <div className="font-font01 text-[#FFD700] text-center ">
-              <h1 className=" animate-charcter text-center text-6xl ">
+              <h1 className=" animate-charcter text-center text-5xl ">
                 {homee.title2}
               </h1>
-              <div className=" subtitles text-center text-3xl">
+              <div className=" font-font02 subtitles py-3 text-center text-3xl">
                 {homee.subtitle2}
               </div>
               <div
@@ -72,10 +72,10 @@ export default function Home() {
             </div>
 
             <div className=" font-font01 text-[#FFD700] text-center ">
-              <h1 className="animate-charcter text-center text-6xl ">
+              <h1 className="animate-charcter text-center text-5xl ">
                 {homee.title3}
               </h1>
-              <div className=" subtitles text-center text-3xl">
+              <div className=" font-font02 subtitles py-3 text-center text-3xl">
                 {homee.subtitle3}
               </div>
               <div

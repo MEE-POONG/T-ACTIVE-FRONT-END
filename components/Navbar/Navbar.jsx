@@ -9,8 +9,8 @@ export default function Navbar() {
 
   <div className="flex flex-wrap justify-between md:gap-10 md:flex-nowrap">
 
-    <div className=" text-yellow-500 flex-col items-center justify-start order-1 hidden w-full md:flex md:flex-row md:justify-end md:w-auto md:order-none md:flex-1">
-      <a href="/" className="block py-2 pl-3 pr-4 ">Home</a>
+    <div className="font-font01 text-yellow-500 flex-col items-center justify-start order-1 hidden w-full md:flex md:flex-row md:justify-end md:w-auto md:order-none md:flex-1">
+      <a href="/" className=" block py-2 pl-3 pr-4 ">Home</a>
       <a href="/about" className="block py-2 pl-3 pr-4">About</a>
     </div>
 
@@ -18,7 +18,7 @@ export default function Navbar() {
         <img src="/images/logo.png" className="h-16  m-auto sm:h-20" alt="T-ACTIVE Logo" />
     </a>
 
-    <div className=" text-yellow-500  flex-col items-center justify-start order-2 hidden w-full md:flex md:flex-row md:w-auto md:flex-1 md:order-none">
+    <div className=" font-font01 text-yellow-500  flex-col items-center justify-start order-2 hidden w-full md:flex md:flex-row md:w-auto md:flex-1 md:order-none">
       <a href="/products" className="block py-2 pl-3 pr-4 ">Product</a>
       <a href="/contact" className="block py-2 pl-3 pr-4 ">Contact</a>
     </div>

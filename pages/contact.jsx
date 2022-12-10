@@ -24,14 +24,15 @@ export default function ContactPages() {
                   {/* <img className="mx-auto" src="/images/1.png" width="40%" /> */}
                 </div>
 
-                <div className="font-helvethaica  ">
-                  <h1 className=" animate-charcter text-center text-6xl ">{contact.title} </h1>
-                  {/* <hr className="my-6 border-yellow-200 md:my-8 "/>     */}
-                  <p className=" text-2xl text-amber-300 text-center space-y-2 ">Adress : {contact.address} </p>
-                  <p className=" text-2xl text-amber-300 text-center space-y-2 ">Tel : {contact.tel} </p>
-                  <p className=" text-2xl text-amber-300 text-center space-y-2 ">E-mail : {contact.email} </p>
-                  <p className=" text-2xl text-amber-300 text-center space-y-2 ">Facebook : {contact.facebook} </p>
-                  <p className=" text-2xl text-amber-300 text-center space-y-2 ">Line : {contact.line} </p>
+               
+                  <h1 className="font-font01 animate-charcter text-center text-5xl ">{contact.title} </h1>
+
+                  <div className=" font-font02 subtitle text-2xl py-5 text-amber-300 text-center">
+                  <p className="py-2"> Adress : {contact.address} </p>
+                  <p className="py-2">Tel : {contact.tel} </p>
+                  <p className="py-2">E-mail : {contact.email} </p>
+                  <p className="py-2">Facebook : {contact.facebook} </p>
+                  <p className="py-2">Line : {contact.line} </p>
                   
                   {/* <h1 className="animate-charcter font-helvethaica text-transparent text-8xl bg-clip-text bg-gradient-to-r from-yellow-300 to-yellow-400">
                     Tailwind CSS

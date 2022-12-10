@@ -6,8 +6,8 @@ module.exports = {
   ],
   theme: {
     fontFamily: {
-      font01: ["db_helvethaica", "sans-serif"],
-      font02:["Trajan_Pro","sans-serif"],
+      font01: ["Prata-Regular", "sans-serif"],
+      font02:["TiroKannada-Italic","sans-serif"],
     },
     screens: {
       'sm': '640px',

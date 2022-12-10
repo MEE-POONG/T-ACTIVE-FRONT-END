@@ -4,12 +4,12 @@ import { BsLine, BsFacebook } from "react-icons/bs";
 export default function Footer() {
   return (
     <>
-      <footer className=" font-helvethaica ">
-        <div className="container  px-14 py-1 text-sm mx-auto  ">
+      <footer className=" font-font01 animate-charcter">
+        <div className="container  px-10 py-1 text-sm mx-auto  ">
           <hr className="my-6 border-yellow-200 md:my-8 " />
           <div className="grid gap-5 md:grid-cols-2 lg:grid-cols-6 m-auto">
             <div className=" col-span-1 md:col-span-2 ">
-              <h1 className=" ml-12 py-1 text-2xl font-semibold tracking-tight text-yellow-400">
+              <h1 className=" ml-10 py-1 text-sm font-semibold tracking-tight text-yellow-400">
                 Subscribe our newsletter to get update.
               </h1>
 
@@ -17,11 +17,11 @@ export default function Footer() {
                 <input
                   id="email"
                   type="text"
-                  className=" ml-12  px-3 py-2.5 text-xl text-yellow-700 bg-white border-yellow-300 border rounded-md dark:bg-dark-900 dark:text-gray-300 yellow:border-yellow-300 focus:border-yellow-300 dark:focus:border-yellows-300 focus:outline-none focus:ring focus:ring-opacity-40 focus:ring-yellow-300"
+                  className=" ml-10  px-3 py-2.5 text-sm text-yellow-500 bg-white border-yellow-300 border rounded-md dark:bg-dark-900 dark:text-gray-300 yellow:border-yellow-300 focus:border-yellow-300 dark:focus:border-yellows-300 focus:outline-none focus:ring focus:ring-opacity-40 focus:ring-yellow-300"
                   placeholder="Email Address"
                 />
 
-                <button className=" text-xl w-full px-6 py-2.5 text-sm font-medium tracking-wider text-yellow bg-white transition duration-300 ease-in-out  transform md:w-auto md:mx-4 focus:outline-none  rounded-lg hover:bg-yellow-700 focus:ring focus:ring-yellow-300 focus:ring-opacity-80">
+                <button className=" text-sm w-full px-6 py-2.5  font-medium tracking-wider text-yellow-500 bg-white transition duration-300 ease-in-out  transform md:w-auto md:mx-4 focus:outline-none  rounded-lg hover:bg-yellow-700 focus:ring focus:ring-yellow-300 focus:ring-opacity-80">
                   Subscribe
                 </button>
               </div>
@@ -38,11 +38,11 @@ export default function Footer() {
               </div>
             </div>
 
-            <div>
-              <p className=" ml-8 text-2xl  font-semibold text-yellow-400">
+            <div >
+              <p className=" ml-8 text-sm font-semibold text-yellow-400">
                 Quick Link
               </p>
-              <div className="ml-8 text-base  flex flex-col items-start mt-0 space-y-2">
+              <div className="ml-8 text-base  flex flex-col items-start mt-0 py-2">
                 <a
                   href="/"
                   className=" text-yellow-400 transition-colors duration-300 dark:text-yellow-300 dark:hover:text-blue-400 hover:underline hover:text-blue-500"
@@ -70,22 +70,22 @@ export default function Footer() {
               </div>
             </div>
 
-            <div>
-              <p className=" ml-10 text-2xl font-semibold text-yellow-400 ">
+            <div className=" ">
+              <p className=" ml-10 text-sm font-semibold text-yellow-400">
                 Contacts
               </p>
 
-              <div className=" ml-10  text-base items-start mt-5 space-y-3">
+              <div className=" ml-10 mt-5 text-base items-start ">
                 <a
                   href="#"
-                  className=" mx-7 h-9 text-yellow-600 transition-colors duration-300 dark:text-yellow-300 hover:text-blue-500 dark:hover:text-blue-400"
+                  className=" py-3 h-9 text-yellow-300 transition-colors duration-300 dark:text-yellow-300 hover:text-blue-500 dark:hover:text-blue-400"
                   aria-label="Facebook"
                 >
                   <BsLine />
                 </a>
                 <a
                   href="#"
-                  className=" mx-7 h-9 text-yellow-600 transition-colors duration-300 dark:text-yellow-300 hover:text-blue-500 dark:hover:text-blue-400"
+                  className=" mx-7 h-9 text-yellow-300 transition-colors duration-300 dark:text-yellow-300 hover:text-blue-500 dark:hover:text-blue-400"
                   aria-label="Facebook"
                 >
                   <BsFacebook />

@@ -30,9 +30,9 @@ export default function AboutPages() {
           </div>
 
           <div className=" font-font01 text-[#FFD700] text-center ">
-            <h1 className=" animate-charcter text-center text-6xl ">{about.title1}</h1>
+            <h1 className=" animate-charcter text-center text-4xl ">{about.title1}</h1>
 
-            <div className=" subtitles text-center text-3xl">
+            <div className=" py-3 font-font02 subtitles text-center text-2xl">
               {about.subtitle1}
               </div>
 
@@ -51,14 +51,14 @@ export default function AboutPages() {
           </div>
 
           <div className="font-font01 text-[#FFD700] text-center ">
-          <h1 className=" animate-charcter text-center text-6xl ">{about.title2}</h1>
+          <h1 className=" animate-charcter text-center text-4xl ">{about.title2}</h1>
 
-            <div className=" subtitles text-center text-3xl">
+            <div className="py-3 font-font02 subtitles text-center text-2xl">
               {about.subtitle2}
               </div>
 
             <div
-                className="  font-font02 subtitles text-center text-xl md:text-2xl"
+                className=" font-font02 subtitles text-center text-xl md:text-2xl"
                 dangerouslySetInnerHTML={{ __html: about?.detail2 }}
               />
           </div>
@@ -76,9 +76,9 @@ export default function AboutPages() {
           </div>
 
           <div className=" font-font01 text-[#FFD700] text-center ">
-          <h1 className="animate-charcter text-center text-6xl ">{about.title3}</h1>
+          <h1 className="animate-charcter text-center text-4xl ">{about.title3}</h1>
 
-          <div className=" subtitles text-center text-3xl">
+          <div className=" py-3 font-font02 subtitles text-center text-2xl">
               {about.subtitle3}
               </div>
 

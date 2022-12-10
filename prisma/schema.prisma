@@ -8,10 +8,10 @@ datasource db {
 }
 
 model About {
-  id         String   @id @default(dbgenerated("gen_random_uuid()")) @db.Uuid
-  createdAt  DateTime @default(now())
-  updatedAt  DateTime
-  deleted_at DateTime
+  id         String    @id @default(dbgenerated("gen_random_uuid()")) @db.Uuid
+  createdAt  DateTime? @default(now())
+  updatedAt  DateTime?
+  deleted_at DateTime?
   detail1    String?
   detail2    String?
   detail3    String?
@@ -34,8 +34,8 @@ model Contact {
   email      String?
   facebook   String?
   line       String?
-  createdAt  DateTime  @default(now())
-  updatedAt  DateTime
+  createdAt  DateTime? @default(now())
+  updatedAt  DateTime?
   deleted_at DateTime?
 }
 
@@ -59,10 +59,10 @@ model Homee {
 }
 
 model Products {
-  id         String   @id @default(dbgenerated("gen_random_uuid()")) @db.Uuid
-  createdAt  DateTime @default(now())
-  updatedAt  DateTime
-  deleted_at DateTime
+  id         String    @id @default(dbgenerated("gen_random_uuid()")) @db.Uuid
+  createdAt  DateTime? @default(now())
+  updatedAt  DateTime?
+  deleted_at DateTime?
   detail     String?
   imagep     String?
   subtitle   String?
