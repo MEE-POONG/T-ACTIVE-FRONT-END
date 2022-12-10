@@ -44,7 +44,7 @@ export default function AboutPages() {
           </div>
         </div>
 
-        <hr class="my-6 border-yellow-500 md:my-8 dark:border-yellow-700" />
+        <hr className="my-6 border-yellow-500 md:my-8 dark:border-yellow-700" />
 
         <div className=" mt-4 mx-5 py-5 md:grid md:grid-cols-2  rounded-xl">
           <div className=" w-auto  md:hidden  my-auto">
@@ -68,7 +68,7 @@ export default function AboutPages() {
           </div>
         </div>
 
-        <hr class="my-6 border-yellow-500 md:my-8 dark:border-yellow-700" />
+        <hr className="my-6 border-yellow-500 md:my-8 dark:border-yellow-700" />
 
         <div className="mt-4 mx-5 py-5 md:grid md:grid-cols-2 rounded-xl">
           <div className="my-auto">
