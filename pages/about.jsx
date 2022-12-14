@@ -100,6 +100,17 @@ export default function AboutPages() {
           </div>
 
         </div>
+
+        <div class=" mt-20 grid gap-x-0 gap-y-0 grid-cols-3 w-full relative overflow-hidden bg-no-repeat bg-cover">
+            <img class=" aspect-square hover:scale-110 transition duration-300 ease-in-out" src="/images/A_16.jpg" />
+            <img class=" aspect-square hover:scale-110 transition duration-300 ease-in-out" src="/images/A_18.jpg" />
+            <img class=" aspect-square hover:scale-110 transition duration-300 ease-in-out" src="/images/A_19.jpg"  />
+            <img class=" aspect-square hover:scale-110 transition duration-300 ease-in-out" src="/images/A_17.jpg"  />
+            <img class=" aspect-square hover:scale-110 transition duration-300 ease-in-out" src="/images/A_19.jpg" />
+            <img class=" aspect-square hover:scale-110 transition duration-300 ease-in-out" src="/images/img01.jpg"  />
+  
+          
+          </div>
       </div>
         ))}
     </>
