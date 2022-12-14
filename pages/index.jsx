@@ -18,9 +18,10 @@ export default function Home() {
         
         <div className="" key={index}>
            
-          <div className="">
-            <div className=" w-[100vw] h-[100vh] ">
-              <img className="" style={{objectFit: "cover", backgroundSize: "cover" ,opacity: "1", width: "100%", height: "100%", position: "absolute", top: "0px", left: "0px", display: "block"}} src={"/images/bg_in.jpg"} />
+          
+            <div className=" h-screen">
+              <img className=" z-0 object-cover bg-cover  opacity-100 w-full h-full absolute top-0 block" src={"/images/bg_in.jpg"} />
+              <div className=" z-10 bg-black bg-opacity-20 object-cover bg-cover  opacity-100 w-full h-full absolute top-0 block "></div>
             </div>
 
             <div className=" font-font01 font-semibold  text-[#FFD700] text-center ">
@@ -35,7 +36,7 @@ export default function Home() {
                 dangerouslySetInnerHTML={{ __html: homee?.detail1 }}
               />
             </div>
-          </div>  
+            
         </div>
       ))}
     </>
