@@ -26,14 +26,8 @@ export default function Navbar() {
   </div>
 
 
-
   <button  id="btn" type="button" className="inline-flex items-center p-2 mr-5 text-sm text-yellow-500  rounded-lg md:hidden  focus:outline-none focus:ring-2 focus:ring-yellow-200 " onClick={() => setNavbar(!navbar)} >
-
-    {navbar ? (
-                                  <FiMinus/>
-                              ) : (
-                                  <FiAlignJustify/>
-                              )}
+    {navbar ? ( <FiMinus/> ) : (  <FiAlignJustify/>   )}
   </button>
 
   <div className={`w-full md:hidden ${ navbar ? "block" : "hidden" }`}>
@@ -52,6 +46,10 @@ export default function Navbar() {
       </li>
     </ul>
   </div> 
+
+
+
+
 </div>
 </nav>
 

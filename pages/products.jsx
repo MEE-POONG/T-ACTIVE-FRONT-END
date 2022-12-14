@@ -15,7 +15,7 @@ export default function ProductsPages() {
       </Head>
     
       j
-        <div className="container px-auto py-12 mx-auto ">
+        <div className="mt-48 container px-auto py-12 mx-auto ">
 
         <div className=" justify-items-center grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3">
          
