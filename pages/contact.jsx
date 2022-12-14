@@ -26,24 +26,21 @@ export default function ContactPages() {
 
                
                   <h1 className="font-font01 animate-charcter font-semibold text-center text-5xl ">{contact.title} </h1>
-
-                  <div className="  py-3 font-font02 subtitles text-center text-2xl">
+        
+                  <div className=" mt-32  py-3 font-font02 subtitles text-center text-md">
                   <p className="py-2"> Adress : {contact.address} </p>
                   <p className="py-2">Tel : {contact.tel} </p>
                   <p className="py-2">E-mail : {contact.email} </p>
                   <p className="py-2">Facebook : {contact.facebook} </p>
                   <p className="py-2">Line : {contact.line} </p>
-                  
-                  {/* <h1 className="animate-charcter font-helvethaica text-transparent text-8xl bg-clip-text bg-gradient-to-r from-yellow-300 to-yellow-400">
-                    Tailwind CSS
-                  </h1> */}
-
+  
                   <br />  <br />  <br /> 
                 </div>
               </div>
             </div>
           </div>
-        </div>
+          </div>
+        
          ))}
     </>
   );
