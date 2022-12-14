@@ -14,21 +14,28 @@ export default function AboutPages() {
         <meta name="description" content="I2AROBOT 2" />
         <link rel="icon" href="/images/logo.png" />
       </Head>
-
+{/* 
 
       <div className=" my-auto ">
             <img className="mx-auto" src="/images/A_1.png" width="30%" />
-          </div>
+          </div> */}
 
       
           {AboutData?.map((about, index) => (
-        <div className="container px-6 py-12 mx-auto" key={index}>
-        <div className="  mt-4 mx-5 py-5 md:grid md:grid-cols-2 rounded-xl">
+         <div className="" key={index}>
+           
+         <div className="">
+           <div className=" w-[100vw] h-[100vh] ">
+             <img className="" style={{objectFit: "cover", backgroundSize: "cover" ,opacity: "1", width: "100%", height: "70%", position: "absolute", top: "250px", left: "0px", display: "block"}} src={"/images/bg_in.jpg"} />
+           <h1 className="font-font01 animate-charcter font-semibold text-center text-5x">  About Us </h1>
+           </div>
 
         <div className=" my-auto ">
         <img className="mx-auto" src={about.imagea1} width="50%" />
           </div>
 
+          
+   <br /> <br />
           <div className=" font-font01  text-[#FFD700] text-center ">
             <h1 className=" animate-charcter font-semibold text-center text-4xl ">{about.title1}</h1>
 
