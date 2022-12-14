@@ -23,7 +23,7 @@ export default function Home() {
               <img className="" style={{objectFit: "cover", backgroundSize: "cover" ,opacity: "1", width: "100%", height: "100%", position: "absolute", top: "0px", left: "0px", display: "block"}} src={"/images/bg_in.jpg"} />
             </div>
 
-            <div className=" font-font01 text-[#FFD700] text-center ">
+            <div className=" font-font01 font-semibold  text-[#FFD700] text-center ">
               <h1 className=" animate-charcter text-center text-5xl ">
                 {homee.title1}
               </h1>

@@ -24,7 +24,7 @@ export default function ProductsPages() {
           <div className=" box1 px-16 w-96 md:container md:mx-auto" key={index}>
           <img className=" mx-auto py-10 px-10 w-auto h-72" src={products.imagep} />
           <div className=" md:px-6">
-            <h1 className="py-4 font-font01 animate-charcter text-center text-3xl md:text-3xl "> {products.title} </h1>
+            <h1 className="py-4 font-font01 animate-charcter font-semibold text-center text-3xl md:text-3xl "> {products.title} </h1>
             <p className=" py-1 font-font01 subtitles text-center text-1xl md:text-2xl">  {products.subtitle} </p>
             <p className=" font-font01 subtitles text-center text-xl md:text-1xl">  {products.detail} </p>
           </div>

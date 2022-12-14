@@ -29,8 +29,8 @@ export default function AboutPages() {
         <img className="mx-auto" src={about.imagea1} width="50%" />
           </div>
 
-          <div className=" font-font01 text-[#FFD700] text-center ">
-            <h1 className=" animate-charcter text-center text-4xl ">{about.title1}</h1>
+          <div className=" font-font01  text-[#FFD700] text-center ">
+            <h1 className=" animate-charcter font-semibold text-center text-4xl ">{about.title1}</h1>
 
             <div className=" py-3 font-font02 subtitles text-center text-2xl">
               {about.subtitle1}
@@ -50,8 +50,8 @@ export default function AboutPages() {
           <div className=" w-auto  md:hidden  my-auto">
           </div>
 
-          <div className="font-font01 text-[#FFD700] text-center ">
-          <h1 className=" animate-charcter text-center text-4xl ">{about.title2}</h1>
+          <div className="font-font01  text-[#FFD700] text-center ">
+          <h1 className=" animate-charcter font-semibold  text-center text-4xl ">{about.title2}</h1>
 
             <div className="py-3 font-font02 subtitles text-center text-2xl">
               {about.subtitle2}
@@ -74,9 +74,9 @@ export default function AboutPages() {
           <div className="my-auto">
           <img className="mx-auto" src={about.imagea3} width="50%" />
           </div>
-
+ 
           <div className=" font-font01 text-[#FFD700] text-center ">
-          <h1 className="animate-charcter text-center text-4xl ">{about.title3}</h1>
+          <h1 className="animate-charcter font-semibold text-center text-4xl ">{about.title3}</h1>
 
           <div className=" py-3 font-font02 subtitles text-center text-2xl">
               {about.subtitle3}
