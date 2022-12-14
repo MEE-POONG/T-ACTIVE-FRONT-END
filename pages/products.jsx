@@ -13,6 +13,13 @@ export default function ProductsPages() {
         <meta name="description" content="I2AROBOT 2" />
         <link rel="icon" href="/images/logo.png" />
       </Head>
+
+      <div className=" h-screen ">
+              <img className=" z-0  object-cover bg-cover brightness-50 w-full h-full absolute top-0 block" src={"/images/product/product00.jpg"} />
+              <h1 className=" z-20 font-font01 animate-charcter font-semibold text-5xl absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"> 
+               PRODUCTS
+               </h1>
+            </div>
     
       j
         <div className="mt-48 container px-auto py-12 mx-auto ">

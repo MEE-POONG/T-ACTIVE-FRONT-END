@@ -26,9 +26,9 @@ export default function AboutPages() {
            
          <div className="">
            <div className=" h-screen ">
-             <img className=" z-0 object-cover bg-cover  opacity-50 w-full h-full absolute top-0 block" src={"/images/A_5.jpg"} />
-             <div className=" z-10 bg-opacity-20 object-cover bg-cover  opacity-100 w-full h-full absolute top-0 block "></div>
-           <h1 className="font-font01 animate-charcter font-semibold text-5xl absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">  About Us </h1>
+             <img className=" z-0 object-cover bg-cover  opacity-100 w-full h-full absolute top-0 block" src={"/images/A_5.jpg"} />
+             <div className=" z-10 bg-black bg-opacity-70 object-cover bg-cover  opacity-100 w-full h-full absolute top-0 block "></div>
+           <h1 className=" z-20 font-font01 animate-charcter font-semibold text-5xl absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">  About Us </h1>
            </div>
 
          

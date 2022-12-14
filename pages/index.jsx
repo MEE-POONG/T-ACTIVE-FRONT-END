@@ -19,10 +19,8 @@ export default function Home() {
         <div className="" key={index}>
            
           {/* BOX1 */}
-            <div className=" h-screen">
-              <img className=" z-0 object-cover bg-cover  opacity-100 w-full h-full absolute top-0 block" src={"/images/bg_in.jpg"} />
-              <div className=" z-10 bg-black bg-opacity-20 object-cover bg-cover  opacity-100 w-full h-full absolute top-0 block "></div>
-
+            <div className="h-screen">
+              <img className=" z-0  object-cover bg-cover brightness-50 w-full h-full absolute top-0 block" src={"/images/bg_in.jpg"} />
               <div className="  font-font01 font-semibold  text-[#FFD700] text-center ">
 
               <div className=" z-20 absolute font-font02 bottom-32 left-16  subtitles text-center text-3xl">
