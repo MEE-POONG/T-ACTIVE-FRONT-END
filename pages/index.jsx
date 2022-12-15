@@ -25,8 +25,8 @@ export default function Home() {
            
           {/* BOX1 */}
             <div className="h-screen">
-              <img className=" z-0  object-cover bg-cover brightness-50 w-full h-full absolute top-0 block" src={"/images/bg_in.jpg"} />
-              <div className="  font-font01 font-semibold  text-[#FFD700] text-center ">
+              <img className=" z-0  object-cover bg-cover  w-full h-full absolute top-0 block" src={"/images/home.jpg"} />
+              <div className="  font-font01 font-semibold  text-center ">
 
               <div className=" z-20 absolute font-font02 bottom-32 left-16  subtitles text-center text-3xl">
                 {homee.subtitle1}
@@ -44,54 +44,35 @@ export default function Home() {
 
             </div>
 
-
-            {/* BOX2 */}
-
-            {/* <div className=" mt-4 mx-5 py-5 md:grid md:grid-cols-2  rounded-xl">
-          <div className=" w-auto  md:hidden  my-auto">
+            <div className=" mt-20 py-3 font-font02 subtitles text-center text-2xl flex justify-around "> 
+          <div > <img src="/images/A_4.png" alt="zeropic" width="100px" /> 0 CALORLE </div>
+          <div > <img src="/images/A_4.png" alt="zeropic" width="100px" /> 0 SUGAR </div>
+          <div > <img src="/images/A_4.png" alt="zeropic" width="100px" /> 0 SODIUM </div>
           </div>
 
-          <div className="font-font01  text-[#FFD700] text-center ">
-          <h1 className=" animate-charcter font-semibold  text-center text-4xl ">{about.title2}</h1>
-
-            <div className="py-3 font-font02 subtitles text-center text-2xl">
-              {about.subtitle2}
-              </div>
-
-            <div
-                className=" font-font02 subtitles text-center text-xl md:text-2xl"
-                dangerouslySetInnerHTML={{ __html: about?.detail2 }}
-              />
-          </div>
-
-          <div className="w-0 md:w-auto  my-auto">
-          <img className="mx-auto" src={about.imagea2} width="50%" />
-          </div>
-        </div> */}
-
-
-            <div className=" relative h-screen mt-4 mx-5 py-5 md:grid md:grid-cols-2">
-              <img className=" z-0 m-auto   bg-cover  opacity-100 w-2/4 h-2/4 block" src={"/images/1.png"} />
-              {/* <div className=" z-10 top-14 left-5 bg-black bg-opacity-20 object-cover bg-cover  opacity-100 w-2/4 h-2/4  absolute block "></div> */}
-
-              <div className=" m-auto font-font01 font-semibold  text-[#FFD700] text-center ">
-{/* 
-              <div className=" z-20 absolute font-font02 bottom-32 left-16  subtitles text-center text-3xl">
-                {homee.subtitle1}
-              </div> */}
-
-
-              <div
-                className="  left-0 font-font02 subtitles text-center text-xl md:text-2xl"
-                dangerouslySetInnerHTML={{ __html: homee?.detail1 }}
-              />
-
+          
+           <div className=" mt-20 container px-6 py-12 mx-auto text-center text-[18px] flex justify-around  ">
+            <div class="  font-font01 subtitles  block p-6 rounded-lg shadow-lg  bg-zinc-900 filter blur-lg md:filter-none max-w-sm">
+              <h1 class="  leading-tight font-medium mb-2"> {homee.title1}</h1>
+              <span class=" mb-4" >{homee.subtitle1}</span>
+              <p class="  mb-4"  dangerouslySetInnerHTML={{ __html: homee?.detail1}} ></p>
             </div>
-     
+            <div class=" font-font01 subtitles block p-6 rounded-lg shadow-lg bg-zinc-900 filter blur-lg md:filter-none max-w-sm">
+              <h1 class="  leading-tight font-medium mb-2"> {homee.title2}</h1>
+              <span class=" mb-4" >{homee.subtitle2}</span>
+              <p class="  mb-4"  dangerouslySetInnerHTML={{ __html: homee?.detail2}} ></p>
             </div>
-
+            <div class=" font-font01 subtitles  block p-6 rounded-lg shadow-lg bg-zinc-900 filter blur-lg md:filter-none max-w-sm">
+              <h1 class=" leading-tight font-medium mb-2"> {homee.title3}</h1>
+              <span class=" mb-4" >{homee.subtitle3}</span>
+              <p class=" mb-4"  dangerouslySetInnerHTML={{ __html: homee?.detail3}} ></p>
+            </div>
+            
         </div>
 
+
+
+        </div>
       ))}
       </div>
       
