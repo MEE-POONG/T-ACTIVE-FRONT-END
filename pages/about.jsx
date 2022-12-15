@@ -61,11 +61,11 @@ export default function AboutPages() {
         {/* <hr className="my-6 border-yellow-500 md:my-8 dark:border-yellow-700" /> */}
 
         <div className="  mt-10 mx-5 py-5 md:grid md:grid-cols-2 rounded-xl ">
-          <div className="my-auto ml-40">
-          <img src={about.imagea3} width="50%" height="100%"/>
+          <div className="my-auto ml-14 ">
+          <img src={about.imagea3} width="80%" height="100%"/>
           </div>
  
-          <div className=" mt-32 font-font01  text-center ">
+          <div className=" mt-20 font-font01  text-center ">
           <h1 className="animate-charcter font-semibold text-center text-4xl ">{about.title3}</h1>
           <div className=" py-3 font-font02 subtitles text-center text-[18px]"> {about.subtitle3}
            </div>
@@ -77,7 +77,7 @@ export default function AboutPages() {
 
         </div>
 
-        <div className=" mt-20 grid gap-x-0 gap-y-0 grid-cols-3 w-full relative overflow-hidden bg-no-repeat bg-cover">
+        <div className=" mt-20 grid grid-cols-3 w-full relative overflow-hidden bg-no-repeat bg-cover">
             <img className=" aspect-square hover:scale-110 transition duration-700 ease-linear" src="/images/A_16.jpg" />
             <img className=" aspect-square hover:scale-110 transition duration-700 ease-linear" src="/images/A_18.jpg" />
             <img className=" aspect-square hover:scale-110 transition duration-700 ease-linear" src="/images/A_19.jpg"  />
