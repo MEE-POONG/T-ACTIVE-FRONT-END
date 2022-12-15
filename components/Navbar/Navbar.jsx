@@ -34,7 +34,7 @@ export default function Navbar() {
 
 
   <div className=" fixed z-50  right-1 mt-5 bg-black bg-opacity-80 rounded-3xl font-font01 text-base px-10 py-5 text-yellow-500  flex-col items-center  order-2 hidden w-full md:flex md:flex-row md:w-auto md:order-none">
-  <Link to="Home" spy={true} smooth={true} offset={50} duration={500} className=" block py-2 pl-3 pr-4 "><button>Home</button></Link>
+  <Link to="Home" spy={true} smooth={true} offset={0} duration={500} className=" block py-2 pl-3 pr-4 "><button>Home</button></Link>
     <Link to="About" spy={true} smooth={true} offset={50} duration={500} className="block py-2 pl-3 pr-4 transition duration-150 "><button>About</button></Link>
     <Link to="Product" spy={true} smooth={true} offset={50} duration={500} className="block py-2 pl-3 pr-4 "><button>Product</button></Link>
     <Link to="Contact" spy={true} smooth={true} offset={50} duration={500} className="block py-2 pl-3 pr-4 "><button>Contact</button></Link>
