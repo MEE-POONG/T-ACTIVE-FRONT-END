@@ -18,7 +18,8 @@ export default function Home() {
         <link rel="icon" href="/images/logo.png" />
       </Head>
 
-      {homeeData?.map((homee, index) => (
+      <div id="Home">
+{homeeData?.map((homee, index) => (
         
         <div className="" key={index}>
            
@@ -92,9 +93,21 @@ export default function Home() {
         </div>
 
       ))}
-             <About/>
-            <Products/>
-            <Contact/>
+      </div>
+      
+      <div id="About" className="transition duration-150">
+        <About/>
+      </div>
+
+      <div id="Product">
+        <Products/>
+      </div>
+      
+      <div id="Contact">
+        <Contact/>
+      </div>
+            
+           
     </>
   );
 }
