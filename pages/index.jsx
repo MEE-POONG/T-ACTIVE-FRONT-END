@@ -1,5 +1,9 @@
 import useAxios from "axios-hooks";
 import Head from "next/head";
+import About from "../container/About/about";
+import Contact from "../container/Contact/contact";
+import Products from "../container/Products/products";
+
 
 export default function Home() {
   const [{ data: homeeData, loading, error }, getHomee] = useAxios({
@@ -82,11 +86,15 @@ export default function Home() {
               />
 
             </div>
-
+     
             </div>
-            
+
         </div>
+
       ))}
+             <About/>
+            <Products/>
+            <Contact/>
     </>
   );
 }

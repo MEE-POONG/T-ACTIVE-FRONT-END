@@ -3,17 +3,13 @@ import Head from "next/head";
 import useAxios from "axios-hooks";
 
 
-export default function AboutPages() {
+export default function About() {
 
   const [{data: AboutData, loading, error}, getAbout] = useAxios({url: '/api/about'})
 
   return (
     <>
-      <Head>
-        <title>T-ACTIVE</title>
-        <meta name="description" content="I2AROBOT 2" />
-        <link rel="icon" href="/images/logo.png" />
-      </Head>
+
 {/* 
 
       <div className=" my-auto ">
@@ -24,7 +20,7 @@ export default function AboutPages() {
           {AboutData?.map((about, index) => (
          <div className="" key={index}>
            
-         <div className="">
+         <div className="relative">
            <div className=" h-screen ">
              <img className=" z-0 object-cover bg-cover  opacity-100 w-full h-full absolute top-0 block" src={"/images/A_5.jpg"} />
              <div className=" z-10 bg-black bg-opacity-70 object-cover bg-cover  opacity-100 w-full h-full absolute top-0 block "></div>

@@ -2,27 +2,24 @@ import React from "react";
 import Head from "next/head";
 import useAxios from "axios-hooks";
 
-export default function ProductsPages() {
+export default function Products() {
   
   const [{data: ProductsData, loading, error}, getProducts] = useAxios({url: '/api/products'})
 
   return (
     <>
-      <Head>
-        <title>T-ACTIVE</title>
-        <meta name="description" content="I2AROBOT 2" />
-        <link rel="icon" href="/images/logo.png" />
-      </Head>
-
-      <div className=" h-screen ">
+{/* 
+      <div className="relative">
+      <div className="mt-20 h-screen ">
               <img className=" z-0  object-cover bg-cover brightness-50 w-full h-full absolute top-0 block" src={"/images/product/product00.jpg"} />
               <h1 className=" z-20 font-font01 animate-charcter font-semibold text-5xl absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"> 
                PRODUCTS
                </h1>
             </div>
-    
-      j
-        <div className="mt-48 container px-auto py-12 mx-auto ">
+            </div>
+     */}
+      
+        <div className=" container px-auto py-12 mx-auto ">
 
         <div className=" justify-items-center grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3">
          
