@@ -3,7 +3,7 @@ import Head from "next/head";
 import useAxios from "axios-hooks";
 
 
-export default function About() {
+export default function AboutPages() {
 
   const [{data: AboutData, loading, error}, getAbout] = useAxios({url: '/api/about'})
 

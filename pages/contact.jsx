@@ -3,7 +3,7 @@ import Head from "next/head";
 import { BsLine, BsFacebook } from "react-icons/bs";
 import useAxios from "axios-hooks";
 
-export default function Contact() {
+export default function ContactPages() {
 
   const [{ data: contactData, loading, error }, getContact] = useAxios({ url: "/api/contact",});
 

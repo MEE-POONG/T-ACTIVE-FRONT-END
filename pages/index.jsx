@@ -1,8 +1,8 @@
 import useAxios from "axios-hooks";
 import Head from "next/head";
-import About from "../container/About/about";
-import Contact from "../container/Contact/contact";
-import Products from "../container/Products/products";
+import AboutPages from "./about";
+import ContactPages from "./contact";
+import ProductsPages from "./products";
 
 
 export default function Home() {
@@ -95,16 +95,16 @@ export default function Home() {
       ))}
       </div>
       
-      <div id="About" className="transition duration-150">
-        <About/>
+      <div id="About" name="about-page" className='globals' >
+        <AboutPages/>
       </div>
 
       <div id="Product">
-        <Products/>
+        <ProductsPages/>
       </div>
       
       <div id="Contact">
-        <Contact/>
+        <ContactPages/>
       </div>
             
            
