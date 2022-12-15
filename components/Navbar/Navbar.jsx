@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { FiAlignJustify,FiMinus } from "react-icons/fi";
+import {Link} from 'react-scroll';
 export default function Navbar() {
 
   const [navbar, setNavbar] = useState(false);
@@ -7,7 +8,7 @@ export default function Navbar() {
   const [navSize, setnavSize] = useState("10rem");
   const [navLogo, setnavLogo] = useState("py-5 px-5 h-10  m-auto md:h-44");
   const listenScrollEvent = () => {
-    window.scrollY > 20 ? setnavLogo("fixed transform transition-all top-1 py-5 px-5 h-10  m-auto md:h-32") : setnavLogo("transform transition-all py-5 px-5 h-10  m-auto md:h-44");
+    window.scrollY > 20 ? setnavLogo("fixed transition-all top-1 py-5 px-5 h-10  m-auto md:h-32") : setnavLogo(" transition-all py-5 px-5 h-10  m-auto md:h-44");
     window.scrollY > 10 ? setnavSize("5rem") : setnavSize("10rem");
   };
   useEffect(() => {
@@ -33,10 +34,10 @@ export default function Navbar() {
 
 
   <div className=" fixed z-50  right-1 mt-5 bg-black bg-opacity-80 rounded-3xl font-font01 text-base px-10 py-5 text-yellow-500  flex-col items-center  order-2 hidden w-full md:flex md:flex-row md:w-auto md:order-none">
-    <a href="#Home" className=" block py-2 pl-3 pr-4 ">Home</a>
-    <a href="#About" className="block py-2 pl-3 pr-4 transition duration-150 ">About</a>
-    <a href="#Product" className="block py-2 pl-3 pr-4 ">Product</a>
-    <a href="#Contact" className="block py-2 pl-3 pr-4 ">Contact</a>
+  <Link to="Home" spy={true} smooth={true} offset={50} duration={500} className=" block py-2 pl-3 pr-4 "><button>Home</button></Link>
+    <Link to="About" spy={true} smooth={true} offset={50} duration={500} className="block py-2 pl-3 pr-4 transition duration-150 "><button>About</button></Link>
+    <Link to="Product" spy={true} smooth={true} offset={50} duration={500} className="block py-2 pl-3 pr-4 "><button>Product</button></Link>
+    <Link to="Contact" spy={true} smooth={true} offset={50} duration={500} className="block py-2 pl-3 pr-4 "><button>Contact</button></Link>
   </div>
 
 
