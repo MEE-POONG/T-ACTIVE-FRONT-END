@@ -11,7 +11,7 @@ export default function ContactPages() {
     <>
 
       {contactData?.map((contact, index) => (
-        <div className="mt-40 container px-6 py-12 mx-auto" key={index}>
+        <div className="mt-20 py-28 container px-6 mx-auto" key={index}>
           <div className="grid grid-cols-1 gap-6 sm:grid-cols-3 sm:gap-y-10 lg:grid-cols-1">
             <div className="sm:col-span-2">
               <div className=" mx-5 py-5 grid ">

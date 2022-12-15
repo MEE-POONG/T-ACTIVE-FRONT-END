@@ -11,7 +11,7 @@ export default function AboutPages() {
     <>
 
 
-         <h1 className=" mt-40 font-font01 animate-charcter font-semibold text-center text-5xl ">ABOUT </h1>
+         <h1 className=" mt-20 py-28 font-font01 animate-charcter font-semibold text-center text-5xl ">ABOUT </h1>
   
           {AboutData?.map((about, index) => (
           <div className="" key={index}>
@@ -19,12 +19,12 @@ export default function AboutPages() {
            <div className=" font-font01  text-center ">
 
 
-          <div className="  mt-10 mx-5 py-5 md:grid md:grid-cols-2 rounded-xl ">
-          <div className="my-auto">
-          <img className=" ml-48 " src={about.imagea1} width="100px" height="100%"/>
+          <div className=" mt-14 mx-5 py-5 md:grid md:grid-cols-2 rounded-xl ">
+          <div className="my-auto ml-14 ">
+          <img src={about.imagea1} width="80%" height="100%"/>
           </div>
  
-          <div className="  font-font01  text-center ">
+          <div className=" mt-5 mr-10  font-font01  text-center ">
           <h1 className="animate-charcter font-semibold text-center text-4xl ">{about.title1}</h1>
           <div className=" py-3 font-font02 subtitles text-center text-[18px]"> {about.subtitle1}
            </div>
@@ -42,7 +42,7 @@ export default function AboutPages() {
           <div className=" w-auto  md:hidden  my-auto">
           </div>
 
-          <div className=" mt-28 font-font01  text-center ">
+          <div className=" mt-28 ml-20 font-font01  text-center ">
           <h1 className=" animate-charcter font-semibold  text-center text-4xl ">{about.title2}</h1>
             <div className="py-3 font-font02 subtitles text-center text-[18px]"> {about.subtitle2}
               </div>
@@ -53,16 +53,16 @@ export default function AboutPages() {
               />
           </div>
 
-          <div className="w-0 md:w-auto  my-auto">
-          <img className="mx-auto" src={about.imagea2} width="100px" />
+          <div className=" mt-14 w-0 md:w-auto ">
+          <img className="mx-auto" src={about.imagea2} width="80%" height="100%" />
           </div>
         </div>
 
         {/* <hr className="my-6 border-yellow-500 md:my-8 dark:border-yellow-700" /> */}
 
         <div className="  mt-10 mx-5 py-5 md:grid md:grid-cols-2 rounded-xl ">
-          <div className="my-auto">
-          <img className=" ml-40" src={about.imagea3} width="50%" height="100%"/>
+          <div className="my-auto ml-40">
+          <img src={about.imagea3} width="50%" height="100%"/>
           </div>
  
           <div className=" mt-32 font-font01  text-center ">

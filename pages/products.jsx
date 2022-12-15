@@ -9,9 +9,9 @@ export default function ProductsPages() {
   return (
     <>
  
-        <h1 className="mt-40 font-font01 animate-charcter font-semibold text-center text-5xl ">PRODUCTS </h1>
+        <h1 className="mt-20 py-20 font-font01 animate-charcter font-semibold text-center text-5xl ">PRODUCTS </h1>
 
-        <div className=" container px-auto py-12 mx-auto ">
+        <div className=" container px-auto mx-auto ">
 
         <div className=" justify-items-center grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3">
 
