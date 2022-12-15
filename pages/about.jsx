@@ -19,7 +19,7 @@ export default function AboutPages() {
            <div className=" font-font01  text-center ">
 
 
-          <div className=" mt-14 mx-5 py-5 md:grid md:grid-cols-2 rounded-xl ">
+          <div className=" mx-5 py-5 md:grid md:grid-cols-2 rounded-xl ">
           <div className="my-auto ml-14 ">
           <img src={about.imagea1} width="80%" height="100%"/>
           </div>
