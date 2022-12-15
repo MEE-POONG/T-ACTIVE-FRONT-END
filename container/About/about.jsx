@@ -10,32 +10,17 @@ export default function About() {
   return (
     <>
 
-{/* 
 
-      <div className=" my-auto ">
-            <img className="mx-auto" src="/images/A_1.png" width="30%" />
-          </div> */}
-
-      
+         <h1 className="mt-20 font-font01 animate-charcter font-semibold text-center text-5xl ">ABOUT </h1>
+  
           {AboutData?.map((about, index) => (
-         <div className="" key={index}>
-           
-         <div className="relative">
-           <div className=" h-screen ">
-             <img className=" z-0 object-cover bg-cover  opacity-100 w-full h-full absolute top-0 block" src={"/images/A_5.jpg"} />
-             <div className=" z-10 bg-black bg-opacity-70 object-cover bg-cover  opacity-100 w-full h-full absolute top-0 block "></div>
-           <h1 className=" z-20 font-font01 animate-charcter font-semibold text-5xl absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">  About Us </h1>
-           </div>
-
-         
-           <div className=" mt-32 font-font01  text-center ">
-          {/* <h1 className="animate-charcter font-semibold text-center text-4xl "> Our </h1> */}
+          <div className="" key={index}>
+   
+           <div className=" font-font01  text-center ">
           <div className=" py-3 font-font02 subtitles text-center text-2xl flex justify-around "> 
-       
           <div > <img src="/images/A_4.png" alt="zeropic" width="100px" /> 0 CALORLE </div>
           <div > <img src="/images/A_4.png" alt="zeropic" width="100px" /> 0 SUGAR </div>
           <div > <img src="/images/A_4.png" alt="zeropic" width="100px" /> 0 SODIUM </div>
-          </div>
           </div>
 
 
@@ -44,7 +29,7 @@ export default function About() {
           <img className=" ml-48 " src={about.imagea1} width="100px" height="100%"/>
           </div>
  
-          <div className=" mt-32 font-font01  text-center ">
+          <div className="  font-font01  text-center ">
           <h1 className="animate-charcter font-semibold text-center text-4xl ">{about.title1}</h1>
           <div className=" py-3 font-font02 subtitles text-center text-2xl"> {about.subtitle1}
            </div>
