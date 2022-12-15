@@ -1,8 +1,21 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { FiAlignJustify,FiMinus } from "react-icons/fi";
 export default function Navbar() {
 
   const [navbar, setNavbar] = useState(false);
+
+  const [navSize, setnavSize] = useState("10rem");
+  const [navColor, setnavColor] = useState("transparent");
+  const listenScrollEvent = () => {
+    window.scrollY > 10 ? setnavColor("#252734") : setnavColor("transparent");
+    window.scrollY > 10 ? setnavSize("5rem") : setnavSize("10rem");
+  };
+  useEffect(() => {
+    window.addEventListener("scroll", listenScrollEvent);
+    return () => {
+      window.removeEventListener("scroll", listenScrollEvent);
+    };
+  }, []); 
 
   return (
     <>
@@ -10,7 +23,7 @@ export default function Navbar() {
 
 <nav>
 
-<div className="flex flex-wrap justify-between md:gap-10 md:flex-nowrap">
+<div className={`flex flex-wrap justify-between md:gap-10 md:flex-nowrap `}>
   <div className=" z-50 absolute ">
       <a href="/" className=" md:flex items-center">
       <img src="/images/logo.png" className="  py-5 px-5 h-10  m-auto md:h-44 " alt="T-ACTIVE Logo" />
