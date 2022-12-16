@@ -43,8 +43,8 @@ export default function AboutPages() {
           </div>
 
           <div className=" mt-28 ml-20 font-font01  text-center ">
-          <h1 className=" animate-charcter font-semibold  text-center text-4xl ">{about.title2}</h1>
-            <div className="py-3 font-font02 subtitles text-center text-[18px]"> {about.subtitle2}
+          <h1 className=" animate-charcter font-semibold  text-center md:text-4xl ">{about.title2}</h1>
+            <div className="py-3 font-font02 subtitles text-center md:text-[18px]"> {about.subtitle2}
               </div>
 
             <div
@@ -53,7 +53,7 @@ export default function AboutPages() {
               />
           </div>
 
-          <div className=" mt-14 w-0 md:w-auto ">
+          <div className=" mt-14 my-auto ">
           <img className="mx-auto" src={about.imagea2} width="80%" height="100%" />
           </div>
         </div>

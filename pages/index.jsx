@@ -52,20 +52,20 @@ export default function Home() {
 
           
            <div className=" mt-20 container px-6 py-12 mx-auto text-center text-[18px] flex justify-around  ">
-            <div class="  font-font01 subtitles  block p-6 rounded-lg shadow-lg  bg-zinc-900 filter blur-lg md:filter-none max-w-sm">
-              <h1 class="  leading-tight font-medium mb-2"> {homee.title1}</h1>
-              <span class=" mb-4" >{homee.subtitle1}</span>
-              <p class="  mb-4"  dangerouslySetInnerHTML={{ __html: homee?.detail1}} ></p>
+            <div className="  bg-black bg-opacity-50 font-font01 subtitles  block p-6 rounded-lg shadow-lg filter blur-lg md:filter-none max-w-sm">
+              <h1 className=" z-20 leading-tight font-medium mb-2"> {homee.title1}</h1>
+              <span className=" z-20 mb-4" >{homee.subtitle1}</span>
+              <p className=" z-20 mb-4"  dangerouslySetInnerHTML={{ __html: homee?.detail1}} ></p>
             </div>
-            <div class=" font-font01 subtitles block p-6 rounded-lg shadow-lg bg-zinc-900 filter blur-lg md:filter-none max-w-sm">
-              <h1 class="  leading-tight font-medium mb-2"> {homee.title2}</h1>
-              <span class=" mb-4" >{homee.subtitle2}</span>
-              <p class="  mb-4"  dangerouslySetInnerHTML={{ __html: homee?.detail2}} ></p>
+            <div className="  bg-black bg-opacity-50 font-font01 subtitles block p-6 rounded-lg shadow-lg filter blur-lg md:filter-none max-w-sm">
+              <h1 className="  leading-tight font-medium mb-2"> {homee.title2}</h1>
+              <span className=" mb-4" >{homee.subtitle2}</span>
+              <p className="  mb-4"  dangerouslySetInnerHTML={{ __html: homee?.detail2}} ></p>
             </div>
-            <div class=" font-font01 subtitles  block p-6 rounded-lg shadow-lg bg-zinc-900 filter blur-lg md:filter-none max-w-sm">
-              <h1 class=" leading-tight font-medium mb-2"> {homee.title3}</h1>
-              <span class=" mb-4" >{homee.subtitle3}</span>
-              <p class=" mb-4"  dangerouslySetInnerHTML={{ __html: homee?.detail3}} ></p>
+            <div className="  bg-black bg-opacity-50 font-font01 subtitles  block p-6 rounded-lg shadow-lg  filter blur-lg md:filter-none max-w-sm">
+              <h1 className=" leading-tight font-medium mb-2"> {homee.title3}</h1>
+              <span className=" mb-4" >{homee.subtitle3}</span>
+              <p className=" mb-4"  dangerouslySetInnerHTML={{ __html: homee?.detail3}} ></p>
             </div>
             
         </div>
