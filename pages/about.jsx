@@ -80,26 +80,26 @@ export default function AboutPages() {
         <div className=" mt-20 grid gap-x-0 gap-y-0 grid-cols-3 w-full relative overflow-hidden bg-no-repeat bg-cover">
 
           <div className=" overflow-hidden ">
-            <img className=" aspect-square hover:scale-110 transition duration-700 ease-linear" src="/images/A_16.jpg" />
+            <img className=" aspect-square hover:scale-110 transition duration-200 ease-linear" src="/images/A_16.jpg" />
           </div>
           
           <div className=" overflow-hidden ">
-            <img className=" aspect-square hover:scale-110 transition duration-700 ease-linear" src="/images/A_18.jpg" />
+            <img className=" aspect-square hover:scale-110 transition duration-200  ease-linear" src="/images/A_18.jpg" />
           </div>
           <div className=" overflow-hidden ">
-            <img className=" aspect-square hover:scale-110 transition duration-700 ease-linear" src="/images/A_19.jpg"  />
-          </div>
-
-          <div className=" overflow-hidden ">
-            <img className=" aspect-square hover:scale-110 transition duration-700 ease-linear" src="/images/A_17.jpg"  />
+            <img className=" aspect-square hover:scale-110 transition duration-200  ease-linear" src="/images/A_19.jpg"  />
           </div>
 
           <div className=" overflow-hidden ">
-            <img className=" aspect-square hover:scale-110 transition duration-700 ease-linear" src="/images/A_19.jpg" />
+            <img className=" aspect-square hover:scale-110 transition duration-200  ease-linear" src="/images/A_17.jpg"  />
           </div>
 
           <div className=" overflow-hidden ">
-            <img className=" aspect-square hover:scale-110 transition duration-700 ease-linear" src="/images/img01.jpg"  />
+            <img className=" aspect-square hover:scale-110 transition duration-200  ease-linear" src="/images/A_19.jpg" />
+          </div>
+
+          <div className=" overflow-hidden ">
+            <img className=" aspect-square hover:scale-110 transition duration-200  ease-linear" src="/images/img01.jpg"  />
           </div>
 
           </div>

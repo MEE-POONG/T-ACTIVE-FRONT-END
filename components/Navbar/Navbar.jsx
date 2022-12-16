@@ -5,11 +5,10 @@ export default function Navbar() {
 
   const [navbar, setNavbar] = useState(false);
 
-  const [navSize, setnavSize] = useState("10rem");
+
   const [navLogo, setnavLogo] = useState("py-5 px-5 h-10  m-auto md:h-44");
   const listenScrollEvent = () => {
     window.scrollY > 20 ? setnavLogo("fixed transition-all top-1 py-5 px-5 h-10  m-auto md:h-32") : setnavLogo(" transition-all py-5 px-5 h-10  m-auto md:h-44");
-    window.scrollY > 10 ? setnavSize("5rem") : setnavSize("10rem");
   };
   useEffect(() => {
     window.addEventListener("scroll", listenScrollEvent);
@@ -35,32 +34,34 @@ export default function Navbar() {
 
   <div className=" fixed z-50  right-1 mt-5 bg-black bg-opacity-80 rounded-3xl font-font01 text-base px-10 py-5 text-yellow-500  flex-col items-center  order-2 hidden w-full md:flex md:flex-row md:w-auto md:order-none">
   <Link to="Home" spy={true} smooth={true} offset={0} duration={700} className=" block py-2 pl-3 pr-4 "><button>Home</button></Link>
-    <Link to="About" spy={true} smooth={true} offset={50} duration={700} className="block py-2 pl-3 pr-4 transition duration-150 "><button>About</button></Link>
+    <Link to="About" spy={true} smooth={true} offset={50} duration={700} className="block py-2 pl-3 pr-4"><button>About</button></Link>
     <Link to="Product" spy={true} smooth={true} offset={50} duration={700} className="block py-2 pl-3 pr-4 "><button>Product</button></Link>
     <Link to="Contact" spy={true} smooth={true} offset={50} duration={700} className="block py-2 pl-3 pr-4 "><button>Contact</button></Link>
   </div>
 
-
-  {/* <button  id="btn" type="button" className="z-50 inline-flex items-center p-2 mr-5 text-sm text-yellow-500  rounded-lg md:hidden  focus:outline-none focus:ring-2 focus:ring-yellow-200 " onClick={() => setNavbar(!navbar)} >
+<div className="fixed z-50 right-0 ">
+    <button  id="btn" type="button" className=" absolute top-4 right-4 items-center p-2 mr-5 text-sm text-yellow-500  rounded-lg md:hidden  focus:outline-none focus:ring-2 focus:ring-yellow-200 " onClick={() => setNavbar(!navbar)} >
     {navbar ? ( <FiMinus/> ) : (  <FiAlignJustify/>   )}
   </button>
 
   <div className={`w-full md:hidden ${ navbar ? "block" : "hidden" }`}>
-    <ul className=" static right-0  mt-2 font-font01 md:hidden text-right text-yellow-500 ">
+    <ul className=" absolute top-10 right-2  text-center   mt-2 font-font01 md:hidden text-yellow-500 ">
       <li>
-        <a href="/" className="block py-2 pl-3 pr-4">Home</a>
+      <Link to="Home" spy={true} smooth={true} offset={0} duration={700} className=" block py-2 pl-3 pr-4 "><button>Home</button></Link>
       </li>
       <li>
-        <a href="/about" className="block py-2 pl-3 pr-4">About</a>
+      <Link to="About" spy={true} smooth={true} offset={50} duration={700} className="block py-2 pl-3 pr-4 "><button>About</button></Link>
       </li> 
       <li>
-        <a href="/products" className="block py-2 pl-3 pr-4 ">Product</a>
+      <Link to="Product" spy={true} smooth={true} offset={50} duration={700} className="block py-2 pl-3 pr-4 "><button>Product</button></Link>
       </li>
       <li>
-        <a href="/contact" className="block py-2 pl-3 pr-4 ">Contact</a>
+      <Link to="Contact" spy={true} smooth={true} offset={50} duration={700} className="block py-2 pl-3 pr-4 "><button>Contact</button></Link>
       </li>
     </ul>
-  </div>  */}
+  </div> 
+
+</div>
 
 
 
