@@ -18,7 +18,7 @@ export default function ProductsPages() {
          
         {ProductsData?.map((products, index) => (
           <div className="mx-1 my-1">
-          <div className=" box1 px-16 w-96 md:container md:mx-auto" key={index}>
+          <div className="px-16 md:container md:mx-auto" key={index}>
 
           <img className=" mx-auto py-10 px-10 w-auto h-72" src={products.imagep} />
           <div className=" md:px-6">
