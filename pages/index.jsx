@@ -18,46 +18,37 @@ export default function Home() {
       </Head>
 
       <div id="Home" className="z-30 relative">
-
         {homeeData?.map((homee, index) => (
-          <div className="" key={index}>
+          <div>
+            <div className="" key={index}>
+              {/* BOX1 */}
+              <div className="h-screen relative">
+                <img
+                  className=" z-0  object-cover bg-cover  w-full h-screen absolute top-0 block"
+                  src={"/images/home.jpg"}
+                />
+                <div className="  font-font01 font-semibold  text-center ">
+                  <div className=" z-20 absolute font-font02 bottom-32 left-5 md:bottom-32 md:left-16  subtitles text-center text-3xl">
+                    {homee.subtitle1}
+                  </div>
 
-            {/* BOX1 */}
-            <div className="h-screen">
-              
-              <img
-                className=" z-0  object-cover bg-cover  w-full h-screen absolute top-0 block"
-                src={"/images/home.jpg"}
-              />
-              <div className="  font-font01 font-semibold  text-center ">
+                  <div className=" animate-charcter z-20 absolute bottom-16 left-5 md:bottom-16 md:left-16  text-center text-5xl ">
+                    {homee.title1}
+                  </div>
 
-            
-                <div className=" z-20 absolute font-font02 bottom-32 left-5 md:bottom-32 md:left-16  subtitles text-center text-3xl">
-                  {homee.subtitle1}
+                  <div className=" z-20 absolute bottom-7 right-0 md:bottom-7 md:right-16  text-center py-5 ">
+                    <a href="https://www.facebook.com/TActiveSteviaSyrup">
+                      <button className=" animate-charcter font-font01 font-semibold w-28 h-12 mx-5 my-5 border-4 border-yellow-300/100 rounded-xl">
+                        PRODUCT
+                      </button>
+                    </a>
+                  </div>
                 </div>
 
-                <div className=" animate-charcter z-20 absolute bottom-16 left-5 md:bottom-16 md:left-16  text-center text-5xl ">
-                  {homee.title1}
-                </div>
-            
-
-                <div className=" z-20 absolute bottom-7 right-0 md:bottom-7 md:right-16  text-center py-5 ">
-
-                  <a href="https://www.facebook.com/TActiveSteviaSyrup">
-                    
-                    <button className=" animate-charcter font-font01 font-semibold w-28 h-12 mx-5 my-5 border-4 border-yellow-300/100 rounded-xl">
-                      PRODUCT
-                    </button>
-                  </a>
-                  
-                </div>
+                {/* blur */}
+                <div className=" z-10 w-full h-52 blur-xl bg-[#25252582] bottom-0 absolute" />
               </div>
-              
-              {/* blur */}
-              <div className=" z-10 w-full h-52 blur-xl bg-[#25252582] bottom-0 absolute"/>
-
             </div>
-
             <div className=" subtitles mt-20 py-3 font-font02  text-center text-sm md:text-3xl flex justify-around ">
               <div>
                 {" "}
@@ -117,7 +108,7 @@ export default function Home() {
         ))}
       </div>
 
-      <div id="About" className="z-30 relative" >
+      <div id="About" className="z-30 relative">
         <AboutPages />
       </div>
 
