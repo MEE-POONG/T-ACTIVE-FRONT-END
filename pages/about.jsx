@@ -18,7 +18,7 @@ export default function AboutPages() {
           <div className=" font-font01  text-center ">
             {/* BOX1 */}
             <div className=" mt-4 mx-5 py-5 md:grid md:grid-cols-2 ">
-              <div className="my-auto">
+              <div className="my-auto ">
                 <img
                   className="mx-auto"
                   src={about.imagea1}
@@ -27,7 +27,7 @@ export default function AboutPages() {
                 />
               </div>
 
-              <div className=" mt-5 md:m-auto font-font01  text-center ">
+              <div className=" mt-5 md:m-auto font-font01  text-center">
                 <h1 className="animate-charcter font-semibold text-center text-2xl md:text-4xl ">
                   {about.title1}
                 </h1>
@@ -44,10 +44,10 @@ export default function AboutPages() {
             {/* <hr className="my-6 border-yellow-500 md:my-8 dark:border-yellow-700" /> */}
 
             {/* BOX2 */}
-            <div className=" mt-4 mx-5 py-5 md:grid md:grid-cols-2">
-              <div className=" w-auto md:hidden  my-auto">
+            <div className=" mt-4 mx-5 py-5 md:grid md:grid-cols-2 ">
+              <div className=" w-auto md:hidden  my-auto ">
                 <img
-                  className="mx-auto"
+                  className="mx-auto drop-shadow-lg"
                   src={about.imagea2}
                   width="80%"
                   height="100%"
