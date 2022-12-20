@@ -3,12 +3,32 @@ import Footer from '../Footer/Footer'
 import Navbar from '../Navbar/Navbar'
 import Slid from '../Slid/Slid'
 
-export default function Layout({children}) {
+export default function Layout({ children }) {
   return (
     <>
-    <Navbar/>
+      <div className='bg-tem '>
+        <div class="area" >
+          <ul class="circles">
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+          </ul>
+        </div >
+      </div>
+      
+      <Navbar />
       <main>{children}</main>
-    <Footer/>
+      <div className="z-50 relative">
+        <Footer />
+      </div>
+      
     </>
   )
 }

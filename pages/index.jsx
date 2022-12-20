@@ -17,13 +17,16 @@ export default function Home() {
         <link rel="icon" href="/images/logo.png" />
       </Head>
 
-      <div id="Home">
+      <div id="Home" className="z-30 relative">
+
         {homeeData?.map((homee, index) => (
           <div className="" key={index}>
+
             {/* BOX1 */}
             <div className="h-screen">
+              
               <img
-                className=" z-0  object-cover bg-cover  w-full h-full absolute top-0 block"
+                className=" z-0  object-cover bg-cover  w-full h-screen absolute top-0 block"
                 src={"/images/home.jpg"}
               />
               <div className="  font-font01 font-semibold  text-center ">
@@ -49,8 +52,9 @@ export default function Home() {
                   
                 </div>
               </div>
-
-              <div className=" z-10 w-full h-52 blur-xl opacity-70 bg-black bottom-0 absolute"/>
+              
+              {/* blur */}
+              <div className=" z-10 w-full h-52 blur-xl bg-[#25252582] bottom-0 absolute"/>
 
             </div>
 
@@ -113,15 +117,15 @@ export default function Home() {
         ))}
       </div>
 
-      <div id="About" name="about-page" className="globals">
+      <div id="About" className="z-30 relative" >
         <AboutPages />
       </div>
 
-      <div id="Product">
+      <div id="Product" className="z-30 relative">
         <ProductsPages />
       </div>
 
-      <div id="Contact">
+      <div id="Contact" className="z-30 relative">
         <ContactPages />
       </div>
     </>
