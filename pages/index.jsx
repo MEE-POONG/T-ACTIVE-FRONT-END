@@ -49,20 +49,20 @@ export default function Home() {
                 <div className=" z-10 w-full h-52 blur-xl bg-[#25252582] bottom-0 absolute" />
               </div>
             </div>
-            <div className=" subtitles mt-20 py-3 font-font02  text-center text-sm md:text-3xl flex justify-around ">
+            <div className=" subtitles mt-20 py-3 font-font02  text-center text-sm md:text-2xl flex justify-around ">
               <div>
                 {" "}
-                <img src="/images/A_4.png" alt="zeropic" width="150px" /> 0
+                <img className="md:ml-4" src="/images/calory.png" alt="zeropic" width="100px" /> 0
                 CALORLE{" "}
               </div>
               <div>
                 {" "}
-                <img src="/images/A_4.png" alt="zeropic" width="150px" /> 0
+                <img src="/images/sugarfree.png" alt="zeropic" width="100px" /> 0
                 SUGAR{" "}
               </div>
               <div>
                 {" "}
-                <img src="/images/A_4.png" alt="zeropic" width="150px" /> 0
+                <img className="ml-2 " src="/images/salt-free.png" alt="zeropic" width="100px" /> 0
                 SODIUM{" "}
               </div>
             </div>
