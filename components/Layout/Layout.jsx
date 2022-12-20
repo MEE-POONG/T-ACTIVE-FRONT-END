@@ -22,9 +22,13 @@ export default function Layout({ children }) {
           </ul>
         </div >
       </div>
+      
       <Navbar />
       <main>{children}</main>
-      <Footer />
+      <div className="z-50 relative">
+        <Footer />
+      </div>
+      
     </>
   )
 }
