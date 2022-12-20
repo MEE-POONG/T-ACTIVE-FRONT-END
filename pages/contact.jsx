@@ -21,7 +21,7 @@ export default function ContactPages() {
                
                   <h1 className="font-font01 animate-charcter font-semibold text-center text-5xl ">{contact.title} </h1>
         
-                  <div className=" mt-10 py-3 font-font02 subtitles text-center text-md">
+                  <div className=" mt-10 py-3 font-font02 subtitles text-center text-md md:text-xl ">
                   <p className="py-2"> Adress : {contact.address} </p>
                   <p className="py-2">Tel : {contact.tel} </p>
                   <p className="py-2">E-mail : {contact.email} </p>
