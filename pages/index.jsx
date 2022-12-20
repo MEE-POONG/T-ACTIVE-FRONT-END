@@ -49,8 +49,10 @@ export default function Home() {
                   
                 </div>
               </div>
+              
+              {/* blur */}
+              <div className=" z-10 w-full h-52 blur-xl bg-[#25252582] bottom-0 absolute"/>
 
-              <div className=" z-10 w-full h-52 blur-xl opacity-70 bg-black bottom-0 absolute"/>
 
             </div>
 
@@ -113,15 +115,15 @@ export default function Home() {
         ))}
       </div>
 
-      <div id="About" name="about-page" className="globals">
+      <div id="About" className="z-50 relative" >
         <AboutPages />
       </div>
 
-      <div id="Product">
+      <div id="Product" className="z-50 relative">
         <ProductsPages />
       </div>
 
-      <div id="Contact">
+      <div id="Contact" className="z-50 relative">
         <ContactPages />
       </div>
     </>
