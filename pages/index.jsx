@@ -52,17 +52,17 @@ export default function Home() {
             <div className=" subtitles mt-20 py-3 font-font02  text-center text-sm md:text-3xl flex justify-around ">
               <div>
                 {" "}
-                <img src="/images/A_4.png" alt="zeropic" width="100px" /> 0
+                <img src="/images/A_4.png" alt="zeropic" width="150px" /> 0
                 CALORLE{" "}
               </div>
               <div>
                 {" "}
-                <img src="/images/A_4.png" alt="zeropic" width="100px" /> 0
+                <img src="/images/A_4.png" alt="zeropic" width="150px" /> 0
                 SUGAR{" "}
               </div>
               <div>
                 {" "}
-                <img src="/images/A_4.png" alt="zeropic" width="100px" /> 0
+                <img src="/images/A_4.png" alt="zeropic" width="150px" /> 0
                 SODIUM{" "}
               </div>
             </div>
