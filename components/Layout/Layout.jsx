@@ -7,8 +7,8 @@ export default function Layout({ children }) {
   return (
     <>
       <div className='bg-tem '>
-        <div class="area" >
-          <ul class="circles">
+        <div className="area" >
+          <ul className="circles">
             <li></li>
             <li></li>
             <li></li>

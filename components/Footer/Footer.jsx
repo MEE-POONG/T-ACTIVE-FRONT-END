@@ -20,7 +20,7 @@ export default function Footer() {
               <div className=" flex flex-col items-center mx-auto mt-2 space-y-3 md:space-y-0  ">
                 
               
-                <input class=" placeholder:text-slate-400 block bg-white w-3/4 border border-slate-300 rounded-md py-2 pl-9 pr-3 shadow-sm focus:outline-none focus:border-yellow-500 focus:ring-yellow-500 focus:ring-1 sm:text-sm" 
+                <input className=" placeholder:text-slate-400 block bg-white w-3/4 border border-slate-300 rounded-md py-2 pl-9 pr-3 shadow-sm focus:outline-none focus:border-yellow-500 focus:ring-yellow-500 focus:ring-1 sm:text-sm" 
                 placeholder="Email" 
                 type="text" 
                 name="Email"/>

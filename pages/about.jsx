@@ -35,7 +35,7 @@ export default function AboutPages() {
                   {about.subtitle1}
                 </div>
                 <div
-                  className="mr-10 font-font02 subtitles indent-12 whitespace-normal text-justify text-md md:text-[20px]"
+                  className="md:mr-10 font-font02 subtitles indent-12 whitespace-normal text-justify text-md md:text-[20px]"
                   dangerouslySetInnerHTML={{ __html: about?.detail1 }}
                 />
               </div>
@@ -64,7 +64,7 @@ export default function AboutPages() {
                 </div>
 
                 <div
-                  className=" ml-10 font-font02 subtitles indent-12 whitespace-normal text-justify text-md md:text-[20px]"
+                  className=" md:ml-10 font-font02 subtitles indent-12 whitespace-normal text-justify text-md md:text-[20px]"
                   dangerouslySetInnerHTML={{ __html: about?.detail2 }}
                 />
               </div>
@@ -102,7 +102,7 @@ export default function AboutPages() {
                   {about.subtitle3}
                 </div>
                 <div
-                  className=" mr-10 font-font02 subtitles indent-12 whitespace-normal text-justify text-md md:text-[20px]"
+                  className=" md:mr-10 font-font02 subtitles indent-12 whitespace-normal text-justify text-md md:text-[20px]"
                   dangerouslySetInnerHTML={{ __html: about?.detail3 }}
                 />
               </div>
