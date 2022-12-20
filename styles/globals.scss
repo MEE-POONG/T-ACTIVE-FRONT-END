@@ -1,42 +1,42 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
 @font-face {
-    font-family: Prata-Regular ;
-    src: url('fonts/Prata-Regular.ttf');
+  font-family: Prata-Regular;
+  src: url("fonts/Prata-Regular.ttf");
 }
 
 @font-face {
-    font-family:TiroKannada-Italic;
-    src: url('fonts/TiroKannada-Italic.ttf');
+  font-family: TiroKannada-Italic;
+  src: url("fonts/TiroKannada-Italic.ttf");
 }
 
-body{
+body {
   //  background-image: url('/images/bg-17.jpg');
-  background: linear-gradient(to right, #414141 0%,  black 100%);
-   
+  background: linear-gradient(to right, #414141 0%, black 100%);
+
   //  background-repeat: repeat;
-   background-size: cover;
+  background-size: cover;
+  position: relative;
+  @import "bg.scss";
 }
 
-.animate-charcter
-{
-   text-transform: uppercase;
+.animate-charcter {
+  text-transform: uppercase;
   background-clip: border-box;
   background-size: 200% auto;
-  color: #fff4c7 ;
+  color: #fff4c7;
   background-clip: text;
   background-image: linear-gradient(
-	to right,
-	#d5c79b 0,
-  #cb9b51 22%, 
-	#f6e27a 45%,
-	#f6f2c0 50%,
-	#f6e27a 55%,
-	#cb9b51 78%,
-	#f8e2c1 100%
-	);
+    to right,
+    #d5c79b 0,
+    #cb9b51 22%,
+    #f6e27a 45%,
+    #f6f2c0 50%,
+    #f6e27a 55%,
+    #cb9b51 78%,
+    #f8e2c1 100%
+  );
   text-fill-color: transparent;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -56,11 +56,11 @@ body{
 
 }
 .box1 {
-  
   border-radius: 10px;
   overflow: hidden;
   border: 5px double transparent;
-  background-image: linear-gradient(rgb(0, 0, 0), rgb(0, 0, 0)), radial-gradient(circle at left top, #d5c79b, #cb9b51,#f6e27a,#f6f2c0,#f6e27a,#cb9b51,#f8e2c1);
+  background-image: linear-gradient(rgb(0, 0, 0), rgb(0, 0, 0)),
+    radial-gradient(circle at left top, #d5c79b, #cb9b51, #f6e27a, #f6f2c0, #f6e27a, #cb9b51, #f8e2c1);
   background-origin: border-box;
   background-clip: padding-box, border-box;
 
@@ -70,14 +70,14 @@ body{
 
 @keyframes gradient {
   0% {
-      background-position: 0% 50%;
+    background-position: 0% 50%;
   }
 
   50% {
-      background-position: 100% 50%;
+    background-position: 100% 50%;
   }
 
   100% {
-      background-position: 0% 50%;
+    background-position: 0% 50%;
   }
 }
