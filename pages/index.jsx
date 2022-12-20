@@ -54,7 +54,7 @@ export default function Home() {
 
             </div>
 
-            <div className=" subtitles mt-20 py-3 font-font02  text-center text-2xl flex justify-around ">
+            <div className=" subtitles mt-20 py-3 font-font02  text-center text-sm md:text-3xl flex justify-around ">
               <div>
                 {" "}
                 <img src="/images/A_4.png" alt="zeropic" width="100px" /> 0
@@ -72,9 +72,9 @@ export default function Home() {
               </div>
             </div>
 
-            <div className=" subtitles mt-20  px-6 py-12 mx-auto text-center text-[18px] justify-items-center grid  lg:grid-cols-3">
+            <div className=" subtitles mt-20  px-6 py-12 mx-auto indent-4 md:indent-6 whitespace-normal text-justify text-[15px] md:text-[17px] justify-items-center grid  lg:grid-cols-3">
               <div className=" mt-5 m-1 bg-black bg-opacity-50 font-font01  block p-6 rounded-lg shadow-lg  max-w-sm">
-                <h1 className="  leading-tight font-medium mb-2">
+                <h1 className="  leading-tight text-center text-[18px] md:text-[22px] font-medium mb-2">
                   {" "}
                   {homee.title1}
                 </h1>
@@ -86,7 +86,7 @@ export default function Home() {
               </div>
 
               <div className=" mt-5 m-1  bg-black bg-opacity-50 font-font01  block p-6 rounded-lg shadow-lg  max-w-sm">
-                <h1 className="  leading-tight font-medium mb-2">
+                <h1 className="  leading-tight text-center text-[18px] md:text-[22px] font-medium mb-2">
                   {" "}
                   {homee.title2}
                 </h1>
@@ -98,7 +98,7 @@ export default function Home() {
               </div>
 
               <div className=" mt-5 m-1  bg-black bg-opacity-50 font-font01   block p-6 rounded-lg shadow-lg  max-w-sm">
-                <h1 className=" leading-tight font-medium mb-2">
+                <h1 className=" leading-tight text-center text-[18px] md:text-[22px] font-medium mb-2">
                   {" "}
                   {homee.title3}
                 </h1>

@@ -28,14 +28,14 @@ export default function AboutPages() {
               </div>
 
               <div className=" mt-5 md:m-auto font-font01  text-center ">
-                <h1 className="animate-charcter font-semibold text-center text-4xl ">
+                <h1 className="animate-charcter font-semibold text-center text-2xl md:text-4xl ">
                   {about.title1}
                 </h1>
                 <div className=" py-3 font-font02 subtitles text-center text-[18px]">
                   {about.subtitle1}
                 </div>
                 <div
-                  className=" font-font02 subtitles text-center text-xl md:text-[18px]"
+                  className=" font-font02 subtitles text-center text-md md:text-[18px]"
                   dangerouslySetInnerHTML={{ __html: about?.detail1 }}
                 />
               </div>
@@ -55,7 +55,7 @@ export default function AboutPages() {
               </div>
 
               <div className=" mt-5 md:m-auto font-font01  text-center ">
-                <h1 className=" animate-charcter font-semibold text-center text-4xl ">
+                <h1 className=" animate-charcter font-semibold text-center text-2xl md:text-4xl ">
                   {about.title2}
                 </h1>
                 <div className="py-3 font-font02 subtitles text-center md:text-[18px]">
@@ -64,7 +64,7 @@ export default function AboutPages() {
                 </div>
 
                 <div
-                  className=" font-font02 subtitles text-center text-xl md:text-[18px]"
+                  className=" font-font02 subtitles text-center text-md md:text-[18px]"
                   dangerouslySetInnerHTML={{ __html: about?.detail2 }}
                 />
               </div>
@@ -84,7 +84,7 @@ export default function AboutPages() {
             {/* BOX3 */}
 
             <div className="  mt-4 mx-5 py-5 md:grid md:grid-cols-2 ">
-              <div className="my-auto ml-14 ">
+              <div className="my-auto ">
                 <img
                   className="mx-auto"
                   src={about.imagea3}
@@ -94,7 +94,7 @@ export default function AboutPages() {
               </div>
 
               <div className=" mt-5 md:m-auto font-font01  text-center ">
-                <h1 className="animate-charcter font-semibold text-center text-4xl ">
+                <h1 className="animate-charcter font-semibold text-center text-2xl md:text-4xl">
                   {about.title3}
                 </h1>
                 <div className=" py-3 font-font02 subtitles text-center text-[18px]">
@@ -102,7 +102,7 @@ export default function AboutPages() {
                   {about.subtitle3}
                 </div>
                 <div
-                  className=" font-font02 subtitles text-center text-xl md: text-[18px]"
+                  className=" font-font02 subtitles text-center text-md md:text-[18px]"
                   dangerouslySetInnerHTML={{ __html: about?.detail3 }}
                 />
               </div>
@@ -112,7 +112,7 @@ export default function AboutPages() {
           <div className=" mt-20 grid gap-x-0 gap-y-0 grid-cols-2  md:grid-cols-3 w-full relative overflow-hidden bg-no-repeat bg-cover">
             <div className=" overflow-hidden ">
               <img
-                className=" aspect-square hover:scale-110 transition duration-200 ease-linear"
+                className="aspect-square hover:scale-110 transition duration-200 ease-linear"
                 src="/images/A_16.jpg"
               />
             </div>
