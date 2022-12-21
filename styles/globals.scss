@@ -52,31 +52,25 @@ body {
 .subtitles {
   // text-transform: uppercase;
   color: #ffdb80 ;
-
-}
-.box1 {
-  border-radius: 10px;
-  overflow: hidden;
-  border: 5px double transparent;
-  background-image: linear-gradient(rgb(0, 0, 0), rgb(0, 0, 0)),
-    radial-gradient(circle at left top, #d5c79b, #cb9b51, #f6e27a, #f6f2c0, #f6e27a, #cb9b51, #f8e2c1);
-  background-origin: border-box;
-  background-clip: padding-box, border-box;
-
-  animation: gradient 15s ease infinite;
-  background-size: 400%;
 }
 
-@keyframes gradient {
+.box {
+  position: relative;;
+  width: 250px;
+  height: 250px;
+  z-index: 0;
+  filter: blur(60px);
+  background-image: linear-gradient(hsl(158, 82, 57, 85%), hsl(252, 82, 57));
+  border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+}
+
+
+@keyframes rotate {
   0% {
-    background-position: 0% 50%;
+    transform: rotate(0deg);
   }
-
-  50% {
-    background-position: 100% 50%;
-  }
-
   100% {
-    background-position: 0% 50%;
+    transform: rotate(360deg);
   }
 }
+
