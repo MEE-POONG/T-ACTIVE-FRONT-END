@@ -9,11 +9,17 @@ export default function ProductsPages() {
   return (
     <>
  
-        <h1 className="mt-20 py-14 font-font01 animate-charcter font-semibold text-center text-5xl ">PRODUCTS </h1>
-        <h6 className=" font-font01 subtitles text-center text-2xl ">Stevia  </h6>
-        <p className="py-5 font-font01 subtitles text-center text-[20px]">
+        <h1 className="mt-32 py-14 font-font01 animate-charcter font-semibold text-center text-5xl ">PRODUCTS </h1>
+        <div className=" py-3 font-font02 subtitles grid grid-cols-6 gap-4 text-md md:text-xl ">
+        <div className=" mx-5 py-5 col-start-2 col-span-4">
+        <div className="text-center">
+        <h6 >Stevia </h6>
+        <p>
           Stevia may be used in place of table sugar in your favorite foods and beverages. A pinch of stevia 
           powder is equal to about one teaspoon of table sugar.</p>
+          </div>
+          </div>
+          </div>
 
           {ProductsData?.map((products, index) => (
         <div className="" key={index}>
@@ -72,7 +78,7 @@ export default function ProductsPages() {
                 <img
                   className="mx-auto"
                   src={products.imagep3}
-                  width="80px"
+                  width="90px"
                   height="100px"
                 />
               </div>
