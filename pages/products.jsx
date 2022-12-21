@@ -34,9 +34,7 @@ export default function ProductsPages() {
                 <h1 className="font-font01 animate-charcter font-semibold text-left md:text-[24px]">
                   {products.title1}   </h1>
                   <h4 className="py-2 font-font01 subtitles text-left text-2xl md:text-[18px] ">
-                  {products.subtitle1} </h4>
-                  <h4 className="py-2 font-font01 subtitles text-left text-2xl md:text-[16px] ">
-                  {products.detail1} </h4>
+                  {products.subtitle1} {products.detail1} </h4>
 
                   <div className=" mt-5 md:m-auto font-font01  text-left"> 
                    {/* <hr className=" border-yellow-500 md:my-8 dark:border-yellow-600" /> */}
@@ -53,9 +51,7 @@ export default function ProductsPages() {
                 <h1 className="font-font01 animate-charcter font-semibold text-right md:text-[24px]">
                   {products.title2}  </h1>
                   <h4 className="py-2 font-font01 subtitles text-right text-2xl md:text-[18px] ">
-                  {products.subtitle2} </h4>
-                  <h4 className="py-2 font-font01 subtitles text-left text-2xl md:text-[16px] ">
-                  {products.detail2} </h4>
+                  {products.subtitle2} {products.detail2}  </h4>
                   {/* <hr className=" border-yellow-500 md:my-8 dark:border-yellow-600" /> */}
                   </div>
               <div className="my-auto ">
@@ -86,9 +82,7 @@ export default function ProductsPages() {
                 <h1 className="font-font01 animate-charcter font-semibold text-left md:text-[24px]">
                   {products.title3}   </h1>
                   <h4 className="py-2 font-font01 subtitles text-left text-2xl md:text-[18px] ">
-                  {products.subtitle3} </h4>
-                  <h4 className="py-2 font-font01 subtitles text-left text-2xl md:text-[16px] ">
-                  {products.detail3} </h4>
+                  {products.subtitle3}  {products.detail3}</h4>
           
                   <div className=" mt-5 md:m-auto font-font01  text-left"> 
                    {/* <hr className=" border-yellow-500 md:my-8 dark:border-yellow-600" /> */}
