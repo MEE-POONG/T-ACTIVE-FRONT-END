@@ -55,11 +55,9 @@ body {
 }
 
 .box {
-  position: relative;;
   width: 250px;
   height: 250px;
-  z-index: 0;
-  filter: blur(60px);
+  // filter: blur(60px);
   background-image: linear-gradient(hsl(158, 82, 57, 85%), hsl(252, 82, 57));
   border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
 }
