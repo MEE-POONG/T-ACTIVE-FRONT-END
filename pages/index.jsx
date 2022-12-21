@@ -57,7 +57,7 @@ export default function Home() {
               </div>
               <div>
                 {" "}
-                <img src="/images/sugarfree.png" alt="zeropic" width="100px" /> 0
+                <img src="/images/sugar-cube.png" alt="zeropic" width="100px" /> 0
                 SUGAR{" "}
               </div>
               <div>
