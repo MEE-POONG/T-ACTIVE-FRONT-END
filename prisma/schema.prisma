@@ -63,8 +63,16 @@ model Products {
   createdAt  DateTime? @default(now())
   updatedAt  DateTime?
   deleted_at DateTime?
-  detail     String?
-  imagep     String?
-  subtitle   String?
-  title      String?
+  detail1    String?
+  detail2    String?
+  detail3    String?
+  imagep1    String?
+  imagep2    String?
+  imagep3    String?
+  subtitle1  String?
+  subtitle2  String?
+  subtitle3  String?
+  title1     String?
+  title2     String?
+  title3     String?
 }
