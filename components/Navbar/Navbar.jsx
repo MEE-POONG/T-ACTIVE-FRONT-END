@@ -6,7 +6,7 @@ export default function Navbar() {
   const [navbar, setNavbar] = useState(false);
 
 
-  const [navbar02, setnavbar02] = useState("bg-gray-700/75")
+  const [navbar02, setnavbar02] = useState("bg-[#000]")
   
   const [goBack, setGoBack] = useState("fixed hidden  z-50 right-0 bottom-16")
 
