@@ -25,7 +25,7 @@ export default function Home() {
               <div className="h-screen relative">
                 <img
                   className=" z-0  object-cover bg-cover  w-full h-screen absolute top-0 block"
-                  src={"/images/home.jpg"}
+                  src={"/images/home.png"}
                 />
                 <div className="  font-font01 font-semibold  text-center ">
                   <div className=" z-20 absolute font-font02 bottom-32 left-5 md:bottom-32 md:left-16  subtitles text-center text-3xl">
