@@ -20,7 +20,7 @@ export default function AboutPages() {
             <div className=" mt-4 mx-5 py-5 md:grid md:grid-cols-2 ">
               <div className="my-auto ">
                 <img
-                  className="mx-auto drop-shadow-lg rounded-lg"
+                  className="mx-auto drop-shadow-lg  rounded-lg"
                   src={about.imagea1}
                   width="80%"
                   height="100%"
