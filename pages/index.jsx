@@ -38,7 +38,7 @@ export default function Home() {
                     {homee.title1}
                   </div>
 
-                  <div className=" z-20 absolute bottom-7 right-0 md:bottom-7 md:right-16  text-center py-5 ">
+                  <div className=" z-20 absolute bottom-10 right-3 md:bottom-10 md:right-10  text-center py-5 ">
 
                     <a href="https://www.facebook.com/TActiveSteviaSyrup" className="relative inline-block text-lg group">
                       <span className="relative z-10 block px-5 py-3 overflow-hidden font-medium leading-tight text-yellow-400 transition-colors duration-300 ease-out border-2 border-gray-900 rounded-lg group-hover:text-black ">

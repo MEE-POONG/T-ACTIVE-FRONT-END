@@ -8,7 +8,7 @@ export default function Navbar() {
 
   const [navbar02, setnavbar02] = useState("bg-gray-700/75")
   
-  const [goBack, setGoBack] = useState("fixed hidden z-50 right-0 bottom-16")
+  const [goBack, setGoBack] = useState("fixed hidden  z-50 right-0 bottom-16")
 
   const listenScrollEvent = () => {
 
@@ -28,8 +28,8 @@ export default function Navbar() {
     <>
 
 
-<nav className={`fixed top-0 z-40 w-full py-2 px-10 backdrop-blur  flex-none transition-colors duration-500 lg:z-50 lg:border-b lg:border-slate-900/10 border-slate-50/[0.06]    ${navbar02}`}> 
-<div className="container flex flex-wrap items-center justify-between mx-auto">
+<nav className={`sticky top-0 z-40 w-full py-2 px-10 backdrop-blur  flex-none transition-colors duration-500 lg:z-50 lg:border-b lg:border-slate-900/10 border-slate-50/[0.06] ${navbar02}`}> 
+<div className="container flex flex-wrap items-center justify-between  mx-auto">
 
     <Link to="Home" spy={true} smooth={true} offset={0} duration={700} className="flex items-center">
         <img src="/images/logo.png" className="h-6 mr-3 sm:h-9" alt="Flowbite Logo" />
@@ -59,6 +59,17 @@ export default function Navbar() {
     </div>
   </div>
 </nav>
+
+<div id="GO BACK" className={goBack}>
+<Link to="Home" spy={true} smooth={true} offset={-100} duration={700} >
+
+  <button  id="btn" type="button" className=" absolute bg-black bg-opacity-80 rounded-3xl right-2 items-center p-2 mr-5 text-lg md:text-2xl text-yellow-500 border-2 border-yellow-300/100 ">
+    <FiArrowUp/>
+  </button>
+
+</Link>
+
+</div>
 
 
 
