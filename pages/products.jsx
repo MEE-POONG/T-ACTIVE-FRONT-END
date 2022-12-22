@@ -9,24 +9,34 @@ export default function ProductsPages() {
   return (
     <>
         
-     
-
+        
           {ProductsData?.map((products, index) => (
         <div className="" key={index}>
 
            <h1 className="mt-32 py-14 font-font01 animate-charcter font-semibold text-center text-5xl ">
          {products.header} </h1>
         <div className=" py-3 font-font02 subtitles grid grid-cols-6 gap-4 text-md md:text-xl ">
+          
          <div className=" mx-5 py-5 col-start-2 col-span-4">
           <div className="text-center">
            <p>{products.subheader}</p>
         </div>
       </div>
+      
         </div>
 
+        <div className=" ml-48 mt-5 md:max-w-6xl relative  p-3 rounded-lg shadow-lg shadow-yellow-600/60 overflow-hidden">
+                <div className="absolute -top-6 -left-10 w-72 h-72 bg-yellow-900/50 rounded-full mix-blend-multiply filter blur-3xl opacity-70 animate-blob "></div>
+                <div className="absolute top-0 -right-10 w-72 h-72 bg-yellow-300/50 rounded-full mix-blend-multiply filter blur-3xl opacity-70 animate-blob animation-delay-2000"></div>
+                <div className="absolute -bottom-24 -right-4 w-56 h-56 bg-yellow-700/75 rounded-full mix-blend-multiply filter blur-3xl opacity-70 animate-blob animation-delay-2000"></div>
+                <div className="absolute -bottom-24 -left-5 w-60 h-60 bg-yellow-300/50 rounded-full mix-blend-multiply filter blur-3xl opacity-70 animate-blob animation-delay-4000"></div>
+              
+      
+      
           <div className=" font-font01  text-left ">
             {/* BOX1 */}
             <div className=" mt-10 mx-5 py-5 md:grid md:grid-cols-2 ">
+              
               <div className="my-auto ">
                 <img
                   className="mx-auto"
@@ -112,12 +122,15 @@ export default function ProductsPages() {
                       <span className="absolute bottom-0 right-0 w-full h-12 -mb-1 -mr-1 transition-all duration-200 ease-linear bg-yellow-400 rounded-lg group-hover:mb-0 group-hover:mr-0" data-rounded="rounded-lg"></span>
                     </a>
           </div>
+          </div>
 
           </div>
-        </div>
-      </div>
+          </div>
+          </div>
+
 
       ))}
+     
     </>
   );
 }
