@@ -44,16 +44,16 @@ export default function Navbar() {
     <div className={`w-full md:block md:w-auto ${ navbar ? "block" : "hidden" }`}  id="navbar-default">
       <ul className="flex flex-col p-2 mt-2 text-right font-font01 text-yellow-500 rounded-lg md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium md:border-0  ">
       <li>
-      <Link to="Home" spy={true} smooth={true} offset={0} duration={700} classNameName="block py-2 pl-1 pr-1 "><button>Home</button></Link>
+      <Link to="Home" spy={true} smooth={true} offset={0} duration={700} className="block py-2 pl-1 pr-1 "><button>Home</button></Link>
       </li>
       <li>
-      <Link to="About" spy={true} smooth={true} offset={0} duration={700} classNameName="block py-2 pl-1 pr-1 "><button>About</button></Link>
+      <Link to="About" spy={true} smooth={true} offset={0} duration={700} className="block py-2 pl-1 pr-1 "><button>About</button></Link>
       </li> 
       <li>
-      <Link to="Product" spy={true} smooth={true} offset={0} duration={700} classNameName="block py-2 pl-1 pr-1 "><button>Product</button></Link>
+      <Link to="Product" spy={true} smooth={true} offset={0} duration={700} className="block py-2 pl-1 pr-1 "><button>Product</button></Link>
       </li>
       <li>
-      <Link to="Contact" spy={true} smooth={true} offset={0} duration={700} classNameName="block py-2 pl-1 pr-1 "><button>Contact</button></Link>
+      <Link to="Contact" spy={true} smooth={true} offset={0} duration={700} className="block py-2 pl-1 pr-1 "><button>Contact</button></Link>
       </li>
       </ul>
     </div>

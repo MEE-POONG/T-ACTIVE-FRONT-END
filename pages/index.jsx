@@ -9,6 +9,8 @@ export default function Home() {
     url: "/api/homee",
   });
 
+  if (loading) return <p>Loading...</p>
+  if (error) return <p>Error!</p>
   return (
     <>
       <Head>
@@ -38,13 +40,13 @@ export default function Home() {
 
                   <div className=" z-20 absolute bottom-7 right-0 md:bottom-7 md:right-16  text-center py-5 ">
 
-                    <a href="https://www.facebook.com/TActiveSteviaSyrup" class="relative inline-block text-lg group">
-                      <span class="relative z-10 block px-5 py-3 overflow-hidden font-medium leading-tight text-yellow-400 transition-colors duration-300 ease-out border-2 border-gray-900 rounded-lg group-hover:text-black ">
-                      <span class="absolute inset-0 w-full h-full px-5 py-3 rounded-lg bg-black"></span>
-                      <span class="absolute left-0 w-48 h-48 -ml-2 transition-all duration-300 origin-top-right -rotate-90 -translate-x-full translate-y-12 bg-yellow-400 group-hover:-rotate-180 ease"></span>
-                      <span class="relative">PRODUCT</span>
+                    <a href="https://www.facebook.com/TActiveSteviaSyrup" className="relative inline-block text-lg group">
+                      <span className="relative z-10 block px-5 py-3 overflow-hidden font-medium leading-tight text-yellow-400 transition-colors duration-300 ease-out border-2 border-gray-900 rounded-lg group-hover:text-black ">
+                      <span className="absolute inset-0 w-full h-full px-5 py-3 rounded-lg bg-black"></span>
+                      <span className="absolute left-0 w-48 h-48 -ml-2 transition-all duration-300 origin-top-right -rotate-90 -translate-x-full translate-y-12 bg-yellow-400 group-hover:-rotate-180 ease"></span>
+                      <span className="relative">PRODUCT</span>
                       </span>
-                      <span class="absolute bottom-0 right-0 w-full h-12 -mb-1 -mr-1 transition-all duration-200 ease-linear bg-yellow-400 rounded-lg group-hover:mb-0 group-hover:mr-0" data-rounded="rounded-lg"></span>
+                      <span className="absolute bottom-0 right-0 w-full h-12 -mb-1 -mr-1 transition-all duration-200 ease-linear bg-yellow-400 rounded-lg group-hover:mb-0 group-hover:mr-0" data-rounded="rounded-lg"></span>
                     </a>
                   </div>
                 </div>
@@ -53,22 +55,26 @@ export default function Home() {
                 <div className=" z-10 w-full h-52 blur-xl bg-[#25252582] bottom-0 absolute" />
               </div>
             </div>
-            <div className=" subtitles mt-20 py-3 font-font02  text-center text-sm md:text-2xl flex justify-around ">
-              <div>
-                {" "}
-                <img className="md:ml-4 w-[70px] md:w-[100px]" src="/images/kcal2.png" alt="zeropic" /> 0
-                CALORIE{" "}
-              </div>
-              <div>
-                {" "}
-                <img src="/images/sugar.png" alt="zeropic" className=" w-[70px] md:w-[100px]" /> 0
-                SUGAR{" "}
-              </div>
-              <div>
-                {" "}
-                <img className="md:ml-2 w-[70px] md:w-[100px]" src="/images/lowsalt.png" alt="zeropic" /> 0
-                SODIUM{" "}
-              </div>
+            <div className=" relative subtitles mt-20 py-3 font-font02  text-center text-sm md:text-2xl flex justify-around ">
+              <div className="absolute top-2 left-44 w-36 h-36 md:bg-yellow-400/50 rounded-full mix-blend-multiply filter blur-3xl opacity-70 animate-blob "></div>
+              <div className="absolute top-2 right-44 w-36 h-36 md:bg-yellow-500/50 rounded-full mix-blend-multiply filter blur-3xl opacity-70 animate-blob animation-delay-2000"></div>
+              <div className="absolute top-2 w-36 h-36 bg-yellow-600/75 rounded-full mix-blend-multiply filter blur-3xl opacity-70 animate-blob animation-delay-2000"></div>
+
+                <div className=" relative">
+                  {" "}
+                  <img className="md:ml-4 w-[70px] md:w-[100px]" src="/images/kcal2.png" alt="zeropic" /> 0
+                  CALORIE{" "}
+                </div>
+                <div className=" relative">
+                  {" "}
+                  <img src="/images/sugar.png" alt="zeropic" className=" w-[70px] md:w-[100px]" /> 0
+                  SUGAR{" "}
+                </div>
+                <div className=" relative">
+                  {" "}
+                  <img className="md:ml-2 w-[70px] md:w-[100px]" src="/images/lowsalt.png" alt="zeropic" /> 0
+                  SODIUM{" "}
+                </div>
             </div>
 
             <div className="relative subtitles mt-20  px-6 py-12 mx-auto indent-4 md:indent-6 whitespace-normal text-justify text-[15px] md:text-[17px] justify-items-center grid  lg:grid-cols-3">
