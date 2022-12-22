@@ -38,7 +38,7 @@ export default function Home() {
 
                   <div className=" z-20 absolute bottom-10 right-3 md:bottom-10 md:right-10  text-center py-5 ">
 
-                    <a href="https://www.facebook.com/TActiveSteviaSyrup" class="relative inline-block text-lg group">
+                    <a target="_blank" href="https://www.facebook.com/TActiveSteviaSyrup" class="relative inline-block text-lg group">
                       <span class="relative z-10 block px-5 py-3 overflow-hidden font-medium leading-tight text-yellow-400 transition-colors duration-300 ease-out border-2 border-gray-900 rounded-lg group-hover:text-black ">
                       <span class="absolute inset-0 w-full h-full px-5 py-3 rounded-lg bg-black"></span>
                       <span class="absolute left-0 w-48 h-48 -ml-2 transition-all duration-300 origin-top-right -rotate-90 -translate-x-full translate-y-12 bg-yellow-400 group-hover:-rotate-180 ease"></span>
