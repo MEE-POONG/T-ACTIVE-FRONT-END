@@ -8,7 +8,7 @@ export default function Navbar() {
 
   const [navbar02, setnavbar02] = useState("bg-gray-700/75")
   
-  const [goBack, setGoBack] = useState("fixed hidden z-50 right-0 bottom-16")
+  const [goBack, setGoBack] = useState("fixed hidden  z-50 right-0 bottom-16")
 
   const listenScrollEvent = () => {
 
@@ -29,7 +29,7 @@ export default function Navbar() {
 
 
 <nav className={`sticky top-0 z-40 w-full py-2 px-10 backdrop-blur  flex-none transition-colors duration-500 lg:z-50 lg:border-b lg:border-slate-900/10 border-slate-50/[0.06] ${navbar02}`}> 
-<div className="container flex flex-wrap items-center justify-between mx-auto">
+<div className="container flex flex-wrap items-center justify-between  mx-auto">
 
     <Link to="Home" spy={true} smooth={true} offset={0} duration={700} className="flex items-center">
         <img src="/images/logo.png" className="h-6 mr-3 sm:h-9" alt="Flowbite Logo" />
