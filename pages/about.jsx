@@ -20,7 +20,7 @@ export default function AboutPages() {
             <div className=" mt-4 mx-5 py-5 md:grid md:grid-cols-2 ">
               <div className="my-auto ">
                 <img
-                  className="mx-auto"
+                  className="mx-auto drop-shadow-lg rounded-lg"
                   src={about.imagea1}
                   width="80%"
                   height="100%"
@@ -47,7 +47,7 @@ export default function AboutPages() {
             <div className=" mt-4 mx-5 py-5 md:grid md:grid-cols-2 ">
               <div className=" w-auto md:hidden  my-auto ">
                 <img
-                  className="mx-auto drop-shadow-lg"
+                  className="mx-auto drop-shadow-lg rounded-lg"
                   src={about.imagea2}
                   width="80%"
                   height="100%"
@@ -71,7 +71,7 @@ export default function AboutPages() {
 
               <div className=" w-0 md:w-auto  my-auto">
                 <img
-                  className="mx-auto"
+                  className="mx-auto drop-shadow-lg rounded-lg"
                   src={about.imagea2}
                   width="80%"
                   height="100%"
@@ -86,7 +86,7 @@ export default function AboutPages() {
             <div className="  mt-4 mx-5 py-5 md:grid md:grid-cols-2 ">
               <div className="my-auto ">
                 <img
-                  className="mx-auto"
+                  className="mx-auto drop-shadow-lg rounded-lg"
                   src={about.imagea3}
                   width="80%"
                   height="100%"
@@ -109,48 +109,81 @@ export default function AboutPages() {
             </div>
           </div>
 
-          <div className=" mt-20 grid gap-x-0 gap-y-0 grid-cols-2  md:grid-cols-3 w-full relative overflow-hidden bg-no-repeat bg-cover">
+          <div className="m-5">
+
+  <section className="overflow-hidden text-gray-700">
+    <div className="container px-5 py-2 mx-auto lg:pt-24 lg:px-32">
+      <div className=" grid  md:grid-cols-2 justify-items-center -m-1 md:-m-2">
+        <div className="flex flex-wrap">
+          <div className="w-1/2 p-1 md:p-2 overflow-hidden rounded-lg">
+            <img  className="block hover:scale-110 transition duration-200 ease-linear object-cover object-center w-full h-full rounded-lg" src="/images/A_16.png"/>
+          </div>
+          <div className="w-1/2 p-1 md:p-2 overflow-hidden rounded-lg">
+            <img  className="block hover:scale-110 transition duration-200 ease-linear object-cover object-center w-full h-full rounded-lg" src="/images/A_18.png"/>
+          </div>
+          <div className="w-full p-1 md:p-2 overflow-hidden rounded-lg">
+            <img  className="block hover:scale-110 transition duration-200 ease-linear object-cover object-center w-full h-full rounded-lg" src="/images/A_19.png"/>
+          </div>
+        </div>
+        <div className="flex flex-wrap ">
+          <div className="w-full p-1 md:p-2 overflow-hidden rounded-lg">
+            <img  className="block hover:scale-110 transition duration-200 ease-linear object-cover object-center w-full h-full rounded-lg" src="/images/A_17.png"/>
+          </div>
+          <div className="w-1/2 p-1 md:p-2 overflow-hidden rounded-lg">
+            <img  className="block hover:scale-110 transition duration-200 ease-linear object-cover object-center w-full h-full rounded-lg" src="/images/A_19.png"/>
+          </div>
+          <div className="w-1/2 p-1 md:p-2 overflow-hidden rounded-lg">
+            <img  className="block hover:scale-110 transition duration-200 ease-linear object-cover object-center w-full h-full rounded-lg" src="/images/img01.png"/>
+          </div>
+        </div>
+      </div>
+    </div>  
+  </section>
+
+</div>
+
+          {/* <div className=" mt-20 grid gap-x-0 gap-y-0 grid-cols-2  md:grid-cols-3 w-full relative overflow-hidden bg-no-repeat bg-cover">
             <div className=" overflow-hidden ">
               <img
                 className="aspect-square hover:scale-110 transition duration-200 ease-linear"
-                src="/images/A_16.jpg"
+                src="/images/A_16.png"
               />
             </div>
 
             <div className=" overflow-hidden ">
               <img
                 className=" aspect-square hover:scale-110 transition duration-200  ease-linear"
-                src="/images/A_18.jpg"
+                src="/images/A_18.png"
               />
             </div>
             <div className=" overflow-hidden ">
               <img
                 className=" aspect-square hover:scale-110 transition duration-200  ease-linear"
-                src="/images/A_19.jpg"
+                src="/images/A_19.png"
               />
             </div>
 
             <div className=" overflow-hidden ">
               <img
                 className=" aspect-square hover:scale-110 transition duration-200  ease-linear"
-                src="/images/A_17.jpg"
+                src="/images/A_17.png"
               />
             </div>
 
             <div className=" overflow-hidden ">
               <img
                 className=" aspect-square hover:scale-110 transition duration-200  ease-linear"
-                src="/images/A_19.jpg"
+                src="/images/A_19.png"
               />
             </div>
 
             <div className=" overflow-hidden ">
               <img
                 className=" aspect-square hover:scale-110 transition duration-200  ease-linear"
-                src="/images/img01.jpg"
+                src="/images/img01.png"
               />
             </div>
-          </div>
+          </div> */}
         </div>
       ))}
     </>
