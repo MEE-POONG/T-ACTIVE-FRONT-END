@@ -69,7 +69,7 @@ export default function Home() {
 
             <div className="subtitles mt-20  px-6 py-12 mx-auto indent-4 md:indent-6 whitespace-normal text-justify text-[15px] md:text-[17px] justify-items-center grid  lg:grid-cols-3">
               <div className="box">
-                <div className=" absolute mt-5 bg-black bg-opacity-75  m-1 font-font01  block p-6 rounded-lg shadow-lg  max-w-sm ">
+                <div className=" absolute mt-5 bg-black bg-opacity-75  m-1 font-font01  block p-6 rounded-lg shadow-lg  w-md ">
                   <h1 className="leading-tight text-center text-[18px] md:text-[22px] font-medium mb-2">
                   {" "}
                   {homee.title1}
