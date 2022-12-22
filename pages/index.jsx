@@ -56,7 +56,7 @@ export default function Home() {
             <div className=" subtitles mt-20 py-3 font-font02  text-center text-sm md:text-2xl flex justify-around ">
               <div>
                 {" "}
-                <img className="ml-4 w-[70px] md:w-[100px]" src="/images/kcal2.png" alt="zeropic" /> 0
+                <img className="md:ml-4 w-[70px] md:w-[100px]" src="/images/kcal2.png" alt="zeropic" /> 0
                 CALORIE{" "}
               </div>
               <div>
@@ -66,49 +66,74 @@ export default function Home() {
               </div>
               <div>
                 {" "}
-                <img className="ml-2 w-[70px] md:w-[100px]" src="/images/lowsalt.png" alt="zeropic" /> 0
+                <img className="md:ml-2 w-[70px] md:w-[100px]" src="/images/lowsalt.png" alt="zeropic" /> 0
                 SODIUM{" "}
               </div>
             </div>
 
-            <div className="subtitles mt-20  px-6 py-12 mx-auto indent-4 md:indent-6 whitespace-normal text-justify text-[15px] md:text-[17px] justify-items-center grid  lg:grid-cols-3">
-          
-                <div className="S mt-5 bg-black bg-opacity-75  m-1 font-font01  block p-6 rounded-lg shadow-lg  max-w-sm ">
-                  <h1 className="leading-tight text-center text-[18px] md:text-[22px] font-medium mb-2">
-                  {" "}
-                  {homee.title1}
-                </h1>
-                <span className="mb-4">{homee.subtitle1}</span>
-                <p
-                  className=" mb-4"
-                  dangerouslySetInnerHTML={{ __html: homee?.detail1 }}
-                ></p>
-              </div>
+            <div className="relative subtitles mt-20  px-6 py-12 mx-auto indent-4 md:indent-6 whitespace-normal text-justify text-[15px] md:text-[17px] justify-items-center grid  lg:grid-cols-3">
+              {/* <div className="relative  "> */}
+                {/* <div class="absolute top-0 -left-4 w-72 h-72 bg-purple-400 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-blob "></div> */}
+                {/* <div class="absolute top-0 -right-4 w-72 h-72 bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500  rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-blob animation-delay-2000"></div> */}
+                {/* <div class="absolute -bottom-32 left-20 w-72 h-72 bg-purple-300 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-blob animation-delay-4000"></div> */}
 
+
+                <div className="mt-5 relative text-white m-1 font-font01  block p-6 rounded-lg shadow-lg max-w-sm shadow-indigo-300 overflow-hidden">
+                <div class="absolute -top-6 -left-10 w-72 h-72 bg-purple-400 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-blob "></div>
+                <div class="absolute top-0 -right-10 w-72 h-72 bg-yellow-300 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-blob animation-delay-2000"></div>
+                <div class="absolute -bottom-24 -right-4 w-72 h-72 bg-purple-400 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-blob animation-delay-2000"></div>
+                <div class="absolute -bottom-24 -left-5 w-72 h-72 bg-yellow-300 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-blob animation-delay-4000"></div>
+                   <div className="relative">
+                      <h1 className=" leading-tight text-center text-[18px] md:text-[22px] font-medium mb-2">
+                      {" "}
+                      {homee.title1}
+                      </h1>
+                      <span className="mb-4">{homee.subtitle1}</span>
+                      <p
+                        className=" mb-4"
+                        dangerouslySetInnerHTML={{ __html: homee?.detail1 }}
+                      ></p>
+                    </div>     
+                </div>
+              {/* </div>  */}
               
-
-              <div className=" mt-5 m-1  bg-black bg-opacity-75 font-font01  block p-6 rounded-lg shadow-lg  max-w-sm">
-                <h1 className="  leading-tight text-center text-[18px] md:text-[22px] font-medium mb-2">
-                  {" "}
-                  {homee.title2}
-                </h1>
-                <span className=" mb-4">{homee.subtitle2}</span>
-                <p
-                  className="  mb-4"
-                  dangerouslySetInnerHTML={{ __html: homee?.detail2 }}
-                ></p>
+             
+              
+              <div className=" mt-5 m-1 relative font-font01 text-white  block p-6 rounded-lg shadow-lg shadow-indigo-300 max-w-sm overflow-hidden">
+                <div class="absolute -top-6 -left-10 w-72 h-72 bg-purple-400 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-blob "></div>
+                <div class="absolute top-0 -right-10 w-72 h-72 bg-yellow-300 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-blob animation-delay-2000"></div>
+                <div class="absolute -bottom-24 -right-4 w-72 h-72 bg-purple-400 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-blob animation-delay-2000"></div>
+                <div class="absolute -bottom-24 -left-5 w-72 h-72 bg-yellow-300 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-blob animation-delay-4000"></div>
+                  <div className="relative"> 
+                    <h1 className="  leading-tight text-center text-[18px] md:text-[22px] font-medium mb-2">
+                      {" "}
+                      {homee.title2}
+                    </h1>
+                    <span className=" mb-4">{homee.subtitle2}</span>
+                    <p
+                      className="  mb-4"
+                      dangerouslySetInnerHTML={{ __html: homee?.detail2 }}
+                    ></p>
+                </div>
               </div>
 
-              <div className=" mt-5 m-1  bg-black bg-opacity-75 font-font01   block p-6 rounded-lg shadow-lg  max-w-sm">
-                <h1 className=" leading-tight text-center text-[18px] md:text-[22px] font-medium mb-2">
-                  {" "}
-                  {homee.title3}
-                </h1>
-                <span className=" mb-4">{homee.subtitle3}</span>
-                <p
-                  className=" mb-4"
-                  dangerouslySetInnerHTML={{ __html: homee?.detail3 }}
-                ></p>
+             
+              <div className="  mt-5 m-1 relative font-font01 text-white  block p-6 rounded-lg shadow-lg shadow-indigo-300 max-w-sm overflow-hidden">
+              <div class="absolute -top-6 -left-10 w-72 h-72 bg-purple-400 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-blob "></div>
+                <div class="absolute top-0 -right-10 w-72 h-72 bg-yellow-300 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-blob animation-delay-2000"></div>
+                <div class="absolute -bottom-24 -right-4 w-72 h-72 bg-purple-400 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-blob animation-delay-2000"></div>
+                <div class="absolute -bottom-24 -left-5 w-72 h-72 bg-yellow-300 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-blob animation-delay-4000"></div>
+                  <div className="relative"> 
+                  <h1 className=" leading-tight text-center text-[18px] md:text-[22px] font-medium mb-2">
+                    {" "}
+                    {homee.title3}
+                  </h1>
+                  <span className=" mb-4">{homee.subtitle3}</span>
+                  <p
+                    className=" mb-4"
+                    dangerouslySetInnerHTML={{ __html: homee?.detail3 }}
+                  ></p>
+                  </div>
               </div>
             </div>
           </div>
