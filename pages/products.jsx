@@ -25,21 +25,19 @@ export default function ProductsPages() {
       
         </div>
 
-        <div className=" ml-48 mt-5 md:max-w-6xl relative  p-3 rounded-lg shadow-lg shadow-yellow-600/60 overflow-hidden">
-                <div className="absolute -top-6 -left-10 w-72 h-72 bg-yellow-900/50 rounded-full mix-blend-multiply filter blur-3xl opacity-70 animate-blob "></div>
-                <div className="absolute top-0 -right-10 w-72 h-72 bg-yellow-300/50 rounded-full mix-blend-multiply filter blur-3xl opacity-70 animate-blob animation-delay-2000"></div>
-                <div className="absolute -bottom-24 -right-4 w-56 h-56 bg-yellow-700/75 rounded-full mix-blend-multiply filter blur-3xl opacity-70 animate-blob animation-delay-2000"></div>
-                <div className="absolute -bottom-24 -left-5 w-60 h-60 bg-yellow-300/50 rounded-full mix-blend-multiply filter blur-3xl opacity-70 animate-blob animation-delay-4000"></div>
+        <div className=" mt-5 my-auto mx-auto relative block p-6 ">
+                <div className="absolute top-56 left-72 w-60 h-60 bg-yellow-300/50 rounded-full mix-blend-multiply filter blur-3xl opacity-70 animate-blob "></div>
+                <div className="absolute bottom-96 right-72 w-60 h-60 bg-yellow-300/50 rounded-full mix-blend-multiply filter blur-3xl opacity-70 animate-blob animation-delay-2000"></div>
+                <div className="absolute bottom-24 left-72 w-60 h-60 bg-yellow-300/50 rounded-full mix-blend-multiply filter blur-3xl opacity-70 animate-blob animation-delay-4000"></div>
               
       
       
           <div className=" font-font01  text-left ">
             {/* BOX1 */}
             <div className=" mt-10 mx-5 py-5 md:grid md:grid-cols-2 ">
-              
-              <div className="my-auto ">
+              <div className="my-auto  ">
                 <img
-                  className="mx-auto"
+                  className="mx-auto  "
                   src={products.imagep1}
                   width="80px"
                   height="100px"
@@ -72,8 +70,9 @@ export default function ProductsPages() {
                   <h4 className="py-2 font-font01 subtitles text-right text-2xl md:text-[18px] ">
                   {products.subtitle2}</h4>
                   <h4 className=" font-font01 subtitles text-right text-2xl md:text-[18px] ">{products.detail2}</h4> 
-                  {/* <hr className=" border-yellow-500 md:my-8 dark:border-yellow-600" /> */}
-                  </div>
+                  {/* <hr className=" border-yellow-500 md:my-8 dark:border-yellow-600" /> */}  
+               </div>
+               
               <div className="my-auto ">
                 <img
                   className=" mx-auto "
@@ -84,11 +83,13 @@ export default function ProductsPages() {
               </div>
               </div>
               </div>
+             
    
 
             {/* BOX3 */}
             <div className=" font-font01  text-left ">
             <div className=" mt-10 mx-5 py-5 md:grid md:grid-cols-2 ">
+              
               <div className="my-auto ">
                 <img
                   className=" mx-auto"
