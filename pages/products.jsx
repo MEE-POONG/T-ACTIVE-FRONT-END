@@ -103,7 +103,7 @@ export default function ProductsPages() {
            </div>
               
            <div className=" text-center py-10">
-          <a href="https://www.facebook.com/TActiveSteviaSyrup">  <button type="button" class="animate-charcter font-font01 font-semibold w-28 h-12 mx-5 my-5 border-4 border-yellow-300/100 rounded-xl"> BUY </button> </a>  
+          <a href="https://www.facebook.com/TActiveSteviaSyrup">  <button type="button" className="animate-charcter font-font01 font-semibold w-28 h-12 mx-5 my-5 border-4 border-yellow-300/100 rounded-xl"> BUY </button> </a>  
           </div>
 
           </div>
