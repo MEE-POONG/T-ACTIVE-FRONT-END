@@ -14,7 +14,7 @@ export default function AboutPages() {
       </h1>
 
       {AboutData?.map((about, index) => (
-        <div className="" key={index}>
+        <div className=" px-20" key={index}>
           <div className=" font-font01  text-center ">
             {/* BOX1 */}
             <div className=" mt-4 mx-5 py-5 md:grid md:grid-cols-2 ">
@@ -110,37 +110,35 @@ export default function AboutPages() {
           </div>
 
           <div className="m-5">
-
-  <section className="overflow-hidden text-gray-700">
-    <div className="container px-5 py-2 mx-auto lg:pt-24 lg:px-32">
-      <div className=" grid  md:grid-cols-2 justify-items-center -m-1 md:-m-2">
-        <div className="flex flex-wrap">
-          <div className="w-1/2 p-1 md:p-2 overflow-hidden rounded-lg">
-            <img  className="block hover:scale-110 transition duration-200 ease-linear object-cover object-center w-full h-full rounded-lg" src="/images/A_16.png"/>
+            <section className="overflow-hidden text-gray-700">
+              <div className="container px-5 py-2 mx-auto lg:pt-24 lg:px-32">
+                <div className=" grid  md:grid-cols-2 justify-items-center -m-1 md:-m-2">
+                  <div className="flex flex-wrap">
+                    <div className="w-1/2 p-1 md:p-2 overflow-hidden rounded-lg">
+                      <img  className="block hover:scale-110 transition duration-200 ease-linear object-cover object-center w-full h-full rounded-lg" src="/images/A_16.png"/>
+                    </div>
+                    <div className="w-1/2 p-1 md:p-2 overflow-hidden rounded-lg">
+                      <img  className="block hover:scale-110 transition duration-200 ease-linear object-cover object-center w-full h-full rounded-lg" src="/images/A_18.png"/>
+                    </div>
+                    <div className="w-full p-1 md:p-2 overflow-hidden rounded-lg">
+                      <img  className="block hover:scale-110 transition duration-200 ease-linear object-cover object-center w-full h-full rounded-lg" src="/images/A_19.png"/>
+                    </div>
+                  </div>
+                  <div className="flex flex-wrap ">
+                    <div className="w-full p-1 md:p-2 overflow-hidden rounded-lg">
+                      <img  className="block hover:scale-110 transition duration-200 ease-linear object-cover object-center w-full h-full rounded-lg" src="/images/A_17.png"/>
+                    </div>
+                    <div className="w-1/2 p-1 md:p-2 overflow-hidden rounded-lg">
+                      <img  className="block hover:scale-110 transition duration-200 ease-linear object-cover object-center w-full h-full rounded-lg" src="/images/A_19.png"/>
+                    </div>
+                    <div className="w-1/2 p-1 md:p-2 overflow-hidden rounded-lg">
+                      <img  className="block hover:scale-110 transition duration-200 ease-linear object-cover object-center w-full h-full rounded-lg" src="/images/img01.png"/>
+                    </div>
+                  </div>
+                </div>
+              </div>  
+            </section>
           </div>
-          <div className="w-1/2 p-1 md:p-2 overflow-hidden rounded-lg">
-            <img  className="block hover:scale-110 transition duration-200 ease-linear object-cover object-center w-full h-full rounded-lg" src="/images/A_18.png"/>
-          </div>
-          <div className="w-full p-1 md:p-2 overflow-hidden rounded-lg">
-            <img  className="block hover:scale-110 transition duration-200 ease-linear object-cover object-center w-full h-full rounded-lg" src="/images/A_19.png"/>
-          </div>
-        </div>
-        <div className="flex flex-wrap ">
-          <div className="w-full p-1 md:p-2 overflow-hidden rounded-lg">
-            <img  className="block hover:scale-110 transition duration-200 ease-linear object-cover object-center w-full h-full rounded-lg" src="/images/A_17.png"/>
-          </div>
-          <div className="w-1/2 p-1 md:p-2 overflow-hidden rounded-lg">
-            <img  className="block hover:scale-110 transition duration-200 ease-linear object-cover object-center w-full h-full rounded-lg" src="/images/A_19.png"/>
-          </div>
-          <div className="w-1/2 p-1 md:p-2 overflow-hidden rounded-lg">
-            <img  className="block hover:scale-110 transition duration-200 ease-linear object-cover object-center w-full h-full rounded-lg" src="/images/img01.png"/>
-          </div>
-        </div>
-      </div>
-    </div>  
-  </section>
-
-</div>
 
           {/* <div className=" mt-20 grid gap-x-0 gap-y-0 grid-cols-2  md:grid-cols-3 w-full relative overflow-hidden bg-no-repeat bg-cover">
             <div className=" overflow-hidden ">
