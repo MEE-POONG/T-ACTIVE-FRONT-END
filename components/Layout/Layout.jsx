@@ -10,12 +10,12 @@ export default function Layout({ children }) {
         <div className="area" >
           <ul className="circles">
             <li className=' bg-[#ffb218]'></li>
-            <li className=' bg-[#ffc342]'></li>
-            <li className=' bg-[#da9710]'></li>
-            <li className=' bg-[#ffde96]'></li>
-            <li className=' bg-[#a5780c]'></li>
+            <li className=' bg-[#fbff00]'></li>
+            <li className=' bg-[#ffad09]'></li>
+            <li className=' bg-[#fff700]'></li>
+            <li className=' bg-[#ff7301]'></li>
             <li className=' bg-[#ffdd48]'></li>
-            <li className=' bg-[#794900]'></li>
+            <li className=' bg-[#ff9a03]'></li>
             <li className=' bg-[#ffc401]'></li>
             <li className=' bg-[#ffcc00]'></li>
             <li className=' bg-[#ffbe31]'></li>
