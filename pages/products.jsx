@@ -12,12 +12,13 @@ export default function ProductsPages() {
 
   return (
     <>
-      {headproductData?.map((HeadProduct, index) => (
+    <div className=" px-20">
+       {headproductData?.map((HeadProduct, index) => (
         <div key={index}>
           <h1 className="mt-32 py-14 font-font01 animate-charcter font-semibold text-center text-5xl ">
             {HeadProduct.header}{" "}
           </h1>
-          <div className=" py-3 font-font02 subtitles grid grid-cols-6 gap-4 text-md md:text-xl ">
+          <div className=" py-3 font-font01 subtitles grid grid-cols-6 gap-4 text-md md:text-xl ">
             <div className=" mx-5 py-5 col-start-2 col-span-4">
               <div className="text-center">
                 <p>{HeadProduct.subheader}</p>
@@ -127,6 +128,8 @@ export default function ProductsPages() {
           </div>
         )
       )}
+    </div>
+     
     </>
   );
 }
