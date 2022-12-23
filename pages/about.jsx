@@ -31,11 +31,11 @@ export default function AboutPages() {
                 <h1 className="animate-charcter font-semibold text-center text-2xl md:text-4xl ">
                   {about.title1}
                 </h1>
-                <div className=" py-3 font-font02 subtitles text-center text-[24px]">
+                <div className=" py-3 font-font01 subtitles text-center text-[24px]">
                   {about.subtitle1}
                 </div>
                 <div
-                  className="md:mr-10 font-font02 subtitles indent-12 whitespace-normal text-justify text-md md:text-[20px]"
+                  className="md:mr-10 font-font01 subtitles indent-12 whitespace-normal text-justify text-md md:text-[20px]"
                   dangerouslySetInnerHTML={{ __html: about?.detail1 }}
                 />
               </div>
@@ -58,13 +58,13 @@ export default function AboutPages() {
                 <h1 className=" animate-charcter font-semibold text-center text-2xl md:text-4xl ">
                   {about.title2}
                 </h1>
-                <div className="py-3 font-font02 subtitles text-center md:text-[24px]">
+                <div className="py-3 font-font01 subtitles text-center md:text-[24px]">
                   {" "}
                   {about.subtitle2}
                 </div>
 
                 <div
-                  className=" md:ml-10 font-font02 subtitles indent-12 whitespace-normal text-justify text-md md:text-[20px]"
+                  className=" md:ml-10 font-font01 subtitles indent-12 whitespace-normal text-justify text-md md:text-[20px]"
                   dangerouslySetInnerHTML={{ __html: about?.detail2 }}
                 />
               </div>
@@ -97,12 +97,12 @@ export default function AboutPages() {
                 <h1 className="animate-charcter font-semibold text-center text-2xl md:text-4xl">
                   {about.title3}
                 </h1>
-                <div className=" py-3 font-font02 subtitles text-center text-[24px]">
+                <div className=" py-3 font-font01 subtitles text-center text-[24px]">
                   {" "}
                   {about.subtitle3}
                 </div>
                 <div
-                  className=" md:mr-10 font-font02 subtitles indent-12 whitespace-normal text-justify text-md md:text-[20px]"
+                  className=" md:mr-10 font-font01 subtitles indent-12 whitespace-normal text-justify text-md md:text-[20px]"
                   dangerouslySetInnerHTML={{ __html: about?.detail3 }}
                 />
               </div>

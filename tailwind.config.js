@@ -6,8 +6,7 @@ module.exports = {
   ],
   theme: {
     fontFamily: {
-      font01: ["Prata-Regular", "sans-serif"],
-      font02:["TiroKannada-Italic","sans-serif"],
+      font01: ["Arvo-Regular", "sans-serif"],
     },
     screens: {
       'sm': '640px',

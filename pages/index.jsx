@@ -30,7 +30,7 @@ export default function Home() {
                   src={"/images/home.png"}
                 />
                 <div className="  font-font01 font-semibold  text-center ">
-                  <div className=" z-20 absolute font-font02 bottom-32 left-5 md:bottom-32 md:left-16  subtitles text-center text-3xl">
+                  <div className=" z-20 absolute font-font01 bottom-32 left-5 md:bottom-32 md:left-16  subtitles text-center text-3xl">
                     {homee.subtitle1}
                   </div>
 
@@ -55,7 +55,7 @@ export default function Home() {
                 <div className=" z-10 w-full h-52 blur-xl bg-[#25252582] bottom-0 absolute" />
               </div>
             </div>
-            <div className=" relative subtitles mt-20 py-3 font-font02  text-center text-sm md:text-2xl flex justify-around ">
+            <div className=" relative subtitles mt-20 py-3 font-font01  text-center text-sm md:text-2xl flex justify-around ">
               <div className="absolute top-2 left-44 w-36 h-36 md:bg-yellow-400/50 rounded-full mix-blend-multiply filter blur-3xl opacity-70 animate-blob "></div>
               <div className="absolute top-2 right-44 w-36 h-36 md:bg-yellow-500/50 rounded-full mix-blend-multiply filter blur-3xl opacity-70 animate-blob animation-delay-2000"></div>
               <div className="absolute top-2 w-36 h-36 bg-yellow-600/75 rounded-full mix-blend-multiply filter blur-3xl opacity-70 animate-blob animation-delay-2000"></div>
