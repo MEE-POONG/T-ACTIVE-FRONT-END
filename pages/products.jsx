@@ -14,11 +14,11 @@ export default function ProductsPages() {
     <>
     <div className=" px-20">
        {headproductData?.map((HeadProduct, index) => (
-        <div key={index}>
-          <h1 className="mt-32 py-14 font-font01 animate-charcter font-semibold text-center text-5xl ">
+        <div key={index} className="font-font01">
+          <h1 className="animate-charcter mt-32 py-14 font-semibold text-center text-5xl ">
             {HeadProduct.header}{" "}
           </h1>
-          <div className=" py-3 font-font01 subtitles grid grid-cols-6 gap-4 text-md md:text-xl ">
+          <div className="subtitles py-3  grid grid-cols-6 gap-4 text-md md:text-xl ">
             <div className=" mx-5 py-5 col-start-2 col-span-4">
               <div className="text-center">
                 <p>{HeadProduct.subheader}</p>
@@ -43,10 +43,10 @@ export default function ProductsPages() {
             <div className=" mt-5  font-font01  text-center md:text-left md:my-auto">
               <hr className=" border-yellow-600 hidden md:block md:my-2 " />
 
-              <h1 className="animate-charcter  font-semibold md:text-[24px]">
+              <h1 className="animate-charcter  font-semibold  text-[35px] md:text-[50px]">
                 {products.title}
               </h1>
-              <h2 className="subtitles py-2 text-2xl md:text-[18px] ">
+              <h2 className="subtitles py-2  text-[20px] md:text-[25px] ">
                 {products.subtitle}
               </h2>
               <h2 className="subtitles  text-2xl md:text-[18px] ">
@@ -87,10 +87,10 @@ export default function ProductsPages() {
               <div className=" mt-5  font-font01 text-center md:text-right  md:my-auto ">
                 <hr className=" border-yellow-600 hidden md:block md:my-2 " />
 
-                <h1 className="animate-charcter  md:text-[24px]">
+                <h1 className="animate-charcter text-[35px] md:text-[50px]">
                   {products.title}
                 </h1>
-                <h2 className="subtitles py-2  text-2xl md:text-[18px] ">
+                <h2 className="subtitles py-2 text-[20px] md:text-[25px] ">
                   {products.subtitle}
                 </h2>
                 <h2 className="subtitles text-2xl md:text-[18px] ">

@@ -4,8 +4,8 @@
     position: fixed;
     top: 0;
     z-index: 1;
-    filter: blur(80px);
-    -webkit-filter: blur(80px);
+    filter: blur(40px);
+    -webkit-filter: blur(40px);
     .context {
         width: 100%;
         position: absolute;
@@ -124,13 +124,36 @@
     @keyframes animate {
         0% {
             transform: translateY(0) rotate(0deg);
+            opacity: 0;
+            border-radius: 0;
+        }
+
+        20% {
+            transform: translateY(-200px) rotate(144deg);
             opacity: 1;
+            border-radius: 50%;
+        }
+        40% {
+            transform: translateY(-400px) rotate(288deg);
+            opacity: 0;
+            border-radius: 0;
+        }
+
+        60% {
+            transform: translateY(-600px) rotate(432deg);
+            opacity: 1;
+            border-radius: 50%;
+        }
+
+        80% {
+            transform: translateY(-800px) rotate(576deg);
+            opacity: 0;
             border-radius: 0;
         }
 
         100% {
             transform: translateY(-1000px) rotate(720deg);
-            opacity: 0;
+            opacity: 1;
             border-radius: 50%;
         }
     }
