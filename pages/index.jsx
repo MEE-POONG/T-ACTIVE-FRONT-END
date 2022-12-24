@@ -87,7 +87,7 @@ export default function Home() {
                   <div className="absolute -bottom-24 -right-4 w-56 h-56 bg-yellow-700/75 rounded-full mix-blend-multiply filter blur-3xl opacity-70 animate-blob animation-delay-2000"></div>
                   <div className="absolute -bottom-24 -left-5 w-60 h-60 bg-yellow-300/50 rounded-full mix-blend-multiply filter blur-3xl opacity-70 animate-blob animation-delay-4000"></div>
                     <div className="relative">
-                      <h1 className=" leading-tight text-center text-[18px] lg:text-[22px] font-medium mb-2">
+                      <h1 className=" leading-tight text-center text-[18px] lg:text-[30px] font-medium mb-2">
                       {" "}
                       {homee.title1}
                       </h1>
@@ -105,7 +105,7 @@ export default function Home() {
                 <div className="absolute -bottom-24 -right-4 w-56 h-56 bg-yellow-700/75 rounded-full mix-blend-multiply filter blur-3xl opacity-70 animate-blob animation-delay-2000"></div>
                 <div className="absolute -bottom-24 -left-5 w-60 h-60 bg-yellow-300/50 rounded-full mix-blend-multiply filter blur-3xl opacity-70 animate-blob animation-delay-4000"></div>
                   <div className="relative"> 
-                    <h1 className="  leading-tight text-center text-[18px] md:text-[22px] font-medium mb-2">
+                    <h1 className="  leading-tight text-center text-[18px] md:text-[30px] font-medium mb-2">
                       {" "}
                       {homee.title2}
                     </h1>
@@ -124,7 +124,7 @@ export default function Home() {
                 <div className="absolute -bottom-24 -right-4 w-56 h-56 bg-yellow-700/75 rounded-full mix-blend-multiply filter blur-3xl opacity-70 animate-blob animation-delay-2000"></div>
                 <div className="absolute -bottom-24 -left-5 w-60 h-60 bg-yellow-300/50 rounded-full mix-blend-multiply filter blur-3xl opacity-70 animate-blob animation-delay-4000"></div>
                   <div className="relative"> 
-                  <h1 className=" leading-tight text-center text-[18px] md:text-[22px] font-medium mb-2">
+                  <h1 className=" leading-tight text-center text-[18px] md:text-[30px] font-medium mb-2">
                     {" "}
                     {homee.title3}
                   </h1>
