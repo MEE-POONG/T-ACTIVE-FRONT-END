@@ -4,9 +4,11 @@ import {Link} from 'react-scroll';
 export default function Navbar() {
 
   const [navbar, setNavbar] = useState(false);
+  const [click, setClick] = useState(false);
+  const handleClick =() => setClick(!click);
 
 
-  const [navbar02, setnavbar02] = useState("bg-[#000]")
+  const [navbar02, setnavbar02] = useState("bg-[#00000035]")
   
   const [goBack, setGoBack] = useState("fixed hidden  z-50 right-0 bottom-16")
 
@@ -28,7 +30,7 @@ export default function Navbar() {
     <>
 
 
-<nav className={`sticky top-0 z-40 w-full py-2 px-10 backdrop-blur  flex-none transition-colors duration-500 lg:z-50 lg:border-b lg:border-slate-900/10 border-slate-50/[0.06] ${navbar02}`}> 
+<nav className={`fixed top-0 z-40 w-full py-2 px-10 backdrop-blur   flex-none transition-colors duration-500 lg:z-50 lg:border-b lg:border-slate-900/10 border-slate-50/[0.06] ${navbar02}`}> 
 <div className="container flex flex-wrap items-center justify-between  mx-auto">
 
     <Link to="Home" spy={true} smooth={true} offset={0} duration={700} className="flex items-center">
@@ -44,16 +46,16 @@ export default function Navbar() {
     <div className={`w-full md:block md:w-auto ${ navbar ? "block" : "hidden" }`}  id="navbar-default">
       <ul className="flex flex-col p-2 mt-2 text-right font-font01 text-yellow-500 rounded-lg md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium md:border-0  ">
       <li>
-      <Link to="Home" spy={true} smooth={true} offset={0} duration={700} className="block py-2 pl-1 pr-1 "><button>Home</button></Link>
+      <Link to="Home" spy={true} smooth={true} offset={-100} duration={700} className="block py-2 pl-1 pr-1 navbarAT "><button >Home</button></Link>
       </li>
       <li>
-      <Link to="About" spy={true} smooth={true} offset={0} duration={700} className="block py-2 pl-1 pr-1 "><button>About</button></Link>
+      <Link to="About" spy={true} smooth={true} offset={-10} duration={700} className="block py-2 pl-1 pr-1 navbarAT"><button>About</button></Link>
       </li> 
       <li>
-      <Link to="Product" spy={true} smooth={true} offset={0} duration={700} className="block py-2 pl-1 pr-1 "><button>Product</button></Link>
+      <Link to="Product" spy={true} smooth={true} offset={-10} duration={700} className="block py-2 pl-1 pr-1 navbarAT "><button>Product</button></Link>
       </li>
       <li>
-      <Link to="Contact" spy={true} smooth={true} offset={0} duration={700} className="block py-2 pl-1 pr-1 "><button>Contact</button></Link>
+      <Link to="Contact" spy={true} smooth={true} offset={-10} duration={700} className="block py-2 pl-1 pr-1 navbarAT"><button>Contact</button></Link>
       </li>
       </ul>
     </div>

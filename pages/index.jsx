@@ -27,7 +27,7 @@ export default function Home() {
               <div className="h-screen relative">
                 <img
                   className=" z-0  object-cover bg-cover  w-full h-screen absolute top-0 block"
-                  src={"/images/home.png"}
+                  src={"/images/A_5.png"}
                 />
                 <div className="  font-font01 font-semibold  text-center ">
                   <div className=" z-20 absolute font-font01 bottom-32 left-5 md:bottom-32 md:left-16  subtitles text-center text-3xl">
@@ -38,23 +38,25 @@ export default function Home() {
                     {homee.title1}
                   </div>
 
+
                   <div className=" z-20 absolute bottom-10 right-3 md:bottom-10 md:right-10  text-center py-5 ">
 
-                    <a target="_blank" href="https://www.facebook.com/TActiveSteviaSyrup" className="relative inline-block text-lg group">
-                      <span className="relative z-10 block px-5 py-3 overflow-hidden font-medium leading-tight text-yellow-400 transition-colors duration-300 ease-out border-2 border-gray-900 rounded-lg group-hover:text-black ">
-                      <span className="absolute inset-0 w-full h-full px-5 py-3 rounded-lg bg-black"></span>
-                      <span className="absolute left-0 w-48 h-48 -ml-2 transition-all duration-300 origin-top-right -rotate-90 -translate-x-full translate-y-12 bg-yellow-400 group-hover:-rotate-180 ease"></span>
-                      <span className="relative">PRODUCT</span>
-                      </span>
-                      <span className="absolute bottom-0 right-0 w-full h-12 -mb-1 -mr-1 transition-all duration-200 ease-linear bg-yellow-400 rounded-lg group-hover:mb-0 group-hover:mr-0" data-rounded="rounded-lg"></span>
-                    </a>
+                    
+                  <a target="_blank" href="https://www.facebook.com/TActiveSteviaSyrup" class="relative inline-flex items-center justify-center p-4 px-5 py-3 overflow-hidden font-medium text-indigo-600 transition duration-300 ease-out rounded-full shadow-xl group hover:ring-1 hover:ring-black">
+                    <span class="absolute inset-0 w-full h-full bg-gradient-to-br  from-black via-yellow-500 to-yellow-600"></span>
+                    <span class="absolute bottom-0 right-0 block w-64 h-64 mb-32 mr-4 transition duration-500 origin-bottom-left transform rotate-45 translate-x-24 bg-yellow-900 rounded-full opacity-30 group-hover:rotate-90 ease"></span>
+                    <span class="relative text-black">PRODUCT</span>
+                  </a>
                   </div>
                 </div>
 
                 {/* blur */}
                 <div className=" z-10 w-full h-52 blur-xl bg-[#25252582] bottom-0 absolute" />
+
               </div>
             </div>
+
+
             <div className=" relative subtitles mt-20 py-3 font-font01  text-center text-sm md:text-2xl flex justify-around ">
               <div className="absolute top-2 left-44 w-36 h-36 md:bg-yellow-400/50 rounded-full mix-blend-multiply filter blur-3xl opacity-70 animate-blob "></div>
               <div className="absolute top-2 right-44 w-36 h-36 md:bg-yellow-500/50 rounded-full mix-blend-multiply filter blur-3xl opacity-70 animate-blob animation-delay-2000"></div>
