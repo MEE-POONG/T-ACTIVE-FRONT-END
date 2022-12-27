@@ -12,10 +12,10 @@ export default function ProductsPages() {
 
   return (
     <>
-    <div className=" px-20">
+    <div className="mt-10 py-2 px-20">
        {headproductData?.map((HeadProduct, index) => (
         <div key={index} className="font-font01">
-          <h1 className="animate-charcter mt-32 py-14 font-semibold text-center text-5xl ">
+          <h1 className="animate-charcter mt-10 py-14 font-semibold text-center text-5xl ">
             {HeadProduct.header}{" "}
           </h1>
           <div className="subtitles py-3  grid grid-cols-6 gap-4 text-md md:text-xl ">
