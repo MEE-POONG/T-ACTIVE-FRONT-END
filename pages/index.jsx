@@ -42,10 +42,10 @@ export default function Home() {
                   <div className=" z-20 absolute bottom-10 right-3 md:bottom-10 md:right-10  text-center py-5 ">
 
                     
-                  <a target="_blank" href="https://www.facebook.com/TActiveSteviaSyrup" class="relative inline-flex items-center justify-center p-4 px-5 py-3 overflow-hidden font-medium text-indigo-600 transition duration-300 ease-out rounded-full shadow-xl group hover:ring-1 hover:ring-black">
-                    <span class="absolute inset-0 w-full h-full bg-gradient-to-br  from-black via-yellow-500 to-yellow-600"></span>
-                    <span class="absolute bottom-0 right-0 block w-64 h-64 mb-32 mr-4 transition duration-500 origin-bottom-left transform rotate-45 translate-x-24 bg-yellow-900 rounded-full opacity-30 group-hover:rotate-90 ease"></span>
-                    <span class="relative text-black">PRODUCT</span>
+                  <a target="_blank" href="https://www.facebook.com/TActiveSteviaSyrup" className="relative inline-flex items-center justify-center p-4 px-5 py-3 overflow-hidden font-medium text-indigo-600 transition duration-300 ease-out rounded-full shadow-xl group hover:ring-1 hover:ring-black">
+                    <span className="absolute inset-0 w-full h-full bg-gradient-to-br  from-black via-yellow-500 to-yellow-600"></span>
+                    <span className="absolute bottom-0 right-0 block w-64 h-64 mb-32 mr-4 transition duration-500 origin-bottom-left transform rotate-45 translate-x-24 bg-yellow-900 rounded-full opacity-30 group-hover:rotate-90 ease"></span>
+                    <span className="relative text-black">PRODUCT</span>
                   </a>
                   </div>
                 </div>
@@ -87,7 +87,7 @@ export default function Home() {
                   <div className="absolute -bottom-24 -right-4 w-56 h-56 bg-yellow-700/75 rounded-full mix-blend-multiply filter blur-3xl opacity-70 animate-blob animation-delay-2000"></div>
                   <div className="absolute -bottom-24 -left-5 w-60 h-60 bg-yellow-300/50 rounded-full mix-blend-multiply filter blur-3xl opacity-70 animate-blob animation-delay-4000"></div>
                     <div className="relative">
-                      <h1 className=" leading-tight text-center text-[18px] lg:text-[30px] font-medium mb-2">
+                      <h1 className=" leading-tight text-center text-[22px] lg:text-[30px] font-medium mb-2">
                       {" "}
                       {homee.title1}
                       </h1>
@@ -105,7 +105,7 @@ export default function Home() {
                 <div className="absolute -bottom-24 -right-4 w-56 h-56 bg-yellow-700/75 rounded-full mix-blend-multiply filter blur-3xl opacity-70 animate-blob animation-delay-2000"></div>
                 <div className="absolute -bottom-24 -left-5 w-60 h-60 bg-yellow-300/50 rounded-full mix-blend-multiply filter blur-3xl opacity-70 animate-blob animation-delay-4000"></div>
                   <div className="relative"> 
-                    <h1 className="  leading-tight text-center text-[18px] md:text-[30px] font-medium mb-2">
+                    <h1 className="  leading-tight text-center text-[22px] md:text-[30px] font-medium mb-2">
                       {" "}
                       {homee.title2}
                     </h1>
@@ -124,7 +124,7 @@ export default function Home() {
                 <div className="absolute -bottom-24 -right-4 w-56 h-56 bg-yellow-700/75 rounded-full mix-blend-multiply filter blur-3xl opacity-70 animate-blob animation-delay-2000"></div>
                 <div className="absolute -bottom-24 -left-5 w-60 h-60 bg-yellow-300/50 rounded-full mix-blend-multiply filter blur-3xl opacity-70 animate-blob animation-delay-4000"></div>
                   <div className="relative"> 
-                  <h1 className=" leading-tight text-center text-[18px] md:text-[30px] font-medium mb-2">
+                  <h1 className=" leading-tight text-center text-[22px] md:text-[30px] font-medium mb-2">
                     {" "}
                     {homee.title3}
                   </h1>

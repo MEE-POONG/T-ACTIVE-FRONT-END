@@ -20,10 +20,10 @@ export default function AboutPages() {
             <div className=" mt-4 mx-5 py-5 md:grid md:grid-cols-2 ">
               <div className="my-auto ">
                 <img
-                  className="mx-auto drop-shadow-lg  rounded-lg "
+                  className="mx-auto drop-shadow-lg  rounded-lg w-[100%] md:w-[80%] h-[100%]"
                   src={about.imagea1}
-                  width="80%"
-                  height="100%"
+                  // width="80%"
+                  // height="100%"
                 />
               </div>
 
@@ -47,10 +47,10 @@ export default function AboutPages() {
             <div className=" mt-4 mx-5 py-5 md:grid md:grid-cols-2 ">
               <div className=" w-auto md:hidden  my-auto ">
                 <img
-                  className="mx-auto drop-shadow-lg rounded-lg"
+                  className="mx-auto drop-shadow-lg rounded-lg w-[100%] md:w-[80%] h-[100%]"
                   src={about.imagea2}
-                  width="80%"
-                  height="100%"
+                  // width="80%"
+                  // height="100%"
                 />
               </div>
 
@@ -86,10 +86,10 @@ export default function AboutPages() {
             <div className="  mt-4 mx-5 py-5 md:grid md:grid-cols-2 ">
               <div className="my-auto ">
                 <img
-                  className="mx-auto drop-shadow-lg rounded-lg"
+                  className="mx-auto drop-shadow-lg rounded-lg w-[100%] md:w-[80%] h-[100%]"
                   src={about.imagea3}
-                  width="80%"
-                  height="100%"
+                  // width="80%"
+                  // height="100%"
                 />
               </div>
 
@@ -109,6 +109,8 @@ export default function AboutPages() {
             </div>
           </div>
 
+          
+          {/* gallery */}
           <div className="m-5">
             <section className="overflow-hidden text-gray-700">
               <div className="container px-5 py-2 mx-auto lg:pt-24 lg:px-32">
@@ -140,48 +142,6 @@ export default function AboutPages() {
             </section>
           </div>
 
-          {/* <div className=" mt-20 grid gap-x-0 gap-y-0 grid-cols-2  md:grid-cols-3 w-full relative overflow-hidden bg-no-repeat bg-cover">
-            <div className=" overflow-hidden ">
-              <img
-                className="aspect-square hover:scale-110 transition duration-200 ease-linear"
-                src="/images/A_16.png"
-              />
-            </div>
-
-            <div className=" overflow-hidden ">
-              <img
-                className=" aspect-square hover:scale-110 transition duration-200  ease-linear"
-                src="/images/A_18.png"
-              />
-            </div>
-            <div className=" overflow-hidden ">
-              <img
-                className=" aspect-square hover:scale-110 transition duration-200  ease-linear"
-                src="/images/A_19.png"
-              />
-            </div>
-
-            <div className=" overflow-hidden ">
-              <img
-                className=" aspect-square hover:scale-110 transition duration-200  ease-linear"
-                src="/images/A_17.png"
-              />
-            </div>
-
-            <div className=" overflow-hidden ">
-              <img
-                className=" aspect-square hover:scale-110 transition duration-200  ease-linear"
-                src="/images/A_19.png"
-              />
-            </div>
-
-            <div className=" overflow-hidden ">
-              <img
-                className=" aspect-square hover:scale-110 transition duration-200  ease-linear"
-                src="/images/img01.png"
-              />
-            </div>
-          </div> */}
         </div>
       ))}
     </>
