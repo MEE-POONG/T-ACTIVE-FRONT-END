@@ -43,7 +43,7 @@ export default function ProductsPages() {
             <div className=" mt-5  font-font01  text-center md:text-left md:my-auto">
               <hr className=" border-yellow-600 hidden md:block md:my-2 " />
 
-              <h1 className="animate-charcter  font-semibold  text-[35px] md:text-[50px]">
+              <h1 className="animate-charcter  font-semibold  text-[35px] md:text-[45px]">
                 {products.title}
               </h1>
               <h2 className="subtitles py-2  text-[20px] md:text-[25px] ">
@@ -56,17 +56,14 @@ export default function ProductsPages() {
                 <a
                   target="_blank"
                   href="https://www.facebook.com/TActiveSteviaSyrup"
-                  className="relative inline-block text-lg group"
-                >
-                  <span className="relative z-10 block px-5 py-3 overflow-hidden font-medium leading-tight text-yellow-400 transition-colors duration-300 ease-out border-2 border-gray-900 rounded-lg group-hover:text-black ">
-                    <span className="absolute inset-0 w-full h-full px-5 py-3 rounded-lg bg-black"></span>
-                    <span className="absolute left-0 w-48 h-48 -ml-2 transition-all duration-300 origin-top-right -rotate-90 -translate-x-full translate-y-12 bg-yellow-400 group-hover:-rotate-180 ease"></span>
-                    <span className="relative">BUY</span>
-                  </span>
-                  <span
-                    className="absolute bottom-0 right-0 w-full h-12 -mb-1 -mr-1 transition-all duration-200 ease-linear bg-yellow-400 rounded-lg group-hover:mb-0 group-hover:mr-0"
-                    data-rounded="rounded-lg"
-                  ></span>
+                  className="relative inline-flex items-center justify-center p-4 px-5 py-3 overflow-hidden font-medium text-indigo-600 transition duration-300 ease-out rounded-full shadow-xl group hover:ring-1 hover:ring-black "
+                  data-rounded="rounded-xl"
+              >
+
+                  <span className="absolute inset-0 w-full h-full bg-gradient-to-br  from-white via-yellow-100 to-yellow-200"></span>
+                  <span className="absolute bottom-0 right-0 block w-64 h-64 mb-32 mr-4 transition duration-500 origin-bottom-left transform rotate-45 translate-x-24 bg-yellow-500 rounded-full opacity-30 group-hover:rotate-90 ease"></span>
+                  <span className="relative animate-font font-semibold">BUY NOW</span>
+              
                 </a>
               </div>
             </div>
@@ -87,7 +84,7 @@ export default function ProductsPages() {
               <div className=" mt-5  font-font01 text-center md:text-right  md:my-auto ">
                 <hr className=" border-yellow-600 hidden md:block md:my-2 " />
 
-                <h1 className="animate-charcter text-[35px] md:text-[50px]">
+                <h1 className="animate-charcter font-semibold text-[35px] md:text-[45px]">
                   {products.title}
                 </h1>
                 <h2 className="subtitles py-2 text-[20px] md:text-[25px] ">
@@ -96,21 +93,19 @@ export default function ProductsPages() {
                 <h2 className="subtitles text-2xl md:text-[18px] ">
                   {products.detail}
                 </h2>
-                <div className=" text-center py-10">
+                <div className=" text-center py-10 ">
                 <a
                   target="_blank"
                   href="https://www.facebook.com/TActiveSteviaSyrup"
-                  className="relative inline-block text-lg group"
-                >
-                  <span className="relative z-10 block px-5 py-3 overflow-hidden font-medium leading-tight text-yellow-400 transition-colors duration-300 ease-out border-2 border-gray-900 rounded-lg group-hover:text-black ">
-                    <span className="absolute inset-0 w-full h-full px-5 py-3 rounded-lg bg-black"></span>
-                    <span className="absolute left-0 w-48 h-48 -ml-2 transition-all duration-300 origin-top-right -rotate-90 -translate-x-full translate-y-12 bg-yellow-400 group-hover:-rotate-180 ease"></span>
-                    <span className="relative">BUY</span>
-                  </span>
-                  <span
-                    className="absolute bottom-0 right-0 w-full h-12 -mb-1 -mr-1 transition-all duration-200 ease-linear bg-yellow-400 rounded-lg group-hover:mb-0 group-hover:mr-0"
-                    data-rounded="rounded-lg"
-                  ></span>
+                  className="relative  inline-flex items-center justify-center p-4 px-5 py-3 overflow-hidden font-medium text-indigo-600 transition duration-300 ease-out rounded-full shadow-xl group hover:ring-1 hover:ring-black "
+                  data-rounded="rounded-xl"
+               >
+
+                    <span className=" absolute  inset-0 w-full h-full bg-gradient-to-br  from-white via-yellow-100 to-yellow-200"></span>
+                    <span className="absolute bottom-0 right-0 block w-64 h-64 mb-32 mr-4 transition duration-500 origin-bottom-left transform rotate-45 translate-x-24 bg-yellow-500 rounded-full opacity-30 group-hover:rotate-90 ease"></span>
+                    <span className="relative animate-font font-semibold">BUY NOW</span>
+                  
+                 
                 </a>
               </div>
               </div>
