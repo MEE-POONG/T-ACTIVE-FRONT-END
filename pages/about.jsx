@@ -22,8 +22,6 @@ export default function AboutPages() {
                 <img
                   className="mx-auto drop-shadow-lg  rounded-lg w-[100%] md:w-[80%] h-[100%]"
                   src={about.imagea1}
-                  // width="80%"
-                  // height="100%"
                 />
               </div>
 

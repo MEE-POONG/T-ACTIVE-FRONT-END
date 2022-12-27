@@ -79,7 +79,7 @@ export default function Home() {
                 </div>
             </div>
 
-            <div className="relative subtitles mt-20 px-10 py-12 mx-auto indent-4 md:indent-6 whitespace-normal text-justify text-[15px] md:text-[17px] justify-items-center grid  lg:grid-cols-3">
+            <div className="relative subtitles mt-20 px-10 py-12 mx-auto indent-4 md:indent-6 whitespace-normal text-justify text-[16px] md:text-[18px] justify-items-center grid  lg:grid-cols-3">
 
                 <div className="mt-5 relative text-white font-font01  block p-6 rounded-lg shadow-lg max-w-sm shadow-yellow-600/60 overflow-hidden">
                   <div className="absolute -top-6 -left-10 w-72 h-72 bg-yellow-900/50 rounded-full mix-blend-multiply filter blur-3xl opacity-70 animate-blob "></div>
