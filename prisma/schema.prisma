@@ -12,18 +12,10 @@ model About {
   createdAt  DateTime? @default(now())
   updatedAt  DateTime?
   deleted_at DateTime?
-  detail1    String?
-  detail2    String?
-  detail3    String?
-  imagea1    String?
-  imagea2    String?
-  imagea3    String?
-  subtitle1  String?
-  subtitle2  String?
-  subtitle3  String?
-  title1     String?
-  title2     String?
-  title3     String?
+  detail     String?
+  image      String?
+  subtitle   String?
+  title      String?
 }
 
 model Contact {
