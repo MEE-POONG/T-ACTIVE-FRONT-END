@@ -3,6 +3,7 @@ import Head from "next/head";
 import AboutPages from "./about";
 import ContactPages from "./contact";
 import ProductsPages from "./products";
+import {Link} from 'react-scroll';
 
 export default function Home() {
   const [{ data: homeTopData}, getHomeTop] = useAxios({
@@ -45,11 +46,15 @@ export default function Home() {
                   <div className=" z-20 absolute bottom-10 right-3 md:bottom-10 md:right-10  text-center py-5 ">
 
                     
-                  <a target="_blank" href={hometop.link} className="relative inline-flex items-center justify-center p-4 px-5 py-3 overflow-hidden font-medium text-indigo-600 transition duration-300 ease-out rounded-full shadow-xl group hover:ring-1 hover:ring-black">
-                    <span className="absolute inset-0 w-full h-full bg-gradient-to-br  from-black via-yellow-500 to-yellow-600"></span>
-                    <span className="absolute bottom-0 right-0 block w-64 h-64 mb-32 mr-4 transition duration-500 origin-bottom-left transform rotate-45 translate-x-24 bg-yellow-900 rounded-full opacity-30 group-hover:rotate-90 ease"></span>
-                    <span className="relative text-black">PRODUCT</span>
-                  </a>
+                  <Link
+                       to="Product" spy={true} smooth={true} offset={-10} duration={700} className="relative  inline-flex items-center justify-center p-4 px-5 py-3 overflow-hidden font-medium 
+                       text-indigo-600 transition duration-300 ease-out rounded-full shadow-xl group hover:ring-1 hover:ring-black"
+                       >
+                    <span className=" absolute  inset-0 w-full h-full bg-gradient-to-br  from-white via-yellow-100 to-yellow-200"></span>
+                    <span className="absolute bottom-0 right-0 block w-64 h-64 mb-32 mr-4 transition duration-500 origin-bottom-left transform rotate-45 translate-x-24 bg-yellow-500 rounded-full opacity-30 group-hover:rotate-90 ease"></span>
+                    <button className="relative animate-font font-semibold">Product</button>
+                  
+                    </Link>
                   </div>
                 </div>
 
@@ -105,11 +110,53 @@ export default function Home() {
                           className=" mb-4"
                           dangerouslySetInnerHTML={{ __html: homedetail?.detail }}
                         ></p>
-                      </div>     
-                  </div>
+                      </div>               
+                  </div>          
               
-            ))}
+                ))}
+
+                 
+                <div id="default-carousel" className="relative" data-carousel="static">
+                   
+                    <div className="relative h-56 overflow-hidden rounded-lg md:h-96">
+                      
+                        <div className="hidden duration-700 ease-in-out" data-carousel-item>
+                            <span className="absolute text-2xl font-semibold text-white -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 sm:text-3xl dark:text-gray-800">First Slide</span>
+                            <img src="/images/A_16.png" className="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="..."/>
+                        </div>
+                      
+                        <div className="hidden duration-700 ease-in-out" data-carousel-item>
+                            <img src="/images/A_16.png" className="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="..."/>
+                        </div>
+                    
+                        <div className="hidden duration-700 ease-in-out" data-carousel-item>
+                            <img src="/images/A_16.png" className="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="..."/>
+                        </div>
+                    </div>
+                  
+                    <div className="absolute z-30 flex space-x-3 -translate-x-1/2 bottom-5 left-1/2">
+                        <button type="button" className="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 1" data-carousel-slide-to="0"></button>
+                        <button type="button" className="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 2" data-carousel-slide-to="1"></button>
+                        <button type="button" className="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 3" data-carousel-slide-to="2"></button>
+                    </div>
+                 
+                    <button type="button" className="absolute top-0 left-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-prev>
+                        <span className="inline-flex items-center justify-center w-8 h-8 rounded-full sm:w-10 sm:h-10 bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+                            <svg aria-hidden="true" className="w-5 h-5 text-white sm:w-6 sm:h-6 dark:text-gray-800" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path></svg>
+                            <span className="sr-only">Previous</span>
+                        </span>
+                    </button>
+                    <button type="button" className="absolute top-0 right-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-next>
+                        <span className="inline-flex items-center justify-center w-8 h-8 rounded-full sm:w-10 sm:h-10 bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+                            <svg aria-hidden="true" className="w-5 h-5 text-white sm:w-6 sm:h-6 dark:text-gray-800" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+                            <span className="sr-only">Next</span>
+                        </span>
+                    </button>
+                </div>
+
+
             </div>
+            
           </div>
       </div>
 
