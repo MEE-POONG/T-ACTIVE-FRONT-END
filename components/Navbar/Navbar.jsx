@@ -8,7 +8,7 @@ export default function Navbar() {
   const handleClick =() => setClick(!click);
 
 
-  const [navbar, setnavbar] = useState("bg-[]")
+  const [navbar, setnavbar] = useState("bg-[#0b0b0b8b]")
   
   const [goBack, setGoBack] = useState("fixed hidden  z-50 right-0 bottom-16")
 
