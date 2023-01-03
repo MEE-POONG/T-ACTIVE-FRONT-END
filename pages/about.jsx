@@ -12,6 +12,9 @@ export default function AboutPages() {
       <h1 className="mt-20 py-28 font-font01 animate-charcter font-semibold text-center text-5xl ">
         ABOUT{" "}
       </h1>
+
+      <iframe  class=" mx-auto  w-3/4  rounded-lg aspect-video" src="/video/Final.mp4" type="video/mp4"> </iframe>
+
       <div className=" px-10 md:px-20">
       <div className=" font-font01  text-center ">
       {AboutData?.map((about, index) => 

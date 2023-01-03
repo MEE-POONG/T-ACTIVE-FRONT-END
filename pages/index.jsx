@@ -34,18 +34,16 @@ export default function Home() {
                   src={hometop.image}
                 />
                 <div className="  font-font01 font-semibold  text-center ">
-                  <div className=" z-20 absolute font-font01 bottom-32 left-5 md:bottom-32 md:left-16  subtitles text-center text-3xl">
+                  <div className=" z-20 absolute bottom-[11rem] inset-x-0 sm:inset-x-auto sm:bottom-32 sm:left-16  subtitles r text-3xl">
                     {hometop.name}
                   </div>
 
-                  <div className=" animate-charcter z-20 absolute bottom-16 left-5 md:bottom-16 md:left-16  text-center text-5xl ">
+                  <div className=" animate-charcter z-20 absolute bottom-[8rem] inset-x-0 sm:inset-x-auto sm:bottom-16 sm:left-16 text-5xl ">
                     {hometop.subname}
                   </div>
 
 
-                  <div className=" z-20 absolute bottom-10 right-3 md:bottom-10 md:right-10  text-center py-5 ">
-
-                    
+                  <div className=" z-20 absolute bottom-10 inset-x-0 sm:bottom-10 sm:inset-x-auto sm:right-10 py-5 ">
                   <Link
                        to="Product" spy={true} smooth={true} offset={-10} duration={700} className="relative  inline-flex items-center justify-center p-4 px-5 py-3 overflow-hidden font-medium 
                        text-indigo-600 transition duration-300 ease-out rounded-full shadow-xl group hover:ring-1 hover:ring-black"
@@ -117,6 +115,8 @@ export default function Home() {
                 
 
             </div>
+            
+            
             
           </div>
       </div>
