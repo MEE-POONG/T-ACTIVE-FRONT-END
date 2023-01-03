@@ -26,9 +26,11 @@ model Contact {
   email      String?
   facebook   String?
   line       String?
+  linkmap    String?
   createdAt  DateTime? @default(now())
   updatedAt  DateTime?
   deleted_at DateTime?
+  
 }
 
 model Homee {

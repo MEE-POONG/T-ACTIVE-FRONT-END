@@ -27,6 +27,12 @@ export default function ContactPages() {
                   <p className="py-2">E-mail : {contact.email} </p>
                   <p className="py-2">Facebook : {contact.facebook} </p>
                   <p className="py-2">Line : {contact.line} </p>
+
+                  <br />
+                  <iframe src={contact.linkmap}
+                      width="100%" height="250" allowFullScreen="" loading="lazy" referrerPolicy="no-referrer-when-downgrade" className="rounded-lg shadow-lg shadow-yellow-600/60 ">
+                  </iframe>
+
   
                   <br />  <br />  <br /> 
                 </div>
