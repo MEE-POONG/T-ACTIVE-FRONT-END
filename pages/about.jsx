@@ -27,10 +27,7 @@ export default function AboutPages() {
       </div>
     
       {videoData?.map((videopresent, index) =>(
-        <iframe key={index} height="100%" src={videopresent.linkvideo} allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen
-        className="mx-auto w-3/4 rounded-lg aspect-video">
-
-        </iframe>
+        <iframe key={index}  height="100%" className=" mx-auto lg:py-5 w-3/4  rounded-lg aspect-video" src={videopresent.linkvideo} type="video/mp4"> </iframe>
       ))}
       
       <div className="inline-flex items-center justify-center w-full">
