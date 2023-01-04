@@ -9,13 +9,23 @@ export default function AboutPages() {
 
   return (
     <>
-      <h1 className="mt-20 py-28 font-font01 animate-charcter font-semibold text-center text-5xl ">
+      <h1 className="mt-16 py-24 font-font01 animate-charcter font-semibold text-center text-5xl ">
         ABOUT{" "}
       </h1>
 
-      <iframe  class=" mx-auto  w-3/4  rounded-lg aspect-video" src="https://www.youtube.com/embed/SCX5NeImRlk" type="video/mp4"> </iframe>
-
       <div className=" px-10 md:px-20">
+
+      <div class="inline-flex items-center justify-center w-full">
+      <hr className=" w-3/4  h-1 md:my-1 items-center justify-center border-yellow-600 hidden md:block" />
+      {/* <span class="absolute px-3 font-medium font-font02 animate-charcter -translate-x-1/2 bg-gray-800 left-1/2 ">Video</span> */}
+      </div>
+    
+      <iframe  class=" mx-auto py-14  w-3/4  rounded-lg aspect-video" src="https://www.youtube.com/embed/SCX5NeImRlk" type="video/mp4"> </iframe>
+      
+      <div class="inline-flex items-center justify-center w-full">
+      <hr className="  w-3/4 h-1 md:my-1 items-center justify-center border-yellow-600  hidden md:block" />
+     
+      </div>
       <div className=" font-font01  text-center ">
       {AboutData?.map((about, index) => 
         index % 2 === 0 ? (
