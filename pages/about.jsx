@@ -21,16 +21,19 @@ export default function AboutPages() {
 
       <div className=" px-10 md:px-20">
 
-      <div class="inline-flex items-center justify-center w-full">
+      <div className="inline-flex items-center justify-center w-full">
       <hr className=" w-3/4  h-1 md:my-1 items-center justify-center border-yellow-600 hidden md:block" />
       {/* <span class="absolute px-3 font-medium font-font02 animate-charcter -translate-x-1/2 bg-gray-800 left-1/2 ">Video</span> */}
       </div>
     
       {videoData?.map((videopresent, index) =>(
-        <iframe key={index} class=" mx-auto py-14 lg:w-3/4 rounded-lg aspect-video" src={videopresent.linkvideo} type="video/mp4"> </iframe>
+        <iframe key={index} height="100%" src={videopresent.linkvideo} allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen
+        className="mx-auto w-3/4 rounded-lg aspect-video">
+
+        </iframe>
       ))}
       
-      <div class="inline-flex items-center justify-center w-full">
+      <div className="inline-flex items-center justify-center w-full">
       <hr className="  w-3/4 h-1 md:my-1 items-center justify-center border-yellow-600  hidden md:block" />
      
       </div>
