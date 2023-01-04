@@ -13,7 +13,7 @@ export default function AboutPages() {
         ABOUT{" "}
       </h1>
 
-      <iframe  class=" mx-auto  w-3/4  rounded-lg aspect-video" src="/video/Final.mp4" type="video/mp4"> </iframe>
+      <iframe  class=" mx-auto  w-3/4  rounded-lg aspect-video" src="https://www.youtube.com/embed/SCX5NeImRlk" type="video/mp4"> </iframe>
 
       <div className=" px-10 md:px-20">
       <div className=" font-font01  text-center ">
