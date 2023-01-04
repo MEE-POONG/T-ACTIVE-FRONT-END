@@ -22,9 +22,12 @@ export default function GalleryPages() {
       
         
             <Swiper 
-          slidesPerView={3}
-          spaceBetween={30}
-          slidesPerGroup={3}
+          breakpoints={{
+            320: { slidesPerView: 1,slidesPerGroup: 1 },
+            480: { slidesPerView: 1 ,slidesPerGroup: 2 },
+            768: { slidesPerView: 2 ,slidesPerGroup: 3 },
+            1024:{ slidesPerView: 3 ,slidesPerGroup: 4 },
+          }}
           loop={true}
           loopFillGroupWithBlank={true}
           pagination={{
