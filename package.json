@@ -17,11 +17,12 @@
     "eslint": "8.28.0",
     "eslint-config-next": "13.0.5",
     "next": "13.0.5",
-    "react": "18.2.0",
+    "react": "^18.2.0",
     "react-datepicker": "^4.8.0",
     "react-dom": "18.2.0",
     "react-icons": "^4.7.1",
     "react-scroll": "^1.8.9",
+    "react-swiper": "^0.1.5",
     "sass": "^1.56.1",
     "swiper": "^8.4.5"
   },

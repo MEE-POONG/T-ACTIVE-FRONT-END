@@ -18,6 +18,15 @@ model About {
   title      String?
 }
 
+model Videopresent {
+   id         String    @id @default(dbgenerated("gen_random_uuid()")) @db.Uuid
+  createdAt   DateTime? @default(now())
+  updatedAt   DateTime?
+  deleted_at  DateTime?
+  title       String?
+  videolink   String?
+}
+
 model Contact {
   id         String    @id @default(dbgenerated("gen_random_uuid()")) @db.Uuid
   title      String?
