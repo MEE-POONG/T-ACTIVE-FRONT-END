@@ -7,6 +7,12 @@ export default function AboutPages() {
     url: "/api/about",
   });
 
+  const [{data: videoData, loading: videoLoading, error: videoError}, getVideolink] =  useAxios({url : '/api/videopresent'})
+
+  if (loading || videoLoading) return <p>Loading....</p>
+  if (error || videoError) return <p>Error!!</p>
+
+
   return (
     <>
       <h1 className="mt-16 py-24 font-font01 animate-charcter font-semibold text-center text-5xl ">
@@ -20,7 +26,9 @@ export default function AboutPages() {
       {/* <span class="absolute px-3 font-medium font-font02 animate-charcter -translate-x-1/2 bg-gray-800 left-1/2 ">Video</span> */}
       </div>
     
-      <iframe  class=" mx-auto py-14  w-3/4  rounded-lg aspect-video" src="https://www.youtube.com/embed/SCX5NeImRlk" type="video/mp4"> </iframe>
+      {videoData?.map((videopresent, index) =>(
+        <iframe key={index} class=" mx-auto py-14 lg:w-3/4 rounded-lg aspect-video" src={videopresent.linkvideo} type="video/mp4"> </iframe>
+      ))}
       
       <div class="inline-flex items-center justify-center w-full">
       <hr className="  w-3/4 h-1 md:my-1 items-center justify-center border-yellow-600  hidden md:block" />
