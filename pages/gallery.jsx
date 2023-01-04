@@ -8,9 +8,10 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
+import "swiper/css/effect-coverflow";
 
 // import required modules
-import { Pagination, Navigation } from "swiper";
+import {EffectCoverflow, Pagination, Navigation } from "swiper";
 
 export default function GalleryPages() {
 
@@ -22,20 +23,28 @@ export default function GalleryPages() {
       
         
             <Swiper 
-          breakpoints={{
-            320: { slidesPerView: 1,slidesPerGroup: 1 },
-            480: { slidesPerView: 1 ,slidesPerGroup: 2 },
-            768: { slidesPerView: 2 ,slidesPerGroup: 3 },
-            1024:{ slidesPerView: 3 ,slidesPerGroup: 4 },
-          }}
-          loop={true}
-          loopFillGroupWithBlank={true}
-          pagination={{
-            clickable: true,
-          }}
-          navigation={true}
-          modules={[Pagination, Navigation]}
-          className="mySwiper"
+            breakpoints={{
+              480: { slidesPerView: 1 ,spaceBetween: 30 },
+              1024:{ slidesPerView: 3 ,spaceBetween: 30  },
+            }}
+            loop={true}
+            loopFillGroupWithBlank={true}
+            pagination={{
+              clickable: true,
+            }}
+             effect={"coverflow"}
+             slidesPerView={"auto"}
+             coverflowEffect={{
+               rotate: 50,
+               stretch: 0,
+               depth: 100,
+               modifier: 1,
+               slideShadows: true,
+             }}
+             navigation={true}
+             modules={[EffectCoverflow, Pagination,Navigation]}
+             className="mySwiper"
+
             >
 
             {galleryData?.map((gallery, index) => (
@@ -43,8 +52,6 @@ export default function GalleryPages() {
             ))}
 
             </Swiper>
-
-             
         
          
          </div>
