@@ -25,7 +25,7 @@ export default function GalleryPages() {
             <Swiper 
             breakpoints={{
               480: { slidesPerView: 1 ,spaceBetween: 30 },
-              1024:{ slidesPerView: 3 ,spaceBetween: 30  },
+              1024:{ slidesPerView: 3 ,spaceBetween: 30 },
             }}
             loop={true}
             loopFillGroupWithBlank={true}
@@ -41,7 +41,7 @@ export default function GalleryPages() {
                modifier: 1,
                slideShadows: true,
              }}
-             navigation={true}
+             navigation={true} 
              modules={[EffectCoverflow, Pagination,Navigation]}
              className="mySwiper"
 
