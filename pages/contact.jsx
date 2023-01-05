@@ -30,7 +30,8 @@ export default function ContactPages() {
 
                   <br />
                   <iframe src={contact.linkmap}
-                      width="100%" height="250" allowFullScreen="" loading="lazy" referrerPolicy="no-referrer-when-downgrade" className="rounded-lg shadow-lg shadow-yellow-600/60 ">
+                      width="100%" height="300" allowFullScreen="" loading="lazy" referrerPolicy="no-referrer-when-downgrade" 
+                      className=" mx-auto md:w-3/4 rounded-lg shadow-lg shadow-yellow-600/60 ">
                   </iframe>
 
   
