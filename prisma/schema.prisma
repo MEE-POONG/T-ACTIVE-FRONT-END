@@ -107,3 +107,10 @@ model Gallery {
   createdAt  DateTime? @default(now())
   deleted_at DateTime?
 }
+
+model Galleryabout {
+  id         String    @id @default(dbgenerated("gen_random_uuid()")) @db.Uuid
+  image      String?
+  createdAt  DateTime? @default(now())
+  deleted_at DateTime?
+}
