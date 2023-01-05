@@ -68,14 +68,54 @@ body {
 
 .navbarAT {
   :hover{
-    padding-bottom: 10px;
-    border-bottom: 5px solid #f1c519;
+    text-transform: uppercase;
+    background-clip: border-box;
+    background-size: 200% auto;
+    color: #fff4c7;
+    background-clip: text;
+    background-image: linear-gradient(
+      to right,
+      #d5c79b 0,
+      #cb9b51 22%,
+      #f6e27a 45%,
+      #f6f2c0 50%,
+      #f6e27a 55%,
+      #cb9b51 78%,
+      #f8e2c1 100%
+    );
+    text-fill-color: transparent;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: textclip 5s linear infinite;
+    display: inline-flexbox;
   }
-  :active{
+  &.active{
+    text-transform: uppercase;
+  background-clip: border-box;
+  background-size: 200% auto;
+  color: #fff4c7;
+  background-clip: text;
+  background-image: linear-gradient(
+    to right,
+    #d5c79b 0,
+    #cb9b51 22%,
+    #f6e27a 45%,
+    #f6f2c0 50%,
+    #f6e27a 55%,
+    #cb9b51 78%,
+    #f8e2c1 100%
+  );
+  text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textclip 5s linear infinite;
+  display: inline-flexbox;
+
     padding-bottom: 12px;
     border-bottom: 5px solid #f1c519;
   }
 }
+
 
 
 @keyframes rotate {

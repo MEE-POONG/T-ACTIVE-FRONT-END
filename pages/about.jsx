@@ -1,6 +1,7 @@
 import React from "react";
 import Head from "next/head";
 import useAxios from "axios-hooks";
+import GalleryAboutPages from "./galleryAbout";
 
 export default function AboutPages() {
   const [{ data: AboutData, loading, error }, getAbout] = useAxios({
@@ -14,8 +15,8 @@ export default function AboutPages() {
 
 
   return (
-    <>
-      <h1 className="mt-16 py-24 font-font01 animate-charcter font-semibold text-center text-5xl ">
+    <> 
+      <h1 className="mt-16 py-24 font-font01 animate-charcter font-semibold text-center text-5xl " >
         ABOUT{" "}
       </h1>
 
@@ -100,36 +101,7 @@ export default function AboutPages() {
       </div>
       </div>
       {/* gallery */}
-          <div className="m-5">
-            <section className="overflow-hidden text-gray-700">
-              <div className="container px-5 py-2 mx-auto lg:pt-24 lg:px-32">
-                <div className=" grid  md:grid-cols-2 justify-items-center -m-1 md:-m-2">
-                  <div className="flex flex-wrap">
-                    <div className="w-1/2 p-1 md:p-2 overflow-hidden rounded-lg">
-                      <img  className="block hover:scale-110 transition duration-200 ease-linear object-cover object-center w-full h-full rounded-lg" src="/images/A_16.png"/>
-                    </div>
-                    <div className="w-1/2 p-1 md:p-2 overflow-hidden rounded-lg">
-                      <img  className="block hover:scale-110 transition duration-200 ease-linear object-cover object-center w-full h-full rounded-lg" src="/images/A_18.png"/>
-                    </div>
-                    <div className="w-full p-1 md:p-2 overflow-hidden rounded-lg">
-                      <img  className="block hover:scale-110 transition duration-200 ease-linear object-cover object-center w-full h-full rounded-lg" src="/images/A_19.png"/>
-                    </div>
-                  </div>
-                  <div className="flex flex-wrap ">
-                    <div className="w-full p-1 md:p-2 overflow-hidden rounded-lg">
-                      <img  className="block hover:scale-110 transition duration-200 ease-linear object-cover object-center w-full h-full rounded-lg" src="/images/A_17.png"/>
-                    </div>
-                    <div className="w-1/2 p-1 md:p-2 overflow-hidden rounded-lg">
-                      <img  className="block hover:scale-110 transition duration-200 ease-linear object-cover object-center w-full h-full rounded-lg" src="/images/A_19.png"/>
-                    </div>
-                    <div className="w-1/2 p-1 md:p-2 overflow-hidden rounded-lg">
-                      <img  className="block hover:scale-110 transition duration-200 ease-linear object-cover object-center w-full h-full rounded-lg" src="/images/img01.png"/>
-                    </div>
-                  </div>
-                </div>
-              </div>  
-            </section>
-          </div>
+          <GalleryAboutPages/>
           
     </>
   );

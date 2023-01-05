@@ -125,10 +125,9 @@ export default function Home() {
       <div id="gallery" className="z-30 relative">
         <GalleryPages/>
       </div>        
-      
-
+    
       <div id="About" className="z-30 relative">
-        <AboutPages />
+        <AboutPages  />
       </div>
 
       <div id="Product" className="z-30 relative">
@@ -137,7 +136,7 @@ export default function Home() {
 
       <div id="Contact" className="z-30 relative">
         <ContactPages />
-      </div>
+      </div>    
     </>
   );
 }

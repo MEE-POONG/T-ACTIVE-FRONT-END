@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { FiAlignJustify,FiMinus,FiArrowUp } from "react-icons/fi";
-import {Link} from 'react-scroll';
+import {Link, scrollSpy} from 'react-scroll';
 export default function Navbar() {
 
   const [navbarB,setNavbarB] = useState(false);
@@ -42,7 +42,7 @@ export default function Navbar() {
 <nav className={`fixed top-0 z-40 w-full py-2 px-10 backdrop-blur  flex-none transition-all duration-500  ${navbar}`}> 
 <div className="container flex flex-wrap items-center justify-between  mx-auto">
 
-    <Link to="Home" spy={true} smooth={true} offset={0} duration={700} className="flex items-center">
+    <Link to="Home" smooth={true} offset={0} duration={700} className="flex items-center">
         <img src="/images/logo.png" className={`transition-all ${logo}  mr-3`} alt="Flowbite Logo" />
         <p className={` ${text} font-semibold  font-font01 animate-charcter`}>T-ACTIVE</p>
     </Link>
@@ -53,18 +53,18 @@ export default function Navbar() {
     </button>
 
     <div className={` w-full md:block md:w-auto ${ navbarB ? "block" : "hidden" }`}  id="navbar-default">
-      <ul className={`flex flex-col p-2 mt-2 text-right   md:flex-row md:space-x-8 md:mt-0 md:${text} md:font-medium md:border-0`}>
+      <ul className={`flex flex-col text-[#ffdb80]  cursor-pointer uppercase  p-2 mt-2 text-right md:flex-row md:space-x-8 md:mt-0 md:${text} md:font-medium md:border-0`}>
       <li>
-      <Link to="Home" spy={true} smooth={true} offset={-100} duration={700} className="font-font01 subtitles font-semibold  block py-2 pl-1 pr-1 navbarAT "><button >Home</button></Link>
+      <Link to="Home" spy={true} smooth={true} offset={0} duration={700}  className="font-font01 navbarAT font-semibold block py-2 pl-1 pr-1"> <span>Home</span></Link>
       </li>
       <li>
-      <Link to="About" spy={true} smooth={true} offset={-10} duration={700} className="font-font01 subtitles font-semibold block py-2 pl-1 pr-1 navbarAT"><button>About</button></Link>
+      <Link to="About" spy={true} smooth={true} offset={0} duration={700}  className="font-font01 navbarAT font-semibold block py-2 pl-1 pr-1"><span>About</span></Link>
       </li> 
       <li>
-      <Link to="Product" spy={true} smooth={true} offset={-10} duration={700} className="font-font01 subtitles font-semibold block py-2 pl-1 pr-1 navbarAT "><button>Product</button></Link>
+      <Link to="Product" spy={true} smooth={true} offset={0} duration={700}  className="font-font01 navbarAT font-semibold block py-2 pl-1 pr-1 "><span>Product</span></Link>
       </li>
       <li>
-      <Link to="Contact" spy={true} smooth={true} offset={-10} duration={700} className="font-font01 subtitles font-semibold block py-2 pl-1 pr-1 navbarAT"><button>Contact</button></Link>
+      <Link to="Contact" spy={true} smooth={true} offset={0} duration={700}  className="font-font01 navbarAT font-semibold block py-2 pl-1 pr-1"><span>Contact</span></Link>
       </li>
       </ul>
     </div>
