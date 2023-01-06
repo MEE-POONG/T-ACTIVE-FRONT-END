@@ -24,7 +24,7 @@ export default function Layout({ children }) {
       </div> */}
       
       <Navbar />
-      {/* <main>{children}</main> */}
+      <main>{children}</main>
       <div className="z-40 relative">
         <Footer />
       </div>
