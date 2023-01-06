@@ -5,7 +5,7 @@ import {Link} from 'react-scroll';
 export default function Footer() {
   return (
     <>
-      <footer className="font-font01s">
+      <footer className="font-fontEns">
         <div className="container  px-10 py-1 text-sm mx-auto  ">
 
           <hr className="my-6 border-yellow-200 md:my-8 " />

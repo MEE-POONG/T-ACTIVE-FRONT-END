@@ -6,7 +6,7 @@ module.exports = {
   ],
   theme: {
     fontFamily: {
-      font01: ["Arvo-Regular", "sans-serif"],
+      fontEn: ["Arvo-Regular", "sans-serif"],
     },
     screens: {
       'sm': '640px',

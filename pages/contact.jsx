@@ -11,7 +11,7 @@ export default function ContactPages() {
     <>
 
       {contactData?.map((contact, index) => (
-        <div className="mt-20 py-28 container justify-items-center px-6 mx-auto" key={index}>
+        <div className="mt-10 py-28 container justify-items-center px-6 mx-auto" key={index}>
         
               <div className=" mx-5 py-5 grid ">
                 <div className="items-center">
@@ -19,9 +19,9 @@ export default function ContactPages() {
                 </div>
 
                
-                  <h1 className="font-font01 animate-charcter font-semibold text-center text-5xl ">{contact.title} </h1>
+                  <h1 className="font-fontEn animate-charcter font-semibold text-center text-[33px] md:text-[45px] ">{contact.title} </h1>
         
-                  <div className=" mt-10 py-3 font-font01 subtitles text-center text-md md:text-xl ">
+                  <div className=" mt-10 py-3 font-fontEn subtitles text-center text-md md:text-xl ">
                   <p className="py-2"> Adress : {contact.address} </p>
                   <p className="py-2">Tel : {contact.tel} </p>
                   <p className="py-2">E-mail : {contact.email} </p>

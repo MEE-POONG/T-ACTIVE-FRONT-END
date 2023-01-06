@@ -14,7 +14,7 @@ export default function ProductsPages() {
     <>
     <div className="mt-10 py-2 px-20">
        {headproductData?.map((HeadProduct, index) => (
-        <div key={index} className="font-font01">
+        <div key={index} className="font-fontEn">
           <h1 className="animate-charcter mt-10 py-14 font-semibold text-center text-[30px] md:text-[45px] ">
             {HeadProduct.header}{" "}
           </h1>
@@ -40,7 +40,7 @@ export default function ProductsPages() {
               />
             </div>
 
-            <div className=" mt-5  font-font01  text-center md:text-left md:my-auto">
+            <div className=" mt-5  font-fontEn  text-center md:text-left md:my-auto">
               <hr className=" border-yellow-600 hidden md:block md:my-2 " />
 
               <h1 className="animate-charcter  font-semibold  text-[30px] md:text-[45px]">
@@ -81,7 +81,7 @@ export default function ProductsPages() {
               />
             </div>
             
-              <div className=" mt-5  font-font01 text-center md:text-right  md:my-auto ">
+              <div className=" mt-5  font-fontEn text-center md:text-right  md:my-auto ">
                 <hr className=" border-yellow-600 hidden md:block md:my-2 " />
 
                 <h1 className="animate-charcter font-semibold text-[30px] md:text-[45px]">

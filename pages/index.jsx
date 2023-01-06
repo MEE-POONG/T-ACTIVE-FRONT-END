@@ -34,7 +34,7 @@ export default function Home() {
                   className=" z-0  object-cover bg-cover  w-full h-screen absolute top-0 block"
                   src={hometop.image}
                 />
-                <div className="  font-font01 font-semibold  text-center ">
+                <div className="  font-fontEn font-semibold  text-center ">
                   <div className=" z-20 absolute bottom-[11rem] inset-x-0 sm:inset-x-auto sm:bottom-32 sm:left-16  subtitles r text-3xl">
                     {hometop.name}
                   </div>
@@ -66,7 +66,7 @@ export default function Home() {
             
 
 
-            <div className=" relative subtitles mt-20 py-3 font-font01  text-center text-sm md:text-2xl flex justify-around ">
+            <div className=" relative subtitles mt-20 py-3 font-fontEn  text-center text-sm md:text-2xl flex justify-around ">
               <div className="absolute top-2 left-44 w-36 h-36 md:bg-yellow-400/50 rounded-full mix-blend-multiply filter blur-3xl opacity-70 animate-blob "></div>
               <div className="absolute top-2 right-44 w-36 h-36 md:bg-yellow-500/50 rounded-full mix-blend-multiply filter blur-3xl opacity-70 animate-blob animation-delay-2000"></div>
               <div className="absolute top-2 w-36 h-36 bg-yellow-600/75 rounded-full mix-blend-multiply filter blur-3xl opacity-70 animate-blob animation-delay-2000"></div>
@@ -94,7 +94,7 @@ export default function Home() {
             <div className="relative subtitles mt-20 px-10 py-12 mx-auto indent-4 md:indent-6 whitespace-normal text-justify text-[16px] md:text-[18px] justify-items-center grid  lg:grid-cols-3">
             {homeDetailData?.map((homedetail,index)=>(
 
-                <div className="mt-5 relative text-white font-font01  block p-6 rounded-lg shadow-lg max-w-sm shadow-yellow-600/60 overflow-hidden" key={index}>
+                <div className="mt-5 relative text-white font-fontEn  block p-6 rounded-lg shadow-lg max-w-sm shadow-yellow-600/60 overflow-hidden" key={index}>
                     <div className="absolute -top-6 -left-10 w-72 h-72 bg-yellow-900/50 rounded-full mix-blend-multiply filter blur-3xl opacity-70 animate-blob "></div>
                     <div className="absolute top-0 -right-10 w-72 h-72 bg-yellow-300/50 rounded-full mix-blend-multiply filter blur-3xl opacity-70 animate-blob animation-delay-2000"></div>
                     <div className="absolute -bottom-24 -right-4 w-56 h-56 bg-yellow-700/75 rounded-full mix-blend-multiply filter blur-3xl opacity-70 animate-blob animation-delay-2000"></div>

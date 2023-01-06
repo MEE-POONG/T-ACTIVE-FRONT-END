@@ -44,7 +44,7 @@ export default function Navbar() {
 
     <Link to="Home" smooth={true} offset={0} duration={700} className="flex items-center">
         <img src="/images/logo.png" className={`transition-all ${logo}  mr-3`} alt="Flowbite Logo" />
-        <p className={` ${text} font-semibold  font-font01 animate-charcter`}>T-ACTIVE</p>
+        <p className={` ${text} font-semibold  font-fontEn animate-charcter`}>T-ACTIVE</p>
     </Link>
 
     <button className="inline-flex items-center p-2 ml-3 text-sm text-yellow-500  md:hidden hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-gray-600" onClick={() => setNavbarB(!navbarB)} >
@@ -55,16 +55,16 @@ export default function Navbar() {
     <div className={` w-full md:block md:w-auto ${ navbarB ? "block" : "hidden" }`}  id="navbar-default">
       <ul className={`flex flex-col text-[#ffdb80]  cursor-pointer uppercase  p-2 mt-2 text-right md:flex-row md:space-x-8 md:mt-0 md:${text} md:font-medium md:border-0`}>
       <li>
-      <Link to="Home" spy={true} smooth={true} offset={0} duration={700}  className="font-font01 navbarAT font-semibold block py-2 pl-1 pr-1"> <span>Home</span></Link>
+      <Link to="Home" spy={true} smooth={true} offset={0} duration={700}  className="font-fontEn navbarAT font-semibold block py-2 pl-1 pr-1"> <span>Home</span></Link>
       </li>
       <li>
-      <Link to="About" spy={true} smooth={true} offset={0} duration={700}  className="font-font01 navbarAT font-semibold block py-2 pl-1 pr-1"><span>About</span></Link>
+      <Link to="About" spy={true} smooth={true} offset={0} duration={700}  className="font-fontEn navbarAT font-semibold block py-2 pl-1 pr-1"><span>About</span></Link>
       </li> 
       <li>
-      <Link to="Product" spy={true} smooth={true} offset={0} duration={700}  className="font-font01 navbarAT font-semibold block py-2 pl-1 pr-1 "><span>Product</span></Link>
+      <Link to="Product" spy={true} smooth={true} offset={0} duration={700}  className="font-fontEn navbarAT font-semibold block py-2 pl-1 pr-1 "><span>Product</span></Link>
       </li>
       <li>
-      <Link to="Contact" spy={true} smooth={true} offset={0} duration={700}  className="font-font01 navbarAT font-semibold block py-2 pl-1 pr-1"><span>Contact</span></Link>
+      <Link to="Contact" spy={true} smooth={true} offset={0} duration={700}  className="font-fontEn navbarAT font-semibold block py-2 pl-1 pr-1"><span>Contact</span></Link>
       </li>
       </ul>
     </div>
