@@ -1,20 +1,9 @@
-FROM node:16-alpine AS runner
-WORKDIR /app
+FROM node:18-alpine
 
-ENV NODE_ENV production
+WORKDIR /usr/src/app
+COPY package.json ./
+RUN yarn
+RUN yarn build
+COPY . .
 
-RUN addgroup --system --gid 1001 nodejs
-RUN adduser --system --uid 1001 nextjs
-
-COPY --from=builder /app/public ./public
-
-COPY --from=builder --chown=nextjs:nodejs /app/.next/standalone ./
-COPY --from=builder --chown=nextjs:nodejs /app/.next/static ./.next/static
-
-USER nextjs
-
-EXPOSE 3000
-
-ENV PORT 3000
-
-CMD ["node", "server.js"]
+CMD ["yarn", "start"]
