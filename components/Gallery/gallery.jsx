@@ -23,27 +23,27 @@ export default function Gallery() {
       
         
             <Swiper 
-            // breakpoints={{
-            //   480: { slidesPerView: 1 ,spaceBetween: 30 },
-            //   1024:{ slidesPerView: 3 ,spaceBetween: 30 },
-            // }}
-            // loop={true}
-            // loopFillGroupWithBlank={true}
-            // pagination={{
-            //   clickable: true,
-            // }}
-            //  effect={"coverflow"}
-            //  slidesPerView={"auto"}
-            //  coverflowEffect={{
-            //    rotate: 50,
-            //    stretch: 0,
-            //    depth: 100,
-            //    modifier: 1,
-            //    slideShadows: true,
-            //  }}
+            breakpoints={{
+              480: { slidesPerView: 1 ,spaceBetween: 30 },
+              1024:{ slidesPerView: 3 ,spaceBetween: 30 },
+            }}
+            loop={true}
+            loopFillGroupWithBlank={true}
+            pagination={{
+              clickable: true,
+            }}
+             effect={"coverflow"}
+             slidesPerView={"auto"}
+             coverflowEffect={{
+               rotate: 50,
+               stretch: 0,
+               depth: 100,
+               modifier: 1,
+               slideShadows: true,
+             }}
             //  navigation={true} 
-            //  modules={[EffectCoverflow, Pagination,Navigation]}
-            //  className="mySwiper"
+             modules={[EffectCoverflow, Pagination]}
+             className="mySwiper"
 
             >
 
