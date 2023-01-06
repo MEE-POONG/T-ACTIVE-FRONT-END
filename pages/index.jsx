@@ -123,11 +123,11 @@ export default function Home() {
           </div>
       </div>
 
-      <div id="gallery" className="z-30 relative">
+      {/* <div id="gallery" className="z-30 relative">
         <Gallery/>
-      </div>        
+      </div>         */}
     
-      {/* <div id="About" className="z-30 relative">
+      <div id="About" className="z-30 relative">
         <About  />
       </div>
 
@@ -137,7 +137,7 @@ export default function Home() {
 
       <div id="Contact" className="z-30 relative">
         <Contact />
-      </div>     */}
+      </div>    
     </>
   );
 }
