@@ -19,8 +19,8 @@ export default function Products() {
             {HeadProduct.header}{" "}
           </h1>
           <div className="subtitles py-3  grid grid-cols-6 gap-4 text-md md:text-xl ">
-            <div className=" mx-5 py-5 col-start-2 col-span-4">
-              <div className="text-center">
+            <div className=" col-start-2 col-span-4">
+              <div className="text-center text-xl md:text-[22px]">
                 <p>{HeadProduct.subheader}</p>
               </div>
             </div>
@@ -49,7 +49,7 @@ export default function Products() {
               <h2 className="subtitles py-2  text-[20px] md:text-[25px] ">
                 {products.subtitle}
               </h2>
-              <h2 className="subtitles  text-2xl md:text-[18px] ">
+              <h2 className="subtitles  text-xl md:text-[22px] ">
                 {products.detail}
               </h2>
               <div className=" text-center py-10">
@@ -90,7 +90,7 @@ export default function Products() {
                 <h2 className="subtitles py-2 text-[20px] md:text-[25px] ">
                   {products.subtitle}
                 </h2>
-                <h2 className="subtitles text-2xl md:text-[18px] ">
+                <h2 className="subtitles text-xl md:text-[22px] ">
                   {products.detail}
                 </h2>
                 <div className=" text-center py-10 ">

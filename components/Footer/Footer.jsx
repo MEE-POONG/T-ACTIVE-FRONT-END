@@ -24,10 +24,21 @@ export default function Footer() {
                 placeholder="Email" 
                 type="text" 
                 name="Email"/>
-             
-                <button className=" animate-charcter text-sm w-2/4 px-6 py-2.5  font-medium tracking-wider text-yellow-500 transition duration-300 ease-in-out  transform md:w-auto md:mx-4 focus:outline-none  rounded-lg hover:bg-yellow-700 focus:ring focus:ring-yellow-300 focus:ring-opacity-80">
-                  Subscribe
-                </button>
+
+                <div className=" text-center py-10">
+                <a
+                 
+                  href="https://www.facebook.com/TActiveSteviaSyrup"
+                  className="relative inline-flex items-center justify-center p-4 px-5 py-3 overflow-hidden font-medium text-indigo-600 transition duration-300 ease-out rounded-full shadow-xl group hover:ring-1 hover:ring-black "
+                  data-rounded="rounded-xl"
+              >
+
+                  <span className="absolute inset-0 w-full h-full bg-gradient-to-br  from-white via-yellow-100 to-yellow-200"></span>
+                  <span className="absolute bottom-0 right-0 block w-64 h-64 mb-32 mr-4 transition duration-500 origin-bottom-left transform rotate-45 translate-x-24 bg-yellow-500 rounded-full opacity-30 group-hover:rotate-90 ease"></span>
+                  <span className="relative animate-font font-semibold">Subscribe</span>
+              
+                </a>
+              </div>
 
               </div>
             </div>
