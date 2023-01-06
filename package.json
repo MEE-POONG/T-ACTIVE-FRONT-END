@@ -6,7 +6,10 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "docker:build": "docker build -t chunwarayut/tactive:latest .",
+    "docker:push": "docker push chunwarayut/tactive:latest",
+    "docker:b:p": "npm run docker:build && npm run docker:push"
   },
   "dependencies": {
     "@headlessui/react": "^1.7.4",
