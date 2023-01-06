@@ -39,7 +39,7 @@ export default function AboutPages() {
       {AboutData?.map((about, index) => 
         index % 2 === 0 ? (
            
-            <div className=" mt-4 mx-5 py-5 md:grid md:grid-cols-2 ">
+            <div className=" mt-4 mx-5 py-5 md:grid md:grid-cols-2 " key={index}>
               <div className="my-auto ">
                 <img
                   className="mx-auto drop-shadow-lg  rounded-lg w-[100%] md:w-[80%] h-[100%]"
@@ -62,7 +62,7 @@ export default function AboutPages() {
             </div>
         ) : (
             
-                    <div className=" mt-4 mx-5 py-5 md:grid md:grid-cols-2 ">
+                    <div className=" mt-4 mx-5 py-5 md:grid md:grid-cols-2 " key={index}>
                       <div className="  w-auto my-auto block md:hidden  ">
                         <img
                           className="mx-auto drop-shadow-lg rounded-lg w-[100%] md:w-[80%] h-[100%]"

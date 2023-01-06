@@ -15,7 +15,7 @@ export default function ProductsPages() {
     <div className="mt-10 py-2 px-20">
        {headproductData?.map((HeadProduct, index) => (
         <div key={index} className="font-font01">
-          <h1 className="animate-charcter mt-10 py-14 font-semibold text-center text-5xl ">
+          <h1 className="animate-charcter mt-10 py-14 font-semibold text-center text-[30px] md:text-[45px] ">
             {HeadProduct.header}{" "}
           </h1>
           <div className="subtitles py-3  grid grid-cols-6 gap-4 text-md md:text-xl ">
@@ -30,7 +30,7 @@ export default function ProductsPages() {
 
       {ProductsData?.map((products, index) =>
         index % 2 === 0 ? (
-          <div className=" mt-10 mx-5 py-5 md:grid md:grid-cols-2 ">
+          <div className=" mt-10 mx-5 py-5 md:grid md:grid-cols-2 " key={index}>
             <div className="my-auto">
               <img
                 className=" mx-auto "
@@ -43,7 +43,7 @@ export default function ProductsPages() {
             <div className=" mt-5  font-font01  text-center md:text-left md:my-auto">
               <hr className=" border-yellow-600 hidden md:block md:my-2 " />
 
-              <h1 className="animate-charcter  font-semibold  text-[35px] md:text-[45px]">
+              <h1 className="animate-charcter  font-semibold  text-[30px] md:text-[45px]">
                 {products.title}
               </h1>
               <h2 className="subtitles py-2  text-[20px] md:text-[25px] ">
@@ -71,7 +71,7 @@ export default function ProductsPages() {
             <hr className=" border-yellow-600 block md:hidden md:my-2 " />
           </div>
         ) : (
-          <div className="ml-10 mt-4 mx-5 py-5 md:grid md:grid-cols-2 ">
+          <div className="ml-10 mt-4 mx-5 py-5 md:grid md:grid-cols-2 " key={index}>
             <div className=" w-auto my-auto block md:hidden ">
               <img
                 className=" mx-auto "
@@ -84,7 +84,7 @@ export default function ProductsPages() {
               <div className=" mt-5  font-font01 text-center md:text-right  md:my-auto ">
                 <hr className=" border-yellow-600 hidden md:block md:my-2 " />
 
-                <h1 className="animate-charcter font-semibold text-[35px] md:text-[45px]">
+                <h1 className="animate-charcter font-semibold text-[30px] md:text-[45px]">
                   {products.title}
                 </h1>
                 <h2 className="subtitles py-2 text-[20px] md:text-[25px] ">

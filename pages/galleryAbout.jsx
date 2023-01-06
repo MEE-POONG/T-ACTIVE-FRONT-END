@@ -17,56 +17,56 @@ export default function GalleryAboutPages() {
               <div className="flex flex-wrap">
                 {galleryAboutData?.map((galleryAbout, index) =>
                   index === 0 ? (
-                    <div className="w-1/2 p-1 md:p-2 overflow-hidden rounded-lg">
+                    <div className="w-1/2 p-1 md:p-2 overflow-hidden rounded-lg" key={index}>
                       <img
                         className="block hover:scale-110 transition duration-200 ease-linear object-cover object-center w-full h-full rounded-lg"
                         src={galleryAbout.image}
                       />
                     </div>
-                  ) : index == 1 ? (
-                    <div className="w-1/2 p-1 md:p-2 overflow-hidden rounded-lg">
+                  ) : index === 1 ? (
+                    <div className="w-1/2 p-1 md:p-2 overflow-hidden rounded-lg" key={index}>
                       <img
                         className="block hover:scale-110 transition duration-200 ease-linear object-cover object-center w-full h-full rounded-lg"
                         src={galleryAbout.image}
                       />
                     </div>
-                  ) : index == 2 ? (
-                    <div className="w-full p-1 md:p-2 overflow-hidden rounded-lg">
+                  ) : index === 2 ? (
+                    <div className="w-full p-1 md:p-2 overflow-hidden rounded-lg" key={index}>
                       <img
                         className="block hover:scale-110 transition duration-200 ease-linear object-cover object-center w-full h-full rounded-lg"
                         src={galleryAbout.image}
                       />
                     </div>
                   ) : (
-                    <></>
+                    <div key={index} />
                   )
                 )}
               </div>
               <div className="flex flex-wrap ">
                 {galleryAboutData?.map((galleryAbout, index) =>
                   index === 3 ? (
-                    <div className="w-full p-1 md:p-2 overflow-hidden rounded-lg">
+                    <div className="w-full p-1 md:p-2 overflow-hidden rounded-lg" key={index}>
                       <img
                         className="block hover:scale-110 transition duration-200 ease-linear object-cover object-center w-full h-full rounded-lg"
                         src={galleryAbout.image}
                       />
                     </div>
-                  ) : index == 4 ? (
-                    <div className="w-1/2 p-1 md:p-2 overflow-hidden rounded-lg">
+                  ) : index === 4 ? (
+                    <div className="w-1/2 p-1 md:p-2 overflow-hidden rounded-lg" key={index}>
                       <img
                         className="block hover:scale-110 transition duration-200 ease-linear object-cover object-center w-full h-full rounded-lg"
                         src={galleryAbout.image}
                       />
                     </div>
-                  ) : index == 5 ? (
-                    <div className="w-1/2 p-1 md:p-2 overflow-hidden rounded-lg">
+                  ) : index === 5 ? (
+                    <div className="w-1/2 p-1 md:p-2 overflow-hidden rounded-lg" key={index}>
                       <img
                         className="block hover:scale-110 transition duration-200 ease-linear object-cover object-center w-full h-full rounded-lg"
                         src={galleryAbout.image}
                       />
                     </div>
                   ) : (
-                    <></>
+                    <div key={index}/>
                   )
                 )}
               </div>
