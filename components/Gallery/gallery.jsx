@@ -13,7 +13,7 @@ import "swiper/css/effect-coverflow";
 // import required modules
 import {EffectCoverflow, Pagination, Navigation } from "swiper";
 
-export default function GalleryPages() {
+export default function Gallery() {
 
   const [{ data: galleryData, loading, error }, getContact] = useAxios({ url: "/api/gallery",});
 

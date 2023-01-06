@@ -2,7 +2,7 @@ import React from "react";
 import Head from "next/head";
 import useAxios from "axios-hooks";
 
-export default function GalleryAboutPages() {
+export default function GalleryAbout() {
   const [{ data: galleryAboutData, loading, error }, getAbout] = useAxios({
     url: "/api/galleryabout",
   });

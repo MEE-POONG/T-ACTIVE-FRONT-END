@@ -2,7 +2,7 @@ import React from "react";
 import Head from "next/head";
 import useAxios from "axios-hooks";
 
-export default function ProductsPages() {
+export default function Products() {
   const [{ data: ProductsData }, getProducts] = useAxios({
     url: "/api/products",
   });

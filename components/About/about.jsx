@@ -1,9 +1,10 @@
 import React from "react";
 import Head from "next/head";
 import useAxios from "axios-hooks";
-import GalleryAboutPages from "./galleryAbout";
+import GalleryAbout from "../GalleryAbout/galleryAbout";
 
-export default function AboutPages() {
+
+export default function About() {
   const [{ data: AboutData, loading, error }, getAbout] = useAxios({
     url: "/api/about",
   });
@@ -101,7 +102,7 @@ export default function AboutPages() {
       </div>
       </div>
       {/* gallery */}
-          <GalleryAboutPages/>
+          <GalleryAbout/>
           
     </>
   );

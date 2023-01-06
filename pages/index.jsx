@@ -1,10 +1,11 @@
 import useAxios from "axios-hooks";
 import Head from "next/head";
-import AboutPages from "./about";
-import ContactPages from "./contact";
-import ProductsPages from "./products";
 import {Link} from 'react-scroll';
-import GalleryPages from "./gallery";
+import About from "../components/About/about";
+import Contact from "../components/Contact/contact";
+import Gallery from "../components/Gallery/gallery";
+import Products from "../components/Products/products";
+
 
 export default function Home() {
   const [{ data: homeTopData}, getHomeTop] = useAxios({
@@ -123,19 +124,19 @@ export default function Home() {
       </div>
 
       <div id="gallery" className="z-30 relative">
-        <GalleryPages/>
+        <Gallery/>
       </div>        
     
       <div id="About" className="z-30 relative">
-        <AboutPages  />
+        <About  />
       </div>
 
       <div id="Product" className="z-30 relative">
-        <ProductsPages />
+        <Products />
       </div>
 
       <div id="Contact" className="z-30 relative">
-        <ContactPages />
+        <Contact />
       </div>    
     </>
   );
