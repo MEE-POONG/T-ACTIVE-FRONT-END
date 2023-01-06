@@ -34,15 +34,15 @@ export default function Gallery() {
             }}
              effect={"coverflow"}
              slidesPerView={"auto"}
-             coverflowEffect={{
-               rotate: 50,
-               stretch: 0,
-               depth: 100,
-               modifier: 1,
-               slideShadows: true,
-             }}
-            //  navigation={true} 
-             modules={[EffectCoverflow, Pagination]}
+            //  coverflowEffect={{
+            //    rotate: 50,
+            //    stretch: 0,
+            //    depth: 100,
+            //    modifier: 1,
+            //    slideShadows: true,
+            //  }}
+             navigation={true} 
+             modules={[EffectCoverflow, Pagination,Navigation]}
              className="mySwiper"
 
             >
