@@ -6,7 +6,7 @@ import Navbar from '../Navbar/Navbar'
 export default function Layout({ children }) {
   return (
     <>
-      {/* <div className='bg-tem '>
+      <div className='bg-tem '>
         <div className="area" >
           <ul className="circles">
             <li className=' bg-[#ffb218]'></li>
@@ -21,7 +21,7 @@ export default function Layout({ children }) {
             <li className=' bg-[#ffbe31]'></li>
           </ul>
         </div >
-      </div> */}
+      </div>
       
       <Navbar />
       <main>{children}</main>
