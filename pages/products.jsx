@@ -54,7 +54,7 @@ export default function ProductsPages() {
               </h2>
               <div className=" text-center py-10">
                 <a
-                  target="_blank"
+                 
                   href="https://www.facebook.com/TActiveSteviaSyrup"
                   className="relative inline-flex items-center justify-center p-4 px-5 py-3 overflow-hidden font-medium text-indigo-600 transition duration-300 ease-out rounded-full shadow-xl group hover:ring-1 hover:ring-black "
                   data-rounded="rounded-xl"
@@ -95,7 +95,7 @@ export default function ProductsPages() {
                 </h2>
                 <div className=" text-center py-10 ">
                 <a
-                  target="_blank"
+                  
                   href="https://www.facebook.com/TActiveSteviaSyrup"
                   className="relative  inline-flex items-center justify-center p-4 px-5 py-3 overflow-hidden font-medium text-indigo-600 transition duration-300 ease-out rounded-full shadow-xl group hover:ring-1 hover:ring-black "
                   data-rounded="rounded-xl"
