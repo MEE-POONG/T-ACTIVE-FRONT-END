@@ -11,7 +11,7 @@ import "swiper/css/navigation";
 import "swiper/css/effect-coverflow";
 
 // import required modules
-import {EffectCoverflow, Pagination, Navigation } from "swiper";
+import {EffectCoverflow, Navigation } from "swiper";
 
 export default function Gallery() {
 
@@ -29,20 +29,8 @@ export default function Gallery() {
             }}
             loop={true}
             loopFillGroupWithBlank={true}
-            pagination={{
-              clickable: true,
-            }}
-             effect={"coverflow"}
-             slidesPerView={"auto"}
-            //  coverflowEffect={{
-            //    rotate: 50,
-            //    stretch: 0,
-            //    depth: 100,
-            //    modifier: 1,
-            //    slideShadows: true,
-            //  }}
              navigation={true} 
-             modules={[EffectCoverflow, Pagination,Navigation]}
+             modules={[EffectCoverflow,Navigation]}
              className="mySwiper"
 
             >
