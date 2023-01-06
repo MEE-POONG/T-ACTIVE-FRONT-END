@@ -47,9 +47,9 @@ export default function Gallery() {
 
             >
 
-            {galleryData?.map((gallery, index) => (
+            {/* {galleryData?.map((gallery, index) => (
             <SwiperSlide className="overflow-hidden" key={index}><img className="block hover:scale-110 transition duration-200 ease-linear object-cover rounded-lg" src={gallery.image} /></SwiperSlide>
-            ))}
+            ))} */}
 
             </Swiper>
         
