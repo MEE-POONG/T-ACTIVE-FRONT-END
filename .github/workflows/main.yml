@@ -1,0 +1,22 @@
+name: Portainer Deploy
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: portainer stack deploy
+        uses: LGinC/portainer-stack-deploy@1.0
+        with:
+          serverurl: 167.71.220.88:9000
+          username: chunwarayut
+          password: Wsce1122
+          stackname: tactive
