@@ -29,3 +29,11 @@ jobs:
       with:
         push: true
         tags: chunwarayut/tactive:latest
+        
+    - name: SSH Command
+      uses: D3rHase/ssh-command-action@v0.2.2
+      with:
+        host: ${{ secrets.SERVER_HOST }}
+        user: ${{ secrets.SERVER_USER }}
+        private_key: ${{ secrets.SSH_KEY }}
+        command: docker pull chunwarayut/tactive:latest && docker restart tactive
