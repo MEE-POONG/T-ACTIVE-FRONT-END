@@ -3,12 +3,12 @@ generator client {
 }
 
 datasource db {
-  provider = "cockroachdb"
+  provider = "mongodb"
   url      = env("DATABASE_URL")
 }
 
 model About {
-  id         String    @id @default(dbgenerated("gen_random_uuid()")) @db.Uuid
+  id         String    @id @default(auto()) @map("_id") @db.ObjectId
   createdAt  DateTime? @default(now())
   updatedAt  DateTime?
   deleted_at DateTime?
@@ -19,7 +19,7 @@ model About {
 }
 
 model Videopresent {
-  id         String    @id @default(dbgenerated("gen_random_uuid()")) @db.Uuid
+  id         String    @id @default(auto()) @map("_id") @db.ObjectId
   createdAt  DateTime? @default(now())
   updatedAt  DateTime?
   deleted_at DateTime?
@@ -28,7 +28,7 @@ model Videopresent {
 }
 
 model Contact {
-  id         String    @id @default(dbgenerated("gen_random_uuid()")) @db.Uuid
+  id         String    @id @default(auto()) @map("_id") @db.ObjectId
   title      String?
   address    String?
   tel        String?
@@ -42,7 +42,7 @@ model Contact {
 }
 
 model Homee {
-  id         String    @id @default(dbgenerated("gen_random_uuid()")) @db.Uuid
+  id         String    @id @default(auto()) @map("_id") @db.ObjectId
   title1     String?
   subtitle1  String?
   detail1    String?
@@ -61,7 +61,7 @@ model Homee {
 }
 
 model Products {
-  id         String    @id @default(dbgenerated("gen_random_uuid()")) @db.Uuid
+  id         String    @id @default(auto()) @map("_id") @db.ObjectId
   createdAt  DateTime? @default(now())
   updatedAt  DateTime?
   deleted_at DateTime?
@@ -72,7 +72,7 @@ model Products {
 }
 
 model Headproduct {
-  id         String    @id @default(dbgenerated("gen_random_uuid()")) @db.Uuid
+  id         String    @id @default(auto()) @map("_id") @db.ObjectId
   header     String?
   subheader  String?
   createdAt  DateTime? @default(now())
@@ -81,7 +81,7 @@ model Headproduct {
 }
 
 model Homedetail {
-  id         String    @id @default(dbgenerated("gen_random_uuid()")) @db.Uuid
+  id         String    @id @default(auto()) @map("_id") @db.ObjectId
   title      String?
   subtitle   String?
   detail     String?
@@ -91,7 +91,7 @@ model Homedetail {
 }
 
 model Hometop {
-  id         String    @id @default(dbgenerated("gen_random_uuid()")) @db.Uuid
+  id         String    @id @default(auto()) @map("_id") @db.ObjectId
   image      String?
   name       String?
   subname    String?
@@ -102,14 +102,14 @@ model Hometop {
 }
 
 model Gallery {
-  id         String    @id @default(dbgenerated("gen_random_uuid()")) @db.Uuid
+  id         String    @id @default(auto()) @map("_id") @db.ObjectId
   image      String?
   createdAt  DateTime? @default(now())
   deleted_at DateTime?
 }
 
 model Galleryabout {
-  id         String    @id @default(dbgenerated("gen_random_uuid()")) @db.Uuid
+  id         String    @id @default(auto()) @map("_id") @db.ObjectId
   image      String?
   createdAt  DateTime? @default(now())
   deleted_at DateTime?
