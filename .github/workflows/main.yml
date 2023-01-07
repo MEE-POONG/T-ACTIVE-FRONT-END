@@ -19,7 +19,5 @@ jobs:
         host: ${{ secrets.SERVER_HOST }}
         user: ${{ secrets.SERVER_USER }}
         private_key: ${{ secrets.SSH_KEY }}
-        command: |
-          docker pull chunwarayut/tactive:latest
-          docker restart tactive
+        command: ls
           
