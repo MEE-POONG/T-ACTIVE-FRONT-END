@@ -36,4 +36,5 @@ jobs:
         host: ${{ secrets.SERVER_HOST }}
         user: ${{ secrets.SERVER_USER }}
         private_key: ${{ secrets.SSH_KEY }}
-        command: docker pull chunwarayut/tactive:latest && docker restart tactive
+        command: docker pull chunwarayut/tactive:latest && docker stop tactive && docker rm tactive && docker run --name tactive --restart=always -d -p 6050:3000 chunwarayut/tactive 
+
