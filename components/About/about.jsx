@@ -29,7 +29,7 @@ export default function About() {
       </div>
     
       {videoData?.map((videopresent, index) =>(
-        <iframe key={index}  height="100%" className=" mx-auto lg:py-5 w-3/4  rounded-lg aspect-video" src={videopresent.linkvideo} type="video/mp4"> </iframe>
+        <iframe key={index}  height="100%" className=" mx-auto lg:py-5 w-[90%]  rounded-lg aspect-video" src={videopresent.linkvideo} type="video/mp4"> </iframe>
       ))}
       
       <div className="inline-flex items-center justify-center w-full">
