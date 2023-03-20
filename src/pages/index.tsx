@@ -1,6 +1,6 @@
 import Head from 'next/head';
 import LayOut from "@/components/LayOut";
-import Warn from '@/container/Home/Warn';
+import OurMission from '@/container/Home/OurMission';
 // import the interfaces from type.tsx
 
 
@@ -12,12 +12,12 @@ export default function HomePage() {
         <title>HOME | dxx=</title>
         <meta
           name="description"
-          content="I2AROBOT 2"
+          content="T ACTIVE"
         />
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <div className='home-page'>
-        <Warn  />
+        <OurMission  />
       </div>
     </LayOut>
   );
