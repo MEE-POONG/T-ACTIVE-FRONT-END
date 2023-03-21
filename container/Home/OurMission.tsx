@@ -1,6 +1,4 @@
-import React, { useEffect, useState } from 'react';
-import { Card, Row, Col } from 'react-bootstrap';
-import axios from 'axios';
+import React, { useEffect } from 'react';
 import AOS from 'aos';
 
 export default function OurMission() {

@@ -1,7 +1,8 @@
-import IndexNavbar from "./IndexNavbar";
+import NavigationBar from "./NavigationBar";
 import Footer from "./Footer";
 import { FaArrowUp } from "react-icons/fa";
-// import TheSlideNav from "./SlideNav";
+import SiteHeader from "./SiteHeader";
+import HeroSection from "@/container/Home/HeroSection";
 
 interface LayoutProps {
   children: React.ReactNode;
@@ -10,15 +11,15 @@ interface LayoutProps {
 export default function LayOut({ children }: LayoutProps): JSX.Element {
   return (
     <>
-      {/* <TheSlideNav /> */}
-      <div className="bg-black text-white mt-0" data-bs-spy="scroll" data-bs-target="#navScroll">
-        <IndexNavbar />
+      <main>
+        <SiteHeader />
+        <NavigationBar />
         {children}
-        <Footer />
+        {/* <Footer /> */}
         {/* <a href="#" className="btn btn-lg btn-primary btn-lg-square back-to-top">
           <FaArrowUp />
         </a> */}
-      </div>
+      </main>
     </>
   );
 }

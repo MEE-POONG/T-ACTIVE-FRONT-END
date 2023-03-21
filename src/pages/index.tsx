@@ -1,6 +1,6 @@
 import Head from 'next/head';
 import LayOut from "@/components/LayOut";
-import OurMission from '@/container/Home/OurMission';
+import HeroSection from '@/container/Home/HeroSection';
 // import the interfaces from type.tsx
 
 
@@ -17,7 +17,7 @@ export default function HomePage() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <div className='home-page'>
-        <OurMission  />
+        <HeroSection />
       </div>
     </LayOut>
   );
