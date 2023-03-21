@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import { Container, Row, Col } from 'react-bootstrap';
+import { BsClock, BsFacebook, BsGeoAlt, BsInstagram, BsTwitter } from 'react-icons/bs';
 
 const HeroSection = () => {
   return (
@@ -19,14 +20,14 @@ const HeroSection = () => {
           <Col lg={12} className="mt-auto d-flex flex-column flex-lg-row text-center">
             <div className="date-wrap">
               <h5 className="text-white">
-                <i className="custom-icon bi-clock me-2"></i>
+                <i className="custom-icon me-2"><BsClock /></i>
                 10 - 12<sup>th</sup>, Dec 2023
               </h5>
             </div>
 
             <div className="location-wrap mx-auto py-3 py-lg-0">
               <h5 className="text-white">
-                <i className="custom-icon bi-geo-alt me-2"></i>
+                <i className="custom-icon me-2"> <BsGeoAlt /></i>
                 National Center, United States
               </h5>
             </div>
@@ -37,19 +38,19 @@ const HeroSection = () => {
 
                 <li className="social-icon-item">
                   <Link href="#" className="social-icon-link">
-                    <span className="bi-facebook"></span>
+                    <BsFacebook />
                   </Link>
                 </li>
 
                 <li className="social-icon-item">
                   <Link href="#" className="social-icon-link">
-                    <span className="bi-twitter"></span>
+                    <BsTwitter />
                   </Link>
                 </li>
 
                 <li className="social-icon-item">
-                  <Link href="#" className="social-icon-link">
-                    <span className="bi-instagram"></span>
+                  <Link href="#" className="social-icon-link ">
+                    <BsInstagram />
                   </Link>
                 </li>
               </ul>

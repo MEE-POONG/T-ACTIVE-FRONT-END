@@ -793,7 +793,9 @@ strong {
 	border-radius: var(--border-radius-large);
 	color: $color_5;
 	font-size: var(--copyright-font-size);
-	display: block;
+	display: flex;
+	align-items: center;
+    justify-content: center;
 	margin-right: 10px;
 	text-align: center;
 	width: 35px;
