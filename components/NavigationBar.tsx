@@ -5,17 +5,10 @@ import { Navbar, Container, Nav, Button } from 'react-bootstrap';
 
 export default function NavigationBar(): JSX.Element {
   const { asPath } = useRouter();
-  const [checkClickPath, setCheckClickPath] = useState<string>("/");
-  useEffect(() => {
-    setCheckClickPath(asPath);
-  }, [asPath]);
 
-  const handlePath = (valPath: string): void => {
-    checkClickPath === valPath ? setCheckClickPath("") : setCheckClickPath(valPath);
-  };
   return (
     <div id="sticky-wrapper" className="sticky-wrapper" style={{ height: "83px" }}>
-      <Navbar expand="lg">
+      <Navbar expand="lg" className='fixed-top'>
         <Container>
           <Navbar.Brand href="/">Festava Live</Navbar.Brand>
           <a href="ticket.html" className="btn custom-btn d-lg-none ms-auto me-4">
@@ -27,7 +20,7 @@ export default function NavigationBar(): JSX.Element {
               <Link href="#section_1" className={asPath === "/" ? "nav-link click-scroll active" : "nav-link click-scroll"}>
                 Home
               </Link>
-              <Link href="#section_5" className={asPath === "/Product" ? "nav-link click-scroll active" : "nav-link click-scroll"}>
+              <Link href="#section_5" className={asPath === "/product" ? "nav-link click-scroll active" : "nav-link click-scroll"}>
                 Product
               </Link>
               <Link href="#section_2" className={asPath === "/" ? "nav-link click-scroll active" : "nav-link click-scroll"}>
@@ -41,8 +34,6 @@ export default function NavigationBar(): JSX.Element {
               <Link href="#section_4" className={asPath === "/" ? "nav-link click-scroll active" : "nav-link click-scroll"}>
                 Schedule
               </Link>
-
-
 
               <Link href="#section_6" className={asPath === "/" ? "nav-link click-scroll active" : "nav-link click-scroll"}>
                 Contact
