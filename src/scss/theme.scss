@@ -227,6 +227,8 @@ strong {
 	border-radius: var(--border-radius-large);
 	border-bottom: 0;
 	padding: 15px;
+	margin: auto;
+	width: max-content;
 	.nav-link {
 		border-radius: var(--border-radius-large);
 		border: 0;

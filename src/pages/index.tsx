@@ -1,6 +1,10 @@
 import Head from 'next/head';
 import LayOut from "@/components/LayOut";
 import HeroSection from '@/container/Home/HeroSection';
+import AboutSection from '@/container/Home/AboutSection';
+import ArtistsSection from '@/container/Home/ArtistsSection';
+import ScheduleSection from '@/container/Home/ScheduleSection';
+import ContactSection from '@/container/Home/ContactSection';
 // import the interfaces from type.tsx
 
 
@@ -18,6 +22,10 @@ export default function HomePage() {
       </Head>
       <div className='home-page'>
         <HeroSection />
+        <AboutSection />
+        <ArtistsSection/>
+        <ScheduleSection />
+        <ContactSection />
       </div>
     </LayOut>
   );
