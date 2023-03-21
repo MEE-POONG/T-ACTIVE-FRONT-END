@@ -5,10 +5,24 @@ import { Navbar, Container, Nav, Button } from 'react-bootstrap';
 
 export default function NavigationBar(): JSX.Element {
   const { asPath } = useRouter();
+  const [navbarTop, setNavbarTop] = useState<boolean>(false);
+  useEffect(() => {
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
 
+  const handleScroll = () => {
+    const bodyScroll = document.body.scrollTop;
+    const elementScroll = document.documentElement.scrollTop;
+    if (bodyScroll > 20 || elementScroll > 20) {
+      setNavbarTop(true);
+    } else {
+      setNavbarTop(false);
+    }
+  };
   return (
-    <div id="sticky-wrapper" className="sticky-wrapper" style={{ height: "83px" }}>
-      <Navbar expand="lg" className='fixed-top'>
+    <div id="sticky-wrapper" className="sticky-wrapper" >
+      <Navbar expand="lg" className={navbarTop ? 'fixed-top' : ''}>
         <Container>
           <Navbar.Brand href="/">Festava Live</Navbar.Brand>
           <a href="ticket.html" className="btn custom-btn d-lg-none ms-auto me-4">

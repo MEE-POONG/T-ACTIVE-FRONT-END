@@ -353,6 +353,10 @@ strong {
 .navbar {
 	background: transparent;
 	z-index: 9;
+	transition: top 0.3s;
+	&.fixed-top {
+		background-color: #000000;
+	}
 }
 .navbar-brand {
 	color: $color_5;
@@ -797,7 +801,7 @@ strong {
 	font-size: var(--copyright-font-size);
 	display: flex;
 	align-items: center;
-    justify-content: center;
+	justify-content: center;
 	margin-right: 10px;
 	text-align: center;
 	width: 35px;
