@@ -7,7 +7,7 @@ const AboutSection = () => {
         <Row>
           <Col lg={6} className="mb-4 mb-lg-0 d-flex align-items-center">
             <div className="services-info">
-              <h2 className=" mb-4">About Stevia</h2>
+              <h1 className="f-s-cookie mb-4">About Stevia</h1>
 
               <p className="">
                 Festava Live is free CSS template provided by TemplateMo website. This layout is built on Bootstrap

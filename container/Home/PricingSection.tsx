@@ -6,7 +6,7 @@ const PricingSection = () => {
       <Container>
         <Row>
           <Col lg={8} className="mx-auto">
-            <h2 className="text-center mb-4">Plans, you' love</h2>
+            <h1 className="text-center f-s-cookie mb-4">Plans, you' love</h1>
           </Col>
 
           <Col lg={6}>

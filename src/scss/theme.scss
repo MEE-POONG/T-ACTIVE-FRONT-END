@@ -408,28 +408,25 @@ strong {
 		position: relative;
 		padding-top: 15px;
 		padding-bottom: 15px;
+		&.active,
 		&:hover {
+			text-shadow: #ffdf9946 1px 0 10px, #ffdf9946 -1px 0px 10px, #ffdf9946 0px 1px 10px, #ffdf9946 0px -1px 10px;
 			color: $color_7;
+			background-size: 200% auto;
+			background-image: linear-gradient(
+				90deg,
+				#d5c79b 0,
+				#cb9b51 22%,
+				#f6e27a 45%,
+				#f6f2c0 50%,
+				#f6e27a 55%,
+				#cb9b51 78%,
+				#f8e2c1
+			);
+			-webkit-background-clip: text;
+			-webkit-text-fill-color: transparent;
+			animation: textGold 5s linear infinite;
 		}
-	}
-	.nav-link.active,
-	.nav-link:hover {
-		text-shadow: #ffdf9946 1px 0 10px, #ffdf9946 -1px 0px 10px, #ffdf9946 0px 1px 10px, #ffdf9946 0px -1px 10px;
-		color: $color_7;
-		background-size: 200% auto;
-		background-image: linear-gradient(
-			90deg,
-			#d5c79b 0,
-			#cb9b51 22%,
-			#f6e27a 45%,
-			#f6f2c0 50%,
-			#f6e27a 55%,
-			#cb9b51 78%,
-			#f8e2c1
-		);
-		-webkit-background-clip: text;
-		-webkit-text-fill-color: transparent;
-		animation: textGold 5s linear infinite;
 	}
 }
 .navbar-toggler {
@@ -660,8 +657,8 @@ strong {
 	}
 	thead {
 		th {
-			background-color: $background-color_10;
-			border-right: 1px solid #c7460a;
+			background-color: var(--primary-color);
+			border-right: 1px solid #363a3e;
 			border-bottom-color: $border-bottom-color_2;
 			&:last-child {
 				border-right-color: $border-right-color_1;
@@ -735,7 +732,7 @@ strong {
 	.link-fx-1 {
 		color: $color_3;
 		&:hover {
-			color: $color_4;
+			color: $color_7;
 		}
 	}
 }
@@ -957,7 +954,7 @@ strong {
 }
 @keyframes textGold {
 	to {
-		background-position: 200%;
+		background-position: -200%;
 	}
 }
 .btn:hover,

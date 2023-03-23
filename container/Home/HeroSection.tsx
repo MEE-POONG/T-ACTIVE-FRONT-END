@@ -10,7 +10,7 @@ const HeroSection = () => {
       <Container className="d-flex justify-content-center align-items-center">
         <Row>
           <Col className="mt-auto mb-5 text-center">
-            <h3 className='gold-active'>Festava Live Presents</h3>
+            <h3 className='gold-active f-s-cookie'>T Active Stevia</h3>
             <h1 className="gold-active mb-5">Night Live 2023</h1>
             <Link className="gold smoothscroll " href="#section_2">
               Let's begin

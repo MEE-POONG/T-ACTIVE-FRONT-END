@@ -6,7 +6,7 @@ function ScheduleSection() {
       <Container>
         <Row>
           <Col xs={12} className="text-center">
-            <h2 className="text-white mb-4">Event Schedule</h2>
+            <h1 className="text-white f-s-cookie mb-4">Event Schedule</h1>
             <div className="table-responsive">
               <Table className="schedule-table" variant="dark">
                 <thead>

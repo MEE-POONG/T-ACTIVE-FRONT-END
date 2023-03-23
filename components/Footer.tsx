@@ -10,7 +10,7 @@ const Footer: React.FC = () => {
           <Container>
             <Row>
               <Col lg={6} xs={12}>
-                <h2 className="text-dark mb-lg-0">T Active Stevia</h2>
+                <h2 className="text-dark f-s-cookie mb-lg-0">T Active Stevia</h2>
               </Col>
 
               <Col lg={6} xs={12} className="d-flex justify-content-lg-end align-items-center">

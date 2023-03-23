@@ -17,7 +17,7 @@ const ContactSection = () => {
       <Container>
         <Row>
           <Col lg={8} md={10} sm={12} className="mx-auto">
-            <h2 className="text-center mb-4">Interested? Let's talk</h2>
+            <h2 className="text-center f-s-cookie mb-4">Interested? Let's talk</h2>
 
             <Tab.Container id="nav-tab" defaultActiveKey="contact-form">
               <Nav variant="tabs" className="justify-content-center">
