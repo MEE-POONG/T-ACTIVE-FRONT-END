@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import { Container, Row, Col } from 'react-bootstrap';
+import { Container, Row, Col, Button } from 'react-bootstrap';
 import { BsClock, BsFacebook, BsGeoAlt, BsInstagram, BsTwitter } from 'react-icons/bs';
 
 const HeroSection = () => {
@@ -10,9 +10,9 @@ const HeroSection = () => {
       <Container className="d-flex justify-content-center align-items-center">
         <Row>
           <Col className="mt-auto mb-5 text-center">
-            <small>Festava Live Presents</small>
-            <h1 className="text-white mb-5">Night Live 2023</h1>
-            <Link className="btn custom-btn smoothscroll" href="#section_2">
+            <h3 className='gold-active'>Festava Live Presents</h3>
+            <h1 className="gold-active mb-5">Night Live 2023</h1>
+            <Link className="gold smoothscroll " href="#section_2">
               Let's begin
             </Link>
           </Col>

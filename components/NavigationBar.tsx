@@ -24,39 +24,39 @@ export default function NavigationBar(): JSX.Element {
     <div id="sticky-wrapper" className="sticky-wrapper" >
       <Navbar expand="lg" className={navbarTop ? 'fixed-top' : ''}>
         <Container>
-          <Navbar.Brand href="/">Festava Live</Navbar.Brand>
-          <a href="ticket.html" className="btn custom-btn d-lg-none ms-auto me-4">
+          <Navbar.Brand href="/">T Active Stevia</Navbar.Brand>
+          <a href="ticket.html" className="btn btn-custom d-lg-none ms-auto me-4">
             Buy Ticket
           </a>
           <Navbar.Toggle aria-controls="navbarNav" />
           <Navbar.Collapse id="navbarNav">
-            <Nav className="ms-auto me-lg-5 align-items-lg-center">
+            <Nav className="ms-auto me-lg-5 align-items-lg-center f-s-cookie">
               <Link href="#section_1" className={asPath === "/" ? "nav-link click-scroll active" : "nav-link click-scroll"}>
                 Home
               </Link>
               <Link href="#section_5" className={asPath === "/product" ? "nav-link click-scroll active" : "nav-link click-scroll"}>
                 Product
               </Link>
-              <Link href="#section_2" className={asPath === "/" ? "nav-link click-scroll active" : "nav-link click-scroll"}>
+              <Link href="#section_2" className={asPath === "/about" ? "nav-link click-scroll active" : "nav-link click-scroll"}>
                 About
               </Link>
 
-              <Link href="#section_3" className={asPath === "/" ? "nav-link click-scroll active" : "nav-link click-scroll"}>
+              <Link href="#section_3" className={asPath === "/artists" ? "nav-link click-scroll active" : "nav-link click-scroll"}>
                 Artists
               </Link>
 
-              <Link href="#section_4" className={asPath === "/" ? "nav-link click-scroll active" : "nav-link click-scroll"}>
+              <Link href="#section_4" className={asPath === "/schedule" ? "nav-link click-scroll active" : "nav-link click-scroll"}>
                 Schedule
               </Link>
 
-              <Link href="#section_6" className={asPath === "/" ? "nav-link click-scroll active" : "nav-link click-scroll"}>
+              <Link href="#section_6" className={asPath === "/contact" ? "nav-link click-scroll active" : "nav-link click-scroll"}>
                 Contact
               </Link>
             </Nav>
 
-            <Button href="ticket.html" className="btn custom-btn d-lg-block d-none">
+            <Link href="ticket.html" className='gold' >
               Buy Ticket
-            </Button>
+            </Link>
           </Navbar.Collapse>
         </Container>
       </Navbar>

@@ -5,7 +5,7 @@ $color_4: var(--link-hover-color);
 $color_5: var(--white-color);
 $color_6: inherit;
 $color_7: var(--gold-color);
-$color_8: var(--custom-btn-bg-color);
+$color_8: var(--gold-color);
 $font-family_1: var(--body-font-family);
 $background-color_1: var(--white-color);
 $background-color_2: currentColor;
@@ -14,7 +14,7 @@ $background-color_4: var(--dark-color);
 $background-color_5: var(--primary-color);
 $background-color_6: var(--gold-color);
 $background-color_7: #fff4c7;
-$background-color_8: rgba(248, 203, 46, 0.75);
+$background-color_8: var(--primary-color);
 $background-color_9: #242424;
 $background-color_10: var(--secondary-color);
 $border-color_1: transparent;
@@ -33,17 +33,17 @@ $border-bottom-color_2: transparent;
 }
 :root {
 	--gold-color: #e3c475;
-	--white-color: #ffffff;
-	--primary-color: #f8cb2e;
+	--white-color: #fff8ef;
+	--primary-color: #e0aa5d;
 	--secondary-color: #ee5007;
 	--section-bg-color: #f0f8ff;
-	--custom-btn-bg-color: #ee5007;
-	--custom-btn-bg-hover-color: #c01f27;
+	// --gold-color: #ee5007;
+	--btn-custom-bg-hover-color: #c01f27;
 	--dark-color: #000000;
 	--p-color: #717275;
 	--border-color: #7fffd4;
 	--link-hover-color: #b22727;
-	--body-font-family: "Outfit", sans-serif;
+	--body-font-family: "Arvo", serif;
 	--h1-font-size: 74px;
 	--h2-font-size: 46px;
 	--h3-font-size: 32px;
@@ -136,7 +136,7 @@ strong {
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 	&:hover {
-		color: $color_4;
+		color: $color_7;
 		&::before {
 			transform: translateX(17px) scaleX(0);
 			transition: transform 0.2s;
@@ -241,17 +241,17 @@ strong {
 		&:focus {
 			background: var(--gold-color);
 			box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175);
-			color: $color_3;
+			color: $color_1;
 			h5 {
-				color: $color_3;
+				color: $color_1;
 			}
 		}
 		&:hover {
 			background: var(--gold-color);
 			box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175);
-			color: $color_3;
+			color: $color_1;
 			h5 {
-				color: $color_3;
+				color: $color_1;
 			}
 		}
 	}
@@ -259,15 +259,15 @@ strong {
 		.nav-link {
 			background: var(--gold-color);
 			box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175);
-			color: $color_3;
+			color: $color_1;
 		}
 	}
 	.nav-link.active {
 		background: var(--gold-color);
 		box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175);
-		color: $color_3;
+		color: $color_1;
 		h5 {
-			color: $color_3;
+			color: $color_1;
 		}
 	}
 	h5 {
@@ -278,8 +278,8 @@ strong {
 .custom-icon {
 	color: $color_7;
 }
-.custom-btn {
-	background: var(--custom-btn-bg-color);
+.btn-custom {
+	background-color: var(--primary-color);
 	border: 2px solid transparent;
 	border-radius: var(--border-radius-large);
 	color: $color_5;
@@ -288,30 +288,40 @@ strong {
 	line-height: normal;
 	transition: all 0.3s;
 	padding: 10px 20px;
-	&:hover {
-		background: var(--custom-btn-bg-hover-color);
+	&:hover,
+	&:focus-visible {
+		background-color: $color_1;
 		color: $color_5;
 	}
 }
 .custom-border-btn {
 	background: transparent;
-	border: 2px solid var(--custom-btn-bg-color);
+	border: 2px solid var(--gold-color);
 	color: $color_8;
 	&:hover {
-		background: var(--custom-btn-bg-hover-color);
-		border-color: $border-color_1;
-		color: $color_5;
+		text-transform: uppercase;
+		background-clip: border-box;
+		background-size: 200% auto;
+		color: #fff4c7;
+		background-clip: text;
+		background-image: linear-gradient(
+			to right,
+			#462523 0,
+			#cb9b51 22%,
+			#f6e27a 45%,
+			#f6f2c0 50%,
+			#f6e27a 55%,
+			#cb9b51 78%,
+			#462523 100%
+		);
+		color: transparent;
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+		animation: textGold 5s linear infinite;
 	}
 }
 .navbar-expand-lg {
 	.navbar-nav {
-		.nav-link.custom-btn {
-			&:hover {
-				background: var(--custom-btn-bg-hover-color);
-				border-color: $border-color_1;
-				color: $color_5;
-			}
-		}
 		.nav-link {
 			border-radius: var(--border-radius-large);
 			margin: 10px;
@@ -319,7 +329,7 @@ strong {
 		}
 	}
 }
-.custom-btn-bg-white {
+.btn-custom-bg-white {
 	border-color: $border-color_2;
 	color: $color_5;
 }
@@ -352,6 +362,7 @@ strong {
 	}
 }
 .navbar {
+	padding: 0;
 	background: transparent;
 	z-index: 9;
 	transition: top 0.3s;
@@ -360,8 +371,13 @@ strong {
 	}
 }
 .navbar-brand {
+	padding: 0;
+	margin: 0;
+	font-family: "Cookie", cursive;
+	line-height: normal;
+	text-shadow: #ffae0049 1px 0 20px, #ffae0049 -1px 0px 20px, #ffae0049 0px 1px 20px, #ffae0049 0px -1px 20px;
 	color: $color_7;
-	font-size: var(--h5-font-size);
+	font-size: var(--h2-font-size);
 	font-weight: var(--font-weight-bold);
 	background-size: 200% auto;
 	background-image: linear-gradient(
@@ -379,17 +395,16 @@ strong {
 	animation: textGold 5s linear infinite;
 	&:hover {
 		color: $color_5;
-		font-size: var(--h5-font-size);
 		font-weight: var(--font-weight-bold);
 	}
 }
 .navbar-nav {
 	.nav-link {
 		display: inline-block;
-		color: $color_5;
+		color: $color_3;
 		font-size: var(--p-font-size);
-		font-weight: var(--font-weight-normal);
 		font-weight: bold;
+		font-size: 1.75rem;
 		position: relative;
 		padding-top: 15px;
 		padding-bottom: 15px;
@@ -399,6 +414,7 @@ strong {
 	}
 	.nav-link.active,
 	.nav-link:hover {
+		text-shadow: #ffdf9946 1px 0 10px, #ffdf9946 -1px 0px 10px, #ffdf9946 0px 1px 10px, #ffdf9946 0px -1px 10px;
 		color: $color_7;
 		background-size: 200% auto;
 		background-image: linear-gradient(
@@ -591,7 +607,6 @@ strong {
 }
 .artists-hover {
 	background-color: $background-color_5;
-	background-color: $background-color_8;
 	border-radius: var(--border-radius-medium);
 	backdrop-filter: blur(5px) saturate(180%);
 	-webkit-backdrop-filter: blur(5px) saturate(180%);
@@ -605,6 +620,7 @@ strong {
 	left: 0;
 	opacity: 0;
 	p {
+		color: $color_1;
 		strong {
 			color: $color_5;
 			display: inline-block;
@@ -612,9 +628,12 @@ strong {
 			margin-right: 20px;
 		}
 		a {
-			color: $color_7;
+			color: $color_5;
+			padding: 10px;
+			border-radius: 25px;
+			background-color: $color_1;
 			&:hover {
-				color: $color_5;
+				color: $color_8;
 			}
 		}
 	}
@@ -762,7 +781,7 @@ strong {
 		outline: none;
 	}
 	button[type="submit"] {
-		background: var(--custom-btn-bg-color);
+		background: var(--gold-color);
 		border: none;
 		border-radius: var(--border-radius-large);
 		color: $color_5;
@@ -771,11 +790,11 @@ strong {
 		transition: all 0.3s;
 		margin-bottom: 0;
 		&:hover {
-			background: var(--custom-btn-bg-hover-color);
+			background: var(--btn-custom-bg-hover-color);
 			border-color: $border-color_1;
 		}
 		&:focus {
-			background: var(--custom-btn-bg-hover-color);
+			background: var(--btn-custom-bg-hover-color);
 			border-color: $border-color_1;
 		}
 	}
@@ -787,7 +806,7 @@ strong {
 	padding-bottom: 30px;
 }
 .site-footer-top {
-	background-color: $background-color_10;
+	background-color: $background-color_8;
 	// background-image: url('../images/nainoa-shizuru-NcdG9mK3PBY-unsplash.jpg');
 	background-repeat: no-repeat;
 	margin-bottom: 70px;
@@ -826,7 +845,7 @@ strong {
 	vertical-align: top;
 }
 .social-icon-link {
-	background: var(--secondary-color);
+	background: var(--gold-color);
 	border-radius: var(--border-radius-large);
 	color: $color_5;
 	font-size: var(--copyright-font-size);
@@ -841,7 +860,7 @@ strong {
 	transition: background 0.2s, color 0.2s;
 	&:hover {
 		background: var(--primary-color);
-		color: $color_5;
+		color: $color_1;
 	}
 	span {
 		display: block;
@@ -914,7 +933,7 @@ strong {
 	}
 }
 @media screen and (max-width: 767px) {
-	.custom-btn {
+	.btn-custom {
 		font-size: 14px;
 		padding: 10px 20px;
 	}
@@ -940,4 +959,13 @@ strong {
 	to {
 		background-position: 200%;
 	}
+}
+.btn:hover,
+.btn:active,
+.btn:focus-visible {
+	color: unset;
+	background-color: unset;
+	border-color: unset;
+	outline: unset;
+	box-shadow: unset;
 }
