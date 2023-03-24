@@ -37,13 +37,12 @@ $border-bottom-color_2: transparent;
 	--primary-color: #e0aa5d;
 	--secondary-color: #ee5007;
 	--section-bg-color: #f0f8ff;
-	// --gold-color: #ee5007;
 	--btn-custom-bg-hover-color: #c01f27;
 	--dark-color: #000000;
 	--p-color: #717275;
 	--border-color: #7fffd4;
 	--link-hover-color: #b22727;
-	--body-font-family: 'Alkatra', cursive;
+	--body-font-family: "Alkatra", cursive;
 	--h1-font-size: 74px;
 	--h2-font-size: 46px;
 	--h3-font-size: 32px;
@@ -336,8 +335,8 @@ strong {
 	.navbar-nav {
 		.nav-link {
 			border-radius: var(--border-radius-large);
-			margin: 10px;
-			padding: 10px 20px;
+			margin: 10px 10px;
+			padding: 0;
 		}
 	}
 }
@@ -856,7 +855,7 @@ strong {
 .social-icon-link {
 	background: var(--gold-color);
 	border-radius: var(--border-radius-large);
-	color: $color_5;
+	color: $color_1;
 	font-size: var(--copyright-font-size);
 	display: flex;
 	align-items: center;
@@ -868,8 +867,8 @@ strong {
 	line-height: 36px;
 	transition: background 0.2s, color 0.2s;
 	&:hover {
+		color: $color_5;
 		background: var(--primary-color);
-		color: $color_1;
 	}
 	span {
 		display: block;
@@ -915,7 +914,7 @@ strong {
 		}
 	}
 	.hero-section {
-		padding-top: 150px;
+		padding-top: 100px;
 	}
 	.pricing-thumb {
 		padding: 35px;

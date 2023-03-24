@@ -6,9 +6,6 @@ import ArtistsSection from '@/container/Home/ArtistsSection';
 import ScheduleSection from '@/container/Home/ScheduleSection';
 import ContactSection from '@/container/Home/ContactSection';
 import PricingSection from '@/container/Home/PricingSection';
-// import the interfaces from type.tsx
-
-
 
 export default function HomePage() {
   return (

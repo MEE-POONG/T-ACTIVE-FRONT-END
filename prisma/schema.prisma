@@ -276,6 +276,7 @@ model Setting {
   tel               String
   addressOne        String
   addressTwo        String
+  addressThree        String
   subDistrict       String
   district          String
   city              String

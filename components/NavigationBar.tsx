@@ -25,10 +25,7 @@ export default function NavigationBar(): JSX.Element {
       <Navbar expand="lg" className={navbarTop ? 'fixed-top' : ''}>
         <Container>
           <Navbar.Brand href="/">T Active Stevia</Navbar.Brand>
-          <a href="ticket.html" className="btn btn-custom d-lg-none ms-auto me-4">
-            Buy Ticket
-          </a>
-          <Navbar.Toggle aria-controls="navbarNav" />
+
           <Navbar.Collapse id="navbarNav">
             <Nav className="ms-auto me-lg-5 align-items-lg-center f-s-cookie">
               <Link href="#section_1" className={asPath === "/" ? "nav-link click-scroll active" : "nav-link click-scroll"}>
@@ -53,11 +50,11 @@ export default function NavigationBar(): JSX.Element {
                 Contact
               </Link>
             </Nav>
-
-            <Link href="ticket.html" className='gold d-lg-block d-md-block d-sm-none' >
-              Buy Ticket
-            </Link>
           </Navbar.Collapse>
+          <Link href="ticket.html" className='gold d-none d-lg-inline d-md-inline m-md-2 ms-md-auto '>
+            Buy Ticket
+          </Link>
+          <Navbar.Toggle aria-controls="navbarNav" />
         </Container>
       </Navbar>
     </div>

@@ -1,35 +1,44 @@
 import Link from 'next/link';
 import { Container, Row, Col, Button } from 'react-bootstrap';
-import { BsClock, BsFacebook, BsGeoAlt, BsInstagram, BsTwitter } from 'react-icons/bs';
+import { BsClock, BsFacebook, BsGeoAlt, BsInstagram, BsLine } from 'react-icons/bs';
+import { intro, openingHours, setting } from './../../data/test';
 
 const HeroSection = () => {
+  const aboutIntro = intro.filter(item => item.pagelist === 'about');
+  const today = new Date().toLocaleDateString(); // get today's date in the format of 'yyyy-mm-dd'
+  const currentDay = openingHours.find((item) => item.day === today || item.sevenDay === new Date().toLocaleDateString('en-US', { weekday: 'long' }));
+  const addressShow = setting[0];
+
+  console.log(addressShow);
   return (
     <section className="hero-section" id="section_1">
       <div className="section-overlay"></div>
 
       <Container className="d-flex justify-content-center align-items-center">
         <Row>
-          <Col className="mt-auto mb-5 text-center">
-            <h3 className='gold-active f-s-cookie'>T Active Stevia</h3>
-            <h1 className="gold-active mb-5">Introducing Stevia</h1>
-            <h1 className="gold-active mb-5">Natural Sweetener</h1>
-            <Link className="gold smoothscroll " href="#section_2">
-              Learn About.
-            </Link>
-          </Col>
+          {aboutIntro?.map((aboutIntro) => (
+            <Col key={aboutIntro.pagelist} className="mt-auto mb-5 text-center">
 
+              <h3 className='gold-active f-s-cookie'>{aboutIntro?.title}</h3>
+              <h1 className="gold-active mb-5">{aboutIntro?.srcipOne}</h1>
+              <h1 className="gold-active mb-5">{aboutIntro?.srcipTwo}</h1>
+              <Link className="gold smoothscroll " href="#section_2">
+                {aboutIntro?.textButton}
+              </Link>
+            </Col>
+          ))}
           <Col lg={12} className="mt-auto d-flex flex-column flex-lg-row text-center">
             <div className="date-wrap">
               <h5 className="text-white">
                 <i className="custom-icon me-2"><BsClock /></i>
-                10 - 12<sup>th</sup>, Dec 2023
+                {currentDay?.opening} -   {currentDay?.closed}
               </h5>
             </div>
 
             <div className="location-wrap mx-auto py-3 py-lg-0">
               <h5 className="text-white">
                 <i className="custom-icon me-2"> <BsGeoAlt /></i>
-                National Center, United States
+                {addressShow?.addressOne + " " + addressShow?.addressTwo + " " + addressShow?.addressThree + " " + addressShow?.subDistrict + " " + addressShow?.district + " " + addressShow?.city + " " + addressShow?.postalCode}
               </h5>
             </div>
 
@@ -38,20 +47,20 @@ const HeroSection = () => {
                 <span className="text-white me-3">Share:</span>
 
                 <li className="social-icon-item">
-                  <Link href="#" className="social-icon-link">
+                  <Link href={addressShow?.facebookLink} className="social-icon-link">
                     <BsFacebook />
                   </Link>
                 </li>
 
                 <li className="social-icon-item">
-                  <Link href="#" className="social-icon-link">
-                    <BsTwitter />
+                  <Link href={addressShow?.intragarmLink} className="social-icon-link ">
+                    <BsInstagram />
                   </Link>
                 </li>
 
                 <li className="social-icon-item">
-                  <Link href="#" className="social-icon-link ">
-                    <BsInstagram />
+                  <Link href={addressShow?.lineLinK} className="social-icon-link ">
+                    <BsLine />
                   </Link>
                 </li>
               </ul>
