@@ -230,6 +230,18 @@ strong {
 	padding: 15px;
 	margin: auto;
 	width: max-content;
+	.nav-item {
+		&:first-child {
+			.nav-link {
+				margin-right: 15px;
+			}
+		}
+		&:last-child {
+			.nav-link {
+				margin: 0;
+			}
+		}
+	}
 	.nav-link {
 		border-radius: var(--border-radius-large);
 		border: 0;
@@ -253,9 +265,6 @@ strong {
 			h5 {
 				color: $color_1;
 			}
-		}
-		&:last-child {
-			margin: 0;
 		}
 	}
 	.nav-item.show {
@@ -958,7 +967,7 @@ strong {
 @media screen and (max-width: 475px) {
 	.nav-tabs .nav-link:last-child {
 		padding: 5px 10px;
-		h5{
+		h5 {
 			font-size: 16px;
 		}
 	}

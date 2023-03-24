@@ -54,7 +54,7 @@ export default function NavigationBar(): JSX.Element {
               </Link>
             </Nav>
 
-            <Link href="ticket.html" className='gold' >
+            <Link href="ticket.html" className='gold d-lg-block d-md-block d-sm-none' >
               Buy Ticket
             </Link>
           </Navbar.Collapse>
