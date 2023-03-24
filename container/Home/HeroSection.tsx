@@ -11,9 +11,10 @@ const HeroSection = () => {
         <Row>
           <Col className="mt-auto mb-5 text-center">
             <h3 className='gold-active f-s-cookie'>T Active Stevia</h3>
-            <h1 className="gold-active mb-5">Night Live 2023</h1>
+            <h1 className="gold-active mb-5">Introducing Stevia</h1>
+            <h1 className="gold-active mb-5">Natural Sweetener</h1>
             <Link className="gold smoothscroll " href="#section_2">
-              Let's begin
+              Learn About.
             </Link>
           </Col>
 
