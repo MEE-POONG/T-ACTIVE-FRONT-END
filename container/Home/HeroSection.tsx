@@ -9,7 +9,6 @@ const HeroSection = () => {
   const currentDay = openingHours.find((item) => item.day === today || item.sevenDay === new Date().toLocaleDateString('en-US', { weekday: 'long' }));
   const addressShow = setting[0];
 
-  console.log(addressShow);
   return (
     <section className="hero-section" id="section_1">
       <div className="section-overlay"></div>

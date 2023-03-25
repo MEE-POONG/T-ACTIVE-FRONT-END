@@ -23,7 +23,6 @@ $border-right-color_1: transparent;
 $border-bottom-color_1: #363a3e;
 $border-bottom-color_2: transparent;
 
-
 :root {
 	--gold-color: #e3c475;
 	--white-color: #fff8ef;
@@ -197,8 +196,8 @@ strong {
 	max-width: initial;
 }
 .section-padding {
-	padding-top: 100px;
-	padding-bottom: 100px;
+	padding-top: 20px;
+	padding-bottom: 80px;
 }
 .section-bg {
 	background-color: $background-color_3;
@@ -730,11 +729,25 @@ strong {
 	position: relative;
 }
 .pricing-thumb {
-	border: 5px dotted var(--dark-color);
+	border: 5px dotted #c18000;
 	border-radius: var(--border-radius-medium);
 	position: relative;
-	padding: 50px;
+	width: 350px;
+	transition: transform 0.2s 0.1s;
+	img {
+		object-fit: contain;
+		border-radius: var(--border-radius-medium);
+		z-index: 1;
+		filter: grayscale(100%);
+	}
 	h3 {
+		position: absolute;
+		left: 0;
+		right: 0;
+		margin-top: 1rem;
+		margin-left: auto;
+		margin-right: auto;
+		z-index: 999;
 		small {
 			display: inline-block;
 			font-size: var(--p-font-size);
@@ -742,9 +755,33 @@ strong {
 		}
 	}
 	.link-fx-1 {
-		color: $color_3;
+		position: absolute;
+		z-index: 999;
+		bottom: 20px;
+		right: 2.5rem;
+		color: #000000;
 		&:hover {
 			color: $color_7;
+		}
+	}
+	.pricing-tag {
+		bottom: 0;
+		top: unset;
+		background-color: #000000;
+	}
+	&:hover {
+		img {
+			filter: unset;
+		}
+		h3 {
+			color: var(--gold-color);
+		}
+		.pricing-tag {
+			color: var(--white-color);
+			background: var(--gold-color);
+		}
+		.link-fx-1 {
+			color: $color_3;
 		}
 	}
 }
@@ -758,7 +795,7 @@ strong {
 	margin-bottom: 10px;
 }
 .pricing-tag {
-	background-color: $background-color_10;
+	background-color: $color_3;
 	border-radius: var(--border-radius-large);
 	color: $color_5;
 	font-weight: var(--font-weight-bold);
@@ -771,7 +808,7 @@ strong {
 	height: 120px;
 	position: absolute;
 	top: 0;
-	right: 0;
+	left: 1.5rem;
 	margin: 20px;
 	span {
 		font-size: 180%;
@@ -917,9 +954,6 @@ strong {
 	.hero-section {
 		padding-top: 100px;
 	}
-	.pricing-thumb {
-		padding: 35px;
-	}
 	.schedule-table {
 		h3 {
 			font-size: 22px;
@@ -987,71 +1021,71 @@ strong {
 	box-shadow: unset;
 }
 .gold-active {
-    text-shadow: #ffae0049 1px 0 20px, #ffae0049 -1px 0px 20px, #ffae0049 0px 1px 20px, #ffae0049 0px -1px 20px;
-    font-weight: bold;
-    text-transform: uppercase;
-    background-clip: border-box;
-    background-size: 200% auto;
-    color: #fff4c7;
-    background-clip: text;
-    background-image: linear-gradient(
-        to right,
-        #462523 0,
-        #cb9b51 22%,
-        #f6e27a 45%,
-        #f6f2c0 50%,
-        #f6e27a 55%,
-        #cb9b51 78%,
-        #462523 100%
-    );
-    color: transparent;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    animation: textGold 5s linear infinite;
+	text-shadow: #ffae0049 1px 0 20px, #ffae0049 -1px 0px 20px, #ffae0049 0px 1px 20px, #ffae0049 0px -1px 20px;
+	font-weight: bold;
+	text-transform: uppercase;
+	background-clip: border-box;
+	background-size: 200% auto;
+	color: #fff4c7;
+	background-clip: text;
+	background-image: linear-gradient(
+		to right,
+		#462523 0,
+		#cb9b51 22%,
+		#f6e27a 45%,
+		#f6f2c0 50%,
+		#f6e27a 55%,
+		#cb9b51 78%,
+		#462523 100%
+	);
+	color: transparent;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	animation: textGold 5s linear infinite;
 }
 .dark-gold {
-    color: $color_1;
-    &:hover,
-    &.active {
-        text-shadow: #ffae0049 1px 0 20px, #ffae0049 -1px 0px 20px, #ffae0049 0px 1px 20px, #ffae0049 0px -1px 20px;
+	color: $color_1;
+	&:hover,
+	&.active {
+		text-shadow: #ffae0049 1px 0 20px, #ffae0049 -1px 0px 20px, #ffae0049 0px 1px 20px, #ffae0049 0px -1px 20px;
 
-        background-clip: border-box;
-        background-size: 200% auto;
-        background-clip: text;
-        background-image: linear-gradient(
-            90deg,
-            #000 0,
-            #130f0a 22%,
-            #f6e27a 45%,
-            #f6f2c0 50%,
-            #f6e27a 55%,
-            #262421 78%,
-            #353331
-        );
-        color: transparent;
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-        animation: textGold 2s linear infinite;
-    }
+		background-clip: border-box;
+		background-size: 200% auto;
+		background-clip: text;
+		background-image: linear-gradient(
+			90deg,
+			#000 0,
+			#130f0a 22%,
+			#f6e27a 45%,
+			#f6f2c0 50%,
+			#f6e27a 55%,
+			#262421 78%,
+			#353331
+		);
+		color: transparent;
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+		animation: textGold 2s linear infinite;
+	}
 }
 button.gold,
 a.gold {
-    background-color: var(--primary-color);
-    border: 2px solid transparent;
-    border-radius: var(--border-radius-large);
-    color: $color_1;
-    font-size: var(--btn-font-size);
-    font-weight: var(--font-weight-bold);
-    line-height: normal;
-    transition: all 0.3s;
-    padding: 5px 20px;
-    &:focus,
-    &:hover {
-        color: var(--white-color);
-        background: var(--gold-color);
-        box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175);
-        h5 {
-            color: $color_1;
-        }
-    }
+	background-color: var(--primary-color);
+	border: 2px solid transparent;
+	border-radius: var(--border-radius-large);
+	color: $color_1;
+	font-size: var(--btn-font-size);
+	font-weight: var(--font-weight-bold);
+	line-height: normal;
+	transition: all 0.3s;
+	padding: 5px 20px;
+	&:focus,
+	&:hover {
+		color: var(--white-color);
+		background: var(--gold-color);
+		box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175);
+		h5 {
+			color: $color_1;
+		}
+	}
 }
