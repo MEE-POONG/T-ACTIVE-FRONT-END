@@ -1,28 +1,32 @@
 import { Container, Row, Col } from 'react-bootstrap';
+import { intro } from './../../data/test';
 
 const AboutSection = () => {
+  const aboutIntro = intro.filter(item => item.pagelist === 'about');
+  console.log(aboutIntro);
+
   return (
     <section className="about-section section-padding" id="section_2">
       <Container>
         <Row>
           <Col lg={6} className="mb-4 mb-lg-0 d-flex align-items-center">
             <div className="services-info">
-              <h1 className="f-s-cookie mb-4">About Stevia</h1>
+
+              <h1 className="f-s-cookie mb-4">{aboutIntro[0].title}</h1>
 
               <p className="">
-                Festava Live is free CSS template provided by TemplateMo website. This layout is built on Bootstrap
-                v5.2.2 CSS library. You are free to use this template for your commercial website.
+                {aboutIntro[0].srcipOne}
               </p>
 
-              <h6 className=" mt-4">Once in Lifetime Experience</h6>
+              <h6 className=" mt-4">{aboutIntro[1]?.title}</h6>
 
               <p className="">
-                You are not allowed to redistribute the template ZIP file on any other website without a permission.
+                {aboutIntro[1]?.srcipOne}
               </p>
 
-              <h6 className=" mt-4">Whole Night Party</h6>
+              <h6 className=" mt-4">{aboutIntro[2]?.title}</h6>
 
-              <p className="">Please tell your friends about our website. Thank you.</p>
+              <p className="">{aboutIntro[2]?.srcipOne}</p>
             </div>
           </Col>
 

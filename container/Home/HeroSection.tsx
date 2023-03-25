@@ -4,7 +4,7 @@ import { BsClock, BsFacebook, BsGeoAlt, BsInstagram, BsLine } from 'react-icons/
 import { intro, openingHours, setting } from './../../data/test';
 
 const HeroSection = () => {
-  const aboutIntro = intro.filter(item => item.pagelist === 'about');
+  const homeIntro = intro.filter(item => item.pagelist === 'home');
   const today = new Date().toLocaleDateString(); // get today's date in the format of 'yyyy-mm-dd'
   const currentDay = openingHours.find((item) => item.day === today || item.sevenDay === new Date().toLocaleDateString('en-US', { weekday: 'long' }));
   const addressShow = setting[0];
@@ -15,14 +15,14 @@ const HeroSection = () => {
 
       <Container className="d-flex justify-content-center align-items-center">
         <Row>
-          {aboutIntro?.map((aboutIntro) => (
-            <Col key={aboutIntro.pagelist} className="mt-auto mb-5 text-center">
+          {homeIntro?.map((homeIntro) => (
+            <Col key={homeIntro.pagelist} className="mt-auto mb-5 text-center">
 
-              <h3 className='gold-active f-s-cookie'>{aboutIntro?.title}</h3>
-              <h1 className="gold-active mb-5">{aboutIntro?.srcipOne}</h1>
-              <h1 className="gold-active mb-5">{aboutIntro?.srcipTwo}</h1>
+              <h3 className='gold-active f-s-cookie'>{homeIntro?.title}</h3>
+              <h1 className="gold-active mb-5">{homeIntro?.srcipOne}</h1>
+              <h1 className="gold-active mb-5">{homeIntro?.srcipTwo}</h1>
               <Link className="gold smoothscroll " href="#section_2">
-                {aboutIntro?.textButton}
+                {homeIntro?.textButton}
               </Link>
             </Col>
           ))}

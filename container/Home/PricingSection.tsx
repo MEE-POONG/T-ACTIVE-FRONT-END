@@ -5,7 +5,6 @@ import { intro, productList } from './../../data/test';
 const PricingSection = () => {
   const productIntro = intro.filter(item => item.pagelist === 'product');
   const productsWithPromotion = productList;
-  console.log(productsWithPromotion);
 
   var settingsSlide = {
     dots: false,
