@@ -23,14 +23,7 @@ $border-right-color_1: transparent;
 $border-bottom-color_1: #363a3e;
 $border-bottom-color_2: transparent;
 
-@keyframes spinAround {
-	from {
-		transform: rotate(0deg);
-	}
-	to {
-		transform: rotate(360deg);
-	}
-}
+
 :root {
 	--gold-color: #e3c475;
 	--white-color: #fff8ef;
@@ -58,6 +51,14 @@ $border-bottom-color_2: transparent;
 	--font-weight-light: 300;
 	--font-weight-normal: 400;
 	--font-weight-bold: 700;
+}
+@keyframes spinAround {
+	from {
+		transform: rotate(0deg);
+	}
+	to {
+		transform: rotate(360deg);
+	}
 }
 body {
 	background-color: $background-color_1;
@@ -984,4 +985,73 @@ strong {
 	border-color: unset;
 	outline: unset;
 	box-shadow: unset;
+}
+.gold-active {
+    text-shadow: #ffae0049 1px 0 20px, #ffae0049 -1px 0px 20px, #ffae0049 0px 1px 20px, #ffae0049 0px -1px 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+    background-clip: border-box;
+    background-size: 200% auto;
+    color: #fff4c7;
+    background-clip: text;
+    background-image: linear-gradient(
+        to right,
+        #462523 0,
+        #cb9b51 22%,
+        #f6e27a 45%,
+        #f6f2c0 50%,
+        #f6e27a 55%,
+        #cb9b51 78%,
+        #462523 100%
+    );
+    color: transparent;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: textGold 5s linear infinite;
+}
+.dark-gold {
+    color: $color_1;
+    &:hover,
+    &.active {
+        text-shadow: #ffae0049 1px 0 20px, #ffae0049 -1px 0px 20px, #ffae0049 0px 1px 20px, #ffae0049 0px -1px 20px;
+
+        background-clip: border-box;
+        background-size: 200% auto;
+        background-clip: text;
+        background-image: linear-gradient(
+            90deg,
+            #000 0,
+            #130f0a 22%,
+            #f6e27a 45%,
+            #f6f2c0 50%,
+            #f6e27a 55%,
+            #262421 78%,
+            #353331
+        );
+        color: transparent;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        animation: textGold 2s linear infinite;
+    }
+}
+button.gold,
+a.gold {
+    background-color: var(--primary-color);
+    border: 2px solid transparent;
+    border-radius: var(--border-radius-large);
+    color: $color_1;
+    font-size: var(--btn-font-size);
+    font-weight: var(--font-weight-bold);
+    line-height: normal;
+    transition: all 0.3s;
+    padding: 5px 20px;
+    &:focus,
+    &:hover {
+        color: var(--white-color);
+        background: var(--gold-color);
+        box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175);
+        h5 {
+            color: $color_1;
+        }
+    }
 }
