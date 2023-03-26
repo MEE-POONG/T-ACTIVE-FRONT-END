@@ -28,7 +28,7 @@ export default function NavigationBar(): JSX.Element {
 
           <Navbar.Collapse id="navbarNav">
             <Nav className="ms-auto me-lg-5 align-items-lg-center f-s-cookie">
-              <Link href="#section_1" className={asPath === "/" ? "nav-link click-scroll active" : "nav-link click-scroll"}>
+              <Link href="/" className={asPath === "/" ? "nav-link click-scroll active" : "nav-link click-scroll"}>
                 Home
               </Link>
               <Link href="#section_5" className={asPath === "/product" ? "nav-link click-scroll active" : "nav-link click-scroll"}>
@@ -37,23 +37,20 @@ export default function NavigationBar(): JSX.Element {
               <Link href="#section_2" className={asPath === "/about" ? "nav-link click-scroll active" : "nav-link click-scroll"}>
                 About
               </Link>
-
-              <Link href="#section_3" className={asPath === "/artists" ? "nav-link click-scroll active" : "nav-link click-scroll"}>
-                Artists
+              <Link href="#section_3" className={asPath === "/blog" ? "nav-link click-scroll active" : "nav-link click-scroll"}>
+                Blog
               </Link>
-
-              <Link href="#section_4" className={asPath === "/schedule" ? "nav-link click-scroll active" : "nav-link click-scroll"}>
-                Schedule
+              <Link href="#section_4" className={asPath === "/event" ? "nav-link click-scroll active" : "nav-link click-scroll"}>
+                Event
               </Link>
-
               <Link href="#section_6" className={asPath === "/contact" ? "nav-link click-scroll active" : "nav-link click-scroll"}>
                 Contact
               </Link>
             </Nav>
           </Navbar.Collapse>
-          <Link href="ticket.html" className='gold d-none d-lg-inline d-md-inline m-md-2 ms-md-auto '>
+          {/* <Link href="ticket.html" className='gold d-none d-lg-inline d-md-inline m-md-2 ms-md-auto '>
             Buy Ticket
-          </Link>
+          </Link> */}
           <Navbar.Toggle aria-controls="navbarNav" />
         </Container>
       </Navbar>

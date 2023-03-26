@@ -17,11 +17,10 @@ const HeroSection = () => {
         <Row>
           {homeIntro?.map((homeIntro) => (
             <Col key={homeIntro.pagelist} className="mt-auto mb-5 text-center">
-
               <h3 className='gold-active f-s-cookie'>{homeIntro?.title}</h3>
               <h1 className="gold-active mb-5">{homeIntro?.srcipOne}</h1>
               <h1 className="gold-active mb-5">{homeIntro?.srcipTwo}</h1>
-              <Link className="gold smoothscroll " href="#section_2">
+              <Link className="gold smoothscroll " href="/about">
                 {homeIntro?.textButton}
               </Link>
             </Col>
