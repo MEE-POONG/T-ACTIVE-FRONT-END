@@ -13,7 +13,7 @@ $background-color_3: var(--section-bg-color);
 $background-color_4: var(--dark-color);
 $background-color_5: var(--primary-color);
 $background-color_6: var(--gold-color);
-$background-color_7: #fff4c7;
+$background-color_7: #fff8d9;
 $background-color_8: var(--primary-color);
 $background-color_9: #242424;
 $background-color_10: var(--secondary-color);
@@ -535,7 +535,7 @@ strong {
 }
 .about-section {
 	// background-image: url('../images/edward-unsplash-blur.jpg');
-	background-color: $background-color_6;
+	background-color: $background-color_7;
 	background-repeat: no-repeat;
 	background-size: cover;
 	position: relative;
@@ -546,6 +546,14 @@ strong {
 }
 .about-text-wrap {
 	position: relative;
+	&:hover {
+		i{
+			color: $background-color_7;;
+		}
+		h3 {
+			color: var(--gold-color);
+		}
+	}
 }
 .about-text-icon {
 	background: var(--primary-color);
@@ -567,7 +575,8 @@ strong {
 	right: 0;
 	left: 0;
 	margin: 20px;
-	padding: 35px;
+	padding: 15px;
+	
 }
 .ticket-section {
 	// background-image: url('../images/nicholas-green-unsplash-blur.jpg');

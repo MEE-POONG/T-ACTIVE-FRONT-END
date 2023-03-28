@@ -1,5 +1,6 @@
 import { Container, Row, Col } from 'react-bootstrap';
 import { intro } from './../../data/test';
+import { BsBook } from 'react-icons/bs';
 
 const AboutSection = () => {
   const aboutIntro = intro.filter(item => item.pagelist === 'about');
@@ -32,17 +33,17 @@ const AboutSection = () => {
 
           <Col lg={6}>
             <div className="about-text-wrap">
-              <img src="images/pexels-alexander-suhorucov-6457579.jpg" className="about-image img-fluid" />
+              <img src={"images/about/IMG_2425.JPG"} className="about-image img-fluid" />
 
               <div className="about-text-info d-flex">
                 <div className="d-flex">
-                  <i className="about-text-icon bi-person"></i>
+                  <i className="about-text-icon"><BsBook/></i>
                 </div>
 
                 <div className="ms-4">
-                  <h3>a happy moment</h3>
+                  <h3>Get to know Click</h3>
 
-                  <p className="mb-0">your amazing festival experience with us</p>
+                  <p className="mb-0">Stevia and the brand leader</p>
                 </div>
               </div>
             </div>
