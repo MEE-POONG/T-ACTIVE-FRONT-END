@@ -1,9 +1,10 @@
 export const intro = [
     { id: '1', title: 'T Active Stevia', srcipOne: 'INTRODUCING STEVIA', srcipTwo: 'NATURAL SWEETENER', srcipThree: '', textButton: 'Learn About.', pagelist: 'home' },
     { id: '2', title: 'Product', srcipOne: 'Extract water instead of sugar.', srcipTwo: 'Mix food and drinks both hot and cold.', srcipThree: '', textButton: '', pagelist: 'product' },
-    { id: '3', title: 'About Stevia', srcipOne: "Discover the sweet and natural taste of Stevia, the perfect alternative to sugar. With zero calories and no harmful side effects, it' is the healthier choice for you and your family.", srcipTwo: '', srcipThree: '', textButton: '', pagelist: 'about' },
+    { id: '3', title: 'About T-Active', srcipOne: "Discover the sweet and natural taste of Stevia, the perfect alternative to sugar. With zero calories and no harmful side effects, it' is the healthier choice for you and your family.", srcipTwo: '', srcipThree: '', textButton: '', pagelist: 'about' },
     { id: '4', title: 'I am Tianna', srcipOne: "When I was 10, everyday after school, I’d go straight to YouTube and watch Victoria Secret models working out.", srcipTwo: '', srcipThree: '', textButton: '', pagelist: 'about' },
     { id: '5', title: 'Whole Night Party', srcipOne: "Stevia is a natural, zero-calorie sweetener that has gained popularity as a healthy alternative to sugar. many benefits including the ability to regulate blood sugar levels and promote weight loss It's a great option for those who want to take care of themselves.", srcipTwo: '', srcipThree: '', textButton: '', pagelist: 'about' },
+    { id: '5', title: 'What is Stevia?', srcipOne: "", srcipTwo: '', srcipThree: '', textButton: '', pagelist: 'stevia' },
 ];
 export const setting = [
     { id: '1', businessName: 't active stevia', facebookName: 'T Active Stevia Syrup', facebookLink: 'www.facebook.com/t.active.stevia', intragarmName: 'T Active Stevia Syrup', intragarmLink: 'www.facebook.com/t.active.stevia', lineName: 'nattavee', lineLinK: 'asdas.com', lineID: '@Stevia', tel: '06444482650', addressOne: '46/4 ถ.ราชนิกูล', addressTwo: 'หมู่ 7', addressThree: '', subDistrict: 'เมือง', district: 'ในเมือง', city: 'นครราชสีมา', postalCode: '30130', location: '1' },

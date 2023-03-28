@@ -6,12 +6,12 @@ const ArtistsSection = () => {
       <Container>
         <Row className="justify-content-center">
           <Col xs={12} className="text-center">
-            <h1 className="f-s-cookie mb-4">Meet Artists</h1>
+            <h1 className="f-s-cookie mb-4">Work Out</h1>
           </Col>
           <Col lg={5} xs={12}>
             <div className="artists-thumb">
               <div className="artists-image-wrap">
-                <img src="images/artists/joecalih-UmTZqmMvQcw-unsplash.jpg" className="artists-image img-fluid" />
+                <img src="images/gallery/4.jpg" className="artists-image img-fluid" />
               </div>
 
               <div className="artists-hover">

@@ -6,6 +6,7 @@ import ArtistsSection from '@/container/Home/ArtistsSection';
 import ScheduleSection from '@/container/Home/ScheduleSection';
 import ContactSection from '@/container/Home/ContactSection';
 import PricingSection from '@/container/Home/PricingSection';
+import SteviaSection from '@/container/Home/SteviaSection';
 
 export default function HomePage() {
   return (
@@ -20,9 +21,9 @@ export default function HomePage() {
       </Head>
       <div className='home-page'>
         <HeroSection />
+        <SteviaSection />
         <PricingSection />
-        <AboutSection />
-        <ArtistsSection/>
+        <ArtistsSection />
         <ScheduleSection />
         <ContactSection />
       </div>
