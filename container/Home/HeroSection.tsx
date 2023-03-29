@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import { Container, Row, Col, Button } from 'react-bootstrap';
+import { Container, Row, Col, Button, Carousel } from 'react-bootstrap';
 import { BsClock, BsFacebook, BsGeoAlt, BsInstagram, BsLine } from 'react-icons/bs';
 import { intro, openingHours, setting } from './../../data/test';
 
@@ -68,10 +68,33 @@ const HeroSection = () => {
       </Container>
 
       <div className="video-wrap">
-        <video autoPlay loop muted className="custom-video" poster="">
+        <Carousel className="custom-video" controls={false} indicators={false}>
+          <Carousel.Item>
+            <img
+              className="d-block w-100"
+              src="/images/gallery/IMG_2425.jpg"
+              alt="First slide"
+            />
+          </Carousel.Item>
+          <Carousel.Item>
+            <img
+              className="d-block w-100"
+              src="/images/gallery/8.jpg"
+              alt="Second slide"
+            />
+          </Carousel.Item>
+          <Carousel.Item>
+            <img
+              className="d-block w-100"
+              src="/images/gallery/16.jpg"
+              alt="Third slide"
+            />
+          </Carousel.Item>
+        </Carousel>
+        {/* <video autoPlay loop muted className="custom-video" poster="">
           <source src="video/pexels-2022395.mp4" type="video/mp4" />
           Your browser does not support the video tag.
-        </video>
+        </video> */}
       </div>
     </section>
   );

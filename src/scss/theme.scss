@@ -5,7 +5,7 @@ $color_4: var(--link-hover-color);
 $color_5: var(--white-color);
 $color_6: inherit;
 $color_7: var(--gold-color);
-$color_8: var(--gold-color);
+$color_8: var(--gold-sub-color);
 $font-family_1: var(--body-font-family);
 $background-color_1: var(--white-color);
 $background-color_2: currentColor;
@@ -25,6 +25,7 @@ $border-bottom-color_2: transparent;
 
 :root {
 	--gold-color: #e3c475;
+	--gold-sub-color: #9c9378;
 	--white-color: #fff8ef;
 	--primary-color: #e0aa5d;
 	--secondary-color: #ee5007;
@@ -196,7 +197,7 @@ strong {
 	max-width: initial;
 }
 .section-padding {
-	padding-top: 20px;
+	padding-top: 50px;
 	padding-bottom: 80px;
 }
 .section-bg {
@@ -308,10 +309,9 @@ strong {
 .custom-border-btn {
 	background: transparent;
 	border: 2px solid var(--gold-color);
-	color: $color_8;
+	color: $color_7;
 	&:hover {
 		text-transform: uppercase;
-		background-clip: border-box;
 		background-size: 200% auto;
 		color: #fff4c7;
 		background-clip: text;
@@ -356,7 +356,7 @@ strong {
 	height: 100%;
 }
 .site-header {
-	background-color: $background-color_5;
+	background-color: #000000;
 	padding-top: 12px;
 	padding-bottom: 12px;
 }
@@ -401,6 +401,7 @@ strong {
 		#cb9b51 78%,
 		#f8e2c1
 	);
+	background-clip: text;
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
 	animation: textGold 5s linear infinite;
@@ -434,6 +435,7 @@ strong {
 				#cb9b51 78%,
 				#f8e2c1
 			);
+			background-clip: text;
 			-webkit-background-clip: text;
 			-webkit-text-fill-color: transparent;
 			animation: textGold 5s linear infinite;
@@ -547,8 +549,8 @@ strong {
 .about-text-wrap {
 	position: relative;
 	&:hover {
-		i{
-			color: $background-color_7;;
+		i {
+			color: $background-color_7;
 		}
 		h3 {
 			color: var(--gold-color);
@@ -576,7 +578,6 @@ strong {
 	left: 0;
 	margin: 20px;
 	padding: 15px;
-	
 }
 .ticket-section {
 	// background-image: url('../images/nicholas-green-unsplash-blur.jpg');
@@ -650,7 +651,7 @@ strong {
 			border-radius: 25px;
 			background-color: $color_1;
 			&:hover {
-				color: $color_8;
+				color: $color_7;
 			}
 		}
 	}
@@ -795,7 +796,7 @@ strong {
 	}
 }
 .pricing-list {
-	column-count: 2;
+	column-count: 4;
 	padding-left: 20px;
 }
 .pricing-list-item {

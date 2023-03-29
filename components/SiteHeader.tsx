@@ -6,11 +6,15 @@ const SiteHeader = () => {
         <header className="site-header">
             <Container>
                 <Row>
-                    <Col lg={12} xs={12} className="d-flex flex-wrap dark-gold">
-                        <p className="d-flex me-4 mb-0 dark-gold">
+                    <Col lg={12} xs={12} className="d-flex flex-wrap gold-active">
+                        <p className="d-flex mb-0 gold-active">
                             <GiCurledLeaf className="me-2 h5" />
-                            <strong className="f-s-cookie">Welcome to T-Active-Stevia</strong>
+                            <strong className="f-s-cookie m-auto">Welcome to T-Active-Stevia</strong>
                         </p>
+                        <span className="d-flex ms-auto mb-0 gold-active">
+                            <p className="f-s-cookie m-auto ms-5"></p>
+                            <p className="f-s-cookie m-auto ms-5">Tel : 0977654321</p>
+                        </span>
                     </Col>
                 </Row>
             </Container>
