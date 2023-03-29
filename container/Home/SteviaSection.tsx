@@ -39,8 +39,13 @@ const SteviaSection = () => {
     ]
   };
   return (
-    <section className="pricing-section section-padding section-bg" id="section_5">
-      <Container>
+
+    <section className="pricing-section section-padding section-bg" id="section_5" >
+      <div style={{ backgroundImage: 'url(./images/gallery/bg1.jpg)', backgroundRepeat: 'no-repeat', backgroundSize: 'cover' }}>
+      height: 1185.54px;
+    transform: translate(0px, 243.019px);
+      </div>
+      <Container className='what-stevia'>
         <Row>
           <Col lg={8} className="mx-auto">
             <h1 className="text-center f-s-cookie m-0">{productIntro[0]?.title}</h1>
@@ -48,214 +53,83 @@ const SteviaSection = () => {
             <h3 className='text-center'>{productIntro[0]?.srcipTwo}</h3>
           </Col>
         </Row>
-        <Slider {...settingsSlide}>
-          {productsWithPromotion?.map((productShow) => (
-            <div key={productShow?.id} >
-              <div className="pricing-thumb mx-auto">
-                <h3 className='text-center'>
-                  {productShow?.name}
-                </h3>
-                <a className="link-fx-1 color-contrast-higher mt-4" href="ticket.html">
-                  <span>Buy Ticket</span>
-                  <svg className="icon" viewBox="0 0 32 32" aria-hidden="true">
-                    <g fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round">
-                      <circle cx="16" cy="16" r="15.5"></circle>
-                      <line x1="10" y1="18" x2="16" y2="12"></line>
-                      <line x1="16" y1="12" x2="22" y2="18"></line>
-                    </g>
-                  </svg>
-                </a>
-                <img src={productShow?.img} alt={productShow?.name} className='w-100 object-fit-contain' />
-                <div className="d-flex">
-                  <p className={productShow?.price > 0 ? "pricing-tag ms-auto" : "d-none"}>
-                    <span>{productShow?.price}.-</span>
-                  </p>
-                </div>
-
-              </div>
-            </div>
-          ))}
-
-
-          <div >
-            <div className="pricing-thumb m-2">
-              <div className="d-flex">
-                <div>
-                  <h3>
-                    <small>Early Bird</small> $120
-                  </h3>
-                  <p>Including good things:</p>
-                </div>
-                <p className="pricing-tag ms-auto">
-                  Save up to <span>50%</span>
-                </p>
-              </div>
-              <ul className="pricing-list mt-3">
-                <li className="pricing-list-item">platform for potential customers</li>
-                <li className="pricing-list-item">digital experience</li>
-                <li className="pricing-list-item">high-quality sound</li>
-                <li className="pricing-list-item">standard content</li>
-              </ul>
-              <a className="link-fx-1 color-contrast-higher mt-4" href="ticket.html">
-                <span>Buy Ticket</span>
-                <svg className="icon" viewBox="0 0 32 32" aria-hidden="true">
-                  <g fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round">
-                    <circle cx="16" cy="16" r="15.5"></circle>
-                    <line x1="10" y1="18" x2="16" y2="12"></line>
-                    <line x1="16" y1="12" x2="22" y2="18"></line>
-                  </g>
-                </svg>
-              </a>
-            </div>
-          </div>
-          <div >
-            <div className="pricing-thumb m-2">
-              <div className="d-flex">
-                <div>
-                  <h3>
-                    <small>Early Bird</small> $120
-                  </h3>
-                  <p>Including good things:</p>
-                </div>
-                <p className="pricing-tag ms-auto">
-                  Save up to <span>50%</span>
-                </p>
-              </div>
-              <ul className="pricing-list mt-3">
-                <li className="pricing-list-item">platform for potential customers</li>
-                <li className="pricing-list-item">digital experience</li>
-                <li className="pricing-list-item">high-quality sound</li>
-                <li className="pricing-list-item">standard content</li>
-              </ul>
-              <a className="link-fx-1 color-contrast-higher mt-4" href="ticket.html">
-                <span>Buy Ticket</span>
-                <svg className="icon" viewBox="0 0 32 32" aria-hidden="true">
-                  <g fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round">
-                    <circle cx="16" cy="16" r="15.5"></circle>
-                    <line x1="10" y1="18" x2="16" y2="12"></line>
-                    <line x1="16" y1="12" x2="22" y2="18"></line>
-                  </g>
-                </svg>
-              </a>
-            </div>
-          </div>
-          <div >
-            <div className="pricing-thumb m-2">
-              <div className="d-flex">
-                <div>
-                  <h3>
-                    <small>Early Bird</small> $120
-                  </h3>
-                  <p>Including good things:</p>
-                </div>
-                <p className="pricing-tag ms-auto">
-                  Save up to <span>50%</span>
-                </p>
-              </div>
-              <ul className="pricing-list mt-3">
-                <li className="pricing-list-item">platform for potential customers</li>
-                <li className="pricing-list-item">digital experience</li>
-                <li className="pricing-list-item">high-quality sound</li>
-                <li className="pricing-list-item">standard content</li>
-              </ul>
-              <a className="link-fx-1 color-contrast-higher mt-4" href="ticket.html">
-                <span>Buy Ticket</span>
-                <svg className="icon" viewBox="0 0 32 32" aria-hidden="true">
-                  <g fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round">
-                    <circle cx="16" cy="16" r="15.5"></circle>
-                    <line x1="10" y1="18" x2="16" y2="12"></line>
-                    <line x1="16" y1="12" x2="22" y2="18"></line>
-                  </g>
-                </svg>
-              </a>
-            </div>
-          </div>
-          <div >
-            <div className="pricing-thumb m-2">
-              <div className="d-flex">
-                <div>
-                  <h3>
-                    <small>Early Bird</small> $120
-                  </h3>
-                  <p>Including good things:</p>
-                </div>
-                <p className="pricing-tag ms-auto">
-                  Save up to <span>50%</span>
-                </p>
-              </div>
-              <ul className="pricing-list mt-3">
-                <li className="pricing-list-item">platform for potential customers</li>
-                <li className="pricing-list-item">digital experience</li>
-                <li className="pricing-list-item">high-quality sound</li>
-                <li className="pricing-list-item">standard content</li>
-              </ul>
-              <a className="link-fx-1 color-contrast-higher mt-4" href="ticket.html">
-                <span>Buy Ticket</span>
-                <svg className="icon" viewBox="0 0 32 32" aria-hidden="true">
-                  <g fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round">
-                    <circle cx="16" cy="16" r="15.5"></circle>
-                    <line x1="10" y1="18" x2="16" y2="12"></line>
-                    <line x1="16" y1="12" x2="22" y2="18"></line>
-                  </g>
-                </svg>
-              </a>
-            </div>
-          </div>
-          <div className="pricing-thumb m-2">
+        <Row>
+          <Col lg={4}>
+            <p>&emsp;&emsp;
+              Stevia is a natural sweetener.
+              The leaves of the plant contain sweet compounds called steviol glycosides.
+              which is 400 times sweeter than normal sugar
+            </p>
+          </Col>
+          <Col lg={4}>
+            <p>&emsp;&emsp;
+              Our products are sweet, delicious, not bitter, not overpowering, and smell good.
+            </p>
+          </Col>
+          <Col lg={4}>
+            <p>&emsp;&emsp;
+              Stevia extract can withstand heat up to 220 degrees and can be used in baking and cooking instead of sugar.
+            </p>
+          </Col>
+        </Row>
+        <Row>
+          <Col lg={4}>
             <div className="d-flex">
-              <div>
+              <div className='text-center w-100'>
+                <img src="/images/icon/sugar.png" alt='suger-icon' />
                 <h3>
-                  <small>Standard</small> $240
+                  <small>SUGAR</small> 0%
                 </h3>
-                <p>What makes a premium festava?</p>
               </div>
             </div>
-            <ul className="pricing-list mt-3">
-              <li className="pricing-list-item">platform for potential customers</li>
-              <li className="pricing-list-item">digital experience</li>
-              <li className="pricing-list-item">high-quality sound</li>
-              <li className="pricing-list-item">premium content</li>
-              <li className="pricing-list-item">live chat support</li>
-            </ul>
-            <a className="link-fx-1 color-contrast-higher mt-4" href="ticket.html">
-              <span>Buy Ticket</span>
-              <svg className="icon" viewBox="0 0 32 32" aria-hidden="true">
-                <g fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round">
-                  <circle cx="16" cy="16" r="15.5"></circle>
-                  <line x1="10" y1="18" x2="16" y2="12"></line>
-                  <line x1="16" y1="12" x2="22" y2="18"></line>
-                </g>
-              </svg>
-            </a>
-          </div>
-          <div className="pricing-thumb m-2">
+            <p className='mx-4 text-center'>
+              Great choice for diabetics or people who are watching their blood sugar levels.
+            </p>
+          </Col>
+          <Col lg={4}>
             <div className="d-flex">
-              <div>
+              <div className='text-center w-100'>
+                <img src="/images/icon/kcal2.png" alt='suger-icon' />
                 <h3>
-                  <small>Standard</small> $240
+                  <small>CALORIE</small> 0%
                 </h3>
-                <p>What makes a premium festava?</p>
               </div>
             </div>
+            <p className='mx-4 text-center'>
+              A good choice for those who want to reduce their calorie intake.
+            </p>
+          </Col>
+          <Col lg={4}>
+            <div className="d-flex">
+              <div className='text-center w-100'>
+                <img src="/images/icon/lowsalt.png" alt='suger-icon' />
+                <h3>
+                  <small>SODIUM</small> 0%
+                </h3>
+              </div>
+            </div>
+            <p className='mx-4 text-center'>
+              A good option for those on a low carb or ketogenic diet.
+            </p>
+          </Col>
+          <Col lg={12}>
+            {/* <h3 className='w-100 text-center'>
+              Pros of Stevia Extract in Taste and Cooking
+            </h3>
             <ul className="pricing-list mt-3">
-              <li className="pricing-list-item">platform for potential customers</li>
-              <li className="pricing-list-item">digital experience</li>
-              <li className="pricing-list-item">high-quality sound</li>
-              <li className="pricing-list-item">premium content</li>
-              <li className="pricing-list-item">live chat support</li>
-            </ul>
-            <a className="link-fx-1 color-contrast-higher mt-4" href="ticket.html">
-              <span>Buy Ticket</span>
-              <svg className="icon" viewBox="0 0 32 32" aria-hidden="true">
-                <g fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round">
-                  <circle cx="16" cy="16" r="15.5"></circle>
-                  <line x1="10" y1="18" x2="16" y2="12"></line>
-                  <line x1="16" y1="12" x2="22" y2="18"></line>
-                </g>
-              </svg>
-            </a>
-          </div>
-        </Slider>
+              <li className="pricing-list-item">No effect on blood sugar. </li>
+              <li className="pricing-list-item">have antioxidant properties</li>
+              <li className="pricing-list-item">help lower blood pressure.</li>
+              <li className="pricing-list-item">have antimicrobial properties</li>
+              <li className="pricing-list-item">reduce inflammation</li>
+              <li className="pricing-list-item">No effect on blood sugar. </li>
+              <li className="pricing-list-item">have antioxidant properties</li>
+              <li className="pricing-list-item">help lower blood pressure.</li>
+              <li className="pricing-list-item">have antimicrobial properties</li>
+              <li className="pricing-list-item">reduce inflammation</li>
+            </ul> */}
+          </Col>
+        </Row>
       </Container>
     </section>
   );
