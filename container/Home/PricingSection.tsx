@@ -43,9 +43,9 @@ const PricingSection = () => {
       <Container>
         <Row>
           <Col lg={8} className="mx-auto">
-            <h1 className="text-center f-s-cookie m-0">{productIntro[0]?.title}</h1>
-            <h3 className='text-center'>{productIntro[0]?.srcipOne}</h3>
-            <h3 className='text-center'>{productIntro[0]?.srcipTwo}</h3>
+            <h1 className="text-center f-s-cookie m-0 f-c-gold">{productIntro[0]?.title}</h1>
+            <h3 className='text-center f-c-gold'>{productIntro[0]?.srcipOne}</h3>
+            <h3 className='text-center f-c-gold'>{productIntro[0]?.srcipTwo}</h3>
           </Col>
         </Row>
         <Slider {...settingsSlide}>
@@ -75,132 +75,6 @@ const PricingSection = () => {
               </div>
             </div>
           ))}
-
-
-          <div >
-            <div className="pricing-thumb m-2">
-              <div className="d-flex">
-                <div>
-                  <h3>
-                    <small>Early Bird</small> $120
-                  </h3>
-                  <p>Including good things:</p>
-                </div>
-                <p className="pricing-tag ms-auto">
-                  Save up to <span>50%</span>
-                </p>
-              </div>
-              <ul className="pricing-list mt-3">
-                <li className="pricing-list-item">platform for potential customers</li>
-                <li className="pricing-list-item">digital experience</li>
-                <li className="pricing-list-item">high-quality sound</li>
-                <li className="pricing-list-item">standard content</li>
-              </ul>
-              <a className="link-fx-1 color-contrast-higher mt-4" href="ticket.html">
-                <span>Buy Ticket</span>
-                <svg className="icon" viewBox="0 0 32 32" aria-hidden="true">
-                  <g fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round">
-                    <circle cx="16" cy="16" r="15.5"></circle>
-                    <line x1="10" y1="18" x2="16" y2="12"></line>
-                    <line x1="16" y1="12" x2="22" y2="18"></line>
-                  </g>
-                </svg>
-              </a>
-            </div>
-          </div>
-          <div >
-            <div className="pricing-thumb m-2">
-              <div className="d-flex">
-                <div>
-                  <h3>
-                    <small>Early Bird</small> $120
-                  </h3>
-                  <p>Including good things:</p>
-                </div>
-                <p className="pricing-tag ms-auto">
-                  Save up to <span>50%</span>
-                </p>
-              </div>
-              <ul className="pricing-list mt-3">
-                <li className="pricing-list-item">platform for potential customers</li>
-                <li className="pricing-list-item">digital experience</li>
-                <li className="pricing-list-item">high-quality sound</li>
-                <li className="pricing-list-item">standard content</li>
-              </ul>
-              <a className="link-fx-1 color-contrast-higher mt-4" href="ticket.html">
-                <span>Buy Ticket</span>
-                <svg className="icon" viewBox="0 0 32 32" aria-hidden="true">
-                  <g fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round">
-                    <circle cx="16" cy="16" r="15.5"></circle>
-                    <line x1="10" y1="18" x2="16" y2="12"></line>
-                    <line x1="16" y1="12" x2="22" y2="18"></line>
-                  </g>
-                </svg>
-              </a>
-            </div>
-          </div>
-          <div >
-            <div className="pricing-thumb m-2">
-              <div className="d-flex">
-                <div>
-                  <h3>
-                    <small>Early Bird</small> $120
-                  </h3>
-                  <p>Including good things:</p>
-                </div>
-                <p className="pricing-tag ms-auto">
-                  Save up to <span>50%</span>
-                </p>
-              </div>
-              <ul className="pricing-list mt-3">
-                <li className="pricing-list-item">platform for potential customers</li>
-                <li className="pricing-list-item">digital experience</li>
-                <li className="pricing-list-item">high-quality sound</li>
-                <li className="pricing-list-item">standard content</li>
-              </ul>
-              <a className="link-fx-1 color-contrast-higher mt-4" href="ticket.html">
-                <span>Buy Ticket</span>
-                <svg className="icon" viewBox="0 0 32 32" aria-hidden="true">
-                  <g fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round">
-                    <circle cx="16" cy="16" r="15.5"></circle>
-                    <line x1="10" y1="18" x2="16" y2="12"></line>
-                    <line x1="16" y1="12" x2="22" y2="18"></line>
-                  </g>
-                </svg>
-              </a>
-            </div>
-          </div>
-          <div >
-            <div className="pricing-thumb m-2">
-              <div className="d-flex">
-                <div>
-                  <h3>
-                    <small>Early Bird</small> $120
-                  </h3>
-                  <p>Including good things:</p>
-                </div>
-                <p className="pricing-tag ms-auto">
-                  Save up to <span>50%</span>
-                </p>
-              </div>
-              <ul className="pricing-list mt-3">
-                <li className="pricing-list-item">platform for potential customers</li>
-                <li className="pricing-list-item">digital experience</li>
-                <li className="pricing-list-item">high-quality sound</li>
-                <li className="pricing-list-item">standard content</li>
-              </ul>
-              <a className="link-fx-1 color-contrast-higher mt-4" href="ticket.html">
-                <span>Buy Ticket</span>
-                <svg className="icon" viewBox="0 0 32 32" aria-hidden="true">
-                  <g fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round">
-                    <circle cx="16" cy="16" r="15.5"></circle>
-                    <line x1="10" y1="18" x2="16" y2="12"></line>
-                    <line x1="16" y1="12" x2="22" y2="18"></line>
-                  </g>
-                </svg>
-              </a>
-            </div>
-          </div>
           {/* <div className="pricing-thumb m-2">
             <div className="d-flex">
               <div>
