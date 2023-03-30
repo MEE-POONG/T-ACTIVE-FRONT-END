@@ -1,6 +1,6 @@
 import { Container, Row, Col } from 'react-bootstrap';
 
-const ArtistsSection = () => {
+const WorkOutSection = () => {
   return (
     <section className="artists-section section-padding" id="section_3">
       <Container>
@@ -104,4 +104,4 @@ const ArtistsSection = () => {
   );
 };
 
-export default ArtistsSection;
+export default WorkOutSection;

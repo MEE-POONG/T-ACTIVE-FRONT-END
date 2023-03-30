@@ -1,6 +1,6 @@
 import { Container, Row, Col, Table } from 'react-bootstrap';
 
-function ScheduleSection() {
+function BlogEventSection() {
   return (
     <section className="schedule-section section-padding" id="section_4">
       <Container>
@@ -69,4 +69,4 @@ function ScheduleSection() {
   );
 }
 
-export default ScheduleSection;
+export default BlogEventSection;

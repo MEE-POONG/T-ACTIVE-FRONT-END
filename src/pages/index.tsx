@@ -2,8 +2,8 @@ import Head from 'next/head';
 import LayOut from "@/components/LayOut";
 import HeroSection from '@/container/Home/HeroSection';
 import AboutSection from '@/container/Home/AboutSection';
-import ArtistsSection from '@/container/Home/ArtistsSection';
-import ScheduleSection from '@/container/Home/ScheduleSection';
+import ArtistsSection from '@/container/Home/WorkOutSection';
+import ScheduleSection from '@/container/Home/BlogEventSection';
 import ContactSection from '@/container/Home/ContactSection';
 import PricingSection from '@/container/Home/PricingSection';
 import SteviaSection from '@/container/Home/SteviaSection';
@@ -23,6 +23,7 @@ export default function HomePage() {
         <HeroSection />
         <SteviaSection />
         <PricingSection />
+        <AboutSection />
         <ArtistsSection />
         <ScheduleSection />
         <ContactSection />
