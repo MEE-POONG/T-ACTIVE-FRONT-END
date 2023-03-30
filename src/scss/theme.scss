@@ -379,6 +379,7 @@ strong {
 	transition: top 0.3s;
 	&.fixed-top {
 		background-color: #000000;
+		z-index: 9999;
 	}
 }
 .navbar-brand {
@@ -1097,4 +1098,10 @@ a.gold {
 			color: $color_1;
 		}
 	}
+}
+.f-c-gold {
+	color: $color_7 !important;
+}
+.f-c-gold2 {
+	color: #cb9b51;
 }
