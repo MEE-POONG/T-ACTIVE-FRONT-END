@@ -13,28 +13,27 @@ const ArtistsSection = () => {
               <div className="artists-image-wrap">
                 <img src="images/gallery/4.jpg" className="artists-image img-fluid" />
               </div>
-
               <div className="artists-hover">
                 <p>
-                  <strong>Name:</strong>
-                  Madona
+                  <strong>Posture:</strong>
+                  lifting dumbbells
                 </p>
 
                 <p>
-                  <strong>Birthdate:</strong>
-                  August 16, 1958
+                  <strong>Burn:</strong>
+                  upper arm
                 </p>
 
                 <p>
-                  <strong>Music:</strong>
-                  Pop, R&amp;B
+                  <strong>Do:</strong>
+                  20 s
                 </p>
 
                 <hr />
 
                 <p className="mb-0">
                   <strong>Youtube Channel:</strong>
-                  <a href="#">Madona Official</a>
+                  <a href="https://www.youtube.com/shorts/FOxCMhexNfI">watch</a>
                 </p>
               </div>
             </div>
@@ -43,58 +42,58 @@ const ArtistsSection = () => {
           <Col lg={5} xs={12}>
             <div className="artists-thumb">
               <div className="artists-image-wrap">
-                <img src="images/artists/abstral-official-bdlMO9z5yco-unsplash.jpg" className="artists-image img-fluid" />
+                <img src="images/gallery/IMG_2292.jpg" className="artists-image img-fluid" />
               </div>
 
               <div className="artists-hover">
                 <p>
-                  <strong>Name:</strong>
-                  Rihana
+                  <strong>Posture:</strong>
+                  lifting dumbbells
                 </p>
 
                 <p>
-                  <strong>Birthdate:</strong>
-                  Feb 20, 1988
+                  <strong>Burn:</strong>
+                  upper arm
                 </p>
 
                 <p>
-                  <strong>Music:</strong>
-                  Country
+                  <strong>Do:</strong>
+                  20 s
                 </p>
 
                 <hr />
 
                 <p className="mb-0">
                   <strong>Youtube Channel:</strong>
-                  <a href="#">Rihana Official</a>
+                  <a href="https://www.youtube.com/shorts/FOxCMhexNfI">watch</a>
                 </p>
               </div>
             </div>
 
             <div className="artists-thumb">
-              <img src="images/artists/soundtrap-rAT6FJ6wltE-unsplash.jpg" className="artists-image img-fluid" />
+              <img src="images/gallery/8.jpg" className="artists-image img-fluid" />
 
               <div className="artists-hover">
                 <p>
-                  <strong>Name:</strong>
-                  Bruno Bros
+                  <strong>Posture:</strong>
+                  lifting dumbbells
                 </p>
 
                 <p>
-                  <strong>Birthdate:</strong>
-                  October 8, 1985
+                  <strong>Burn:</strong>
+                  upper arm
                 </p>
 
                 <p>
-                  <strong>Music:</strong>
-                  Pop
+                  <strong>Do:</strong>
+                  20 s
                 </p>
 
                 <hr />
 
                 <p className="mb-0">
                   <strong>Youtube Channel:</strong>
-                  <a href="#">Bruno Official</a>
+                  <a href="https://www.youtube.com/shorts/FOxCMhexNfI">watch</a>
                 </p>
               </div>
             </div>
