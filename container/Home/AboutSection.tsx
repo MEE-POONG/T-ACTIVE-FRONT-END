@@ -4,7 +4,6 @@ import { BsBook } from 'react-icons/bs';
 
 const AboutSection = () => {
   const aboutIntro = intro.filter(item => item.pagelist === 'about');
-  console.log(aboutIntro);
 
   return (
     <section className="about-section section-padding" id="section_2">

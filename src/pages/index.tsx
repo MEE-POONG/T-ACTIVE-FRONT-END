@@ -1,3 +1,4 @@
+import React, { useEffect, useState } from "react";
 import Head from 'next/head';
 import LayOut from "@/components/LayOut";
 import HeroSection from '@/container/Home/HeroSection';
@@ -8,7 +9,18 @@ import ContactSection from '@/container/Home/ContactSection';
 import PricingSection from '@/container/Home/PricingSection';
 import SteviaSection from '@/container/Home/SteviaSection';
 
-export default function HomePage() {
+export default function HomePage(): JSX.Element {
+  const [srcollBG, setSrcollBG] = useState<number>(0);
+  useEffect(() => {
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
+  const handleScroll = () => {
+    setSrcollBG(0 - (document.documentElement.scrollTop / 10));
+
+  };
+
   return (
     <LayOut>
       <Head>
@@ -21,7 +33,7 @@ export default function HomePage() {
       </Head>
       <div className='home-page'>
         <HeroSection />
-        <SteviaSection />
+        <SteviaSection id={''} translateX={0} translateY={srcollBG} />
         <PricingSection />
         <AboutSection />
         <ArtistsSection />

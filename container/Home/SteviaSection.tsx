@@ -1,9 +1,25 @@
+import React from 'react';
+
 import { Container, Row, Col } from 'react-bootstrap';
 import Slider from "react-slick";
 import { intro, productList } from '../../data/test';
 import Link from 'next/link';
 
-const SteviaSection = () => {
+interface SteviaProps {
+  id: string;
+  translateX: number;
+  translateY: number;
+}
+
+const SteviaSection: React.FC<SteviaProps> = ({ id, translateX, translateY }) => {
+  const elementRef = React.useRef<HTMLDivElement>(null);
+  React.useEffect(() => {
+    const element = elementRef.current;
+
+    if (element) {
+      element.style.transform = `translate(${translateX}px, ${translateY}px)`;
+    }
+  }, [translateX, translateY]);
   const productIntro = intro.filter(item => item.pagelist === 'stevia');
   const productsWithPromotion = productList;
 
@@ -128,7 +144,7 @@ const SteviaSection = () => {
 
       </Container>
       <div className="video-wrap ">
-        <div style={{ backgroundImage: 'url(./images/gallery/bg1.jpg)' }} className="custom-video" />
+        <div id={id} ref={elementRef} style={{ backgroundImage: 'url(./images/gallery/bg1.jpg)' }} className="custom-video" />
 
       </div>
     </section>
