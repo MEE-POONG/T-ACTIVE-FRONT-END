@@ -67,25 +67,7 @@ const SteviaSection: React.FC<SteviaProps> = ({ id, translateX, translateY }) =>
             <h3 className='text-center'>{productIntro[0]?.srcipTwo}</h3>
           </Col>
         </Row>
-        <Row>
-          <Col lg={4}>
-            <p className='f-c-gold'>&emsp;&emsp;
-              Stevia is a natural sweetener.
-              The leaves of the plant contain sweet compounds called steviol glycosides.
-              which is 400 times sweeter than normal sugar
-            </p>
-          </Col>
-          <Col lg={4}>
-            <p className='f-c-gold'>&emsp;&emsp;
-              Our products are sweet, delicious, not bitter, not overpowering, and smell good.
-            </p>
-          </Col>
-          <Col lg={4}>
-            <p className='f-c-gold'>&emsp;&emsp;
-              Stevia extract can withstand heat up to 220 degrees and can be used in baking and cooking instead of sugar.
-            </p>
-          </Col>
-        </Row>
+
         <Row>
           <Col lg={4}>
             <div className="d-flex">
@@ -126,6 +108,26 @@ const SteviaSection: React.FC<SteviaProps> = ({ id, translateX, translateY }) =>
               A good option for those on a low carb or ketogenic diet.
             </p>
           </Col>
+
+        </Row>
+        <Row>
+          <Col lg={4}>
+            <p className='f-c-gold'>&emsp;&emsp;
+              Stevia is a natural sweetener.
+              The leaves of the plant contain sweet compounds called steviol glycosides.
+              which is 400 times sweeter than normal sugar
+            </p>
+          </Col>
+          <Col lg={4}>
+            <p className='f-c-gold'>&emsp;&emsp;
+              Our products are sweet, delicious, not bitter, not overpowering, and smell good.
+            </p>
+          </Col>
+          <Col lg={4}>
+            <p className='f-c-gold'>&emsp;&emsp;
+              Stevia extract can withstand heat up to 220 degrees and can be used in baking and cooking instead of sugar.
+            </p>
+          </Col>
           <Col lg={12}>
             <Link className="link-fx-1 color-contrast-higher mt-4 f-c-gold" href="ticket.html">
               <h3 className='f-c-gold'>
@@ -141,7 +143,6 @@ const SteviaSection: React.FC<SteviaProps> = ({ id, translateX, translateY }) =>
             </Link>
           </Col>
         </Row>
-
       </Container>
       <div className="video-wrap ">
         <div id={id} ref={elementRef} style={{ backgroundImage: 'url(./images/gallery/bg1.jpg)' }} className="custom-video" />

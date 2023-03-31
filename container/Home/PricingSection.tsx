@@ -45,7 +45,7 @@ const PricingSection = () => {
           <Col lg={8} className="mx-auto">
             <h1 className="text-center f-s-cookie m-0 f-c-gold">{productIntro[0]?.title}</h1>
             <h3 className='text-center f-c-gold'>{productIntro[0]?.srcipOne}</h3>
-            <h3 className='text-center f-c-gold'>{productIntro[0]?.srcipTwo}</h3>
+            <h3 className='text-center f-c-gold mb-5'>{productIntro[0]?.srcipTwo}</h3>
           </Col>
         </Row>
         <Slider {...settingsSlide}>
