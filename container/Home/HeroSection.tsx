@@ -16,10 +16,10 @@ const HeroSection = () => {
       <Container className="d-flex justify-content-center align-items-center">
         <Row>
           {homeIntro?.map((homeIntro) => (
-            <Col key={homeIntro.pagelist} className="mt-auto mb-5 text-center">
+            <Col key={homeIntro.pagelist} className="mt-lg-auto mb-lg-5 text-center">
               <h3 className='f-c-gold f-s-cookie'>{homeIntro?.title}</h3>
-              <h1 className="f-c-gold mb-5">{homeIntro?.srcipOne}</h1>
-              <h1 className="f-c-gold mb-5">{homeIntro?.srcipTwo}</h1>
+              <h1 className="f-c-gold mb-lg-5 mb-md-3">{homeIntro?.srcipOne}</h1>
+              <h1 className="f-c-gold mb-lg-5 mb-md-3">{homeIntro?.srcipTwo}</h1>
               <Link className="gold smoothscroll " href="/about">
                 {homeIntro?.textButton}
               </Link>
