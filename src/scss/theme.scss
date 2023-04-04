@@ -723,11 +723,9 @@ strong {
 	.country-background-image {
 		// background-image: url('../images/artists/soundtrap-rAT6FJ6wltE-unsplash.jpg');
 	}
-	h3 {
-		color: $color_5;
-		position: relative;
-		z-index: 2;
-	}
+	h3,
+	h4,
+	h5,
 	p {
 		color: $color_5;
 		position: relative;
