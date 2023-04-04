@@ -17,7 +17,7 @@ export const openingHours = [
     { id: '5', sevenDay: 'Friday', opening: '08.00', closed: '16.00', activityDay: 'weekday' },
     { id: '6', sevenDay: 'Saturday', opening: '08.00', closed: '16.00', activityDay: 'weekday' },
     { id: '7', sevenDay: 'Sunday', opening: '08.00', closed: '16.00', activityDay: 'weekday' },
-    { id: '8', day: '2023-03-25', opening: '09.00', closed: '16.00', activityDay: 'special' },
+    { id: '8', day: '2023-04-04T00:41:51.499Z', opening: '09.00', closed: '16.00', activityDay: 'special' },
     { id: '9', day: '2023-03-26', opening: '10.00', closed: '16.00', activityDay: 'special' },
 ];
 export const intro_product = [
@@ -34,13 +34,19 @@ export const productList = [
 ];
 
 export const event = [
-    { id: '1', title: 'Original Flavour "250ml"', srcipOne: 'Use to sweeten your beverages and foods naturally.', srcipTwo: "aaaa", subDetail: "aaaa", detailOne: "aaaa", detailTwo: "aaaa", detailThree: "aaaa", listOne: "aaaa", listTwo: "", listThree: "", start: "2023-03-25", end: "2023-03-25", img: "images/product/IMG_O.jpg" },
-    { id: '2', title: 'Vanilla flavor "250ml"', srcipOne: 'Use to sweeten your beverages and foods naturally.', srcipTwo: "aaaa", subDetail: "aaaa", detailOne: "aaaa", detailTwo: "aaaa", detailThree: "aaaa", listOne: "aaaa", listTwo: "", listThree: "", start: "2023-03-25", end: "2023-03-25", img: "images/product/IMG_V.jpg" },
-    { id: '3', title: 'Original Flavour Mini', srcipOne: 'Use to sweeten your beverages and foods naturally.', srcipTwo: "aaaa", subDetail: "aaaa", detailOne: "aaaa", detailTwo: "aaaa", detailThree: "aaaa", listOne: "aaaa", listTwo: "", listThree: "", start: "2023-03-25", end: "2023-03-25", img: "images/product/IMG_Mini.jpg" },
+    { id: '1', title: 'Original Flavour "250ml"', srcipOne: 'Use to sweeten your beverages and foods naturally.', srcipTwo: "aaaa", subDetail: "aaaa", detailOne: "aaaa", detailTwo: "aaaa", detailThree: "aaaa", listOne: "aaaa", listTwo: "", listThree: "", start: "2023-04-04T00:41:51.499Z", end: "2023-04-04T00:41:51.499Z", img: "images/product/IMG_O.jpg" },
+    { id: '2', title: 'Vanilla flavor "250ml"', srcipOne: 'Use to sweeten your beverages and foods naturally.', srcipTwo: "aaaa", subDetail: "aaaa", detailOne: "aaaa", detailTwo: "aaaa", detailThree: "aaaa", listOne: "aaaa", listTwo: "", listThree: "", start: "2023-04-07T00:41:51.499Z", end: "2023-04-07T00:41:51.499Z", img: "images/product/IMG_V.jpg" },
+    { id: '3', title: 'Original Flavour Mini', srcipOne: 'Use to sweeten your beverages and foods naturally.', srcipTwo: "aaaa", subDetail: "aaaa", detailOne: "aaaa", detailTwo: "aaaa", detailThree: "aaaa", listOne: "aaaa", listTwo: "", listThree: "", start: "2023-04-09T00:41:51.499Z", end: "2023-04-09T00:41:51.499Z", img: "images/product/IMG_Mini.jpg" },
 ];
 
 export const blog = [
+<<<<<<< HEAD
     { id: '1', title: 'Original Flavour "250ml"', srcipOne: 'Use to sweeten your beverages and foods naturally.', srcipTwo: "aaaa", subDetail: "aaaa", detailOne: "aaaa", detailTwo: "aaaa", detailThree: "aaaa", listOne: "aaaa", listTwo: "", listThree: "", start: "2023-03-25", end: "2023-03-25", img: "images/product/IMG_O.jpg" },
     { id: '2', title: 'Vanilla flavor "250ml"', srcipOne: 'Use to sweeten your beverages and foods naturally.', srcipTwo: "aaaa", subDetail: "aaaa", detailOne: "aaaa", detailTwo: "aaaa", detailThree: "aaaa", listOne: "aaaa", listTwo: "", listThree: "", start: "2023-03-25", end: "2023-03-25", img: "images/product/IMG_V.jpg" },
     { id: '3', title: 'Original Flavour Mini', srcipOne: 'Use to sweeten your beverages and foods naturally.', srcipTwo: "aaaa", subDetail: "aaaa", detailOne: "aaaa", detailTwo: "aaaa", detailThree: "aaaa", listOne: "aaaa", listTwo: "", listThree: "", start: "2023-03-25", end: "2023-03-25", img: "images/product/IMG_Mini.jpg" },
+=======
+    { id: '1', title: 'Original Flavour "250ml"', srcipOne: 'Use to sweeten your beverages and foods naturally.', srcipTwo: "aaaa", subDetail: "aaaa", detailOne: "aaaa", detailTwo: "aaaa", detailThree: "aaaa", listOne: "aaaa", listTwo: "", listThree: "", start: "2023-04-04T00:41:51.499Z", end: "2023-04-04T00:41:51.499Z", img: "images/product/IMG_O.jpg" },
+    { id: '2', title: 'Vanilla flavor "250ml"', srcipOne: 'Use to sweeten your beverages and foods naturally.', srcipTwo: "aaaa", subDetail: "aaaa", detailOne: "aaaa", detailTwo: "aaaa", detailThree: "aaaa", listOne: "aaaa", listTwo: "", listThree: "", start: "2023-07-04T00:41:51.499Z", end: "2023-07-08T00:41:51.499Z", img: "images/product/IMG_V.jpg" },
+    { id: '3', title: 'Original Flavour Mini', srcipOne: 'Use to sweeten your beverages and foods naturally.', srcipTwo: "aaaa", subDetail: "aaaa", detailOne: "aaaa", detailTwo: "aaaa", detailThree: "aaaa", listOne: "aaaa", listTwo: "", listThree: "", start: "2023-010-04T00:41:51.499Z", end: "2023-10-04T00:41:51.499Z", img: "images/product/IMG_Mini.jpg" },
+>>>>>>> bf91e15625a2b286f3d62c6c06e87709e54cdc6b
 ];
