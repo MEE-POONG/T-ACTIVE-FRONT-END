@@ -7,7 +7,7 @@ export const intro = [
     { id: '5', title: 'What is Stevia?', srcipOne: "", srcipTwo: '', srcipThree: '', textButton: '', pagelist: 'stevia' },
 ];
 export const setting = [
-    { id: '1', businessName: 't active stevia', facebookName: 'T Active Stevia Syrup', facebookLink: 'www.facebook.com/t.active.stevia', intragarmName: 'T Active Stevia Syrup', intragarmLink: 'www.facebook.com/t.active.stevia', lineName: 'nattavee', lineLinK: 'asdas.com', lineID: '@Stevia', tel: '06444482650', addressOne: '46/4 ถ.ราชนิกูล', addressTwo: 'หมู่ 7', addressThree: '', subDistrict: 'เมือง', district: 'ในเมือง', city: 'นครราชสีมา', postalCode: '30130', location: '1' },
+    { id: '1', businessName: 't active stevia', facebookName: 'T Active Stevia Syrup', facebookLink: 'www.facebook.com/t.active.stevia', intragarmName: 'T Active Stevia Syrup', intragarmLink: 'www.facebook.com/t.active.stevia', lineName: 'nattavee', lineLinK: 'asdas.com', lineID: '@Stevia', tel: '06444482650', addressOne: '46/4 Ratchanikun', addressTwo: 'Moo 7', addressThree: '', subDistrict: 'Nai Mueang', district: 'Mueang Nakhon Ratchasima District', city: 'Nakhon Ratchasima', postalCode: '30000', location: '1' },
 ];
 export const openingHours = [
     { id: '1', sevenDay: 'Monday', opening: '08.00', closed: '16.00', activityDay: 'weekday' },

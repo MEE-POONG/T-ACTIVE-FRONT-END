@@ -87,7 +87,7 @@ const Footer: React.FC = () => {
             <Col lg={3} md={6} className="mb-4 mb-lg-0 mb-md-0">
               <h5 className="site-footer-title mb-3">Location</h5>
               <p className="text-white d-flex mt-3 mb-2">
-                Silang Junction South, Tagaytay, Cavite, Philippines
+                46/4 Ratchanikun, Nai Mueang, Mueang Nakhon Ratchasima District, Nakhon Ratchasima 30000
               </p>
               <a className="link-fx-1 color-contrast-higher mt-3" href="#">
                 <span>Our Maps</span>
@@ -107,11 +107,11 @@ const Footer: React.FC = () => {
             <Row>
               <Col lg={3} xs={12} className="mt-5">
                 <p className="copyright-text">
-                  Copyright © 2036 Festava Live Company
+                  Copyright © 2036 ME PROMPT TECHNOLOGY COMPANY LIMITED
                 </p>
                 <p className="copy-text">
                   Distributed by:{' '}
-                  <Link href="https://themewagon.com">ThemeWagon</Link>
+                  <Link href="https://themewagon.com">ThemeMePromt</Link>
                 </p>
               </Col>
               <Col lg={8} xs={12} className="mt-lg-5">
