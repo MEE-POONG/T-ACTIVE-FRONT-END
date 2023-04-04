@@ -129,7 +129,7 @@ const SteviaSection: React.FC<SteviaProps> = ({ id, translateX, translateY }) =>
             </p>
           </Col>
           <Col lg={12}>
-            <Link className="link-fx-1 color-contrast-higher mt-4 f-c-gold" href="ticket.html">
+            <Link className="link-fx-1 color-contrast-higher mt-4 f-c-gold" href="about">
               <h3 className='f-c-gold'>
                 <span>Read Stevia</span>
                 <svg className="icon" viewBox="0 0 32 32" aria-hidden="true">

@@ -24,7 +24,7 @@ export default function HomePage(): JSX.Element {
   return (
     <LayOut>
       <Head>
-        <title>HOME | dxx=</title>
+        <title>HOME | T-Active Stevia</title>
         <meta
           name="description"
           content="T ACTIVE"
