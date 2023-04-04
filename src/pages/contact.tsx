@@ -79,7 +79,7 @@ export default function ContactPage(){
                                 
                                <div className="contact-detail">
                                     <i className=""> <BsCalendar3 /></i>
-                                    <span> Every Day 08.00 - 16.00</span>
+                                    <span> Open daily from  08.00 to 16.00</span>
                                </div>
                                 
 

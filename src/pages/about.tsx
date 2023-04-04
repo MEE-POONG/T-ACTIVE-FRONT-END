@@ -58,7 +58,7 @@ export default function AboutPage () {
 
                             <Row>
                               <Col sm={4}>
-                                <img className="img-2" src="/images/about/tainna.jpg" alt=""/>
+                                <img className="img-2" src="/images/about/tainna2.jpg" alt=""/>
                                 </Col> 
                                 <Col sm={8} className="text1">
                                 <h3 >My solution:</h3>

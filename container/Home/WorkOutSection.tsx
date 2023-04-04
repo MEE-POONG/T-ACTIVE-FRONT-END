@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import { Container, Row, Col } from 'react-bootstrap';
 
 const WorkOutSection = () => {
@@ -97,6 +98,20 @@ const WorkOutSection = () => {
                 </p>
               </div>
             </div>
+          </Col>
+          <Col lg={12}>
+            <Link className="link-fx-1 color-contrast-higher mt-4 f-c-gold " href="blog">
+                <h3 className='f-c-gold'>
+                  <span>See More</span>
+                  <svg className="icon" viewBox="0 0 32 32" aria-hidden="true">
+                    <g fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round">
+                      <circle cx="16" cy="16" r="15.5"></circle>
+                      <line x1="10" y1="18" x2="16" y2="12"></line>
+                      <line x1="16" y1="12" x2="22" y2="18"></line>
+                    </g>
+                  </svg>
+                </h3>
+            </Link>
           </Col>
         </Row>
       </Container>

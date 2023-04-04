@@ -44,7 +44,3 @@ export const blog = [
     { id: '2', title: 'Vanilla flavor "250ml"', srcipOne: 'Use to sweeten your beverages and foods naturally.', srcipTwo: "aaaa", subDetail: "aaaa", detailOne: "aaaa", detailTwo: "aaaa", detailThree: "aaaa", listOne: "aaaa", listTwo: "", listThree: "", start: "2023-03-25", end: "2023-03-25", img: "images/product/IMG_V.jpg" },
     { id: '3', title: 'Original Flavour Mini', srcipOne: 'Use to sweeten your beverages and foods naturally.', srcipTwo: "aaaa", subDetail: "aaaa", detailOne: "aaaa", detailTwo: "aaaa", detailThree: "aaaa", listOne: "aaaa", listTwo: "", listThree: "", start: "2023-03-25", end: "2023-03-25", img: "images/product/IMG_Mini.jpg" },
 ];
-
-export const stevia = [
-
-];
