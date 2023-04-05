@@ -1,11 +1,12 @@
 .about-page {
     .container {
         margin-top: 6em;
-
+    }
+    img{
+        border-radius: 15px;
     }
     .img-1{
         width: 350px;
-        border-radius: 5px;
         margin-left: auto;
         margin-right: auto;
     }
@@ -15,10 +16,12 @@
     }
     .img-2{
         width: 100%;
-        border-radius: 5px;
         margin-top:2rem;
         margin-left: auto;
         margin-right: auto;  
+    }
+    .section-1 {
+        position: relative;
     }
     .top-right {
         position: absolute;
@@ -26,9 +29,6 @@
         right: 3rem;
         left: 35rem;
         // background-color: black;
-      }
-    .section-1 {
-        position: relative;
     }
 
     .tainna {
@@ -41,4 +41,52 @@
     .text1{
         margin-top: 3rem;
     }
+
+    
+  @media  (min-width: 300px) and (max-width: 650px) {
+    .img-1{
+        width: 280px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    p{
+        text-indent: 20px;
+        font-size: 12px;
+    }
+    .top-right {
+        position: absolute;
+        top: 19rem;
+        right: 1rem;
+        left: 2rem;
+        // background-color: black;
+      }
+      .tainna {
+        margin-top: 20rem;
+    }
+    .row {
+        padding: 0rem;
+    }
+  }
+
+  @media (min-width: 700px) and (max-width: 1200px){
+    .img-1{
+        width: 230px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    p{
+        text-indent: 20px;
+        font-size: 14px;
+    }
+    .top-right {
+        position: absolute;
+        top: 4rem;
+        right: 1rem;
+        left: 17rem;
+        // background-color: black;
+      }
+      .row {
+        padding: 0rem;
+    }
+  }
 }

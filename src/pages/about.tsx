@@ -7,7 +7,7 @@ export default function AboutPage () {
     return (
         <LayOut>
             <div className="about-page">
-                <Container className="">
+                <Container>
                     <h2 className="mb-4">What is a Stevia?</h2>
                     <Row>
                         <Col sm={4}>
@@ -20,7 +20,7 @@ export default function AboutPage () {
                         </Col>
                     </Row> 
 
-                    <section className="section-1">
+                    <section className="section-1" id="about_tainna">
                         <h2 className="text-center mt-5"> Overview </h2>
                         <img className="img-2" src="/images/about/IMG_9069.jpg" alt=""/>
                         <div className="top-right text1">
@@ -58,7 +58,7 @@ export default function AboutPage () {
 
                             <Row>
                               <Col sm={4}>
-                                <img className="img-2" src="/images/about/tainna.jpg" alt=""/>
+                                <img className="img-2" src="/images/about/tainna2.jpg" alt=""/>
                                 </Col> 
                                 <Col sm={8} className="text1">
                                 <h3 >My solution:</h3>
