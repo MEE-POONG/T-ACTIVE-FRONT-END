@@ -24,9 +24,9 @@ export default function AboutPage () {
                         <h2 className="text-center mt-5"> Overview </h2>
                         <img className="img-2" src="/images/about/IMG_9069.jpg" alt=""/>
                         <div className="top-right text1">
-                        <p>The history of selling T-Active brand sweet grass products started with research and development to create the best product possible. The research team selected high-quality ingredients to create a formula for the product, resulting in a high-quality product that could compete with other brands.
-                        Once T-Active sweet grass products were developed, the marketing team planned a marketing strategy and created the T-Active brand to have a clear identity and be well-known in the market. The marketing strategy focused on consumers who want to maintain good health and take care of their bodies holistically.
-                        The marketing approach for T-Active sweet grass products was supported by a group of customers who have a desire to maintain their bodies effectively. This caused marketing to focus on people with lifestyles that value health and wellness.
+                        <p>The history of selling T-Active brand stevia products started with research and development to create the best product possible. The research team selected high-quality ingredients to create a formula for the product, resulting in a high-quality product that could compete with other brands.
+                        Once T-Active stevia products were developed, the marketing team planned a marketing strategy and created the T-Active brand to have a clear identity and be well-known in the market. The marketing strategy focused on consumers who want to maintain good health and take care of their bodies holistically.
+                        The marketing approach for T-Active stevia products was supported by a group of customers who have a desire to maintain their bodies effectively. This caused marketing to focus on people with lifestyles that value health and wellness.
                         </p>
                         </div>
 

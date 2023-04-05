@@ -31,7 +31,7 @@ export default function NavigationBar(): JSX.Element {
               <Link href="/" className={asPath === "/" ? "nav-link click-scroll active" : "nav-link click-scroll"}>
                 Home
               </Link>
-              <Link href="#section_5" className={asPath === "/product" ? "nav-link click-scroll active" : "nav-link click-scroll"}>
+              <Link href="products" className={asPath === "/product" ? "nav-link click-scroll active" : "nav-link click-scroll"}>
                 Product
               </Link>
               <Link href="about" className={asPath === "/about" ? "nav-link click-scroll active" : "nav-link click-scroll"}>
