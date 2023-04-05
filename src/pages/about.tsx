@@ -7,7 +7,7 @@ export default function AboutPage () {
     return (
         <LayOut>
             <div className="about-page">
-                <Container className="">
+                <Container>
                     <h2 className="mb-4">What is a Stevia?</h2>
                     <Row>
                         <Col sm={4}>

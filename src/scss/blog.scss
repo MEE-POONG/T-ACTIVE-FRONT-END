@@ -2,4 +2,21 @@
     .container{
         margin-top: 10rem;
     }
+    * {
+    box-sizing: border-box;
+  }
+  .blog-img{
+    border-radius: var(--border-radius-medium);
+	width: 100%;
+  }
+  .card-text{
+    margin:-30px auto;
+    margin-bottom:-50px;
+    height:300px;
+    width:300px;
+    background-color:#e0aa5d;
+    color:#fff;
+    padding:20px;
+  }
+
 }

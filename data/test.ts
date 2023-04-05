@@ -40,13 +40,7 @@ export const event = [
 ];
 
 export const blog = [
-<<<<<<< HEAD
-    { id: '1', title: 'Original Flavour "250ml"', srcipOne: 'Use to sweeten your beverages and foods naturally.', srcipTwo: "aaaa", subDetail: "aaaa", detailOne: "aaaa", detailTwo: "aaaa", detailThree: "aaaa", listOne: "aaaa", listTwo: "", listThree: "", start: "2023-03-25", end: "2023-03-25", img: "images/product/IMG_O.jpg" },
-    { id: '2', title: 'Vanilla flavor "250ml"', srcipOne: 'Use to sweeten your beverages and foods naturally.', srcipTwo: "aaaa", subDetail: "aaaa", detailOne: "aaaa", detailTwo: "aaaa", detailThree: "aaaa", listOne: "aaaa", listTwo: "", listThree: "", start: "2023-03-25", end: "2023-03-25", img: "images/product/IMG_V.jpg" },
-    { id: '3', title: 'Original Flavour Mini', srcipOne: 'Use to sweeten your beverages and foods naturally.', srcipTwo: "aaaa", subDetail: "aaaa", detailOne: "aaaa", detailTwo: "aaaa", detailThree: "aaaa", listOne: "aaaa", listTwo: "", listThree: "", start: "2023-03-25", end: "2023-03-25", img: "images/product/IMG_Mini.jpg" },
-=======
     { id: '1', title: 'Original Flavour "250ml"', srcipOne: 'Use to sweeten your beverages and foods naturally.', srcipTwo: "aaaa", subDetail: "aaaa", detailOne: "aaaa", detailTwo: "aaaa", detailThree: "aaaa", listOne: "aaaa", listTwo: "", listThree: "", start: "2023-04-04T00:41:51.499Z", end: "2023-04-04T00:41:51.499Z", img: "images/product/IMG_O.jpg" },
     { id: '2', title: 'Vanilla flavor "250ml"', srcipOne: 'Use to sweeten your beverages and foods naturally.', srcipTwo: "aaaa", subDetail: "aaaa", detailOne: "aaaa", detailTwo: "aaaa", detailThree: "aaaa", listOne: "aaaa", listTwo: "", listThree: "", start: "2023-07-04T00:41:51.499Z", end: "2023-07-08T00:41:51.499Z", img: "images/product/IMG_V.jpg" },
     { id: '3', title: 'Original Flavour Mini', srcipOne: 'Use to sweeten your beverages and foods naturally.', srcipTwo: "aaaa", subDetail: "aaaa", detailOne: "aaaa", detailTwo: "aaaa", detailThree: "aaaa", listOne: "aaaa", listTwo: "", listThree: "", start: "2023-010-04T00:41:51.499Z", end: "2023-10-04T00:41:51.499Z", img: "images/product/IMG_Mini.jpg" },
->>>>>>> bf91e15625a2b286f3d62c6c06e87709e54cdc6b
 ];
