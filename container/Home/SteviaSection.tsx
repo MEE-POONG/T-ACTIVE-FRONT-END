@@ -146,7 +146,6 @@ const SteviaSection: React.FC<SteviaProps> = ({ id, translateX, translateY }) =>
       </Container>
       <div className="video-wrap ">
         <div id={id} ref={elementRef} style={{ backgroundImage: 'url(./images/gallery/bg1.jpg)' }} className="custom-video" />
-
       </div>
     </section>
   );
