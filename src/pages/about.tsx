@@ -20,7 +20,7 @@ export default function AboutPage () {
                         </Col>
                     </Row> 
 
-                    <section className="section-1">
+                    <section className="section-1" id="about_tainna">
                         <h2 className="text-center mt-5"> Overview </h2>
                         <img className="img-2" src="/images/about/IMG_9069.jpg" alt=""/>
                         <div className="top-right text1">

@@ -1,6 +1,7 @@
 import { Container, Row, Col } from 'react-bootstrap';
 import { intro } from './../../data/test';
 import { BsBook } from 'react-icons/bs';
+import Link from 'next/link';
 
 const AboutSection = () => {
   const aboutIntro = intro.filter(item => item.pagelist === 'about');
@@ -40,8 +41,8 @@ const AboutSection = () => {
                 </div>
 
                 <div className="ms-4">
-                  <h3>Get to know Click</h3>
-
+                  <Link href="about" ><h3>Get to know Click</h3></Link>
+                  
                   <p className="mb-0">Stevia and the brand leader</p>
                 </div>
               </div>
