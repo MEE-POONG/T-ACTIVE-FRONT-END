@@ -3,17 +3,17 @@ import LayOut from "@/components/LayOut";
 import Link from "next/link";
 import React from "react";
 import { Col, Container, Row } from "react-bootstrap";
-import { event } from "../../data/test";
+import { blog } from "../../data/test";
 import moment from "moment";
 
-export default function EventPage() {
+export default function BlogPage() {
     return (
         <LayOut>
-            <div className="event-page">
+            <div className="blog-page">
                 <Container>
-                    <h2 className="text-center mb-5">Evebt</h2>
+                    <h2 className="text-center mb-5">Blog</h2>
                     <Row xs="auto">
-                        {event.map((item) => (
+                        {blog.map((item) => (
                             <Col key={item.id} sm={12} md={6} lg={4} className="text-center">
                                 <div className="a-box">
                                     <div className="img-container">
