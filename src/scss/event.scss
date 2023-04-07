@@ -1,4 +1,4 @@
-.blog-page {
+.event-page {
   .container {
     margin-top: 10rem;
     margin-bottom: 5rem;
@@ -21,9 +21,9 @@
   }
 
   .img-container img {
-    transform: skew(0deg, -13deg);
+    transform: skew(0deg, 13deg);
     height: 250px;
-    margin: -20px 0px 0px -70px;
+    margin: -30px 0px 0px -70px;
     object-fit: cover;
     width: 300px;
 
@@ -34,7 +34,7 @@
     border-radius: 20px;
     overflow: hidden;
     padding: 0px;
-    transform: skew(0deg, 13deg);
+    transform: skew(0deg, -13deg);
     font-size: 0px;
     margin: 30px 0px 0px 0px;
     background: #c8c2c2;

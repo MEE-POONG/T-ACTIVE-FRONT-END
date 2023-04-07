@@ -9,3 +9,8 @@
 .object-fit-contain{
     object-fit: contain;
 }
+.topic-row{
+    display: flex;
+    flex-direction: column;
+    gap: 10px; 
+}
