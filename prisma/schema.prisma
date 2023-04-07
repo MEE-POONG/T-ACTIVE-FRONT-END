@@ -42,7 +42,7 @@ model Contact {
   deleted_at DateTime? @map("deleted_at")
 }
 
-model Blog {
+model Workout {
   id          String    @id @default(auto()) @map("_id") @db.ObjectId
   blogTitle   String?
   Topic       String?
@@ -66,4 +66,21 @@ model Products {
   createdAt          DateTime? @default(now())
   updatedAt          DateTime? @updatedAt
   deleted_at         DateTime? @map("deleted_at")
+}
+
+model Blog {
+  id              String    @id @default(auto()) @map("_id") @db.ObjectId
+  blogTitle       String?
+  blogSubtitle    String?
+  blogDescription String?
+  blogImage       String?
+  createdAt       DateTime? @default(now())
+  updatedAt       DateTime? @updatedAt
+  deleted_at      DateTime? @map("deleted_at")
+}
+
+model Event {
+  id String @id @default(auto()) @map("_id") @db.ObjectId
+  eventTitle String?
+  
 }
