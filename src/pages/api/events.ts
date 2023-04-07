@@ -1,6 +1,5 @@
-import { PrismaClient } from "@prisma/client";
-
-const prisma = new PrismaClient();
+import { PrismaClient } from "@prisma/client"
+const prisma = new PrismaClient()
 
 import type { NextApiRequest, NextApiResponse } from 'next'
 
@@ -9,7 +8,7 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
     switch (method) {
         case 'GET':
             try {
-                const data = await prisma.contact.findMany({});
+                const data = await prisma.event.findMany({});
                 res.status(200).json(data)
             } catch (err) {
                 res.status(400).json({
@@ -26,4 +25,3 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
             break;
     }
 }
-

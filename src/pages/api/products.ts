@@ -27,6 +27,3 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
     }
 }
 
-
-
-// const blog = await prisma.blog.findMany();
