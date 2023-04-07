@@ -3,6 +3,7 @@ import moment from 'moment';
 import { Container, Row, Col, Table, Carousel, Card } from 'react-bootstrap';
 import { event, blog } from './../../data/test';
 import Link from 'next/link';
+import Slider from 'react-slick';
 
 type BlogItem = {
   id: string;
@@ -10,6 +11,8 @@ type BlogItem = {
   subtitle: string;
   img: string;
   link?: string;
+  start: string;
+  end: string;
   // Add other properties as needed
 };
 type EventItem = {
@@ -18,10 +21,76 @@ type EventItem = {
   subtitle: string;
   img: string;
   link?: string;
+  start: string;
+  end: string;
   // Add other properties as needed
 };
 const BlogEventSection: FC = () => {
-
+  var settingsBlog = {
+    dots: false,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 2,
+    slidesToScroll: 1,
+    initialSlide: 0,
+    autoplay: true,
+    rtl: true,
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+        }
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+        }
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+        }
+      }
+    ]
+  };
+  var settingsEvent = {
+    dots: false,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 2,
+    slidesToScroll: 1,
+    initialSlide: 0,
+    autoplay: true,
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+        }
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+        }
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+        }
+      }
+    ]
+  };
   const blogItems = blog.map((item: BlogItem) => (
     <div className="a-box">
       <div className="img-container">
@@ -45,13 +114,13 @@ const BlogEventSection: FC = () => {
               <p><strong className="m-0">start :</strong></p>
             </Col>
             <Col className="p-0 m-0" xs={7}>
-              {/* <p>{moment(item.start).format('HH:mm DD MMM YY')}</p> */}
+              <p>{moment(item.start).format('HH:mm DD MMM YY')}</p>
             </Col>
             <Col className="p-0 m-0" xs={5}>
               <p><strong className="m-0">end :</strong></p>
             </Col>
             <Col className="p-0 m-0" xs={7}>
-              {/* <p>{moment(item.end).format('HH:mm DD MMM YY')}</p> */}
+              <p>{moment(item.end).format('HH:mm DD MMM YY')}</p>
             </Col>
           </Row>
           <hr />
@@ -94,13 +163,13 @@ const BlogEventSection: FC = () => {
               <p><strong className="m-0">start :</strong></p>
             </Col>
             <Col className="p-0 m-0" xs={7}>
-              {/* <p>{moment(item.start).format('HH:mm DD MMM YY')}</p> */}
+              <p>{moment(item.start).format('HH:mm DD MMM YY')}</p>
             </Col>
             <Col className="p-0 m-0" xs={5}>
               <p><strong className="m-0">end :</strong></p>
             </Col>
             <Col className="p-0 m-0" xs={7}>
-              {/* <p>{moment(item.end).format('HH:mm DD MMM YY')}</p> */}
+              <p>{moment(item.end).format('HH:mm DD MMM YY')}</p>
             </Col>
           </Row>
           <hr />
@@ -128,14 +197,18 @@ const BlogEventSection: FC = () => {
           <Col xs={12} md={6} className='blog-page'>
             <h1 className="f-s-cookie mb-4 text-center">Blogs</h1>
             <div className="artists-thumb">
-              {blogItems}
+              <Slider {...settingsBlog}>
+                {blogItems}
+              </Slider>
             </div>
           </Col>
           <Col xs={12} md={6} className='event-page'>
             <h1 className="f-s-cookie mb-4 text-center">Events</h1>
             <div className="artists-thumb">
               <div className="artists-thumb">
-                {eventItems}
+                <Slider {...settingsEvent}>
+                  {eventItems}
+                </Slider>
               </div>
             </div>
           </Col>
