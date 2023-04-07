@@ -13,7 +13,6 @@ type BlogItem = {
   link?: string;
   start: string;
   end: string;
-  // Add other properties as needed
 };
 type EventItem = {
   id: string;
@@ -23,7 +22,6 @@ type EventItem = {
   link?: string;
   start: string;
   end: string;
-  // Add other properties as needed
 };
 const BlogEventSection: FC = () => {
   var settingsBlog = {
