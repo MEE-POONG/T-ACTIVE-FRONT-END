@@ -31,7 +31,7 @@ export default function ProductsPage() {
                                     <div className="price">
                                         <p>
                                             <strong>Price:</strong>
-                                            <i>600</i> Baht.
+                                            <i>690</i> Baht.
                                         </p>
                                     </div>
                                 </div>
@@ -60,7 +60,7 @@ export default function ProductsPage() {
                                     <div className="price">
                                         <p>
                                             <strong>Price:</strong>
-                                            <i>600</i> Baht.
+                                            <i>690</i> Baht.
                                         </p>
                                     </div>
                                 </div>
@@ -82,7 +82,7 @@ export default function ProductsPage() {
                                         <strong>Description:</strong>
                                         An extract from the stevia plant that does not add color but does not flavor, is used as a sugar substitute in cooking or in beverages. Trial size is suitable for those who want to try it for the first time or for portability.
                                     </p>
-                                    <p>
+                                    {/* <p>
                                         <strong>Volume:</strong>
                                         <i>50</i> ml.
                                     </p>
@@ -91,7 +91,7 @@ export default function ProductsPage() {
                                             <strong>Price:</strong>
                                             <i>600</i> Baht.
                                         </p>
-                                    </div>
+                                    </div> */}
                                 </div>
                             </Col>
                         </Row>
