@@ -1,5 +1,6 @@
 .products-page{
    margin-top: 7rem;
+   padding: 10rem;
    .top-card{
     margin-top: 2rem;
     width: 840px;
@@ -49,6 +50,10 @@
 
 
    @media (min-width: 300px) and (max-width: 1200px) {
+    padding: 0;
+    .top-img{
+       display: none;
+       }
     .top-card{
         margin-top: 2rem;
         width: auto;
