@@ -3,15 +3,16 @@ import LayOut from "@/components/LayOut";
 import Link from "next/link";
 import React from "react";
 import { Col, Container, Row } from "react-bootstrap";
-import { blog } from "../../data/test";
+import { blog } from "../../../data/test";
 import moment from "moment";
 
 export default function BlogPage() {
+    
     return (
         <LayOut>
             <div className="blog-page">
                 <Container>
-                    <h2 className="text-center mb-5">Blog</h2>
+                    <h2 className="text-center mb-5">Blogs</h2>
                     <Row xs="auto">
                         {blog.map((item) => (
                             <Col key={item.id} sm={12} md={6} lg={4} className="text-center">
@@ -27,27 +28,27 @@ export default function BlogPage() {
                                         <h3>{item.title}</h3>
                                         <div className="mt-3">
                                             <Row>
-                                                <Col className="p-0 m-0" xs={5}>
-                                                    <p><strong className="m-0">SubTitle :</strong></p>
+                                                <Col className="p-0 m-0 text-end" xs={5}>
+                                                    <p><strong className="m-0">SubTitle&nbsp; :</strong></p>
                                                 </Col>
-                                                <Col className="p-0 m-0" xs={7}>
-                                                    <p>{item.subtitle}</p>
+                                                <Col className="p-0 m-0 text-start" xs={7}>
+                                                    <p>&nbsp; {item.subtitle}</p>
                                                 </Col>
-                                                <Col className="p-0 m-0" xs={5}>
-                                                    <p><strong className="m-0">start :</strong></p>
+                                                <Col className="p-0 m-0 text-end" xs={5}>
+                                                    <p><strong className="m-0">start&nbsp; :</strong></p>
                                                 </Col>
-                                                <Col className="p-0 m-0" xs={7}>
-                                                    <p>{moment(item.start).format('HH:mm DD MMM YY')}</p>
+                                                <Col className="p-0 m-0 text-start" xs={7}>
+                                                    <p>&nbsp; {moment(item.start).format('HH:mm DD MMM YY')}</p>
                                                 </Col>
-                                                <Col className="p-0 m-0" xs={5}>
-                                                    <p><strong className="m-0">end :</strong></p>
+                                                <Col className="p-0 m-0 text-end" xs={5}>
+                                                    <p><strong className="m-0">end&nbsp; :</strong></p>
                                                 </Col>
-                                                <Col className="p-0 m-0" xs={7}>
-                                                    <p>{moment(item.end).format('HH:mm DD MMM YY')}</p>
+                                                <Col className="p-0 m-0 text-start" xs={7}>
+                                                    <p>&nbsp; {moment(item.end).format('HH:mm DD MMM YY')}</p>
                                                 </Col>
                                             </Row>
                                             <hr />
-                                            <Link className="link-fx-1 color-contrast-higher f-c-gold mb-3" href="about">
+                                            <Link className="link-fx-1 color-contrast-higher f-c-gold mb-3" href={"blog/" + item.id }>
                                                 <h3 className='f-c-gold m-0'>
                                                     <span>Read Stevia</span>
                                                     <svg className="icon" viewBox="0 0 32 32" aria-hidden="true">

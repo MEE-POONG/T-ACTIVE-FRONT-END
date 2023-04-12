@@ -43,7 +43,7 @@ export const event = [
     { id: '4', title: 'Original Flavour Mini', subtitle: "aaaaa", srcipOne: 'Use to sweeten your beverages and foods naturally.', srcipTwo: "aaaa", subDetail: "aaaa", detailOne: "aaaa", detailTwo: "aaaa", detailThree: "aaaa", listOne: "aaaa", listTwo: "", listThree: "", start: "2023-04-09T00:41:51.499Z", end: "2023-04-09T00:41:51.499Z", img: "images/product/IMG_Mini.jpg" },
     { id: '5', title: 'Original Flavour Mini', subtitle: "aaaaa", srcipOne: 'Use to sweeten your beverages and foods naturally.', srcipTwo: "aaaa", subDetail: "aaaa", detailOne: "aaaa", detailTwo: "aaaa", detailThree: "aaaa", listOne: "aaaa", listTwo: "", listThree: "", start: "2023-04-09T00:41:51.499Z", end: "2023-04-09T00:41:51.499Z", img: "images/product/IMG_Mini.jpg" },
     { id: '6', title: 'Original Flavour Mini', subtitle: "aaaaa", srcipOne: 'Use to sweeten your beverages and foods naturally.', srcipTwo: "aaaa", subDetail: "aaaa", detailOne: "aaaa", detailTwo: "aaaa", detailThree: "aaaa", listOne: "aaaa", listTwo: "", listThree: "", start: "2023-04-09T00:41:51.499Z", end: "2023-04-09T00:41:51.499Z", img: "images/product/IMG_Mini.jpg" },
-];
+];  
 
 export const blog = [
     { id: '1', title: 'Original Flavour "250ml"', subtitle: "aaaaa", srcipOne: 'Use to sweeten your beverages and foods naturally.', srcipTwo: "aaaa", subDetail: "aaaa", detailOne: "aaaa", detailTwo: "aaaa", detailThree: "aaaa", listOne: "aaaa", listTwo: "", listThree: "", start: "2023-04-04T00:41:51.499Z", end: "2023-04-04T00:41:51.499Z", img: "images/product/IMG_O.jpg" },

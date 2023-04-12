@@ -17,7 +17,7 @@
     width: 200px;
     overflow: hidden;
     border-radius: 0px 0px 20px 20px;
-    display: inline-block;    
+    display: inline-block;
   }
 
   .img-container img {
@@ -26,7 +26,6 @@
     margin: -20px 0px 0px -70px;
     object-fit: cover;
     width: 300px;
-
   }
 
   .inner-skew {
@@ -76,5 +75,9 @@
     margin: 20px 0px 10px 0px;
     color: $color_7;
     font-size: 18px;
+  }
+  img.show {
+    object-fit: contain;
+    height: 450px;
   }
 }

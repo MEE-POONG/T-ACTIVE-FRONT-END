@@ -90,7 +90,7 @@ const BlogEventSection: FC = () => {
     ]
   };
   const blogItems = blog.map((item: BlogItem) => (
-    <div className="a-box">
+    <div className="a-box" key={item.id}>
       <div className="img-container">
         <div className="img-inner">
           <div className="inner-skew">
@@ -122,9 +122,9 @@ const BlogEventSection: FC = () => {
             </Col>
           </Row>
           <hr />
-          <Link className="link-fx-1 color-contrast-higher f-c-gold mb-3" href="about">
+          <Link className="link-fx-1 color-contrast-higher f-c-gold mb-3" href={"blog/" + item.id}>
             <h3 className='f-c-gold m-0'>
-              <span>Read Stevia</span>
+              <span>Read</span>
               <svg className="icon" viewBox="0 0 32 32" aria-hidden="true">
                 <g fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round">
                   <circle cx="16" cy="16" r="15.5"></circle>
@@ -139,7 +139,7 @@ const BlogEventSection: FC = () => {
     </div>
   ));
   const eventItems = event.map((item: EventItem) => (
-    <div className="a-box">
+    <div className="a-box" key={item.id}>
       <div className="img-container">
         <div className="img-inner">
           <div className="inner-skew">
@@ -171,9 +171,9 @@ const BlogEventSection: FC = () => {
             </Col>
           </Row>
           <hr />
-          <Link className="link-fx-1 color-contrast-higher f-c-gold mb-3" href="about">
+          <Link className="link-fx-1 color-contrast-higher f-c-gold mb-3" href={"event/" + item.id}>
             <h3 className='f-c-gold m-0'>
-              <span>Read Stevia</span>
+              <span>Read</span>
               <svg className="icon" viewBox="0 0 32 32" aria-hidden="true">
                 <g fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round">
                   <circle cx="16" cy="16" r="15.5"></circle>

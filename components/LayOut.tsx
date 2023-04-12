@@ -11,9 +11,10 @@ interface LayoutProps {
 export default function LayOut({ children }: LayoutProps): JSX.Element {
   return (
     <>
+      <SiteHeader />
+      <NavigationBar />
       <main>
-        <SiteHeader />
-        <NavigationBar />
+
         {children}
         <Footer />
         {/* <a href="#" className="btn btn-lg btn-primary btn-lg-square back-to-top">
