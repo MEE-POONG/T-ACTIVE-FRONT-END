@@ -69,10 +69,10 @@ const SteviaSection: React.FC<SteviaProps> = ({ id, translateX, translateY }) =>
         </Row>
 
         <Row>
-          <Col lg={4}>
+          <Col lg={4} md={4}>
             <div className="d-flex">
               <div className='text-center w-100'>
-                <img src="/images/icon/sugar.png" alt='suger-icon' />
+                <img src="/images/icon/sugar.png" alt='suger-icon' className='logo-zero' />
                 <h3 className='f-c-gold'>
                   <small>SUGAR</small> 0%
                 </h3>
@@ -82,10 +82,10 @@ const SteviaSection: React.FC<SteviaProps> = ({ id, translateX, translateY }) =>
               Great choice for diabetics or people who are watching their blood sugar levels.
             </p>
           </Col>
-          <Col lg={4}>
+          <Col lg={4} md={4}>
             <div className="d-flex">
               <div className='text-center w-100'>
-                <img src="/images/icon/kcal2.png" alt='suger-icon' />
+                <img src="/images/icon/kcal2.png" alt='suger-icon' className='logo-zero' />
                 <h3 className='f-c-gold'>
                   <small>CALORIE</small> 0%
                 </h3>
@@ -95,10 +95,10 @@ const SteviaSection: React.FC<SteviaProps> = ({ id, translateX, translateY }) =>
               A good choice for those who want to reduce their calorie intake.
             </p>
           </Col>
-          <Col lg={4}>
+          <Col lg={4} md={4}>
             <div className="d-flex">
               <div className='text-center w-100'>
-                <img src="/images/icon/lowsalt.png" alt='suger-icon' />
+                <img src="/images/icon/lowsalt.png" alt='suger-icon' className='logo-zero' />
                 <h3 className='f-c-gold'>
                   <small>SODIUM</small> 0%
                 </h3>

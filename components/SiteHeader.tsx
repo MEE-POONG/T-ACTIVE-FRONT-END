@@ -3,7 +3,7 @@ import { Container, Row, Col } from "react-bootstrap";
 
 const SiteHeader = () => {
     return (
-        <header className="site-header">
+        <header className="site-header d-lg-block d-none">
             <Container>
                 <Row>
                     <Col lg={12} xs={12} className="d-flex flex-wrap gold-active">

@@ -35,10 +35,10 @@ export default function HomePage(): JSX.Element {
         <HeroSection />
         <SteviaSection id={''} translateX={0} translateY={srcollBG} />
         <PricingSection />
-        <AboutSection />
-        <ArtistsSection />
-        <ScheduleSection />
-        <ContactSection />
+        {/* <AboutSection /> */}
+        {/* <ArtistsSection /> */}
+        {/* <ScheduleSection /> */}
+        {/* <ContactSection /> */}
       </div>
     </LayOut>
   );

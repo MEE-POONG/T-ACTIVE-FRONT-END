@@ -36,7 +36,7 @@ const HeroSection = () => {
             <div className="location-wrap mx-auto py-3 py-lg-0">
               <h5 className="text-white">
                 <i className="custom-icon me-2"> <BsGeoAlt /></i>
-                {addressShow?.addressOne + " " + addressShow?.addressTwo + " " + addressShow?.addressThree + " " + addressShow?.subDistrict + " " + addressShow?.district + " " + addressShow?.city + " " + addressShow?.postalCode}
+                {addressShow?.addressOne + " " + addressShow?.addressTwo + " " + addressShow?.addressThree + " " + addressShow?.subDistrict + " " + addressShow?.city + " " + addressShow?.postalCode}
               </h5>
             </div>
 
