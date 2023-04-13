@@ -11,7 +11,7 @@ const PricingSection = () => {
     infinite: true,
     slidesToShow: 3,
     slidesToScroll: 1,
-    autoplay: false,
+    autoplay: true,
     autoplaySpeed: 2000,
     pauseOnHover: true,
     responsive: [
@@ -51,7 +51,7 @@ const PricingSection = () => {
         <Slider {...settingsSlide}>
           {productsWithPromotion?.map((productShow) => (
             <div key={productShow?.id} >
-              <div className="pricing-thumb mx-auto">
+              <div className="pricing-thumb">
                 <h3 className='text-center'>
                   {productShow?.name}
                 </h3>
