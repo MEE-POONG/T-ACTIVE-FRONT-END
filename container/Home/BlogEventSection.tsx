@@ -42,16 +42,23 @@ const BlogEventSection: FC = () => {
         }
       },
       {
+        breakpoint: 767,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        }
+      },
+      {
         breakpoint: 600,
         settings: {
-          slidesToShow: 2,
+          slidesToShow: 1,
           slidesToScroll: 1,
         }
       },
       {
         breakpoint: 480,
         settings: {
-          slidesToShow: 2,
+          slidesToShow: 1,
           slidesToScroll: 1,
         }
       }
@@ -74,16 +81,23 @@ const BlogEventSection: FC = () => {
         }
       },
       {
+        breakpoint: 767,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        }
+      },
+      {
         breakpoint: 600,
         settings: {
-          slidesToShow: 2,
+          slidesToShow: 1,
           slidesToScroll: 1,
         }
       },
       {
         breakpoint: 480,
         settings: {
-          slidesToShow: 2,
+          slidesToShow: 1,
           slidesToScroll: 1,
         }
       }
@@ -192,7 +206,7 @@ const BlogEventSection: FC = () => {
     <section className="blogevent-section section-padding" id="section_3">
       <Container>
         <Row>
-          <Col xs={12} md={6} className='blog-page'>
+          <Col xs={12} md={12} lg={6} className='blog-page'>
             <h1 className="f-s-cookie mb-4 text-center">Blogs</h1>
             <div className="artists-thumb">
               <Slider {...settingsBlog}>
@@ -200,7 +214,7 @@ const BlogEventSection: FC = () => {
               </Slider>
             </div>
           </Col>
-          <Col xs={12} md={6} className='event-page'>
+          <Col xs={12} md={12} lg={6} className='event-page'>
             <h1 className="f-s-cookie mb-4 text-center">Events</h1>
             <div className="artists-thumb">
               <div className="artists-thumb">
