@@ -87,7 +87,7 @@ const Footer: React.FC = () => {
             <Col lg={3} md={6} className="mb-4 mb-lg-0 mb-md-0">
               <h5 className="site-footer-title mb-3">Location</h5>
               <p className="text-white d-flex mt-3 mb-2">
-                46/4 Ratchanikun, Nai Mueang, Mueang Nakhon Ratchasima District, Nakhon Ratchasima 30000
+                46/4 Ratchanikun, Nai Mueang, Nakhon Ratchasima 30000
               </p>
               <a className="link-fx-1 color-contrast-higher mt-3" href="#">
                 <span>Our Maps</span>

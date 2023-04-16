@@ -77,4 +77,8 @@
     color: $color_7;
     font-size: 18px;
   }
+  img.show {
+    object-fit: contain;
+    height: 450px;
+  }
 }

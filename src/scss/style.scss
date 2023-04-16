@@ -1,16 +1,25 @@
-
 .f-s-cookie {
     font-family: "Cookie", cursive;
     color: #000000;
 }
-.object-fit-cover{
+.object-fit-cover {
     object-fit: cover;
 }
-.object-fit-contain{
+.object-fit-contain {
     object-fit: contain;
 }
-.topic-row{
+.topic-row {
     display: flex;
     flex-direction: column;
-    gap: 10px; 
+    gap: 10px;
+}
+@media screen and (max-width: 991px) {
+    .sticky-wrapper {
+        margin-top: 0px;
+    }
+}
+@media screen and (max-width: 700px) {
+    .slick-arrow {
+        display: none !important;
+    }
 }

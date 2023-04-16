@@ -64,7 +64,7 @@ export default function ContactPage(){
                             <Col className="contact">
                                 <div className="contact-detail">
                                     <i className=""> <BsGeoAlt /></i>
-                                    <span> 46/4 Ratchanikun, Nai Mueang, Mueang Nakhon Ratchasima District, Nakhon Ratchasima 30000 </span>
+                                    <span> 46/4 46/4 Ratchanikun, Nai Mueang, Nakhon Ratchasima 30000 </span>
                                 </div>
                                
                                 <div className="contact-detail">

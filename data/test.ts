@@ -7,7 +7,7 @@ export const intro = [
     { id: '5', title: 'What is Stevia?', srcipOne: "", srcipTwo: '', srcipThree: '', textButton: '', pagelist: 'stevia' },
 ];
 export const setting = [
-    { id: '1', businessName: 't active stevia', facebookName: 'T Active Stevia Syrup', facebookLink: 'www.facebook.com/t.active.stevia', intragarmName: 'T Active Stevia Syrup', intragarmLink: 'www.facebook.com/t.active.stevia', lineName: 'nattavee', lineLinK: 'asdas.com', lineID: '@Stevia', tel: '06444482650', addressOne: '46/4 Ratchanikun', addressTwo: 'Moo 7', addressThree: '', subDistrict: 'Nai Mueang', district: 'Mueang Nakhon Ratchasima District', city: 'Nakhon Ratchasima', postalCode: '30000', location: '1' },
+    { id: '1', businessName: 't active stevia', facebookName: 'T Active Stevia Syrup', facebookLink: 'www.facebook.com/t.active.stevia', intragarmName: 'T Active Stevia Syrup', intragarmLink: 'www.facebook.com/t.active.stevia', lineName: 'nattavee', lineLinK: 'asdas.com', lineID: '@Stevia', tel: '06444482650', addressOne: '46/4 Ratchanikun', addressTwo: 'Moo 7', addressThree: '', subDistrict: 'Nai Mueang', district: 'Mueang Nakhon Ratchasima', city: 'Nakhon Ratchasima', postalCode: '30000', location: '1' },
 ];
 export const openingHours = [
     { id: '1', sevenDay: 'Monday', opening: '08.00', closed: '16.00', activityDay: 'weekday' },
@@ -43,7 +43,7 @@ export const event = [
     { id: '4', title: 'Original Flavour Mini', subtitle: "aaaaa", srcipOne: 'Use to sweeten your beverages and foods naturally.', srcipTwo: "aaaa", subDetail: "aaaa", detailOne: "aaaa", detailTwo: "aaaa", detailThree: "aaaa", listOne: "aaaa", listTwo: "", listThree: "", start: "2023-04-09T00:41:51.499Z", end: "2023-04-09T00:41:51.499Z", img: "images/product/IMG_Mini.jpg" },
     { id: '5', title: 'Original Flavour Mini', subtitle: "aaaaa", srcipOne: 'Use to sweeten your beverages and foods naturally.', srcipTwo: "aaaa", subDetail: "aaaa", detailOne: "aaaa", detailTwo: "aaaa", detailThree: "aaaa", listOne: "aaaa", listTwo: "", listThree: "", start: "2023-04-09T00:41:51.499Z", end: "2023-04-09T00:41:51.499Z", img: "images/product/IMG_Mini.jpg" },
     { id: '6', title: 'Original Flavour Mini', subtitle: "aaaaa", srcipOne: 'Use to sweeten your beverages and foods naturally.', srcipTwo: "aaaa", subDetail: "aaaa", detailOne: "aaaa", detailTwo: "aaaa", detailThree: "aaaa", listOne: "aaaa", listTwo: "", listThree: "", start: "2023-04-09T00:41:51.499Z", end: "2023-04-09T00:41:51.499Z", img: "images/product/IMG_Mini.jpg" },
-];
+];  
 
 export const blog = [
     { id: '1', title: 'Original Flavour "250ml"', subtitle: "aaaaa", srcipOne: 'Use to sweeten your beverages and foods naturally.', srcipTwo: "aaaa", subDetail: "aaaa", detailOne: "aaaa", detailTwo: "aaaa", detailThree: "aaaa", listOne: "aaaa", listTwo: "", listThree: "", start: "2023-04-04T00:41:51.499Z", end: "2023-04-04T00:41:51.499Z", img: "images/product/IMG_O.jpg" },

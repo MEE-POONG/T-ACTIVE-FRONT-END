@@ -221,7 +221,7 @@ strong {
 .tab-content {
 	background-color: $background-color_1;
 	border-radius: var(--border-radius-medium);
-	padding: 45px;
+	padding: 1.75rem;
 }
 .nav-tabs {
 	background-color: $background-color_3;
@@ -734,7 +734,7 @@ strong {
 	border: 5px dotted #000000;
 	border-radius: var(--border-radius-medium);
 	position: relative;
-	width: 350px;
+	margin: 1rem;
 	img {
 		object-fit: contain;
 		border-radius: var(--border-radius-medium);
