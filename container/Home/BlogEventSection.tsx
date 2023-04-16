@@ -90,7 +90,7 @@ const BlogEventSection: FC = () => {
     ]
   };
   const blogItems = blog.map((item: BlogItem) => (
-    <div className="a-box">
+    <div key={item.id} className="a-box">
       <div className="img-container">
         <div className="img-inner">
           <div className="inner-skew">
@@ -139,7 +139,7 @@ const BlogEventSection: FC = () => {
     </div>
   ));
   const eventItems = event.map((item: EventItem) => (
-    <div className="a-box">
+    <div key={item.id} className="a-box">
       <div className="img-container">
         <div className="img-inner">
           <div className="inner-skew">
