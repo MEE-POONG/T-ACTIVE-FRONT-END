@@ -1,4 +1,5 @@
-import React, { FC } from 'react';
+import React, { FC, useEffect } from 'react';
+import AOS from 'aos';
 import moment from 'moment';
 import { Container, Row, Col, Table, Carousel, Card } from 'react-bootstrap';
 import { event, blog } from './../../data/test';
@@ -24,6 +25,11 @@ type EventItem = {
   end: string;
 };
 const BlogEventSection: FC = () => {
+  useEffect(() => {
+    AOS.init({
+      duration: 1000,
+    });
+  }, []);
   var settingsBlog = {
     dots: false,
     infinite: true,
@@ -90,7 +96,7 @@ const BlogEventSection: FC = () => {
     ]
   };
   const blogItems = blog.map((item: BlogItem) => (
-    <div key={item.id} className="a-box">
+    <div key={item.id} className="a-box" data-aos="fade-right">
       <div className="img-container">
         <div className="img-inner">
           <div className="inner-skew">
@@ -139,7 +145,7 @@ const BlogEventSection: FC = () => {
     </div>
   ));
   const eventItems = event.map((item: EventItem) => (
-    <div key={item.id} className="a-box">
+    <div key={item.id} className="a-box" data-aos="fade-left">
       <div className="img-container">
         <div className="img-inner">
           <div className="inner-skew">
@@ -193,7 +199,7 @@ const BlogEventSection: FC = () => {
       <Container>
         <Row>
           <Col xs={12} md={6} className='blog-page'>
-            <h1 className="f-s-cookie mb-4 text-center">Blogs</h1>
+            <h1 className="f-s-cookie mb-4 text-center" data-aos="fade-up">Blogs</h1>
             <div className="artists-thumb">
               <Slider {...settingsBlog}>
                 {blogItems}
@@ -201,7 +207,7 @@ const BlogEventSection: FC = () => {
             </div>
           </Col>
           <Col xs={12} md={6} className='event-page'>
-            <h1 className="f-s-cookie mb-4 text-center">Events</h1>
+            <h1 className="f-s-cookie mb-4 text-center" data-aos="fade-up">Events</h1>
             <div className="artists-thumb">
               <div className="artists-thumb">
                 <Slider {...settingsEvent}>

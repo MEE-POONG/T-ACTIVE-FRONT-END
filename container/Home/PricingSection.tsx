@@ -1,8 +1,15 @@
+import React, { useEffect } from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
 import Slider from "react-slick";
 import { intro, productList } from './../../data/test';
+import AOS from 'aos';
 
 const PricingSection = () => {
+  useEffect(() => {
+    AOS.init({
+      duration: 1000,
+    });
+  }, []);
   const productIntro = intro.filter(item => item.pagelist === 'product');
   const productsWithPromotion = productList;
 
@@ -43,14 +50,14 @@ const PricingSection = () => {
       <Container>
         <Row>
           <Col lg={8} className="mx-auto">
-            <h1 className="text-center f-s-cookie m-0 f-c-gold">{productIntro[0]?.title}</h1>
-            <h3 className='text-center f-c-gold'>{productIntro[0]?.srcipOne}</h3>
-            <h3 className='text-center f-c-gold mb-5'>{productIntro[0]?.srcipTwo}</h3>
+            <h1 className="text-center f-s-cookie m-0 f-c-gold" data-aos="fade-up">{productIntro[0]?.title}</h1>
+            <h3 className='text-center f-c-gold' data-aos="fade-up">{productIntro[0]?.srcipOne}</h3>
+            <h3 className='text-center f-c-gold mb-5' data-aos="fade-up">{productIntro[0]?.srcipTwo}</h3>
           </Col>
         </Row>
         <Slider {...settingsSlide}>
-          {productsWithPromotion?.map((productShow) => (
-            <div key={productShow?.id} >
+          {productsWithPromotion?.map((productShow, index) => (
+            <div key={productShow?.id} data-aos="fade-up" data-aos-delay={300 * (index + 1)}>
               <div className="pricing-thumb mx-auto">
                 <h3 className='text-center'>
                   {productShow?.name}

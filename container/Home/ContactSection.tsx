@@ -1,3 +1,5 @@
+import React, { useEffect } from 'react';
+import AOS from 'aos';
 import { useState } from 'react';
 import { Container, Row, Col, Tab, Nav, Button, Form } from 'react-bootstrap';
 
@@ -6,7 +8,11 @@ const ContactSection = () => {
   const [email, setEmail] = useState('');
   const [company, setCompany] = useState('');
   const [message, setMessage] = useState('');
-
+  useEffect(() => {
+    AOS.init({
+      duration: 1000,
+    });
+  }, []);
   const handleSubmit = (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault();
     // handle form submission
@@ -17,9 +23,9 @@ const ContactSection = () => {
       <Container>
         <Row>
           <Col lg={8} md={10} sm={12} className="mx-auto">
-            <h2 className="text-center f-s-cookie mb-4">Interested? Let's talk</h2>
-            <Tab.Container id="nav-tab" defaultActiveKey="contact-form">
-              <Nav variant="tabs" className="justify-content-center">
+            <h2 className="text-center f-s-cookie mb-4" data-aos="fade-up">Interested? Let's talk</h2>
+            <Tab.Container id="nav-tab" defaultActiveKey="contact-form" >
+              <Nav variant="tabs" className="justify-content-center" data-aos="zoom-in-up">
                 <Nav.Item>
                   <Nav.Link eventKey="contact-form">
                     <h5>Contact Form</h5>
@@ -32,7 +38,7 @@ const ContactSection = () => {
                 </Nav.Item>
               </Nav>
 
-              <Tab.Content className="shadow-lg mt-5">
+              <Tab.Content className="shadow-lg mt-5" data-aos="zoom-in-down">
                 <Tab.Pane eventKey="contact-form">
                   <Form className="custom-form contact-form mb-5 mb-lg-0" onSubmit={handleSubmit}>
                     <Form.Group controlId="contact-name" className="mb-3">

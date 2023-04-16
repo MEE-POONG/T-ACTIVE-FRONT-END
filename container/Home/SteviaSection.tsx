@@ -1,5 +1,5 @@
-import React from 'react';
-
+import React, { useEffect } from 'react';
+import AOS from 'aos';
 import { Container, Row, Col } from 'react-bootstrap';
 import Slider from "react-slick";
 import { intro, productList } from '../../data/test';
@@ -12,6 +12,11 @@ interface SteviaProps {
 }
 
 const SteviaSection: React.FC<SteviaProps> = ({ id, translateX, translateY }) => {
+  useEffect(() => {
+    AOS.init({
+      duration: 1000,
+    });
+  }, []);
   const elementRef = React.useRef<HTMLDivElement>(null);
   React.useEffect(() => {
     const element = elementRef.current;
@@ -62,7 +67,7 @@ const SteviaSection: React.FC<SteviaProps> = ({ id, translateX, translateY }) =>
       <Container className='what-stevia'>
         <Row>
           <Col lg={8} className="mx-auto">
-            <h1 className="text-center f-s-cookie m-0 f-c-gold">{productIntro[0]?.title}</h1>
+            <h1 className="text-center f-s-cookie m-0 f-c-gold" data-aos="flip-up" data-aos-delay="300">{productIntro[0]?.title}</h1>
             <h3 className='text-center'>{productIntro[0]?.srcipOne}</h3>
             <h3 className='text-center'>{productIntro[0]?.srcipTwo}</h3>
           </Col>
@@ -71,40 +76,40 @@ const SteviaSection: React.FC<SteviaProps> = ({ id, translateX, translateY }) =>
         <Row>
           <Col lg={4}>
             <div className="d-flex">
-              <div className='text-center w-100'>
+              <div className='text-center w-100' data-aos="zoom-in">
                 <img src="/images/icon/sugar.png" alt='suger-icon' />
                 <h3 className='f-c-gold'>
                   <small>SUGAR</small> 0%
                 </h3>
               </div>
             </div>
-            <p className='mx-4 text-center f-c-gold '>
+            <p className='mx-4 text-center f-c-gold' data-aos="zoom-in">
               Great choice for diabetics or people who are watching their blood sugar levels.
             </p>
           </Col>
           <Col lg={4}>
             <div className="d-flex">
-              <div className='text-center w-100'>
+              <div className='text-center w-100' data-aos="zoom-in">
                 <img src="/images/icon/kcal2.png" alt='suger-icon' />
                 <h3 className='f-c-gold'>
                   <small>CALORIE</small> 0%
                 </h3>
               </div>
             </div>
-            <p className='mx-4 text-center f-c-gold '>
+            <p className='mx-4 text-center f-c-gold' data-aos="zoom-in">
               A good choice for those who want to reduce their calorie intake.
             </p>
           </Col>
           <Col lg={4}>
             <div className="d-flex">
-              <div className='text-center w-100'>
+              <div className='text-center w-100' data-aos="zoom-in">
                 <img src="/images/icon/lowsalt.png" alt='suger-icon' />
                 <h3 className='f-c-gold'>
                   <small>SODIUM</small> 0%
                 </h3>
               </div>
             </div>
-            <p className='mx-4 text-center f-c-gold '>
+            <p className='mx-4 text-center f-c-gold' data-aos="zoom-in">
               A good option for those on a low carb or ketogenic diet.
             </p>
           </Col>
@@ -112,24 +117,23 @@ const SteviaSection: React.FC<SteviaProps> = ({ id, translateX, translateY }) =>
         </Row>
         <Row>
           <Col lg={4}>
-            <p className='f-c-gold'>&emsp;&emsp;
+            <p className='f-c-gold' data-aos="zoom-in">&emsp;&emsp;
               Stevia is a natural sweetener.
-              The leaves of the plant contain sweet compounds called steviol glycosides.
-              which is 400 times sweeter than normal sugar
+              The leaves of the plant contain sweet compounds called steviol glycosides.times sweeter than normal sugar
             </p>
           </Col>
           <Col lg={4}>
-            <p className='f-c-gold'>&emsp;&emsp;
+            <p className='f-c-gold' data-aos="zoom-in">&emsp;&emsp;
               Our products are sweet, delicious, not bitter, not overpowering, and smell good.
             </p>
           </Col>
           <Col lg={4}>
-            <p className='f-c-gold'>&emsp;&emsp;
+            <p className='f-c-gold' data-aos="zoom-in">&emsp;&emsp;
               Stevia extract can withstand heat up to 220 degrees and can be used in baking and cooking instead of sugar.
             </p>
           </Col>
           <Col lg={12}>
-            <Link className="link-fx-1 color-contrast-higher mt-4 f-c-gold" href="about">
+            <Link className="link-fx-1 color-contrast-higher mt-4 f-c-gold" href="about" data-aos="fade-up" data-aos-delay="300">
               <h3 className='f-c-gold'>
                 <span>Read Stevia</span>
                 <svg className="icon" viewBox="0 0 32 32" aria-hidden="true">
