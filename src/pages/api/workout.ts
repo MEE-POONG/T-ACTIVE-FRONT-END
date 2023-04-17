@@ -9,7 +9,7 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
     switch (method) {
         case 'GET':
             try {
-                const data = await prisma..findMany({});
+                const data = await prisma.workout.findMany({});
                 res.status(200).json(data)
             } catch (err) {
                 res.status(400).json({
