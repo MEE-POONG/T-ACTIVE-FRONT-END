@@ -18,7 +18,7 @@ model About {
   aboutTitileFour   String?
   aboutTitileFive   String?
   aboutSubTitile    String?
-  aboutSubTitle     String?
+  aboutsubTitle     String?
   aboutDetailOne    String?
   aboutSubDetailOne String?
   aboutDetailTwo    String?
@@ -71,7 +71,7 @@ model Products {
 model Blog {
   id              String    @id @default(auto()) @map("_id") @db.ObjectId
   blogTitle       String?
-  blogSubtitle    String?
+  blogsubTitle    String?
   blogDescription String?
   blogImage       String?
   createdAt       DateTime? @default(now())
@@ -82,7 +82,7 @@ model Blog {
 model Event {
   id               String    @id @default(auto()) @map("_id") @db.ObjectId
   eventTitle       String?
-  eventSubtitle    String?
+  eventsubTitle    String?
   eventDescription String?
   eventImage       String?
   StartDate        DateTime?

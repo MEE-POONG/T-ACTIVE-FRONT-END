@@ -6,7 +6,7 @@ export const intro = [
     { id: '5', title: 'Whole Night Party', srcipOne: "Stevia is a natural, zero-calorie sweetener that has gained popularity as a healthy alternative to sugar. many benefits including the ability to regulate blood sugar levels and promote weight loss It's a great option for those who want to take care of themselves.", srcipTwo: '', srcipThree: '', textButton: '', pagelist: 'about' },
     { id: '5', title: 'What is Stevia?', srcipOne: "", srcipTwo: '', srcipThree: '', textButton: '', pagelist: 'stevia' },
 ];
-export const setting = [
+export const setting = [ 
     { id: '1', businessName: 't active stevia', facebookName: 'T Active Stevia Syrup', facebookLink: 'www.facebook.com/t.active.stevia', intragarmName: 'T Active Stevia Syrup', intragarmLink: 'www.facebook.com/t.active.stevia', lineName: 'nattavee', lineLinK: 'asdas.com', lineID: '@Stevia', tel: '06444482650', addressOne: '46/4 Ratchanikun', addressTwo: 'Moo 7', addressThree: '', subDistrict: 'Nai Mueang', district: 'Mueang Nakhon Ratchasima', city: 'Nakhon Ratchasima', postalCode: '30000', location: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3860.130658071613!2d101.49296961494679!3d14.648523679827356!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x311c2f3397aaab97%3A0x183576f9757d2d9b!2zU3VnYXZpYSBDby4sIEx0ZC4gKOC4muC4o-C4tOC4qeC4seC4lyDguIvguLnguIHguLLguYDguKfguLXguKIg4LiI4Liz4LiB4Lix4LiUKQ!5e0!3m2!1sen!2sth!4v1672716306117!5m2!1sen!2sth' },
 ];
 export const openingHours = [
@@ -82,10 +82,10 @@ export const event = [
     }
 ];
 
-export const bslog = [
+export const blog = [
     {
         id: '1', title: '"Stevia...Sweet cable choice for health"',
-        subtitle: "Stevia...Sweet cable choice for health",
+        subTitle: "Stevia...Sweet cable choice for health",
         srcipOne: 'Stevia is a natural sweetener. Thailand has allowed it to be used as a raw material for herbal teas since years.Prof. 2010 ( Announcement of the Food and Drug Administration on the list of plants or parts of plants used as raw materials for herbal teas, announced on 11 February.Prof. 2010 )',
         subDetail: "",
         detailOne: "Stevia has a scientific name, Stevia Rebaudiana Bertoni, also known as Stevia, in the family Asteraceae ( Compositae). Stevia is a small herbaceous plant, about 30 - 90 centimeters tall, a single leaf shaped spear. Back the edge of the wavy leaves with white bouquet of flowers resembling the treeBasil likes the air quite cool. The temperature is around 20 - 26 degrees Celsius and goes up well when planted in highland from sea level about 600 - 700 meters. It has been planted in Thailand since the year.Prof. By 1975, the appropriate planting area was in the north. Hay leaves Extracted with water, about one percent sweetener These sweeteners are 150 - 300 times sweeter than sugar, highly stable in both soft acid, light bass and heat resistant.Up to 200 degrees Celsius, therefore do not decompose or change the condition from the heat in cooking. Use in small quantities. No poison and safe to consume",
@@ -96,7 +96,7 @@ export const bslog = [
     },
     {
         id: '2', title: '"Benefits of Stevia"',
-        subtitle: "Benefits of Stevia",
+        subTitle: "Benefits of Stevia",
         srcipOne: 'The benefits of stevia are many, including reducing sugar and reducing the risk of heart disease.',
         subDetail: "",
         detailOne: "1. Helps to increase eating and helps reduce bitterness in food 2. Used as a sweetener instead of sugar. Without causing high blood sugar 3. Stevia, the choice of obese people Give sweetness like sugar But not giving energy How much to eat is not fat.Therefore helps to control the weight very well 4. Stevia has been processed into various finished products. Currently, 5 forms of stevia are consumed in descending order: drying leaves, dried leaves for ready-made brewing. ( stevia tea ), Fresh leaves, Dried leaves for sugar substitution ( stevia powder ), and dried <br/> 5. Stevia extract is used instead of sugar. Or use as a substitute for some sugar Because steviolides are well resistant to acids and heat. Therefore can be used in a variety of foods and beverages such as soft drinks, green tea, beige snacksAry, jam, jelly, ice cream, candy, chewing gum, seasoning sauce, etc. ( Most recently, heard that famous brands like Coca Cola have patented and have been produced using this extract as well. But not yet released in Thailand Which, if any, when heldIt's a good choice for those who don't want to drink sugar in an envelope.) <br/> 6. In the food industry Stevia extract is considered to have many advantages, such as being non-degradable by microbes. When used with food, therefore do not cause food to rot. Do not cause brown food when passing high heat and most importantly Will not be absorbed in the digestive systemVery suitable for people with obesity, diabetes, blood pressure and heart disease <br/> 7.Stevioside In addition to being used in food and beverages Currently, it is also used as a substitute for sugar in the production of toothpaste. ", detailTwo: "Benefits of SteviaHelps to treat diabetic patients. Reducing sugar levels in the veins Suitable for those.Want to control blood sugar levels.Helps to reduce hyperlipidemia. Helps to reduce the risk of heart disease. High blood pressure and obesity. Helps nourish the liver. And Helps to heal wounds both inside and outside.",
@@ -106,7 +106,7 @@ export const bslog = [
     },
     {
         id: '3', title: '"Stevia 5 adopting schemes"',
-        subtitle: "How to Stevia 5 adopting schemes:",
+        subTitle: "How to Stevia 5 adopting schemes:",
         srcipOne: 'There are many different ways to use stevia for cooking.',
         subDetail: "",
         detailOne: "There are many different ways to use stevia for cooking. Because stevia itself can be extracted and processed in up to 5 types, namely crushed dried stevia leaves used instead of sugar, or what we call stevia sugar, dried stevia, ready-ground dried stevia leaves for brewing tea, stevia powder and fresh stevia leaves. ",
@@ -117,7 +117,7 @@ export const bslog = [
     },
     {
         id: '4', title: '"How About T-Active Stevia"',
-        subtitle: "",
+        subTitle: "",
         srcipOne: 'Use to sweeten your beverages and foods naturally.',
         subDetail: "aaaa",
         detailOne: "aaaa",

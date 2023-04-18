@@ -9,6 +9,7 @@ import Slider from 'react-slick';
 type BlogItem = {
   id: string;
   title: string;
+  subTitle: string;
   srcipOne: string;
   subDetail: string;
   detailOne: string;
