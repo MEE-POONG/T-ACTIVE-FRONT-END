@@ -1,7 +1,6 @@
 import React, { useEffect } from 'react';
 import AOS from 'aos';
 import { Container, Row, Col } from 'react-bootstrap';
-import Slider from "react-slick";
 import { intro, productList } from '../../data/test';
 import Link from 'next/link';
 

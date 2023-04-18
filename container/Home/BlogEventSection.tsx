@@ -1,7 +1,7 @@
 import React, { FC, useEffect } from 'react';
 import AOS from 'aos';
 import moment from 'moment';
-import { Container, Row, Col, Table, Carousel, Card } from 'react-bootstrap';
+import { Container, Row, Col } from 'react-bootstrap';
 import { event, blog } from './../../data/test';
 import Link from 'next/link';
 import Slider from 'react-slick';

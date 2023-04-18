@@ -97,10 +97,6 @@ const HeroSection = () => {
             />
           </Carousel.Item>
         </Carousel>
-        {/* <video autoPlay loop muted className="custom-video" poster="">
-          <source src="video/pexels-2022395.mp4" type="video/mp4" />
-          Your browser does not support the video tag.
-        </video> */}
       </div>
     </section>
   );

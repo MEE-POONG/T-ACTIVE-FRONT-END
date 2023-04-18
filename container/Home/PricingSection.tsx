@@ -57,7 +57,7 @@ const PricingSection = () => {
         </Row>
         <Slider {...settingsSlide}>
           {productsWithPromotion?.map((productShow, index) => (
-            <div key={productShow?.id} data-aos="fade-up" data-aos-delay={300 * (index + 1)}>
+            <div key={productShow?.id} data-aos="fade-up" data-aos-delay={300 * (index + 1)} className='p-1'>
               <div className="pricing-thumb mx-auto">
                 <h3 className='text-center'>
                   {productShow?.name}
@@ -82,60 +82,6 @@ const PricingSection = () => {
               </div>
             </div>
           ))}
-          {/* <div className="pricing-thumb m-2">
-            <div className="d-flex">
-              <div>
-                <h3>
-                  <small>Standard</small> $240
-                </h3>
-                <p>What makes a premium festava?</p>
-              </div>
-            </div>
-            <ul className="pricing-list mt-3">
-              <li className="pricing-list-item">platform for potential customers</li>
-              <li className="pricing-list-item">digital experience</li>
-              <li className="pricing-list-item">high-quality sound</li>
-              <li className="pricing-list-item">premium content</li>
-              <li className="pricing-list-item">live chat support</li>
-            </ul>
-            <a className="link-fx-1 color-contrast-higher mt-4" href="ticket.html">
-              <span>Buy Ticket</span>
-              <svg className="icon" viewBox="0 0 32 32" aria-hidden="true">
-                <g fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round">
-                  <circle cx="16" cy="16" r="15.5"></circle>
-                  <line x1="10" y1="18" x2="16" y2="12"></line>
-                  <line x1="16" y1="12" x2="22" y2="18"></line>
-                </g>
-              </svg>
-            </a>
-          </div>
-          <div className="pricing-thumb m-2">
-            <div className="d-flex">
-              <div>
-                <h3>
-                  <small>Standard</small> $240
-                </h3>
-                <p>What makes a premium festava?</p>
-              </div>
-            </div>
-            <ul className="pricing-list mt-3">
-              <li className="pricing-list-item">platform for potential customers</li>
-              <li className="pricing-list-item">digital experience</li>
-              <li className="pricing-list-item">high-quality sound</li>
-              <li className="pricing-list-item">premium content</li>
-              <li className="pricing-list-item">live chat support</li>
-            </ul>
-            <a className="link-fx-1 color-contrast-higher mt-4" href="ticket.html">
-              <span>Buy Ticket</span>
-              <svg className="icon" viewBox="0 0 32 32" aria-hidden="true">
-                <g fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round">
-                  <circle cx="16" cy="16" r="15.5"></circle>
-                  <line x1="10" y1="18" x2="16" y2="12"></line>
-                  <line x1="16" y1="12" x2="22" y2="18"></line>
-                </g>
-              </svg>
-            </a>
-          </div> */}
         </Slider>
       </Container>
     </section>
