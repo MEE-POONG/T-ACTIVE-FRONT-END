@@ -26,9 +26,6 @@ export default function BlogID() {
                             <p>{blogItem?.srcipOne}</p>
                         </Col>
                         <Col sm={12}>
-                            <p>{blogItem?.srcipTwo}</p>
-                        </Col>
-                        <Col sm={12}>
                             <p>
                                 {blogItem?.subDetail}
                             </p>
@@ -45,22 +42,7 @@ export default function BlogID() {
                         </Col>
                         <Col sm={12}>
                             <p>
-                                {blogItem?.detailThree}
-                            </p>
-                        </Col>
-                        <Col sm={12}>
-                            <p>
                                 {blogItem?.listOne}
-                            </p>
-                        </Col>
-                        <Col sm={12}>
-                            <p>
-                                {blogItem?.listTwo}
-                            </p>
-                        </Col>
-                        <Col sm={12}>
-                            <p>
-                                {blogItem?.listThree}
                             </p>
                         </Col>
                         {/* <Col sm={12}>
