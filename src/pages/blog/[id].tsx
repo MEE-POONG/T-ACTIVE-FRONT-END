@@ -63,6 +63,11 @@ export default function BlogID() {
                                 {blogItem?.listThree}
                             </p>
                         </Col>
+                        <Col xs={12}>
+                            <p>
+                               Source: {blogItem?.source}
+                            </p>
+                        </Col>
 
                     </Row>
                 </Container>
