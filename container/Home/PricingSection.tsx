@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
 import Slider from "react-slick";
-import { intro, productList } from './../../data/test';
+import { intro, productList } from '@/test';
 import AOS from 'aos';
 
 const PricingSection = () => {

@@ -3,7 +3,7 @@ import AOS from 'aos';
 import Link from 'next/link';
 import { Container, Row, Col, Button, Carousel } from 'react-bootstrap';
 import { BsClock, BsFacebook, BsGeoAlt, BsInstagram, BsLine } from 'react-icons/bs';
-import { intro, openingHours, setting } from './../../data/test';
+import { intro, openingHours, setting } from '@/test';
 
 const HeroSection = () => {
   useEffect(() => {

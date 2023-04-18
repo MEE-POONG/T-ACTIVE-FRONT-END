@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import AOS from 'aos';
 import { Container, Row, Col } from 'react-bootstrap';
-import { intro } from './../../data/test';
+import { intro } from '@/test';
 import { BsBook } from 'react-icons/bs';
 import Link from 'next/link';
 
