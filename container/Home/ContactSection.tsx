@@ -93,7 +93,7 @@ const ContactSection = () => {
                 <Tab.Pane eventKey="contact-map">
                   <iframe
                     className="google-map"
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d29974.469402870927!2d120.94861466021855!3d14.106066818082482!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x33bd777b1ab54c8f%3A0x6ecc514451ce2be8!2sTagaytay%2C%20Cavite%2C%20Philippines!5e1!3m2!1sen!2smy!4v1670344209509!5m2!1sen!2smy"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3860.130658071613!2d101.49296961494679!3d14.648523679827356!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x311c2f3397aaab97%3A0x183576f9757d2d9b!2zU3VnYXZpYSBDby4sIEx0ZC4gKOC4muC4o-C4tOC4qeC4seC4lyDguIvguLnguIHguLLguYDguKfguLXguKIg4LiI4Liz4LiB4Lix4LiUKQ!5e0!3m2!1sen!2sth!4v1672716306117!5m2!1sen!2sth"
                     width="100%" height="450" style={{ border: 0 }} allowFullScreen loading="lazy"
                     referrerPolicy="no-referrer-when-downgrade"
                   />
