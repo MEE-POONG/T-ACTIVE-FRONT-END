@@ -37,29 +37,36 @@ export const event = [
     {
         id: "1", title: "Stevia: A Natural Sweetener", srcipOne: "Discover the benefits of using Stevia as a natural sweetener.", subDetail: "Health and Wellness", detailOne: `<p>During the &quot;Stevia: A Natural Sweetener&quot; event, you will learn how to improve your diet by incorporating Stevia as a natural and healthy sugar substitute. The exhibition will showcase various aspects of Stevia and its benefits:</p>
         <ol>
-            <li>
+            <li><p>
             Nutritional advantages: Explore the nutritional aspects of Stevia, including its zero-calorie nature and its minimal impact on blood sugar levels, making it suitable for people with diabetes or those watching their weight.
+            </p>
             </li>
-            <li>
+            <li><p>
             Stevia in everyday life: Discover a wide range of products and recipes that incorporate Stevia, from beverages to baked goods, allowing you to enjoy sweet treats without the guilt.
+            </p>
             </li>
-            <li>
+            <li><p>
             Cooking demonstrations: Attend live cooking demonstrations by professional chefs who will teach you how to cook and bake using Stevia as a sugar substitute, demonstrating techniques and tips to achieve the perfect sweetness without sacrificing taste.
+            </p>
             </li>
-            <li>
+            <li><p>
             Stevia vs. artificial sweeteners: Understand the differences between Stevia and artificial sweeteners and learn why Stevia is considered a safer and healthier alternative.
+            </p>
             </li>
-            <li>
+            <li><p>
             Expert advice: Consult with certified nutritionists and health professionals on how to incorporate Stevia into your daily diet and discuss any concerns or questions you may have about Stevia and its effects on your health.
+            </p>
             </li>
-            <li>
+            <li><p>
             Interactive activities: Participate in engaging activities and challenges to test your knowledge about Stevia and its benefits, and win prizes and giveaways.
+            </p>
             </li>
-            <li>
+            <li><p>
             Networking opportunities: Meet like-minded individuals who are also interested in improving their diet and health with Stevia and share your experiences, tips, and recipes.
+            </p>
             </li>
         </ol>`
-        , start: "2023-04-10T09:00:00.000Z", end: "2023-04-10T12:00:00.000Z", img: "images/event/stevia1.jpg"
+        , start: "2023-04-10T09:00:00.000Z", end: "2023-04-10T12:00:00.000Z", img: "images/event/image1.jpg"
     },
     {
         id: "2", title: "Baking with Stevia Workshop", srcipOne: "Learn how to bake delicious treats using Stevia as a sugar substitute.", subDetail: "Cooking Workshop", detailOne: "Hands-on baking experience", detailTwo: "Expert guidance from a professional baker", listOne: "Create tasty and healthy desserts", start: "2023-04-17T14:00:00.000Z", end: "2023-04-17T17:00:00.000Z", img: "images/event/stevia <br/> 2.jpg"

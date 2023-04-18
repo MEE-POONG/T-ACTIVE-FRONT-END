@@ -90,12 +90,15 @@
       color: burlywood;
     }
     img {
+      width: 100%;
       border: 0;
-      width: 360px;
       margin-bottom: 2rem;
+      object-fit: contain;
     }
-    p {
-      text-indent: 50px;
+    p,
+    ol > li {
+      font-size: 1.25rem;
+      color: var(--p-color);
     }
   }
 }

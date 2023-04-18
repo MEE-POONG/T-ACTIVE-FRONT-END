@@ -25,7 +25,9 @@ export default function EventID() {
                     <Row>
                         <Col sm={12}>
                             <p>
-                                {eventItem?.subDetail}
+                                Activity start and end :  {moment(eventItem?.start).format('DD MMM YY') === moment(eventItem?.end).format('DD MMM YY')
+                                    ? `${moment(eventItem?.start).format('HH:mm')} - ${moment(eventItem?.end).format('HH:mm')}`
+                                    : `${moment(eventItem?.start).format('HH:mm DD MMMM YYYY')} - ${moment(eventItem?.end).format('HH:mm DD MMMM YYYY')}`}
                             </p>
                         </Col>
                         <Col sm={12}>
