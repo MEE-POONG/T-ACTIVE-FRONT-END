@@ -15,59 +15,59 @@ export default function BlogID() {
 
     return (
         <LayOut>
-            <div className="blog-page">
+            <div className="blogdetail">
                 <Container>
-                    <h2 className="text-center mb-5">{blogItem?.title}</h2>
+                    <h2 className="text-center mb-5 title">{blogItem?.title}</h2>
                     <div className="text-center">
                         <img src={"../" + blogItem?.img} alt={"img : " + blogItem?.title} className="show" />
                     </div>
                     <Row>
-                        <Col xs={12}>
+                        <Col sm={12}>
                             <p>{blogItem?.srcipOne}</p>
                         </Col>
-                        <Col xs={12}>
+                        <Col sm={12}>
                             <p>{blogItem?.srcipTwo}</p>
                         </Col>
-                        <Col xs={12}>
+                        <Col sm={12}>
                             <p>
                                 {blogItem?.subDetail}
                             </p>
                         </Col>
-                        <Col xs={12}>
+                        <Col sm={12}>
                             <p>
                                 {blogItem?.detailOne}
                             </p>
                         </Col>
-                        <Col xs={12}>
+                        <Col sm={12}>
                             <p>
                                 {blogItem?.detailTwo}
                             </p>
                         </Col>
-                        <Col xs={12}>
+                        <Col sm={12}>
                             <p>
                                 {blogItem?.detailThree}
                             </p>
                         </Col>
-                        <Col xs={12}>
+                        <Col sm={12}>
                             <p>
                                 {blogItem?.listOne}
                             </p>
                         </Col>
-                        <Col xs={12}>
+                        <Col sm={12}>
                             <p>
                                 {blogItem?.listTwo}
                             </p>
                         </Col>
-                        <Col xs={12}>
+                        <Col sm={12}>
                             <p>
                                 {blogItem?.listThree}
                             </p>
                         </Col>
-                        <Col xs={12}>
-                            <p>
-                               Source: {blogItem?.source}
+                        {/* <Col sm={12}>
+                            <p className="source">
+                              <i> Source: {blogItem?.source}</i>  
                             </p>
-                        </Col>
+                        </Col> */}
 
                     </Row>
                 </Container>
