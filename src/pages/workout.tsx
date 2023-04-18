@@ -19,12 +19,12 @@ export default function WorkOutPage() {
                                     <div className="img-container">
                                         <div className="img-inner">
                                             <div className="inner-skew">
-                                                <img src={item.img} alt={item.title} />
+                                                <img src={item.img} alt={item.exercise} />
                                             </div>
                                         </div>
                                     </div>
                                     <div className="text-container">
-                                        <h3>{item.title}</h3>
+                                        <h3>{item.exercise}</h3>
                                         <div className="mt-3">
                                             <Row>
                                                 <Col className="p-0 m-0" xs={5}>
@@ -32,15 +32,6 @@ export default function WorkOutPage() {
                                                 </Col>
                                                 <Col className="p-0 m-0" xs={5}>
                                                     <p><strong className="m-0">start :</strong></p>
-                                                </Col>
-                                                <Col className="p-0 m-0" xs={7}>
-                                                    <p>{moment(item.start).format('HH:mm DD MMM YY')}</p>
-                                                </Col>
-                                                <Col className="p-0 m-0" xs={5}>
-                                                    <p><strong className="m-0">end :</strong></p>
-                                                </Col>
-                                                <Col className="p-0 m-0" xs={7}>
-                                                    <p>{moment(item.end).format('HH:mm DD MMM YY')}</p>
                                                 </Col>
                                             </Row>
                                             <hr />

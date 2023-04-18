@@ -1,14 +1,25 @@
-import React, { useEffect } from 'react';
+import React, { FC, useEffect } from 'react';
 import AOS from 'aos';
 import Link from 'next/link';
 import { Container, Row, Col } from 'react-bootstrap';
+import { WorkOut } from '../../data/test';
+type WorkOutItem = {
+  id: string;
+  exercise: string;
+  img: string;
+  Posture: string;
+  burn: string;
+  do: string;
+  youtubeLink: string;
+};
+const WorkOutSection: FC = () => {
 
-const WorkOutSection = () => {
   useEffect(() => {
     AOS.init({
       duration: 1000,
     });
   }, []);
+  const firstThreeWorkouts = WorkOut.slice(0, 3);
   return (
     <section className="artists-section section-padding" id="section_3">
       <Container>
@@ -19,34 +30,40 @@ const WorkOutSection = () => {
           <Col lg={5} xs={12}>
             <div className="artists-thumb" data-aos="fade-up-right">
               <div className="artists-image-wrap">
-                <img src="images/gallery/4.jpg" className="artists-image img-fluid" />
+                <img src={firstThreeWorkouts[0]?.img} className="artists-image img-fluid" />
               </div>
               <div className="artists-hover">
                 <p>
+                  <strong>exercise:</strong>
+                  {firstThreeWorkouts[0]?.exercise}
+                </p>
+                <p>
                   <strong>Posture:</strong>
-                  lifting dumbbells
+                  {firstThreeWorkouts[0]?.Posture}
                 </p>
 
                 <p>
                   <strong>Burn:</strong>
-                  upper arm
+                  {firstThreeWorkouts[0]?.burn}
+
                 </p>
 
                 <p>
                   <strong>Do:</strong>
-                  20 s
+                  {firstThreeWorkouts[0]?.do}
                 </p>
-
+                <p className="mb-0">
+                  <a href={firstThreeWorkouts[0]?.youtubeLink} className="w-100 text-center">Read</a>
+                </p>
                 <hr />
 
                 <p className="mb-0">
                   <strong>Youtube Channel:</strong>
-                  <a href="https://www.youtube.com/shorts/FOxCMhexNfI">watch</a>
+                  <a href={firstThreeWorkouts[0]?.youtubeLink}>watch</a>
                 </p>
               </div>
             </div>
           </Col>
-
           <Col lg={5} xs={12}>
             <div className="artists-thumb" data-aos="fade-down-left">
               <div className="artists-image-wrap">
@@ -55,26 +72,34 @@ const WorkOutSection = () => {
 
               <div className="artists-hover">
                 <p>
+                  <strong>exercise:</strong>
+                  {firstThreeWorkouts[0]?.exercise}
+                </p>
+                <p>
                   <strong>Posture:</strong>
-                  lifting dumbbells
+                  {firstThreeWorkouts[0]?.Posture}
                 </p>
 
                 <p>
                   <strong>Burn:</strong>
-                  upper arm
+                  {firstThreeWorkouts[0]?.burn}
+
                 </p>
 
                 <p>
                   <strong>Do:</strong>
-                  20 s
+                  {firstThreeWorkouts[0]?.do}
                 </p>
-
+                <p className="mb-0">
+                  <a href={firstThreeWorkouts[0]?.youtubeLink} className="w-100 text-center">Read</a>
+                </p>
                 <hr />
 
                 <p className="mb-0">
                   <strong>Youtube Channel:</strong>
-                  <a href="https://www.youtube.com/shorts/FOxCMhexNfI">watch</a>
+                  <a href={firstThreeWorkouts[0]?.youtubeLink}>watch</a>
                 </p>
+
               </div>
             </div>
 
@@ -83,25 +108,32 @@ const WorkOutSection = () => {
 
               <div className="artists-hover">
                 <p>
+                  <strong>exercise:</strong>
+                  {firstThreeWorkouts[0]?.exercise}
+                </p>
+                <p>
                   <strong>Posture:</strong>
-                  lifting dumbbells
+                  {firstThreeWorkouts[0]?.Posture}
                 </p>
 
                 <p>
                   <strong>Burn:</strong>
-                  upper arm
+                  {firstThreeWorkouts[0]?.burn}
+
                 </p>
 
                 <p>
                   <strong>Do:</strong>
-                  20 s
+                  {firstThreeWorkouts[0]?.do}
                 </p>
-
+                <p className="mb-0">
+                  <a href={firstThreeWorkouts[0]?.youtubeLink} className="w-100 text-center">Read</a>
+                </p>
                 <hr />
 
                 <p className="mb-0">
                   <strong>Youtube Channel:</strong>
-                  <a href="https://www.youtube.com/shorts/FOxCMhexNfI">watch</a>
+                  <a href={firstThreeWorkouts[0]?.youtubeLink}>watch</a>
                 </p>
               </div>
             </div>
