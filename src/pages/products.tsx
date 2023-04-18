@@ -6,13 +6,12 @@ export default function ProductsPage() {
         <LayOut>
             <div className="products-page">
                 <Container>
-                    <h2 className="text-center">Our Products</h2>
-                    <div className="top-card">
-                        <img className="top-img" src="/images/product/IMG_8870.jpg" alt="" />
+                    <div className="title">
+                        <h2 className="title">Our Products</h2>
                     </div>
 
                     {/* ProductCard */}
-                    <div className="card">
+                    <div className="card-left">
                         <Row>
                             <Col sm={4}>
                                 <img className="p-image" src="/images/product/IMG_8915.png" alt="" />
@@ -39,38 +38,34 @@ export default function ProductsPage() {
                         </Row>
                     </div>
 
-                    <hr />
-
-                    <div className="card">
-                        <Row>
-                            <Col sm={4}>
-                                <img className="p-image" src="/images/product/newbot.png" alt="" />
-                            </Col>
-                            <Col sm={8}>
-                                <div className="p-detail">
-                                    <h2>Vanila flavour</h2>
-                                    <p>
-                                        <strong>Description:</strong>
-                                        An extracts from stevia plant, which do not add color but add vanilla flavor, can enhance the aroma and be used as a sugar substitute in cooking or added to beverages.
-                                    </p>
-                                    <p>
-                                        <strong>Volume:</strong>
-                                        <i>250</i> ml.
-                                    </p>
-                                    <div className="price">
+                    <div className="card-right">
+                        <Row className="reverse">
+                                <Col sm={9}>
+                                    <div className="p-detail">
+                                        <h2>Vanila flavour</h2>
                                         <p>
-                                            <strong>Price:</strong>
-                                            <i>690</i> Baht.
+                                            <strong>Description:</strong>
+                                            An extracts from stevia plant, which do not add color but add vanilla flavor, can enhance the aroma and be used as a sugar substitute in cooking or added to beverages.
                                         </p>
+                                        <p>
+                                            <strong>Volume:</strong>
+                                            <i>250</i> ml.
+                                        </p>
+                                        <div className="price">
+                                            <p>
+                                                <strong>Price:</strong>
+                                                <i>690</i> Baht.
+                                            </p>
+                                        </div>
                                     </div>
-                                </div>
-                            </Col>
+                                </Col>
+                                <Col sm={3}>
+                                    <img className="p-image" src="/images/product/newbot.png" alt="" />
+                                </Col>
                         </Row>
                     </div>
 
-                    <hr />
-
-                    <div className="card">
+                    <div className="card-left">
                         <Row>
                             <Col sm={4}>
                                 <img className="p-image" src="/images/product/small.png" alt="" />
