@@ -16,53 +16,58 @@ export default function EventID() {
     return (
         <LayOut>
             <div className="event-page">
-                <Container>
-                    <h2 className="text-center mb-5">{eventItem?.title}</h2>
+                <Container className="event-detail">
+                    <h2 className="text-center mb-5 title">{eventItem?.title}</h2>
                     <div className="text-center">
                         <img src={"../" + eventItem?.img} alt={"img : " + eventItem?.title} className="show" />
                     </div>
                     <Row>
-                        <Col xs={12}>
+                        <Col sm={12}>
                             <p>{eventItem?.srcipOne}</p>
                         </Col>
-                        <Col xs={12}>
+                        <Col sm={12}>
                             <p>{eventItem?.srcipTwo}</p>
                         </Col>
-                        <Col xs={12}>
+                        <Col sm={12}>
                             <p>
                                 {eventItem?.subDetail}
                             </p>
                         </Col>
-                        <Col xs={12}>
+                        <Col sm={12}>
                             <p>
                                 {eventItem?.detailOne}
                             </p>
                         </Col>
-                        <Col xs={12}>
+                        <Col sm={12}>
                             <p>
                                 {eventItem?.detailTwo}
                             </p>
                         </Col>
-                        <Col xs={12}>
+                        <Col sm={12}>
                             <p>
                                 {eventItem?.detailThree}
                             </p>
                         </Col>
-                        <Col xs={12}>
+                        <Col sm={12}>
                             <p>
                                 {eventItem?.listOne}
                             </p>
                         </Col>
-                        <Col xs={12}>
+                        <Col sm={12}>
                             <p>
                                 {eventItem?.listTwo}
                             </p>
                         </Col>
-                        <Col xs={12}>
+                        <Col sm={12}>
                             <p>
                                 {eventItem?.listThree}
                             </p>
                         </Col>
+                        {/* <Col sm={12}>
+                            <p className="source">
+                              <i> Source: {eventItem?.source}</i>  
+                            </p>
+                        </Col> */}
 
                     </Row>
                 </Container>
