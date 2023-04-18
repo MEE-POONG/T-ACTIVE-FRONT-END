@@ -28,11 +28,8 @@ export default function EventPage() {
                                         <h3>{item.title}</h3>
                                         <div className="mt-3">
                                             <Row>
-                                                <Col className="p-0 m-0 text-end" xs={5}>
-                                                    <p><strong className="m-0">SubTitle&nbsp; :</strong></p>
-                                                </Col>
-                                                <Col className="p-0 m-0 text-start" xs={7}>
-                                                    <p>&nbsp; {item.subtitle}</p>
+                                                <Col className="p-0 m-0 text-start" xs={12}>
+                                                    <p>&nbsp; {item.srcipOne}</p>
                                                 </Col>
                                                 <Col className="p-0 m-0 text-end" xs={5}>
                                                     <p><strong className="m-0">start&nbsp; :</strong></p>

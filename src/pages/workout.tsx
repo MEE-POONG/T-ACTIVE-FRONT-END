@@ -3,17 +3,17 @@ import LayOut from "@/components/LayOut";
 import Link from "next/link";
 import React from "react";
 import { Col, Container, Row } from "react-bootstrap";
-import { blog } from "../../data/test";
+import { WorkOut } from "../../data/test";
 import moment from "moment";
 
-export default function BlogPage() {
+export default function WorkOutPage() {
     return (
         <LayOut>
-            <div className="blog-page">
+            <div className="WorkOut-page">
                 <Container>
-                    <h2 className="text-center mb-5">Blogs</h2>
+                    <h2 className="text-center mb-5">WorkOuts</h2>
                     <Row xs="auto">
-                        {blog.map((item) => (
+                        {WorkOut.map((item) => (
                             <Col key={item.id}>
                                 <div className="a-box">
                                     <div className="img-container">
@@ -29,9 +29,6 @@ export default function BlogPage() {
                                             <Row>
                                                 <Col className="p-0 m-0" xs={5}>
                                                     <p><strong className="m-0">SubTitle :</strong></p>
-                                                </Col>
-                                                <Col className="p-0 m-0" xs={7}>
-                                                    <p>{item.subtitle}</p>
                                                 </Col>
                                                 <Col className="p-0 m-0" xs={5}>
                                                     <p><strong className="m-0">start :</strong></p>

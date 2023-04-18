@@ -9,7 +9,7 @@ import Slider from 'react-slick';
 type BlogItem = {
   id: string;
   title: string;
-  subtitle: string;
+  srcipOne:string;
   img: string;
   link?: string;
   start: string;
@@ -18,7 +18,7 @@ type BlogItem = {
 type EventItem = {
   id: string;
   title: string;
-  subtitle: string;
+  srcipOne:string;
   img: string;
   link?: string;
   start: string;
@@ -122,11 +122,8 @@ const BlogEventSection: FC = () => {
         <h3>{item.title}</h3>
         <div className="mt-3">
           <Row>
-            <Col className="p-0 m-0" xs={5}>
-              <p><strong className="m-0">SubTitle :</strong></p>
-            </Col>
-            <Col className="p-0 m-0" xs={7}>
-              <p>{item.subtitle}</p>
+            <Col className="p-0 m-0" xs={12}>
+              <p>{item.srcipOne}</p>
             </Col>
             <Col className="p-0 m-0" xs={5}>
               <p><strong className="m-0">start :</strong></p>
@@ -171,11 +168,8 @@ const BlogEventSection: FC = () => {
         <h3>{item.title}</h3>
         <div className="mt-3">
           <Row>
-            <Col className="p-0 m-0" xs={5}>
-              <p><strong className="m-0">SubTitle :</strong></p>
-            </Col>
-            <Col className="p-0 m-0" xs={7}>
-              <p>{item.subtitle}</p>
+            <Col className="p-0 m-0" xs={12}>
+              <p>{item.srcipOne}</p>
             </Col>
             <Col className="p-0 m-0" xs={5}>
               <p><strong className="m-0">start :</strong></p>
