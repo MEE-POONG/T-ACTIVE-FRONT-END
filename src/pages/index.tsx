@@ -37,7 +37,7 @@ export default function HomePage(): JSX.Element {
         <PricingSection />
         <AboutSection />
         <ArtistsSection />
-        <ScheduleSection />
+        <ScheduleSection/>
         <ContactSection />
       </div>
     </LayOut>

@@ -65,22 +65,8 @@
         z-index: 100;
         position: relative;
     }
-    .blogevent-section {
-        background-color: #fff8d945;
-        position: relative;
-        .artists-hover {
-            border-top-left-radius: 0px;
-            border-top-right-radius: 0px;
-            margin: 0;
-        }
-        .artists-image-wrap {
-            img {
-                height: 550px;
-                object-fit: cover;
-            }
-        }
-    }
     .workout-section {
+        background-image: linear-gradient(360deg, #e3f2ff 0%, #fff8ef 100%) !important;
         p {
             display: -webkit-box;
             -webkit-line-clamp: 1;
@@ -89,6 +75,32 @@
             text-overflow: ellipsis;
         }
     }
+    .blogevent-section {
+        z-index: 1000;
+        position: relative;
+        .container {
+            z-index: 999;
+            position: inherit;
+        }
+        .video-wrap {
+            .custom-video {
+                &::after {
+                    position: absolute;
+                    content: "";
+                    height: 100%;
+                    width: 100%;
+                    top: 0;
+                    left: 0;
+                    background-image: linear-gradient(180deg, #e3f2ff 0%, #fff8ef70 100%) !important;
+                }
+                img {
+                    height: 100vh;
+                    object-fit: cover;
+                }
+            }
+        }
+    }
+
     @media screen and (max-width: 992px) {
         .hero-section {
             .container {

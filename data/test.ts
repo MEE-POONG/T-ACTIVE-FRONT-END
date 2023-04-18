@@ -7,7 +7,7 @@ export const intro = [
     { id: '5', title: 'What is Stevia?', srcipOne: "", srcipTwo: '', srcipThree: '', textButton: '', pagelist: 'stevia' },
 ];
 export const setting = [
-    { id: '1', businessName: 't active stevia', facebookName: 'T Active Stevia Syrup', facebookLink: 'www.facebook.com/t.active.stevia', intragarmName: 'T Active Stevia Syrup', intragarmLink: 'www.facebook.com/t.active.stevia', lineName: 'nattavee', lineLinK: 'asdas.com', lineID: '@Stevia', tel: '06444482650', addressOne: '46/4 Ratchanikun', addressTwo: 'Moo 7', addressThree: '', subDistrict: 'Nai Mueang', district: 'Mueang Nakhon Ratchasima', city: 'Nakhon Ratchasima', postalCode: '30000', location: '1' },
+    { id: '1', businessName: 't active stevia', facebookName: 'T Active Stevia Syrup', facebookLink: 'www.facebook.com/t.active.stevia', intragarmName: 'T Active Stevia Syrup', intragarmLink: 'www.facebook.com/t.active.stevia', lineName: 'nattavee', lineLinK: 'asdas.com', lineID: '@Stevia', tel: '06444482650', addressOne: '46/4 Ratchanikun', addressTwo: 'Moo 7', addressThree: '', subDistrict: 'Nai Mueang', district: 'Mueang Nakhon Ratchasima', city: 'Nakhon Ratchasima', postalCode: '30000', location: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3860.130658071613!2d101.49296961494679!3d14.648523679827356!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x311c2f3397aaab97%3A0x183576f9757d2d9b!2zU3VnYXZpYSBDby4sIEx0ZC4gKOC4muC4o-C4tOC4qeC4seC4lyDguIvguLnguIHguLLguYDguKfguLXguKIg4LiI4Liz4LiB4Lix4LiUKQ!5e0!3m2!1sen!2sth!4v1672716306117!5m2!1sen!2sth' },
 ];
 export const openingHours = [
     { id: '1', sevenDay: 'Monday', opening: '08.00', closed: '16.00', activityDay: 'weekday' },
