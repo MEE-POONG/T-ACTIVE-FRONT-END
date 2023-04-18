@@ -21,7 +21,7 @@ const WorkOutSection: FC = () => {
   }, []);
   const firstThreeWorkouts = WorkOut.slice(0, 3);
   return (
-    <section className="artists-section section-padding" id="section_3">
+    <section className="workout-section section-padding" id="section_3">
       <Container>
         <Row className="justify-content-center">
           <Col xs={12} className="text-center">
@@ -52,14 +52,11 @@ const WorkOutSection: FC = () => {
                   <strong>Do:</strong>
                   {firstThreeWorkouts[0]?.do}
                 </p>
-                <p className="mb-0">
-                  <a href={firstThreeWorkouts[0]?.youtubeLink} className="w-100 text-center">Read</a>
-                </p>
                 <hr />
-
                 <p className="mb-0">
                   <strong>Youtube Channel:</strong>
-                  <a href={firstThreeWorkouts[0]?.youtubeLink}>watch</a>
+                  <a href={firstThreeWorkouts[0]?.youtubeLink} className="text-center mx-1 px-4">Read</a>
+                  <a href={firstThreeWorkouts[0]?.youtubeLink} className="text-center mx-1 px-4">watch</a>
                 </p>
               </div>
             </div>
@@ -73,31 +70,30 @@ const WorkOutSection: FC = () => {
               <div className="artists-hover">
                 <p>
                   <strong>exercise:</strong>
-                  {firstThreeWorkouts[0]?.exercise}
+                  {firstThreeWorkouts[1]?.exercise}
                 </p>
                 <p>
                   <strong>Posture:</strong>
-                  {firstThreeWorkouts[0]?.Posture}
+                  {firstThreeWorkouts[1]?.Posture}
                 </p>
 
                 <p>
                   <strong>Burn:</strong>
-                  {firstThreeWorkouts[0]?.burn}
+                  {firstThreeWorkouts[1]?.burn}
 
                 </p>
 
                 <p>
                   <strong>Do:</strong>
-                  {firstThreeWorkouts[0]?.do}
+                  {firstThreeWorkouts[1]?.do}
                 </p>
-                <p className="mb-0">
-                  <a href={firstThreeWorkouts[0]?.youtubeLink} className="w-100 text-center">Read</a>
-                </p>
+
                 <hr />
 
                 <p className="mb-0">
                   <strong>Youtube Channel:</strong>
-                  <a href={firstThreeWorkouts[0]?.youtubeLink}>watch</a>
+                  <a href={firstThreeWorkouts[1]?.youtubeLink} className="text-center mx-1 px-4">Read</a>
+                  <a href={firstThreeWorkouts[1]?.youtubeLink} className="text-center mx-1 px-4">watch</a>
                 </p>
 
               </div>
@@ -109,31 +105,28 @@ const WorkOutSection: FC = () => {
               <div className="artists-hover">
                 <p>
                   <strong>exercise:</strong>
-                  {firstThreeWorkouts[0]?.exercise}
+                  {firstThreeWorkouts[2]?.exercise}
                 </p>
                 <p>
                   <strong>Posture:</strong>
-                  {firstThreeWorkouts[0]?.Posture}
+                  {firstThreeWorkouts[2]?.Posture}
                 </p>
 
                 <p>
                   <strong>Burn:</strong>
-                  {firstThreeWorkouts[0]?.burn}
+                  {firstThreeWorkouts[2]?.burn}
 
                 </p>
 
                 <p>
                   <strong>Do:</strong>
-                  {firstThreeWorkouts[0]?.do}
-                </p>
-                <p className="mb-0">
-                  <a href={firstThreeWorkouts[0]?.youtubeLink} className="w-100 text-center">Read</a>
+                  {firstThreeWorkouts[2]?.do}
                 </p>
                 <hr />
-
                 <p className="mb-0">
                   <strong>Youtube Channel:</strong>
-                  <a href={firstThreeWorkouts[0]?.youtubeLink}>watch</a>
+                  <a href={firstThreeWorkouts[2]?.youtubeLink} className="text-center mx-1 px-4">Read</a>
+                  <a href={firstThreeWorkouts[2]?.youtubeLink} className="text-center mx-1 px-4">watch</a>
                 </p>
               </div>
             </div>

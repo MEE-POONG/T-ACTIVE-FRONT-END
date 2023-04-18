@@ -9,16 +9,18 @@ import Slider from 'react-slick';
 type BlogItem = {
   id: string;
   title: string;
-  srcipOne:string;
+  srcipOne: string;
+  subDetail: string;
+  detailOne: string;
+  detailTwo: string;
+  listOne: string;
   img: string;
-  link?: string;
-  start: string;
-  end: string;
+  source?: string;
 };
 type EventItem = {
   id: string;
   title: string;
-  srcipOne:string;
+  srcipOne: string;
   img: string;
   link?: string;
   start: string;
@@ -39,6 +41,8 @@ const BlogEventSection: FC = () => {
     initialSlide: 0,
     autoplay: true,
     rtl: true,
+    nextArrow: <div className='d-none' />,
+    prevArrow: <div className='d-none' />,
     responsive: [
       {
         breakpoint: 1024,
@@ -77,7 +81,8 @@ const BlogEventSection: FC = () => {
     slidesToShow: 2,
     slidesToScroll: 1,
     initialSlide: 0,
-    autoplay: true,
+    nextArrow: <div className='d-none' />,
+    prevArrow: <div className='d-none' />,
     responsive: [
       {
         breakpoint: 1024,
@@ -119,26 +124,12 @@ const BlogEventSection: FC = () => {
         </div>
       </div>
       <div className="text-container">
-        <h3>{item.title}</h3>
+        <h3 className='truncate-one-lines'>{item.title}</h3>
         <div className="mt-3">
-          <Row>
-            <Col className="p-0 m-0" xs={12}>
-              <p>{item.srcipOne}</p>
-            </Col>
-            <Col className="p-0 m-0" xs={5}>
-              <p><strong className="m-0">start :</strong></p>
-            </Col>
-            <Col className="p-0 m-0" xs={7}>
-              <p>{moment(item.start).format('HH:mm DD MMM YY')}</p>
-            </Col>
-            <Col className="p-0 m-0" xs={5}>
-              <p><strong className="m-0">end :</strong></p>
-            </Col>
-            <Col className="p-0 m-0" xs={7}>
-              <p>{moment(item.end).format('HH:mm DD MMM YY')}</p>
-            </Col>
-          </Row>
-          <hr />
+          <p className="truncate-full-lines" >{item.srcipOne}</p>
+        </div>
+        <hr />
+        <div>
           <Link className="link-fx-1 color-contrast-higher f-c-gold mb-3" href={"blog/" + item.id}>
             <h3 className='f-c-gold m-0'>
               <span>Read</span>
@@ -165,26 +156,28 @@ const BlogEventSection: FC = () => {
         </div>
       </div>
       <div className="text-container">
-        <h3>{item.title}</h3>
-        <div className="mt-3">
+        <h3 className='truncate-one-lines'>{item.title}</h3>
+        <div className='truncate-full-lines'>
           <Row>
-            <Col className="p-0 m-0" xs={12}>
+            <Col className="truncate-two-lines" xs={12}>
               <p>{item.srcipOne}</p>
             </Col>
-            <Col className="p-0 m-0" xs={5}>
+            <Col xs={5}>
               <p><strong className="m-0">start :</strong></p>
             </Col>
-            <Col className="p-0 m-0" xs={7}>
+            <Col xs={7}>
               <p>{moment(item.start).format('HH:mm DD MMM YY')}</p>
             </Col>
-            <Col className="p-0 m-0" xs={5}>
+            <Col xs={5}>
               <p><strong className="m-0">end :</strong></p>
             </Col>
-            <Col className="p-0 m-0" xs={7}>
+            <Col xs={7}>
               <p>{moment(item.end).format('HH:mm DD MMM YY')}</p>
             </Col>
           </Row>
-          <hr />
+        </div>
+        <hr />
+        <div>
           <Link className="link-fx-1 color-contrast-higher f-c-gold mb-3" href={"event/" + item.id}>
             <h3 className='f-c-gold m-0'>
               <span>Read</span>
@@ -217,11 +210,9 @@ const BlogEventSection: FC = () => {
           <Col xs={12} md={6} className='event-page'>
             <h1 className="f-s-cookie mb-4 text-center" data-aos="fade-up">Events</h1>
             <div className="artists-thumb">
-              <div className="artists-thumb">
-                <Slider {...settingsEvent}>
-                  {eventItems}
-                </Slider>
-              </div>
+              <Slider {...settingsEvent}>
+                {eventItems}
+              </Slider>
             </div>
           </Col>
         </Row>
