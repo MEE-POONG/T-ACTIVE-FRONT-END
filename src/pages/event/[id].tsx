@@ -6,6 +6,7 @@ import { Col, Container, Row } from "react-bootstrap";
 import { event } from '../../../data/test';
 import moment from "moment";
 import { useRouter } from "next/router";
+import HtmlContent from "@/components/HtmlContent";
 
 export default function EventID() {
     const router = useRouter();
@@ -16,54 +17,27 @@ export default function EventID() {
     return (
         <LayOut>
             <div className="event-page">
-                <Container>
-                    <h2 className="text-center mb-5">{eventItem?.title}</h2>
+                <Container className="event-detail">
+                    <h2 className="text-center mb-5 title">{eventItem?.title}</h2>
                     <div className="text-center">
                         <img src={"../" + eventItem?.img} alt={"img : " + eventItem?.title} className="show" />
                     </div>
                     <Row>
-                        <Col xs={12}>
-                            <p>{eventItem?.srcipOne}</p>
-                        </Col>
-                        <Col xs={12}>
-                            <p>{eventItem?.srcipTwo}</p>
-                        </Col>
-                        <Col xs={12}>
+                        <Col sm={12}>
                             <p>
-                                {eventItem?.subDetail}
+                                Activity start and end :  {moment(eventItem?.start).format('DD MMM YY') === moment(eventItem?.end).format('DD MMM YY')
+                                    ? `${moment(eventItem?.start).format('HH:mm')} - ${moment(eventItem?.end).format('HH:mm')}`
+                                    : `${moment(eventItem?.start).format('HH:mm DD MMMM YYYY')} - ${moment(eventItem?.end).format('HH:mm DD MMMM YYYY')}`}
                             </p>
                         </Col>
-                        <Col xs={12}>
-                            <p>
-                                {eventItem?.detailOne}
-                            </p>
+                        <Col sm={12}>
+                            <HtmlContent content={eventItem?.detailOne} />
                         </Col>
-                        <Col xs={12}>
+                        <Col sm={12}>
                             <p>
                                 {eventItem?.detailTwo}
                             </p>
                         </Col>
-                        <Col xs={12}>
-                            <p>
-                                {eventItem?.detailThree}
-                            </p>
-                        </Col>
-                        <Col xs={12}>
-                            <p>
-                                {eventItem?.listOne}
-                            </p>
-                        </Col>
-                        <Col xs={12}>
-                            <p>
-                                {eventItem?.listTwo}
-                            </p>
-                        </Col>
-                        <Col xs={12}>
-                            <p>
-                                {eventItem?.listThree}
-                            </p>
-                        </Col>
-
                     </Row>
                 </Container>
             </div>

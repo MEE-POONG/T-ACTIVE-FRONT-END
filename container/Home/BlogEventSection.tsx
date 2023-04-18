@@ -9,6 +9,7 @@ import Slider from 'react-slick';
 type BlogItem = {
   id: string;
   title: string;
+  subTitle: string;
   srcipOne: string;
   subDetail: string;
   detailOne: string;
@@ -32,6 +33,7 @@ const BlogEventSection: FC = () => {
       duration: 1000,
     });
   }, []);
+  const elementRef = React.useRef<HTMLDivElement>(null);
   var settingsBlog = {
     dots: false,
     infinite: true,
@@ -81,6 +83,7 @@ const BlogEventSection: FC = () => {
     slidesToShow: 2,
     slidesToScroll: 1,
     initialSlide: 0,
+    autoplay: true,
     nextArrow: <div className='d-none' />,
     prevArrow: <div className='d-none' />,
     responsive: [
@@ -217,6 +220,9 @@ const BlogEventSection: FC = () => {
           </Col>
         </Row>
       </Container>
+      <div className="video-wrap ">
+        <div ref={elementRef} style={{ backgroundImage: 'url(./images/gallery/bg1.jpg)' }} className="custom-video" />
+      </div>
     </section>
   );
 };

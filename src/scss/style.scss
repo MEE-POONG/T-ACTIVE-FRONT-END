@@ -42,6 +42,11 @@
     text-overflow: ellipsis;
     height: 7rem;
 }
+.html-text{
+    li{
+        padding-bottom: 0.75rem;
+    }
+}
 @media screen and (max-width: 991px) {
     .sticky-wrapper {
         margin-top: 0px;

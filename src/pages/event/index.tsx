@@ -28,20 +28,8 @@ export default function EventPage() {
                                         <h3>{item.title}</h3>
                                         <div className="mt-3">
                                             <Row>
-                                                <Col className="p-0 m-0 text-start" xs={12}>
+                                                <Col className="cut-text">
                                                     <p>&nbsp; {item.srcipOne}</p>
-                                                </Col>
-                                                <Col className="p-0 m-0 text-end" xs={5}>
-                                                    <p><strong className="m-0">start&nbsp; :</strong></p>
-                                                </Col>
-                                                <Col className="p-0 m-0 text-start" xs={7}>
-                                                    <p>&nbsp; {moment(item.start).format('HH:mm DD MMM YY')}</p>
-                                                </Col>
-                                                <Col className="p-0 m-0 text-end" xs={5}>
-                                                    <p><strong className="m-0">end&nbsp; :</strong></p>
-                                                </Col>
-                                                <Col className="p-0 m-0 text-start" xs={7}>
-                                                    <p>&nbsp; {moment(item.end).format('HH:mm DD MMM YY')}</p>
                                                 </Col>
                                             </Row>
                                             <hr />

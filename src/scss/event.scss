@@ -17,16 +17,16 @@
     width: 200px;
     overflow: hidden;
     border-radius: 0px 0px 20px 20px;
-    display: inline-block;    
+    display: inline-block;
   }
 
   .img-container img {
     transform: skew(0deg, 13deg);
     height: 250px;
-    margin: -30px 0px 0px -70px;
+    margin: -20px 0px 0px -20px;
+    -o-object-fit: cover;
     object-fit: cover;
-    width: 300px;
-
+    width: 120%;
   }
 
   .inner-skew {
@@ -80,5 +80,26 @@
   img.show {
     object-fit: contain;
     height: 450px;
+  }
+  .event-detail {
+    .container {
+      margin-top: 10rem;
+      margin-bottom: 5rem;
+    }
+    .title {
+      color: burlywood;
+    }
+    img {
+      width: 100%;
+      border: 0;
+      max-height: 450px;
+      margin-bottom: 2rem;
+      object-fit: contain;
+    }
+    p,
+    ol > li {
+      font-size: 1.25rem;
+      color: var(--p-color);
+    }
   }
 }

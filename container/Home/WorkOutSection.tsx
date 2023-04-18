@@ -131,7 +131,7 @@ const WorkOutSection: FC = () => {
               </div>
             </div>
           </Col>
-          <Col lg={12}>
+          <Col lg={12} className='text-end'>
             <Link className="link-fx-1 color-contrast-higher mt-4 f-c-gold " href="blog">
               <h3 className='f-c-gold'>
                 <span>See More</span>
