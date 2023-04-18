@@ -6,6 +6,7 @@ import { Col, Container, Row } from "react-bootstrap";
 import { event } from '../../../data/test';
 import moment from "moment";
 import { useRouter } from "next/router";
+import HtmlContent from "@/components/HtmlContent";
 
 export default function EventID() {
     const router = useRouter();
@@ -23,52 +24,18 @@ export default function EventID() {
                     </div>
                     <Row>
                         <Col sm={12}>
-                            <p>{eventItem?.srcipOne}</p>
-                        </Col>
-                        <Col sm={12}>
-                            <p>{eventItem?.srcipTwo}</p>
-                        </Col>
-                        <Col sm={12}>
                             <p>
                                 {eventItem?.subDetail}
                             </p>
                         </Col>
                         <Col sm={12}>
-                            <p>
-                                {eventItem?.detailOne}
-                            </p>
+                            <HtmlContent content={eventItem?.detailOne} />
                         </Col>
                         <Col sm={12}>
                             <p>
                                 {eventItem?.detailTwo}
                             </p>
                         </Col>
-                        <Col sm={12}>
-                            <p>
-                                {eventItem?.detailThree}
-                            </p>
-                        </Col>
-                        <Col sm={12}>
-                            <p>
-                                {eventItem?.listOne}
-                            </p>
-                        </Col>
-                        <Col sm={12}>
-                            <p>
-                                {eventItem?.listTwo}
-                            </p>
-                        </Col>
-                        <Col sm={12}>
-                            <p>
-                                {eventItem?.listThree}
-                            </p>
-                        </Col>
-                        {/* <Col sm={12}>
-                            <p className="source">
-                              <i> Source: {eventItem?.source}</i>  
-                            </p>
-                        </Col> */}
-
                     </Row>
                 </Container>
             </div>
