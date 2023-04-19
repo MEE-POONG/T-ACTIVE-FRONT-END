@@ -78,7 +78,7 @@ const HeroSection = () => {
           <Carousel.Item>
             <img
               className="d-block w-100"
-              src="/images/gallery/IMG_2425.jpg"
+              src="/images/gallery/18.jpg"
               alt="First slide"
             />
           </Carousel.Item>
