@@ -50,7 +50,7 @@ const PricingSection = () => {
       <Container>
         <Row>
           <Col lg={8} className="mx-auto">
-            <h1 className="text-center f-s-philosopher m-0 f-c-gold" data-aos="fade-up">{productIntro[0]?.title}</h1>
+            <h1 className="text-center f-s-bitter m-0 f-c-gold" data-aos="fade-up">{productIntro[0]?.title}</h1>
             <h3 className='text-center f-c-gold' data-aos="fade-up">{productIntro[0]?.srcipOne}</h3>
             <h3 className='text-center f-c-gold mb-5' data-aos="fade-up">{productIntro[0]?.srcipTwo}</h3>
           </Col>

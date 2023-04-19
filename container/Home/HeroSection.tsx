@@ -24,7 +24,7 @@ const HeroSection = () => {
         <Row>
           {homeIntro?.map((homeIntro) => (
             <Col key={homeIntro.pagelist} className="mt-lg-auto mb-lg-5 text-center">
-              <h3 className='f-c-gold f-s-philosopher' data-aos="fade-down" data-aos-easing="ease">{homeIntro?.title}</h3>
+              <h3 className='f-c-gold f-s-bitter' data-aos="fade-down" data-aos-easing="ease">{homeIntro?.title}</h3>
               <h1 className="f-c-gold mb-lg-5 mb-md-3" data-aos="fade-down" data-aos-easing="ease" data-aos-delay="300">{homeIntro?.srcipOne}</h1>
               <h1 className="f-c-gold mb-lg-5 mb-md-3" data-aos="fade-down" data-aos-easing="ease" data-aos-delay="600">{homeIntro?.srcipTwo}</h1>
               <Link className="gold smoothscroll " href="/about" data-aos="fade-down" data-aos-easing="ease" data-aos-delay="600">
