@@ -40,7 +40,7 @@ const AboutSection = () => {
 
           <Col lg={6}>
             <div className="about-text-wrap" data-aos="fade-left">
-              <img src={"images/about/18.jpg"} className="about-image img-fluid" />
+              <img src={"images/gallery/18.jpg"} className="about-image img-fluid" />
 
               <div className="about-text-info d-flex">
                 <div className="d-flex">

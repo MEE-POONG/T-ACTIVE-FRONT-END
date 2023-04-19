@@ -117,6 +117,7 @@ const BlogEventSection: FC = () => {
       }
     ]
   };
+  
   const blogItems = blog.map((item: BlogItem) => (
     <div key={item.id} className="a-box" data-aos="fade-right">
       <div className="img-container">

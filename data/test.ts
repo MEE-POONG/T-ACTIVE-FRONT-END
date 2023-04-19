@@ -69,16 +69,16 @@ export const event = [
         , start: "2023-04-10T09:00:00.000Z", end: "2023-04-10T12:00:00.000Z", img: "images/event/image1.jpg"
     },
     {
-        id: "2", title: "Baking with Stevia Workshop", srcipOne: "Learn how to bake delicious treats using Stevia as a sugar substitute.", subDetail: "Cooking Workshop", detailOne: "Hands-on baking experience", detailTwo: "Expert guidance from a professional baker", listOne: "Create tasty and healthy desserts", start: "2023-04-17T14:00:00.000Z", end: "2023-04-17T17:00:00.000Z", img: "images/event/stevia <br/> 2.jpg"
+        id: "2", title: "Baking with Stevia Workshop", srcipOne: "Learn how to bake delicious treats using Stevia as a sugar substitute.", subDetail: "Cooking Workshop", detailOne: "Hands-on baking experience", detailTwo: "Expert guidance from a professional baker", listOne: "Create tasty and healthy desserts", start: "2023-04-17T14:00:00.000Z", end: "2023-04-17T17:00:00.000Z", img: "images/event/image2.jpg"
     },
     {
-        id: "3", title: "Stevia and Diabetes Management", srcipOne: "Explore the role of Stevia in managing diabetes and blood sugar levels.", subDetail: "Health Talk", detailOne: "Understand the glycemic index and its importance", detailTwo: "Learn about Stevia's impact on blood sugar levels", listOne: "Q&A with a certified nutritionist", start: "2023-04-24T10:00:00.000Z", end: "2023-04-24T12:00:00.000Z", img: "images/event/stevia <br/> 3.jpg"
+        id: "3", title: "Stevia and Diabetes Management", srcipOne: "Explore the role of Stevia in managing diabetes and blood sugar levels.", subDetail: "Health Talk", detailOne: "Understand the glycemic index and its importance", detailTwo: "Learn about Stevia's impact on blood sugar levels", listOne: "Q&A with a certified nutritionist", start: "2023-04-24T10:00:00.000Z", end: "2023-04-24T12:00:00.000Z", img: "images/event/image3.jpg"
     },
     {
-        id: "4", title: "Stevia Plant Cultivation Workshop", srcipOne: "Grow your own Stevia plants and enjoy their natural sweetness.", subDetail: "Gardening Workshop", detailOne: "Learn how to cultivate Stevia plants at home", detailTwo: "Understand the ideal growing conditions for Stevia", listOne: "Hands-on planting experience", start: "2023-05-01T13:00:00.000Z", end: "2023-05-01T16:00:00.000Z", img: "images/event/stevia <br/> 4.jpg"
+        id: "4", title: "Stevia Plant Cultivation Workshop", srcipOne: "Grow your own Stevia plants and enjoy their natural sweetness.", subDetail: "Gardening Workshop", detailOne: "Learn how to cultivate Stevia plants at home", detailTwo: "Understand the ideal growing conditions for Stevia", listOne: "Hands-on planting experience", start: "2023-05-01T13:00:00.000Z", end: "2023-05-01T16:00:00.000Z", img: "images/event/image4.jpg"
     },
     {
-        id: "5", title: "Stevia in the Beverage Industry", srcipOne: "Discover how Stevia is revolutionizing the beverage industry.", subDetail: "Industry Insights", detailOne: "Explore Stevia-based beverages on the market", detailTwo: "Understand the role of Stevia in promoting healthier beverage choices", listOne: "Panel discussion with industry experts", start: "2023-05-08T15:00:00.000Z", end: "2023-05-08T17:00:00.000Z", img: "images/event/stevia5"
+        id: "5", title: "Stevia in the Beverage Industry", srcipOne: "Discover how Stevia is revolutionizing the beverage industry.", subDetail: "Industry Insights", detailOne: "Explore Stevia-based beverages on the market", detailTwo: "Understand the role of Stevia in promoting healthier beverage choices", listOne: "Panel discussion with industry experts", start: "2023-05-08T15:00:00.000Z", end: "2023-05-08T17:00:00.000Z", img: "images/event/image5.jpg"
     }
 ];
 
