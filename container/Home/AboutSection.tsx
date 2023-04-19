@@ -20,7 +20,7 @@ const AboutSection = () => {
           <Col lg={6} className="mb-4 mb-lg-0 d-flex align-items-center">
             <div className="services-info">
 
-              <h1 className="f-s-cookie mb-4" data-aos="fade-right">{aboutIntro[0].title}</h1>
+              <h1 className="f-s-philosopher mb-4" data-aos="fade-right">{aboutIntro[0].title}</h1>
 
               <p data-aos="fade-right">
                 {aboutIntro[0].srcipOne}

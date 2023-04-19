@@ -27,7 +27,7 @@ export default function NavigationBar(): JSX.Element {
           <Navbar.Brand href="/">T Active Stevia</Navbar.Brand>
           <Navbar.Toggle aria-controls="navbarNav" />
           <Navbar.Collapse id="navbarNav">
-            <Nav className="ms-auto me-lg-5 align-items-center f-s-cookie">
+            <Nav className="ms-auto me-lg-5 align-items-center f-s-philosopher">
               <Link href="/" className={asPath === "/" ? "nav-link click-scroll active" : "nav-link click-scroll"}>
                 Home
               </Link>

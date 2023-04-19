@@ -25,7 +25,7 @@ const WorkOutSection: FC = () => {
       <Container>
         <Row className="justify-content-center">
           <Col xs={12} className="text-center">
-            <h1 className="f-s-cookie mb-4" data-aos="fade-up">Work Out</h1>
+            <h1 className="f-s-philosopher mb-4" data-aos="fade-up">Work Out</h1>
           </Col>
           <Col lg={5} xs={12}>
             <div className="artists-thumb" data-aos="fade-up-right">

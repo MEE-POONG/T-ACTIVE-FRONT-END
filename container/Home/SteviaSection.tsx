@@ -66,7 +66,7 @@ const SteviaSection: React.FC<SteviaProps> = ({ id, translateX, translateY }) =>
       <Container className='what-stevia'>
         <Row>
           <Col lg={8} className="mx-auto">
-            <h1 className="text-center f-s-cookie m-0 f-c-gold" data-aos="flip-up" data-aos-delay="300">{productIntro[0]?.title}</h1>
+            <h1 className="text-center f-s-philosopher m-0 f-c-gold" data-aos="flip-up" data-aos-delay="300">{productIntro[0]?.title}</h1>
             <h3 className='text-center'>{productIntro[0]?.srcipOne}</h3>
             <h3 className='text-center'>{productIntro[0]?.srcipTwo}</h3>
           </Col>
