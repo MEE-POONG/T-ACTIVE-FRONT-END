@@ -6,7 +6,7 @@ $color_5: var(--white-color);
 $color_6: inherit;
 $color_7: var(--gold-color);
 $color_8: var(--gold-sub-color);
-$font-family_1: var(--body-font-family);
+// $font-family_1: var(--body-font-family);
 $background-color_1: var(--white-color);
 $background-color_2: currentColor;
 $background-color_3: var(--section-bg-color);
@@ -35,7 +35,7 @@ $border-bottom-color_2: transparent;
 	--p-color: #717275;
 	--border-color: #7fffd4;
 	--link-hover-color: #b22727;
-	--body-font-family: "Alkatra", cursive;
+	// --body-font-family: "Alkatra", cursive;
 	--h1-font-size: 74px;
 	--h2-font-size: 46px;
 	--h3-font-size: 32px;
@@ -62,7 +62,7 @@ $border-bottom-color_2: transparent;
 }
 body {
 	background-color: $background-color_1;
-	font-family: $font-family_1;
+	font-family: "Alkatra", cursive;
 }
 h2 {
 	color: $color_1;
@@ -386,7 +386,7 @@ strong {
 .navbar-brand {
 	padding: 0;
 	margin: 0;
-	font-family: 'Domine', serif;
+	font-family: "Domine", serif;
 	line-height: normal;
 	text-shadow: #ffae0049 1px 0 20px, #ffae0049 -1px 0px 20px, #ffae0049 0px 1px 20px, #ffae0049 0px -1px 20px;
 	color: $color_7;
