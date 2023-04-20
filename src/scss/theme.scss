@@ -6,7 +6,6 @@ $color_5: var(--white-color);
 $color_6: inherit;
 $color_7: var(--gold-color);
 $color_8: var(--gold-sub-color);
-// $font-family_1: var(--body-font-family);
 $background-color_1: var(--white-color);
 $background-color_2: currentColor;
 $background-color_3: var(--section-bg-color);
@@ -35,7 +34,6 @@ $border-bottom-color_2: transparent;
 	--p-color: #717275;
 	--border-color: #7fffd4;
 	--link-hover-color: #b22727;
-	// --body-font-family: "Alkatra", cursive;
 	--h1-font-size: 74px;
 	--h2-font-size: 46px;
 	--h3-font-size: 32px;
@@ -62,7 +60,9 @@ $border-bottom-color_2: transparent;
 }
 body {
 	background-color: $background-color_1;
-	font-family: "Alkatra", cursive;
+	* {
+		font-family: "Alkatra", cursive;
+	}
 }
 h2 {
 	color: $color_1;

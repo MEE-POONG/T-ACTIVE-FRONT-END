@@ -92,7 +92,7 @@ export const blog = [
         detailTwo: "Stevia extract is allowed to be a sugar substitute in at least 30 countries such as Japan, China, Korea, Canada, Australia, New Zealand, Malaysia, Indonesia and is likely to increase steadily. The US Food and Drug Administration and European countries allowThe use of stevia as an ingredient in beverages since 2017.Prof. 2008 and Wed.Prof. 2011, respectively, Thailand by the Ministry of Public Health Announcement of production and distribution of stevia in Thailand since.Prof. 2002 ( Ministry of Public Health Announcement ( Issue 262) P.Prof. 2002 on stevioside and foods containing steviolides ) and announced that the extract of all glycosides has been a food additive since 2008.Prof. 2013 on steviol glycosides ), based on data from the Food Additives Expert Committee of the Food and Agriculture Organization And the World Health Organization United Nations (The Joint FAO/WHO Expert Committee on Food Additives, JECFA) which has evaluated and configured security (Acceptable Daily Intake, ADI) According to the announcement of the Ministry of Public Health Said Steve All Glycosides Means pure extract from stevia leaves Which consists of steviolocides, Aribadio, Oxide, B. Ore, Di B. Olicides, Di RebadioCozide A. Rubusocides and Steviol Biosides Stevia extracts that are allowed to be used as food components must have a substance in the Steviol glycosides group. Total not less than 95 percent of dry weight, which is referenced by standards Food and Agriculture Organization And the World Health Organization United Nations (Codex 2010: JECFA Monograph (2010) INS no. 960)",
         listOne: "",
         source: "https://pharmacy.mahidol.ac.th/th/knowledge/article/221/",
-        img: "images/about/stevialeave.png"
+        img: "images/blog/image1.jpg"
     },
     {
         id: '2', title: '"Benefits of Stevia"',
@@ -102,7 +102,7 @@ export const blog = [
         detailOne: "1. Helps to increase eating and helps reduce headness in food 2. Used as a sweetener instead of sugar. Without causing high blood sugar 3. Stevia, the choice of obese people Give sweetness like sugar But not giving energy How much to eat is not fat.Therefore helps to control the weight very well 4. Stevia has been processed into various finished products. Currently, 5 forms of stevia are consumed in descending order: drying leaves, dried leaves for ready-made brewing. ( stevia tea ), Fresh leaves, Dried leaves for sugar substitution ( stevia powder ), and dried <br/> 5. Stevia extract is used instead of sugar. Or use as a substitute for some sugar Because steviolides are well resistant to acids and heat. Therefore can be used in a variety of foods and beverages such as soft drinks, green tea, beige snacksAry, jam, jelly, ice cream, candy, chewing gum, seasoning sauce, etc. ( Most recently, heard that famous brands like Coca Cola have patented and have been produced using this extract as well. But not yet released in Thailand Which, if any, when heldIt's a good choice for those who don't want to drink sugar in an envelope.) <br/> 6. In the food industry Stevia extract is considered to have many advantages, such as being non-degradable by microbes. When used with food, therefore do not cause food to rot. Do not cause brown food when passing high heat and most importantly Will not be absorbed in the digestive systemVery suitable for people with obesity, diabetes, blood pressure and heart disease <br/> 7.Stevioside In addition to being used in food and beverages Currently, it is also used as a substitute for sugar in the production of toothpaste. ", detailTwo: "Benefits of SteviaHelps to treat diabetic patients. Reducing sugar levels in the veins Suitable for those.Want to control blood sugar levels.Helps to reduce hyperlipidemia. Helps to reduce the risk of heart disease. High blood pressure and obesity. Helps nourish the liver. And Helps to heal wounds both inside and outside.",
         listOne: "",
         source: "https://www.csdlabservices.com/",
-        img: "images/about/stevialeave.png"
+        img: "images/blog/image1.jpg"
     },
     {
         id: '3', title: '"Stevia 5 adopting schemes"',
@@ -113,7 +113,7 @@ export const blog = [
         detailTwo: "",
         listOne: "",
         source: 'https://www.wongnai.com/food-tips/what-is-stevia',
-        img: "images/5use.jpg"
+        img: "images/blog/image2.jpg"
     },
     {
         id: '4', title: '"How About T-Active Stevia"',
@@ -124,7 +124,7 @@ export const blog = [
         detailTwo: "aaaa",
         listOne: "aaaa",
         source: 'https://www.wongnai.com/food-tips/what-is-stevia',
-        img: "images/5use.jpg"
+        img: "images/blog/image2.jpg"
     },
 ];
 
