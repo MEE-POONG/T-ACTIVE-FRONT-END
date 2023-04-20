@@ -66,7 +66,7 @@ const SteviaSection: React.FC<SteviaProps> = ({ id, translateX, translateY }) =>
       <Container className='what-stevia'>
         <Row>
           <Col lg={8} className="mx-auto">
-            <h1 className="text-center f-s-bitter m-0 f-c-gold" data-aos="flip-up" data-aos-delay="300">{productIntro[0]?.title}</h1>
+            <h1 className="text-center f-s-head m-0 f-c-gold" data-aos="flip-up" data-aos-delay="300">{productIntro[0]?.title}</h1>
             <h3 className='text-center'>{productIntro[0]?.srcipOne}</h3>
             <h3 className='text-center'>{productIntro[0]?.srcipTwo}</h3>
           </Col>
@@ -123,7 +123,7 @@ const SteviaSection: React.FC<SteviaProps> = ({ id, translateX, translateY }) =>
           </Col>
           <Col lg={4}>
             <p className='f-c-gold' data-aos="zoom-in">&emsp;&emsp;
-              Our products are sweet, delicious, not bitter, not overpowering, and smell good.
+              Our products are sweet, delicious, not head, not overpowering, and smell good.
             </p>
           </Col>
           <Col lg={4}>

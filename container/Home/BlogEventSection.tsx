@@ -204,7 +204,7 @@ const BlogEventSection: FC = () => {
       <Container>
         <Row>
           <Col xs={12} md={6} className='blog-page'>
-            <h1 className="f-s-bitter mb-4 text-center" data-aos="fade-up">Blogs</h1>
+            <h1 className="f-s-head mb-4 text-center" data-aos="fade-up">Blogs</h1>
             <div className="artists-thumb">
               <Slider {...settingsBlog}>
                 {blogItems}
@@ -212,7 +212,7 @@ const BlogEventSection: FC = () => {
             </div>
           </Col>
           <Col xs={12} md={6} className='event-page'>
-            <h1 className="f-s-bitter mb-4 text-center" data-aos="fade-up">Events</h1>
+            <h1 className="f-s-head mb-4 text-center" data-aos="fade-up">Events</h1>
             <div className="artists-thumb">
               <Slider {...settingsEvent}>
                 {eventItems}
