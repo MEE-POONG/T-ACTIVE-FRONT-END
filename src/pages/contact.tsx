@@ -81,13 +81,9 @@ export default function ContactPage() {
                                     <i className=""> <BsCalendar3 /></i>
                                     <span> Open daily from  08.00 to 16.00</span>
                                 </div>
-
-
                             </Col>
                         </Row>
                     </div>
-
-
                 </Container>
             </div>
         </LayOut>
